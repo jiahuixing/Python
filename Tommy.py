@@ -132,6 +132,13 @@ def getDate():
     mDate = year + block + mon + block + day
     return mDate
 
+def getPathNames():
+    length = len(sys.argv)
+    if length >=2:
+        print('argvs >= 2')
+    else:
+        print('argvs < 2')
+
 def createPath():
     cwd = str(os.getcwd()).strip('\n').strip('\r')
     version = getDate()
