@@ -175,7 +175,7 @@ def moveFilesAndPaths():
     if cwd == PYTHON_FILE_PATH:
         move_internal = 'sudo mv *internal* ' + internal_version
         move_other = 'sudo mv *' + version + '*.zip* *' + version + '*.tar* ' + version
-        mv_xml = 'sudo mv *.xml ' + internal_version
+        mv_xml = 'sudo mv *' + version + '*.xml ' + internal_version
         print('Move internal files to path:%s.'%internal_version)
         os.system(move_internal)
         print('Move xml files to path:%s.'%internal_version)
