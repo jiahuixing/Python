@@ -41,10 +41,13 @@ def testThread():
         """
     num = len(DEVICES)
     if num > 0:
+        print('num > 0')
         for i in xrange(num):
             device_id = DEVICES[i]
             print('i=%d,device_id=%s'%(i,device_id))
             thread.start_new_thread(log,(device_id,i))
+    else:
+        print('num <= 0')
 
 getDeviceList()
 testThread()
