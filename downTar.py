@@ -35,8 +35,10 @@ def downTar():
     if version in web:
         debug('Find version.')
         page = MAIN_PAGE + version
-        web = urllib.urlopen(page).read()
-
+        web = urllib.urlopen(page).readlines()
+        for line in web:
+            if '.tar' in line:
+                print(line)
     else:
         debug('Version not found.')
 
