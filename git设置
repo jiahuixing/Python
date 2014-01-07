@@ -1,0 +1,10 @@
+http://www.cnblogs.com/peterzd/archive/2012/04/22/2465230.html
+
+1.sudo apt-get install git-core git-gui git-doc
+2.
+    1.检查是否已经有SSH Key。
+        cd ~/.ssh
+    2.如果说没有这个目录，就直接看第三步
+    3.生成一个新的SSH。
+        ssh-keygen -t rsa -C "email"
+3.
