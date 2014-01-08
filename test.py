@@ -10,4 +10,16 @@ def testArgvs():
     print(length)
 
 
-testArgvs()
+def testTryReturn():
+    num = 0
+    try:
+        num = 1
+    except KeyboardInterrupt:
+        print('wrong')
+    return num
+
+
+
+num = testTryReturn()
+print(type(num))
+print(num)

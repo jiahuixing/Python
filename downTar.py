@@ -56,8 +56,8 @@ def downTar():
     if version in web:
         debug('Find version.')
         num = judgeInput(CHOOSE_T_SYS)
+        debug('num=%s' % num)
         if num:
-            debug('num=%s'%num)
             page = MAIN_PAGE + version
             web = urllib.urlopen(page).readlines()
             for line in web:
@@ -74,26 +74,30 @@ def findTar(num, line):
     choose = CHOOSE[num - 1]
     version = getDate()
     tar_name = choose + MID + version + IMAGES_SUF
-#    debug('tar_name=%s'%tar_name)
+    #    debug('tar_name=%s'%tar_name)
     pat = re.compile(tar_name)
     result = re.search(pat, line)
     if result:
         debug('find it')
         tar = result.group()
     else:
-        #debug('cant find it')
+        debug('cant find it')
         tar = ''
     return  tar
 
 
 def judgeInput(choose_type=CHOOSE_T_IN):
-    read_len = 1
-    if len(CHOOSE) > 9:
-        read_len = 2
-    if len(sys.argv) > 2 and choose_type == CHOOSE_T_SYS:
-        m_input = sys.argv[2][:read_len]
-    else:
-        info = ('''Pls choose the num to down the tar:
+    debug(choose_type)
+    try:
+        if len(CHOOSE) > 9:
+            read_len = 2
+        else:
+            read_len = 1
+        if len(sys.argv) > 2 and choose_type == CHOOSE_T_SYS:
+            m_input = sys.argv[2][:read_len]
+        else:
+            info = (
+                '''Pls choose the num to down the tar:
 1.mione
 2.aries
 3.aries_alpha
@@ -103,18 +107,21 @@ def judgeInput(choose_type=CHOOSE_T_IN):
 7.cancro
 8.wt93007
 9.HM2013023
-    ''')
-        print(info)
-        m_input = sys.stdin.read(read_len)
-    if m_input.isdigit():
-        m_input = int(m_input)
-        if m_input in range(1, len(CHOOSE) + 1):
-            return m_input
+        ''')
+            print(info)
+            m_input = sys.stdin.read(read_len)
+        if m_input.isdigit():
+            m_input = int(m_input)
+            if m_input in range(1, len(CHOOSE) + 1):
+                debug('m_input=%s' % m_input)
+                return m_input
+            else:
+                debug('Pls input num in %s--%s.' % (1, len(CHOOSE)))
+                judgeInput()
         else:
-            debug('Pls input num in %s--%s.'%(1,len(CHOOSE)))
+            debug('Not a valid num,pls re input')
             judgeInput()
-    else:
-        debug('Input wrong,pls re input')
-        judgeInput()
+    except KeyboardInterrupt:
+        debug('Interrupt')
 
 downTar()
