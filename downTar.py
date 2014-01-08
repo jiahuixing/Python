@@ -1,7 +1,6 @@
 __author__ = 'jiahuixing'
 # -*- coding: utf-8 -*-
 
-import os
 import time
 import sys
 import urllib
@@ -9,8 +8,10 @@ import re
 
 MAIN_PAGE = 'http://ota.n.miui.com/ota/'
 
-DOWNLOAD = 'wget '
+CHOOSE_T_SYS = 'sys'
+CHOOSE_T_IN = 'in'
 
+DOWNLOAD = 'wget '
 
 X1 = 'mione_plus_'
 X2 = 'aries_'
@@ -24,48 +25,75 @@ HM2_W = 'HM2013023_'
 
 MID = 'images_'
 
-CHOOSE = [X1,X2,X2_ALPHA,X2A,X2A_ALPHA,X3_TD,X3_W,HM2_TD,HM2_W]
+CHOOSE = [X1, X2, X2_ALPHA, X2A, X2A_ALPHA, X3_TD, X3_W, HM2_TD, HM2_W]
 
 IMAGES_SUF = r'_4.[0-9]{1}_[a-zA-Z0-9]{10}.tar'
 
 def debug(msg):
-    print('******%s******'%msg)
+    print('******%s******' % msg)
+
 
 def getDate():
     if len(sys.argv) > 1:
         version = sys.argv[1]
     else:
         block = '.'
-        year,mon,day= time.strftime('%Y'),time.strftime('%m'),time.strftime('%d')
+        year, mon, day = time.strftime('%Y'), time.strftime('%m'), time.strftime('%d')
         year = year[-1]
         mon = str(int(mon))
         day = str(int(day))
         version = year + block + mon + block + day
     return version
 
+
 def downTar():
     '''
     open url
     '''
     version = getDate()
-
     web = urllib.urlopen(MAIN_PAGE).read()
 
     if version in web:
         debug('Find version.')
-        page = MAIN_PAGE + version
-        web = urllib.urlopen(page).readlines()
-        for line in web:
-            if '.tar' in line:
-                tar = findTar1(2,line)
-                if tar:
-                    print('tar=%s'%tar)
-                    break
+        num = judgeInput(CHOOSE_T_SYS)
+        if num:
+            debug('num=%s'%num)
+            page = MAIN_PAGE + version
+            web = urllib.urlopen(page).readlines()
+            for line in web:
+                if '.tar' in line:
+                    tar = findTar(num, line)
+                    if tar:
+                        print('tar=%s' % tar)
+                        break
     else:
         debug('Version not found.')
 
-def findTar():
-    info = '''Pls choose the num to down the tar:
+
+def findTar(num, line):
+    choose = CHOOSE[num - 1]
+    version = getDate()
+    tar_name = choose + MID + version + IMAGES_SUF
+#    debug('tar_name=%s'%tar_name)
+    pat = re.compile(tar_name)
+    result = re.search(pat, line)
+    if result:
+        debug('find it')
+        tar = result.group()
+    else:
+        #debug('cant find it')
+        tar = ''
+    return  tar
+
+
+def judgeInput(choose_type=CHOOSE_T_IN):
+    read_len = 1
+    if len(CHOOSE) > 9:
+        read_len = 2
+    if len(sys.argv) > 2 and choose_type == CHOOSE_T_SYS:
+        m_input = sys.argv[2][:read_len]
+    else:
+        info = ('''Pls choose the num to down the tar:
 1.mione
 2.aries
 3.aries_alpha
@@ -75,52 +103,18 @@ def findTar():
 7.cancro
 8.wt93007
 9.HM2013023
-    '''
-    print(info)
-    m_input = sys.stdin.read(1)
+    ''')
+        print(info)
+        m_input = sys.stdin.read(read_len)
     if m_input.isdigit():
         m_input = int(m_input)
-        if m_input in range(1,9):
-            choose = CHOOSE[m_input-1]
-            version = getDate()
-            tar_name = choose + MID + version + IMAGES_SUF
-            print(tar_name)
-            pat = re.compile(tar_name)
-            print('pat=%s'%pat)
-            tmp = 'aries_images_'+ version + '_4.1_eb18afb0ac.tar'
-            print('tmp=%s'%tmp)
-            if re.findall(pat,tmp):
-                print(1)
-            else:
-                print(2)
+        if m_input in range(1, len(CHOOSE) + 1):
+            return m_input
         else:
-            print('******wrong num******')
-            findTar()
+            debug('Pls input num in %s--%s.'%(1,len(CHOOSE)))
+            judgeInput()
     else:
-        print('******input wrong******')
-        findTar()
-
-
-def findTar1(num,line):
-    choose = CHOOSE[num-1]
-    version = getDate()
-    tar_name = choose + MID + version + IMAGES_SUF
-#    print(tar_name)
-    pat = re.compile(tar_name)
-#    print('pat=%s'%pat)
-#    print('line=%s'%line)
-    #result = re.findall(pat,line)
-    result = re.search(pat,line)
-    if result:
-        print('******find it******')
-        tar = result.group()
-    else:
-        print('******cant find it******')
-        tar = ''
-    return  tar
-
+        debug('Input wrong,pls re input')
+        judgeInput()
 
 downTar()
-
-
-

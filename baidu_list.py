@@ -20,11 +20,12 @@ def getDeviceList():
         if line != '':
             line = line.split()
             if len(line) == 2:
-#                i += 1
-#                print('i=%d'%i)
-#                print(line)
+            #                i += 1
+            #                print('i=%d'%i)
+            #                print(line)
                 DEVICES.append(line[0])
     print(DEVICES)
+
 
 def log(device_id):
     """
@@ -44,8 +45,8 @@ def testThread():
         print('num > 0')
         for i in xrange(num):
             device_id = DEVICES[i]
-            print('i=%d,device_id=%s'%(i,device_id))
-            thread.start_new_thread(log,(device_id,i))
+            print('i=%d,device_id=%s' % (i, device_id))
+            thread.start_new_thread(log, (device_id, i))
     else:
         print('num <= 0')
 
