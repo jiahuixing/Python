@@ -85,7 +85,7 @@ def findTar(num, line):
         debug('find it')
         tar = result.group()
     else:
-        debug('cant find it')
+        #debug('cant find it')
         tar = ''
     return  tar
 
