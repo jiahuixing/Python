@@ -8,8 +8,8 @@ import re
 
 MAIN_PAGE = 'http://ota.n.miui.com/ota/'
 
-CHOOSE_T_SYS = 'sys'
-CHOOSE_T_IN = 'in'
+CHOOSE_T_SYS = 'sys.argv'
+CHOOSE_T_IN = 'input'
 
 DOWNLOAD = 'wget '
 
@@ -28,6 +28,9 @@ MID = 'images_'
 CHOOSE = [X1, X2, X2_ALPHA, X2A, X2A_ALPHA, X3_TD, X3_W, HM2_TD, HM2_W]
 
 IMAGES_SUF = r'_4.[0-9]{1}_[a-zA-Z0-9]{10}.tar'
+
+global choose_num
+
 
 def debug(msg):
     print('******%s******' % msg)
@@ -55,7 +58,8 @@ def downTar():
 
     if version in web:
         debug('Find version.')
-        num = judgeInput(CHOOSE_T_SYS)
+        judgeInput(CHOOSE_T_SYS)
+        num = choose_num
         debug('num=%s' % num)
         if num:
             page = MAIN_PAGE + version
@@ -114,7 +118,7 @@ def judgeInput(choose_type=CHOOSE_T_IN):
             m_input = int(m_input)
             if m_input in range(1, len(CHOOSE) + 1):
                 debug('m_input=%s' % m_input)
-                return m_input
+                setNum(m_input)
             else:
                 debug('Pls input num in %s--%s.' % (1, len(CHOOSE)))
                 judgeInput()
@@ -123,5 +127,15 @@ def judgeInput(choose_type=CHOOSE_T_IN):
             judgeInput()
     except KeyboardInterrupt:
         debug('Interrupt')
+
+
+def getNum():
+    return choose_num
+
+
+def setNum(num):
+    global choose_num
+    choose_num = num
+
 
 downTar()
