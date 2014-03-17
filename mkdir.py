@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from T_Libs import *
+from my_libs import *
 
 
 BLOCK = ' '
