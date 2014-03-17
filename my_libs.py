@@ -203,6 +203,12 @@ Rom_Types = [
 
 
 def get_file_md5(filename):
+    """
+
+    @param filename:
+    @return md5:
+    @summary 获取rom的md5
+    """
     if not os.path.isfile(filename):
         return
     my_hash = hashlib.md5()
@@ -217,6 +223,12 @@ def get_file_md5(filename):
 
 
 def get_rom_type(name):
+    """
+
+    @param name:
+    @return rom_type:
+    @summary 获取rom的类型
+    """
     rom_type = ''
     for i in xrange(len(Rom_Types)):
         if Rom_Types[i][0] in name:
@@ -226,6 +238,12 @@ def get_rom_type(name):
 
 
 def get_version():
+    """
+
+
+    @return version:
+    @summary 获取版本号
+    """
     argv_len = len(sys.argv)
     if argv_len >= 3:
         version = sys.argv[2]
@@ -235,23 +253,44 @@ def get_version():
 
 
 def get_rom_idx(name):
+    """
+
+    @param name:
+    @return idx:
+    @return str_idx
+    @summary 获取rom name 在Rom_Properties中的idx
+    """
     idx = -1
+    str_idx = ''
     name = str.lower(name)
     for i in xrange(len(Rom_Properties)):
         mask = str.lower(Rom_Properties[i][0])
         if mask in name:
             idx = i
+            str_idx = str(idx + 1)
             break
-    return idx, str(idx + 1)
+    return idx, str_idx
 
 
 def get_rom_size(filename):
+    """
+
+    @param filename:
+    @return size:
+    @summary 获得rom的size
+    """
     size = os.path.getsize(filename) / 1024 / 1024
     size = str(size) + 'M'
     return size
 
 
 def get_date():
+    """
+
+
+    @return m_date:
+    @summary 获取格式日期
+    """
     block = '.'
     year, mon, day = time.strftime('%Y'), time.strftime('%m'), time.strftime('%d')
     year = year[-1]
@@ -262,6 +301,13 @@ def get_date():
 
 
 def walk_dir(m_folder, topdown=True):
+    """
+
+    @param m_folder:
+    @param topdown:
+    @return info:
+    @summary 遍历目录m_folder
+    """
     info = dict()
     for root, dirs, files in os.walk(m_folder, topdown):
         for file_name in files:
