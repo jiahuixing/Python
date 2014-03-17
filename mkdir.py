@@ -2,18 +2,10 @@
 
 from my_libs import *
 
-
 BLOCK = ' '
 PYTHON_FILE_PATH = '/data/files'
 USER_OTA_PATH = '/data/ota/'
 ENG_PATH = '/data/eng/'
-
-DEV_MIUI = 'miui_'
-ZIP = 'zip'
-DEV_IMAGES = '_images_'
-TAR = 'tgz'
-STABLE_MIUI = 'J'
-ORIGIN = 'N'
 
 
 def get_version_type():

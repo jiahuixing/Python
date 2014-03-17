@@ -4,7 +4,8 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="">
+    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="my_libs.py&#10;">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mkdir.py" afterPath="$PROJECT_DIR$/mkdir.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_libs.py" afterPath="$PROJECT_DIR$/my_libs.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -50,16 +51,18 @@
       <file leaf-file-name="getfile_url.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/getfile_url.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="0" selection-start="894" selection-end="916" vertical-scroll-proportion="0.0" vertical-offset="282" max-vertical-offset="1005">
-              <folding />
+            <state line="46" column="35" selection-start="1433" selection-end="1433" vertical-scroll-proportion="0.0" vertical-offset="12" max-vertical-offset="1005">
+              <folding>
+                <marker date="1395050912582" expanded="true" signature="593:1815" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="my_libs.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="my_libs.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my_libs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="27" selection-start="411" selection-end="411" vertical-scroll-proportion="0.373444" vertical-offset="0" max-vertical-offset="5160">
+            <state line="7" column="49" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5115">
               <folding>
                 <element signature="e#25#39#0" expanded="true" />
               </folding>
@@ -67,10 +70,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mkdir.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="mkdir.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mkdir.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="158" column="17" selection-start="4726" selection-end="4726" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2970">
+            <state line="13" column="22" selection-start="257" selection-end="257" vertical-scroll-proportion="0.26970956" vertical-offset="0" max-vertical-offset="2835">
               <folding />
             </state>
           </provider>
@@ -89,7 +92,9 @@
         <entry file="file://$PROJECT_DIR$/test1.py">
           <provider selected="true" editor-type-id="text-editor">
             <state line="13" column="7" selection-start="277" selection-end="277" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
-              <folding />
+              <folding>
+                <marker date="1395040307886" expanded="true" signature="64:267" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -124,8 +129,8 @@
         <option value="$PROJECT_DIR$/T_Libs.py" />
         <option value="$PROJECT_DIR$/retarfile.py" />
         <option value="$PROJECT_DIR$/getfile_url.py" />
-        <option value="$PROJECT_DIR$/mkdir.py" />
         <option value="$PROJECT_DIR$/my_libs.py" />
+        <option value="$PROJECT_DIR$/mkdir.py" />
       </list>
     </option>
   </component>
@@ -520,7 +525,11 @@
       <created>1395050937378</created>
       <updated>1395050937378</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="my_libs.py&#10;">
+      <created>1395054596183</created>
+      <updated>1395054596183</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -547,16 +556,16 @@
     <frame x="64" y="-5" width="1377" height="906" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39133126" sideWeight="0.6703786" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3909434" sideWeight="0.6703786" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32971245" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290566" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28419656" sideWeight="0.6005155" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3997773" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1654952" sideWeight="0.2182628" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284345" sideWeight="0.6703786" order="7" side_tool="false" content_ui="tabs" x="616" y="74" width="514" height="898" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1654952" sideWeight="0.2182628" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19698113" sideWeight="0.7118194" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33864543" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -604,7 +613,8 @@
     <MESSAGE value="get_file_url.py&#10;mkdir.py&#10;my_libs.py" />
     <MESSAGE value="get_file_url.py&#10;mkdir.py&#10;" />
     <MESSAGE value="get_file_url.py&#10;mkdir.py&#10;my_libs.py&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="get_file_url.py&#10;mkdir.py&#10;my_libs.py&#10;" />
+    <MESSAGE value="my_libs.py&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="my_libs.py&#10;" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -653,7 +663,9 @@
     <entry file="file://$PROJECT_DIR$/test1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="7" selection-start="277" selection-end="277" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
-          <folding />
+          <folding>
+            <marker date="1395040307886" expanded="true" signature="64:267" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -668,7 +680,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="14" selection-start="125" selection-end="133" vertical-scroll-proportion="0.3" vertical-offset="0" max-vertical-offset="3435">
           <folding>
-            <element signature="e#51#60#0" expanded="true" />
+            <element signature="e#51#60#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -689,24 +701,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/getfile_url.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="894" selection-end="916" vertical-scroll-proportion="0.0" vertical-offset="282" max-vertical-offset="1005">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mkdir.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="158" column="17" selection-start="4726" selection-end="4726" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2970">
-          <folding />
+        <state line="46" column="35" selection-start="1433" selection-end="1433" vertical-scroll-proportion="0.0" vertical-offset="12" max-vertical-offset="1005">
+          <folding>
+            <marker date="1395050912582" expanded="true" signature="593:1815" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/my_libs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="27" selection-start="411" selection-end="411" vertical-scroll-proportion="0.373444" vertical-offset="0" max-vertical-offset="5160">
+        <state line="7" column="49" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5115">
           <folding>
             <element signature="e#25#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mkdir.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="22" selection-start="257" selection-end="257" vertical-scroll-proportion="0.26970956" vertical-offset="0" max-vertical-offset="2835">
+          <folding />
         </state>
       </provider>
     </entry>

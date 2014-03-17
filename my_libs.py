@@ -88,7 +88,6 @@ Rom_Properties = [
     ['_NativeMI3W_Q', 'X3-WCDMA-Android-原生版', ],
     ['cancro_images_Q', 'X3-WCDMA-Android-原生版', ],
 
-
     ##############################################小米Pad##############################################
 
     # 小米平板X6
@@ -105,7 +104,6 @@ Rom_Properties = [
     ['_HM2_J', 'H2-TD-稳定版', ],
     ['wt93007_images_J', 'H2-TD-稳定版', ],
     ['wt93007_chinamobile_images', 'H2-TD-移动稳定版', ],
-
 
     # 红米手机2 WCDMA
 
@@ -184,7 +182,6 @@ Rom_Properties = [
     ['lcsh92_wet_tdd_images_J', 'H3-TD-稳定版', ],
     ['lcsh92_wet_tdd_images_J', 'H3-TD-稳定版', ],
     ['lcsh92_wet_tdd_chinamobile_images', 'H3-TD-移动定制版', ],
-
 
     # 红米手机3 WCDMA
 
