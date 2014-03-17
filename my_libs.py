@@ -198,6 +198,16 @@ Rom_Types = [
     ['tar', 'Fastboot线刷包'],
 ]
 
+Dev_Types = [
+
+    '-体验版',
+    '-开发版',
+    '-稳定版',
+    '-Android-原生版',
+    '-移动定制版',
+    '-移动定制版',
+]
+
 
 def get_file_md5(filename):
     """
@@ -331,25 +341,28 @@ def walk_dir(m_folder, topdown=True):
             tmp = []
             print os.path.abspath(file_name)
             if Rom_Types[0][0] in file_name or Rom_Types[1][0] in file_name or Rom_Types[2][0] in file_name:
-                idx, str_idx = get_rom_idx(file_name)
-                print('idx==%s' % idx)
-                if str_idx != "0":
-                    size = get_rom_size(os.path.join(root, file_name))
-                    md5 = get_file_md5(os.path.join(root, file_name))
-                    tmp.append(idx)
-                    tmp.append(size)
-                    tmp.append(md5)
-                    tmp.append(file_name)
-                    # print(tmp)
-                    keys = info.keys()
-                    # print(keys)
-                    if str_idx not in keys:
-                        info[str_idx] = []
-                        info[str_idx].append(tmp)
+                if 'ota' not in file_name:
+                    idx, str_idx = get_rom_idx(file_name)
+                    print('idx==%s' % idx)
+                    if str_idx != "0":
+                        size = get_rom_size(os.path.join(root, file_name))
+                        md5 = get_file_md5(os.path.join(root, file_name))
+                        tmp.append(idx)
+                        tmp.append(size)
+                        tmp.append(md5)
+                        tmp.append(file_name)
+                        # print(tmp)
+                        keys = info.keys()
+                        # print(keys)
+                        if str_idx not in keys:
+                            info[str_idx] = []
+                            info[str_idx].append(tmp)
+                        else:
+                            info[str_idx].append(tmp)
                     else:
-                        info[str_idx].append(tmp)
+                        print('Not in Rom_Types list.')
                 else:
-                    print('Not in Rom_Types list.')
+                    print('Ota files.')
             else:
                 print('Not valid "zip,tar,tgz" files.')
 
