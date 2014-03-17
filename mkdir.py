@@ -160,7 +160,7 @@ class Generate:
         head = '【升级提醒】\n—————————————————————————————————————————————————— \n\n'
         end = ' '
         url_head = 'http://ota.n.miui.com/ota/' + version + '/'
-        if info:
+        if {} != info:
             for key in info.keys():
                 if key != '':
                     #print('key:%s'%key)
