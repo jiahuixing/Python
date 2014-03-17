@@ -55,7 +55,7 @@ class Generate:
 
 
 if __name__ == '__main__':
-    print('total=%s' % len(Rom_Properties))
+    print('total==%s' % len(Rom_Properties))
     generate = Generate()
     url = generate.get_download_url()
     print url

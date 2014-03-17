@@ -332,7 +332,7 @@ def walk_dir(m_folder, topdown=True):
             print os.path.abspath(file_name)
             if Rom_Types[0][0] in file_name or Rom_Types[1][0] in file_name or Rom_Types[2][0] in file_name:
                 idx, str_idx = get_rom_idx(file_name)
-                print('idx=%s' % idx)
+                print('idx==%s' % idx)
                 if str_idx != "0":
                     size = get_rom_size(os.path.join(root, file_name))
                     md5 = get_file_md5(os.path.join(root, file_name))

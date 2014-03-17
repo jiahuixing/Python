@@ -50,6 +50,10 @@ def get_version_type():
 
 
 def create_path():
+    """
+
+    @summary 创建文件夹
+    """
     cwd = str(os.getcwd()).strip('\n').strip('\r')
     version, internal_version = get_path_names()
     version_type = get_version_type()
@@ -71,6 +75,10 @@ def create_path():
 
 
 def move_files_paths():
+    """
+
+    @summary 移动文件到目录
+    """
     cwd = str(os.getcwd()).strip('\n').strip('\r')
     version, internal_version = get_path_names()
     version_type = get_version_type()
@@ -123,7 +131,6 @@ class Generate:
         self.m_version = version
 
     def get_download_url(self):
-
         m_folder = self.m_folder
         info = walk_dir(m_folder)
         version = self.m_version
