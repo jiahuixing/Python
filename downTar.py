@@ -87,7 +87,7 @@ def findTar(num, line):
     else:
         #debug('cant find it')
         tar = ''
-    return  tar
+    return tar
 
 
 def judgeInput(choose_type=CHOOSE_T_IN):

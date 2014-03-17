@@ -49,18 +49,6 @@ def get_version_type():
         get_version_type()
 
 
-def get_path_names():
-    length = len(sys.argv)
-    if length >= 2:
-        # print('argvs >= 2')
-        version = sys.argv[1]
-    else:
-        # print('argvs < 2')
-        version = get_date()
-    internal_version = version + '-internal'
-    return version, internal_version
-
-
 def create_path():
     cwd = str(os.getcwd()).strip('\n').strip('\r')
     version, internal_version = get_path_names()
@@ -109,14 +97,6 @@ def move_files_paths():
             os.system(move_eng)
     else:
         print('Pls move this python file to path:%s.' % PYTHON_FILE_PATH)
-
-
-def write_print_format(version, msg):
-    read_mode = 'w'
-    file_name = version + '-url.txt'
-    file_obj = open(file_name, read_mode)
-    file_obj.write(msg)
-    file_obj.close()
 
 
 class Generate:
@@ -180,5 +160,4 @@ if __name__ == '__main__':
     generate = Generate()
     url = generate.get_download_url()
     print url
-    #write_print_format(generate.mVersion,url)
 

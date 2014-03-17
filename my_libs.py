@@ -297,6 +297,26 @@ def get_date():
     return m_date
 
 
+def write_print_format(version, msg):
+    read_mode = 'w'
+    file_name = version + '-url.txt'
+    file_obj = open(file_name, read_mode)
+    file_obj.write(msg)
+    file_obj.close()
+
+
+def get_path_names():
+    length = len(sys.argv)
+    if length >= 2:
+        # print('argvs >= 2')
+        version = sys.argv[1]
+    else:
+        # print('argvs < 2')
+        version = get_date()
+    internal_version = version + '-internal'
+    return version, internal_version
+
+
 def walk_dir(m_folder, topdown=True):
     """
 

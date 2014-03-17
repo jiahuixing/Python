@@ -2,7 +2,6 @@ __author__ = 'jiahuixing'
 # -*- coding: utf-8 -*-
 
 import os
-import sys
 import thread
 
 DEVICES = []
@@ -49,6 +48,7 @@ def testThread():
             thread.start_new_thread(log, (device_id, i))
     else:
         print('num <= 0')
+
 
 getDeviceList()
 testThread()

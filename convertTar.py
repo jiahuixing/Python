@@ -2,6 +2,7 @@
 import os
 import sys
 
+
 def reconsitution(standardTar, originalTar):
     workPath = os.path.split(standardTar)[0]
     targetName = os.path.split(originalTar)[1].replace(".tar", "")
@@ -53,6 +54,7 @@ def deleteChildFolder(path):
 
 def uncompress(source, target):
     os.system("tar -xvf " + source + " -C " + target)
+
 
 if __name__ == "__main__":
     mPath = sys.argv[1]
