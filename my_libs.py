@@ -347,6 +347,7 @@ def walk_dir(m_folder, topdown=True):
                     if str_idx != "0":
                         size = get_rom_size(os.path.join(root, file_name))
                         md5 = get_file_md5(os.path.join(root, file_name))
+                        c_name = Rom_Properties[idx][1]
                         tmp.append(idx)
                         tmp.append(size)
                         tmp.append(md5)
@@ -354,11 +355,11 @@ def walk_dir(m_folder, topdown=True):
                         # print(tmp)
                         keys = info.keys()
                         # print(keys)
-                        if str_idx not in keys:
-                            info[str_idx] = []
-                            info[str_idx].append(tmp)
+                        if c_name not in keys:
+                            info[c_name] = []
+                            info[c_name].append(tmp)
                         else:
-                            info[str_idx].append(tmp)
+                            info[c_name].append(tmp)
                     else:
                         print('Not in Rom_Types list.')
                 else:

@@ -33,14 +33,13 @@ class Generate:
         end = ' '
         url_head = 'http://ota.n.miui.com/ota/' + version + '/'
         if {} != info:
-            for key in info.keys():
+            keys = info.keys()
+            for key in keys:
                 if key != '':
                     #print('key:%s'%key)
                     length = len(info[key])
                     #print('length:%s'%length)
-                    idx = info[key][0][0]
-                    c_name = Rom_Properties[idx][1]
-                    body += "%s %s\n\n" % (c_name, version)
+                    body += "%s %s\n\n" % (key, version)
                     for i in xrange(length):
                         #print('i:%d'%i)
                         tmp = info[key][i]
