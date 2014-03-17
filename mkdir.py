@@ -8,11 +8,6 @@ PYTHON_FILE_PATH = '/data/files'
 USER_OTA_PATH = '/data/ota/'
 ENG_PATH = '/data/eng/'
 
-
-#PYTHON_FILE_PATH = '/mnt/hgfs/vmshare/jiahuixing/UiAutomator/bin/test'
-#USER_OTA_PATH = '/mnt/hgfs/vmshare/jiahuixing/UiAutomator/bin/test/test/ota/'
-#ENG_PATH = '/mnt/hgfs/vmshare/jiahuixing/UiAutomator/bin/test/test/eng/'
-
 DEV_MIUI = 'miui_'
 ZIP = 'zip'
 DEV_IMAGES = '_images_'

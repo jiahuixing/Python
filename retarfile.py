@@ -37,7 +37,7 @@ def debug(msg):
     print('******%s******' % msg)
 
 
-def getVersion():
+def get_version():
     if len(sys.argv) > 1:
         folder = sys.argv[1]
         folder = str.split(folder, '/')
@@ -47,7 +47,7 @@ def getVersion():
         debug('请输入版本号(如：“/data/ota/JLB25.0/ ”)')
 
 
-def findImage(version, device_type):
+def find_image(version, device_type):
     image = ''
     image_pre = ''
     if device_type == ARIES:
@@ -70,13 +70,13 @@ def findImage(version, device_type):
     return image
 
 
-def extractTar(file_name):
+def extract_tar(file_name):
     extract = TAR_XVF + file_name
     debug('extract=%s' % extract)
     os.system(extract)
 
 
-def compressTar(version, device_type, operator):
+def compress_tar(version, device_type, operator):
     compress = ''
     if device_type == TAURUS:
         compress = TAR_CVF + 'taurus_' + operator + '_images_' + version + '_4.1.tar ' + 'taurus_' + operator + '_images_' + version + '_4.1'
@@ -87,7 +87,7 @@ def compressTar(version, device_type, operator):
         os.system(compress)
 
 
-def cpUserDate(version, device_type):
+def cp_user_date(version, device_type):
     cp = ''
     if device_type == TAURUS:
         cp = CP_TAURUS + version + '/userdata.img taurus_images_' + version + '_4.1/images/'
@@ -98,7 +98,7 @@ def cpUserDate(version, device_type):
         os.system(cp)
 
 
-def renameFolder(version, device_type, operator):
+def rename_folder(version, device_type, operator):
     rename = ''
     if device_type == TAURUS:
         rename = 'mv taurus_images_' + version + '_4.1 ' + 'taurus_' + operator + '_images_' + version + '_4.1'
@@ -109,7 +109,7 @@ def renameFolder(version, device_type, operator):
         os.system(rename)
 
 
-def rmFolder(version, device_type, operator):
+def rm_folder(version, device_type, operator):
     rm_data = RM + 'home/'
     rm_image = RM
     debug('rm_data=%s' % rm_data)
@@ -123,8 +123,8 @@ def rmFolder(version, device_type, operator):
         os.system(rm_image)
 
 
-def runScript():
-    version = getVersion()
+def run_script():
+    version = get_version()
     if version:
         for i in xrange(len(USER_DATA_PRE)):
             debug('i=%d' % i)
@@ -145,15 +145,16 @@ def runScript():
             elif OP_CU in user_data:
                 operator = OP_CU
             debug('operator=%s' % operator)
-            image = findImage(version, device_type)
+            image = find_image(version, device_type)
             if image:
-                extractTar(user_data)
-                extractTar(image)
-                cpUserDate(version, device_type)
-                renameFolder(version, device_type, operator)
-                compressTar(version, device_type, operator)
-                rmFolder(version, device_type, operator)
+                extract_tar(user_data)
+                extract_tar(image)
+                cp_user_date(version, device_type)
+                rename_folder(version, device_type, operator)
+                compress_tar(version, device_type, operator)
+                rm_folder(version, device_type, operator)
             else:
                 debug('未找到image.')
 
-runScript()
+
+run_script()
