@@ -39,6 +39,11 @@ Rom_Properties = [
 
     # 小米手机2A TD
 
+    ['_MI2ATD_', 'M2A-TD-开发版', ],
+    ['taurus_td_images', 'M2A-TD-开发版', ],
+
+    # 小米手机2A WCDMA
+
     ['_MI2A_4', 'M2A-WCDMA-开发版', ],
     ['taurus_images_4', 'M2A-WCDMA-开发版', ],
     ['_MI2A_J', 'M2A-WCDMA-稳定版', ],
@@ -46,10 +51,6 @@ Rom_Properties = [
     ['taurus_chinaunicom_images', 'M2A-WCDMA-CU-联通稳定版', ],
     ['_MI2AAlpha_', 'M2A-WCDMA-体验版', ],
     ['taurus_alpha_images', 'M2A-WCDMA-体验版', ],
-    ['_MI2ATD_', 'M2A-TD-开发版', ],
-    ['taurus_td_images', 'M2A-TD-开发版', ],
-
-    # 小米手机2A
 
     # 小米手机3 TD
 
@@ -69,7 +70,6 @@ Rom_Properties = [
     ['cancro_images_J', 'X3-WCDMA-稳定版', ],
     ['_MI3WTW_4', 'X3-WCDMA-TW-台湾开发版', ],
     ['cancro_tw_images_4', 'X3-WCDMA-TW-台湾开发版', ],
-    ['cancro_tw_images_4', 'X3-WCDMA-TW-台湾开发版', ],
     ['_MI3WTW_J', 'X3-WCDMA-TW-台湾稳定版', ],
     ['cancro_tw_images_J', 'X3-WCDMA-TW-台湾稳定版', ],
     ['_MI3WHK_4', 'X3-WCDMA-HK-香港开发版', ],
@@ -77,7 +77,8 @@ Rom_Properties = [
     ['_MI3WHK_J', 'X3-WCDMA-HK-香港稳定版', ],
     ['cancro_hk_images_J', 'X3-WCDMA-SG-香港稳定版', ],
     ['_MI3WSG_4', 'X3-WCDMA-SG-新加坡开发版', ],
-    ['_MI3WSG_J', 'X3-WCDMA-SG-新加坡开发版', ],
+    ['cancro_sg_images_4', 'X3-WCDMA-SG-新加坡开发版', ],
+    ['_MI3WSG_J', 'X3-WCDMA-SG-新加坡稳定版', ],
     ['cancro_sg_images_J', 'X3-WCDMA-SG-新加坡稳定版', ],
     ['_MI3WMY_4', 'X3-WCDMA-MY-马来西亚开发版', ],
     ['cancro_my_images_4', 'X3-WCDMA-MY-马来西亚开发版', ],
@@ -180,7 +181,6 @@ Rom_Properties = [
     ['lcsh92_wet_tdd_images_4', 'H3-TD-不稳定版', ],
     ['_H3TD_J', 'H3-TD-稳定版', ],
     ['lcsh92_wet_tdd_images_J', 'H3-TD-稳定版', ],
-    ['lcsh92_wet_tdd_images_J', 'H3-TD-稳定版', ],
     ['lcsh92_wet_tdd_chinamobile_images', 'H3-TD-移动定制版', ],
 
     # 红米手机3 WCDMA
@@ -268,14 +268,15 @@ def get_rom_idx(name):
     @summary 获取rom name 在Rom_Properties中的idx
     """
     idx = -1
-    str_idx = ''
     name = str.lower(name)
     for i in xrange(len(Rom_Properties)):
         mask = str.lower(Rom_Properties[i][0])
         if mask in name:
             idx = i
-            str_idx = str(idx + 1)
             break
+        else:
+            continue
+    str_idx = str(idx + 1)
     return idx, str_idx
 
 
@@ -343,8 +344,11 @@ def walk_dir(m_folder, topdown=True):
             if Rom_Types[0][0] in file_name or Rom_Types[1][0] in file_name or Rom_Types[2][0] in file_name:
                 if 'ota' not in file_name:
                     idx, str_idx = get_rom_idx(file_name)
+                    # print('idx==%s str_idx=%s' % (idx, str_idx))
                     print('idx==%s' % idx)
-                    if str_idx != "0":
+                    # print(Rom_Properties[idx])
+                    min_idx = '0'
+                    if str_idx != min_idx:
                         size = get_rom_size(os.path.join(root, file_name))
                         md5 = get_file_md5(os.path.join(root, file_name))
                         c_name = Rom_Properties[idx][1]
@@ -357,9 +361,7 @@ def walk_dir(m_folder, topdown=True):
                         # print(keys)
                         if c_name not in keys:
                             info[c_name] = []
-                            info[c_name].append(tmp)
-                        else:
-                            info[c_name].append(tmp)
+                        info[c_name].append(tmp)
                     else:
                         print('Not in Rom_Types list.')
                 else:
