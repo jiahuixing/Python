@@ -27,16 +27,16 @@ MID = 'images_'
 
 CHOOSE = [X1, X2, X2_ALPHA, X2A, X2A_ALPHA, X3_TD, X3_W, HM2_TD, HM2_W]
 
-IMAGES_SUF = r'_4.[0-9]{1}_[a-zA-Z0-9]{10}.tar'
+IMAGES_SUF = r'_4.[0-9]{1}_[a-zA-Z0-9]{10}'
 
-global choose_num
+SUFFIX = '.tgz'
 
 
 def debug(msg):
     print('******%s******' % msg)
 
 
-def getDate():
+def get_date():
     if len(sys.argv) > 1:
         version = sys.argv[1]
     else:
@@ -49,24 +49,27 @@ def getDate():
     return version
 
 
-def downTar():
-    '''
-    open url
-    '''
-    version = getDate()
+def down_tgz():
+    """
+
+    @summary 下载tgz
+    """
+    version = get_date()
     web = urllib.urlopen(MAIN_PAGE).read()
 
     if version in web:
         debug('Find version.')
-        judgeInput(CHOOSE_T_SYS)
+        judge_input(CHOOSE_T_SYS)
         num = choose_num
         debug('num=%s' % num)
         if num:
             page = MAIN_PAGE + version
+            debug(page)
             web = urllib.urlopen(page).readlines()
             for line in web:
-                if '.tar' in line:
-                    tar = findTar(num, line)
+                if '.tgz' in line:
+                    # debug(line)
+                    tar = find_tar(num, line)
                     if tar:
                         print('tar=%s' % tar)
                         break
@@ -74,11 +77,11 @@ def downTar():
         debug('Version not found.')
 
 
-def findTar(num, line):
+def find_tar(num, line):
     choose = CHOOSE[num - 1]
-    version = getDate()
-    tar_name = choose + MID + version + IMAGES_SUF
-    #    debug('tar_name=%s'%tar_name)
+    version = get_date()
+    tar_name = choose + MID + version + IMAGES_SUF + SUFFIX
+    # debug('tar_name=%s' % tar_name)
     pat = re.compile(tar_name)
     result = re.search(pat, line)
     if result:
@@ -90,7 +93,7 @@ def findTar(num, line):
     return tar
 
 
-def judgeInput(choose_type=CHOOSE_T_IN):
+def judge_input(choose_type=CHOOSE_T_IN):
     debug(choose_type)
     try:
         if len(CHOOSE) > 9:
@@ -118,24 +121,24 @@ def judgeInput(choose_type=CHOOSE_T_IN):
             m_input = int(m_input)
             if m_input in range(1, len(CHOOSE) + 1):
                 debug('m_input=%s' % m_input)
-                setNum(m_input)
+                set_num(m_input)
             else:
                 debug('Pls input num in %s--%s.' % (1, len(CHOOSE)))
-                judgeInput()
+                judge_input()
         else:
             debug('Not a valid num,pls re input')
-            judgeInput()
+            judge_input()
     except KeyboardInterrupt:
         debug('Interrupt')
 
 
-def getNum():
+def get_num():
     return choose_num
 
 
-def setNum(num):
+def set_num(num):
     global choose_num
     choose_num = num
 
 
-downTar()
+down_tgz()
