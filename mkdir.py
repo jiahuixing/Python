@@ -9,6 +9,12 @@ ENG_PATH = '/data/eng/'
 
 
 def get_version_type():
+    """
+
+
+    @return:
+    @summary 获取版本类型
+    """
     num_letter = 0
     input_type = 0
     if len(sys.argv) < 2:
@@ -52,7 +58,7 @@ def get_version_type():
 def create_path():
     """
 
-    @summary 创建文件夹
+    @summary 创建目录
     """
     cwd = str(os.getcwd()).strip('\n').strip('\r')
     version, internal_version = get_path_names()
