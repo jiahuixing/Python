@@ -7,13 +7,12 @@ import thread
 DEVICES = []
 
 
-def getDeviceList():
+def get_device_list():
     """
     获取device list
     """
     adb_cmd_devices = 'adb devices'
     po = os.popen(adb_cmd_devices)
-    i = 0
     for line in po.readlines():
         line = line.strip('\r').strip('\n')
         if line != '':
@@ -35,7 +34,7 @@ def log(device_id):
     print(device_id)
 
 
-def testThread():
+def test_thread():
     """
 
         """
@@ -50,8 +49,8 @@ def testThread():
         print('num <= 0')
 
 
-getDeviceList()
-testThread()
+get_device_list()
+test_thread()
 
 
 

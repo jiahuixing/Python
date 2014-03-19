@@ -4,6 +4,7 @@ import hashlib
 import os
 import sys
 import time
+import re
 
 # IMAGES_SUF = r'_4.[0-9]{1}_[a-zA-Z0-9]{10}.tar'
 
@@ -432,3 +433,18 @@ def get_download_url(m_folder, version):
     redmi_url = to_get_url(info_redmi, version)
     pad_url = to_get_url(info_pad, version)
     return xiaomi_url, redmi_url, pad_url
+
+
+def get_dev_type(file_name):
+    """
+
+
+    """
+    dev_version = r'[0-9]{1}\.[0-9]{1,2}\.[0-9]{1,2}'
+    pattern = re.compile(dev_version)
+    search_result = re.search(pattern, file_name)
+    if search_result:
+        print('Find it.')
+        print(search_result.group())
+    else:
+        print('Not find.')
