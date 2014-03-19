@@ -5,9 +5,11 @@ from my_libs import *
 
 class Generate:
     m_folder = ''
+    m_version = ''
 
     def __init__(self):
         self.get_folder()
+        self.get_version()
 
     def get_folder(self):
         block = '.'
@@ -15,46 +17,26 @@ class Generate:
         if argv_len >= 2:
             m_folder = sys.argv[1]
         else:
-            year, mon, day = time.strftime('%Y'), time.strftime('%m'), time.strftime('%d')
-            year = year[-1]
-            mon = str(int(mon))
-            day = str(int(day))
-            m_folder = year + block + mon + block + day
+            m_folder = get_date()
         self.m_folder = m_folder
 
-    def get_download_url(self):
-
-        m_folder = self.m_folder
-        info = walk_dir(m_folder)
-        version = get_version()
-        m_url = ''
-        body = ''
-        head = '【升级提醒】\n—————————————————————————————————————————————————— \n\n'
-        end = ' '
-        url_head = 'http://ota.n.miui.com/ota/' + version + '/'
-        if {} != info:
-            keys = info.keys()
-            for key in keys:
-                if key != '':
-                    #print('key:%s'%key)
-                    length = len(info[key])
-                    #print('length:%s'%length)
-                    body += "%s %s\n\n" % (key, version)
-                    for i in xrange(length):
-                        #print('i:%d'%i)
-                        tmp = info[key][i]
-                        size = tmp[1]
-                        md5 = tmp[2]
-                        name = tmp[3]
-                        rom_type = get_rom_type(name)
-                        body = '%s%s %s MD5: %s\n%s%s \n\n' % (body, rom_type, size, md5, url_head, name)
-                    body += '—————————————————————————————————————————————————— \n\n'
-            m_url = head + body + end
-        return m_url
+    def get_version(self):
+        if len(sys.argv) >= 3:
+            version = sys.argv[2]
+        else:
+            version = get_date()
+        self.m_version = version
 
 
 if __name__ == '__main__':
     print('total==%s' % len(Rom_Properties))
     generate = Generate()
-    url = generate.get_download_url()
-    print url
+    xiaomi_url, redmi_url, pad_url = get_download_url(generate.m_folder, generate.m_version)
+    print('###################################################################\n')
+    if xiaomi_url != '':
+        print(xiaomi_url)
+    if redmi_url != '':
+        print(redmi_url)
+    if pad_url != '':
+        print(pad_url)
+    print('###################################################################\n')

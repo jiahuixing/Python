@@ -136,40 +136,19 @@ class Generate:
             version = get_date()
         self.m_version = version
 
-    def get_download_url(self):
-        m_folder = self.m_folder
-        info = walk_dir(m_folder)
-        version = self.m_version
-        m_url = ''
-        body = ''
-        head = '【升级提醒】\n—————————————————————————————————————————————————— \n\n'
-        end = ' '
-        url_head = 'http://ota.n.miui.com/ota/' + version + '/'
-        if {} != info:
-            keys = info.keys()
-            for key in keys:
-                if key != '':
-                    #print('key:%s'%key)
-                    length = len(info[key])
-                    #print('length:%s'%length)
-                    body += "%s %s\n\n" % (key, version)
-                    for i in xrange(length):
-                        #print('i:%d'%i)
-                        tmp = info[key][i]
-                        size = tmp[1]
-                        md5 = tmp[2]
-                        name = tmp[3]
-                        rom_type = get_rom_type(name)
-                        body = '%s%s %s MD5: %s\n%s%s \n\n' % (body, rom_type, size, md5, url_head, name)
-                    body += '—————————————————————————————————————————————————— \n\n'
-            m_url = head + body + end
-        return m_url
-
 
 if __name__ == '__main__':
+    print('total==%s' % len(Rom_Properties))
     create_path()
     move_files_paths()
     generate = Generate()
-    url = generate.get_download_url()
-    print url
+    xiaomi_url, redmi_url, pad_url = get_download_url(generate.m_folder, generate.m_version)
+    print('###################################################################\n')
+    if xiaomi_url != '':
+        print(xiaomi_url)
+    if redmi_url != '':
+        print(redmi_url)
+    if pad_url != '':
+        print(pad_url)
+    print('###################################################################\n')
 

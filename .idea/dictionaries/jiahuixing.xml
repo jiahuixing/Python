@@ -14,8 +14,10 @@
       <w>logcat</w>
       <w>mione</w>
       <w>mioneplus</w>
+      <w>redmi</w>
       <w>wcdma</w>
       <w>wget</w>
+      <w>xiaomi</w>
     </words>
   </dictionary>
 </component>
