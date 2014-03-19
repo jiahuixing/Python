@@ -376,6 +376,13 @@ def walk_dir(m_folder, topdown=True):
 
 
 def to_get_url(info, version):
+    """
+
+    @param info:
+    @param version:
+    @return m_url:
+    @summary 组合url
+    """
     m_url = ''
     body = ''
     head = '【升级提醒】\n—————————————————————————————————————————————————— \n\n'
@@ -412,6 +419,13 @@ def to_get_url(info, version):
 
 
 def get_download_url(m_folder, version):
+    """
+
+    @param m_folder:
+    @param version:
+    @return xiaomi_url, redmi_url, pad_url:
+    @summary 获得to_get_url 中组合得到的url
+    """
     info_xiaomi, info_redmi, info_pad = walk_dir(m_folder)
     # info = walk_dir(m_folder))
     xiaomi_url = to_get_url(info_xiaomi, version)
