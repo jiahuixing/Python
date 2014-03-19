@@ -29,7 +29,8 @@ class Generate:
 
 
 if __name__ == '__main__':
-    print('total==%s' % len(Rom_Properties))
+    for i in xrange(len(Rom_Properties)):
+        print('i=%s,i_length=%s' % (i, len(Rom_Properties[i])))
     generate = Generate()
     xiaomi_url, redmi_url, pad_url = get_download_url(generate.m_folder, generate.m_version)
     print('###################################################################\n')

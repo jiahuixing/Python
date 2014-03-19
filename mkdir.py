@@ -138,7 +138,8 @@ class Generate:
 
 
 if __name__ == '__main__':
-    print('total==%s' % len(Rom_Properties))
+    for i in xrange(len(Rom_Properties)):
+        print('i=%s,i_length=%s' % (i, len(Rom_Properties[i])))
     create_path()
     move_files_paths()
     generate = Generate()
