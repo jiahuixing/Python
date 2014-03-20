@@ -475,11 +475,11 @@ def get_dev_type(file_name):
 
     @param file_name:
     """
-    dev_version = r'[0-9]{1}\.[0-9]{1,2}\.[0-9]{1,2}'
-    stable_version = r'[A-Z]{3,7}[0-9]{1,2}\.[0-9]{1,2}'
-    origin_version = r'[A-Z]{3}[0-9]{2}'
+    dev_version = r'[0-9]{1}\.[0-9]{1,2}\.[0-9]{1,2}\_'
+    stable_version = r'[A-Z]{3,7}[0-9]{1,2}\.[0-9]{1,2}\_'
+    origin_version = r'[A-Z]{3}[0-9]{2}\_'
     pattern_dev = re.compile(dev_version)
-    pattern_stable = re.compile(origin_version)
+    pattern_stable = re.compile(stable_version)
     pattern_origin = re.compile(origin_version)
 
     op_idx = get_op_idx(file_name)
@@ -489,11 +489,17 @@ def get_dev_type(file_name):
     if op_name != '':
         print('op_name=%s' % op_name)
 
-    dev_search_result = re.search(pattern_dev, file_name)
-    stable_search_result = re.search(pattern_stable, file_name)
-    origin_search_result = re.search(pattern_origin, file_name)
+    dev_search_result = re.findall(pattern_dev, file_name)
+    stable_search_result = re.findall(pattern_stable, file_name)
+    origin_search_result = re.findall(pattern_origin, file_name)
     if dev_search_result:
-        print('Find it.')
-        print(dev_search_result.group())
+        print('dev.')
+        print(dev_search_result)
+    elif stable_search_result:
+        print('stable.')
+        print(stable_search_result)
+    elif origin_search_result:
+        print('origin.')
+        print(origin_search_result)
     else:
         print('Not find.')

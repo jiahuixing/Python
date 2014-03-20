@@ -12,4 +12,16 @@ def test1():
             get_dev_type(file_name)
 
 
+def test2():
+    dev_version = r'[0-9]{1}\.[0-9]{1,2}\.[0-9]{1,2}\_'
+    dev_pattern = re.compile(dev_version)
+    string = 'dasdadadsasd4.5.12_dasdasdweqweqw5.6.7222_dasdadsdasdad7.2.3_dasdasdasdas1.3.3_asdasdasdas'
+    dev_search_result = re.findall(dev_pattern, string)
+    if dev_search_result:
+        print(dev_search_result)
+
+
 test1()
+# test2()
+
+
