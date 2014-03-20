@@ -201,9 +201,25 @@ Rom_Properties = [
 ]
 
 Rom_Types = [
+
+    #rom的类型 线刷包 | 卡刷包
+
     ['zip', '系统升级卡刷包'],
     ['tgz', 'Fastboot线刷包'],
     ['tar', 'Fastboot线刷包'],
+]
+
+Ops_Types = [
+
+    #运营商种类
+
+    #中国移动   0
+    ['chinamobile', '-CM-移动稳定版'],
+    #中国联通   1
+    ['chinaunicom', '-CU-联通定制版'],
+    #中国电信   2
+    ['chinatelecom', '-CT-电信定制版'],
+
 ]
 
 
@@ -435,16 +451,49 @@ def get_download_url(m_folder, version):
     return xiaomi_url, redmi_url, pad_url
 
 
+def get_op_idx(file_name):
+    """
+
+    @param file_name:
+    @return op_idx:
+    @summary 获取运营商类型的idx
+    """
+    op_idx = -1
+    name = str.lower(file_name)
+    for i in xrange(len(Ops_Types)):
+        op = Ops_Types[i][0]
+        if op in name:
+            op_idx = i
+            break
+        else:
+            continue
+    return op_idx
+
+
 def get_dev_type(file_name):
     """
 
-
+    @param file_name:
     """
     dev_version = r'[0-9]{1}\.[0-9]{1,2}\.[0-9]{1,2}'
-    pattern = re.compile(dev_version)
-    search_result = re.search(pattern, file_name)
-    if search_result:
+    stable_version = r'[A-Z]{3,7}[0-9]{1,2}\.[0-9]{1,2}'
+    origin_version = r'[A-Z]{3}[0-9]{2}'
+    pattern_dev = re.compile(dev_version)
+    pattern_stable = re.compile(origin_version)
+    pattern_origin = re.compile(origin_version)
+
+    op_idx = get_op_idx(file_name)
+    op_name = ''
+    if op_idx != -1:
+        op_name = Ops_Types[op_idx][1]
+    if op_name != '':
+        print('op_name=%s' % op_name)
+
+    dev_search_result = re.search(pattern_dev, file_name)
+    stable_search_result = re.search(pattern_stable, file_name)
+    origin_search_result = re.search(pattern_origin, file_name)
+    if dev_search_result:
         print('Find it.')
-        print(search_result.group())
+        print(dev_search_result.group())
     else:
         print('Not find.')
