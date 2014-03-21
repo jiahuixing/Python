@@ -1,7 +1,7 @@
 __author__ = 'jiahuixing'
 # -*- coding: utf-8 -*-
 
-from my_libs import *
+from gen_url.my_libs import *
 
 
 def test1():
@@ -25,5 +25,4 @@ def test2():
 test1()
 print('#########################################################')
 test2()
-
 

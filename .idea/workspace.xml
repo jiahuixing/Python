@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AnalysisUIOptions">
-    <option name="SCOPE_TYPE" value="3" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/getfile_url.py" afterPath="$PROJECT_DIR$/getfile_url.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_libs.py" afterPath="$PROJECT_DIR$/my_libs.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.py" afterPath="$PROJECT_DIR$/test.py" />
+    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="判断版本类型的准备">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gen_url/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gen_url/tmp_libs.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/getfile_url.py" afterPath="$PROJECT_DIR$/gen_url/getfile_url.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/mkdir.py" afterPath="$PROJECT_DIR$/gen_url/mkdir.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/my_libs.py" afterPath="$PROJECT_DIR$/gen_url/my_libs.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test.py" afterPath="$PROJECT_DIR$/gen_url/test.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test1.py" afterPath="$PROJECT_DIR$/gen_url/test1.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Python.iws" />
@@ -35,19 +36,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="getfile_url.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/getfile_url.py">
+      <file leaf-file-name="getfile_url.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gen_url/getfile_url.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="92" selection-start="828" selection-end="828" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
+            <state line="30" column="26" selection-start="603" selection-end="603" vertical-scroll-proportion="0.5256917" vertical-offset="184" max-vertical-offset="690">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="my_libs.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/my_libs.py">
+      <file leaf-file-name="my_libs.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gen_url/my_libs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="500" column="17" selection-start="14455" selection-end="14455" vertical-scroll-proportion="-0.53526974" vertical-offset="7887" max-vertical-offset="8610">
+            <state line="28" column="30" selection-start="703" selection-end="706" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8610">
               <folding>
                 <element signature="e#25#39#0" expanded="true" />
               </folding>
@@ -55,19 +56,39 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.py">
+      <file leaf-file-name="tmp_libs.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gen_url/tmp_libs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+            <state line="454" column="27" selection-start="12539" selection-end="12539" vertical-scroll-proportion="0.0" vertical-offset="6635" max-vertical-offset="8625">
+              <folding>
+                <element signature="e#25#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gen_url/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="14" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gen_url/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="0" selection-start="727" selection-end="727" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="mkdir.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mkdir.py">
+        <entry file="file://$PROJECT_DIR$/gen_url/mkdir.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="146" column="28" selection-start="4438" selection-end="4438" vertical-scroll-proportion="0.0" vertical-offset="1692" max-vertical-offset="2415">
+            <state line="146" column="28" selection-start="4446" selection-end="4446" vertical-scroll-proportion="0.0" vertical-offset="1692" max-vertical-offset="2415">
               <folding />
             </state>
           </provider>
@@ -107,9 +128,12 @@
         <option value="$PROJECT_DIR$/mkdir.py" />
         <option value="$PROJECT_DIR$/baidu_list.py" />
         <option value="$PROJECT_DIR$/downTar.py" />
-        <option value="$PROJECT_DIR$/getfile_url.py" />
-        <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/my_libs.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/tmp_libs.py" />
+        <option value="$PROJECT_DIR$/getfile_url.py" />
+        <option value="$PROJECT_DIR$/gen_url/__init__.py" />
+        <option value="$PROJECT_DIR$/gen_url/getfile_url.py" />
       </list>
     </option>
   </component>
@@ -133,7 +157,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -144,7 +168,43 @@
       <autoscrollFromSource />
       <sortByType />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gen_url" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="55" />
@@ -178,6 +238,12 @@
       <console-settings />
     </option>
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/gen_url" />
+      <recent name="$PROJECT_DIR$/gen_url/4.3.18" />
+    </key>
+  </component>
   <component name="RunManager" selected="Python.test">
     <configuration default="false" name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -192,7 +258,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Python" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gen_url/test.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
@@ -232,7 +298,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Python" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gen_url/test1.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
@@ -529,7 +595,11 @@
       <created>1395307248581</created>
       <updated>1395307248581</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="判断版本类型的准备">
+      <created>1395395961927</created>
+      <updated>1395395961927</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -546,10 +616,10 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24701196" sideWeight="0.67018867" order="7" side_tool="false" content_ui="tabs" x="616" y="74" width="514" height="898" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32802126" sideWeight="0.49962264" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17433962" sideWeight="0.7118194" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20377359" sideWeight="0.7118194" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17433962" sideWeight="0.7118194" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20377359" sideWeight="0.7118194" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33864543" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28818062" sideWeight="0.49962264" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28818062" sideWeight="0.49962264" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -613,18 +683,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="7" selection-start="277" selection-end="277" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="285" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="11" selection-start="149" selection-end="149" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/lib/python2.7/re.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="187" column="4" selection-start="8882" selection-end="8882" vertical-scroll-proportion="0.33293557" vertical-offset="0" max-vertical-offset="0" />
@@ -660,7 +718,7 @@
         <state line="32" column="4" selection-start="678" selection-end="678" vertical-scroll-proportion="0.9432049" vertical-offset="0" max-vertical-offset="930" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test1.py">
+    <entry file="file://$PROJECT_DIR$/gen_url/test1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="7" selection-start="277" selection-end="277" vertical-scroll-proportion="0.3853755" vertical-offset="0" max-vertical-offset="506" />
       </provider>
@@ -675,33 +733,49 @@
         <state line="44" column="23" selection-start="808" selection-end="808" vertical-scroll-proportion="-2.1422925" vertical-offset="1699" max-vertical-offset="2205" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/getfile_url.py">
+    <entry file="file://$PROJECT_DIR$/gen_url/mkdir.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="92" selection-start="828" selection-end="828" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
+        <state line="146" column="28" selection-start="4446" selection-end="4446" vertical-scroll-proportion="0.0" vertical-offset="1692" max-vertical-offset="2415">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mkdir.py">
+    <entry file="file://$PROJECT_DIR$/gen_url/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="146" column="28" selection-start="4438" selection-end="4438" vertical-scroll-proportion="0.0" vertical-offset="829" max-vertical-offset="2415">
+        <state line="28" column="0" selection-start="727" selection-end="727" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
+    <entry file="file://$PROJECT_DIR$/gen_url/tmp_libs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my_libs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="500" column="17" selection-start="14455" selection-end="14455" vertical-scroll-proportion="-0.53526974" vertical-offset="7887" max-vertical-offset="8610">
+        <state line="454" column="27" selection-start="12539" selection-end="12539" vertical-scroll-proportion="0.0" vertical-offset="6635" max-vertical-offset="8625">
           <folding>
             <element signature="e#25#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen_url/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="14" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen_url/my_libs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="30" selection-start="703" selection-end="706" vertical-scroll-proportion="0.0" vertical-offset="945" max-vertical-offset="8610">
+          <folding>
+            <element signature="e#25#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen_url/getfile_url.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="26" selection-start="603" selection-end="603" vertical-scroll-proportion="0.5256917" vertical-offset="184" max-vertical-offset="690">
+          <folding />
         </state>
       </provider>
     </entry>

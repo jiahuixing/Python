@@ -525,8 +525,8 @@ def get_dev_type(file_name):
     pattern_stable = re.compile(stable_version)
     pattern_origin = re.compile(origin_version)
 
-    op_idx = get_op_idx(file_name)
     op_name = ''
+    op_idx = get_op_idx(file_name)
     if op_idx != -1:
         op_name = Ops_Types[op_idx][1]
     if op_name != '':

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from my_libs import *
+from gen_url.my_libs import *
 
 BLOCK = ' '
 PYTHON_FILE_PATH = '/data/files'
