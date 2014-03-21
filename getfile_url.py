@@ -33,11 +33,9 @@ if __name__ == '__main__':
         print('i=%s,i_length=%s' % (i, len(Rom_Properties[i])))
     generate = Generate()
     xiaomi_url, redmi_url, pad_url = get_download_url(generate.m_folder, generate.m_version)
-    print('###################################################################\n')
     if xiaomi_url != '':
         print(xiaomi_url)
     if redmi_url != '':
         print(redmi_url)
     if pad_url != '':
         print(pad_url)
-    print('###################################################################\n')

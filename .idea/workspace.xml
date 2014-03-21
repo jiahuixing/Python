@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/getfile_url.py" afterPath="$PROJECT_DIR$/getfile_url.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_libs.py" afterPath="$PROJECT_DIR$/my_libs.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.py" afterPath="$PROJECT_DIR$/test.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -37,16 +38,16 @@
       <file leaf-file-name="getfile_url.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/getfile_url.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="0" selection-start="604" selection-end="709" vertical-scroll-proportion="0.0" vertical-offset="184" max-vertical-offset="720">
+            <state line="34" column="92" selection-start="828" selection-end="828" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="my_libs.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="my_libs.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/my_libs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="479" column="41" selection-start="14294" selection-end="14294" vertical-scroll-proportion="0.0" vertical-offset="7054" max-vertical-offset="7650">
+            <state line="500" column="17" selection-start="14455" selection-end="14455" vertical-scroll-proportion="-0.53526974" vertical-offset="7887" max-vertical-offset="8610">
               <folding>
                 <element signature="e#25#39#0" expanded="true" />
               </folding>
@@ -54,10 +55,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="test.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="32" selection-start="593" selection-end="593" vertical-scroll-proportion="0.64102566" vertical-offset="0" max-vertical-offset="480">
+            <state line="14" column="0" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
               <folding />
             </state>
           </provider>
@@ -66,7 +67,7 @@
       <file leaf-file-name="mkdir.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mkdir.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="146" column="28" selection-start="4438" selection-end="4438" vertical-scroll-proportion="0.0" vertical-offset="1909" max-vertical-offset="2415">
+            <state line="146" column="28" selection-start="4438" selection-end="4438" vertical-scroll-proportion="0.0" vertical-offset="1692" max-vertical-offset="2415">
               <folding />
             </state>
           </provider>
@@ -103,12 +104,12 @@
         <option value="$PROJECT_DIR$/Methods.py" />
         <option value="$PROJECT_DIR$/T_Libs.py" />
         <option value="$PROJECT_DIR$/retarfile.py" />
-        <option value="$PROJECT_DIR$/getfile_url.py" />
         <option value="$PROJECT_DIR$/mkdir.py" />
         <option value="$PROJECT_DIR$/baidu_list.py" />
         <option value="$PROJECT_DIR$/downTar.py" />
-        <option value="$PROJECT_DIR$/my_libs.py" />
+        <option value="$PROJECT_DIR$/getfile_url.py" />
         <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/my_libs.py" />
       </list>
     </option>
   </component>
@@ -524,7 +525,11 @@
       <created>1395301839230</created>
       <updated>1395301839230</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="判断版本类型的准备">
+      <created>1395307248581</created>
+      <updated>1395307248581</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -539,15 +544,15 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28818062" sideWeight="0.50037736" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1654952" sideWeight="0.2182628" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24701196" sideWeight="0.67018867" order="7" side_tool="false" content_ui="tabs" x="616" y="74" width="514" height="898" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32802126" sideWeight="0.49962264" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17433962" sideWeight="0.6613546" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17433962" sideWeight="0.7118194" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20377359" sideWeight="0.7118194" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33864543" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33864543" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28818062" sideWeight="0.49962264" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -650,13 +655,6 @@
         <state line="160" column="0" selection-start="4590" selection-end="4590" vertical-scroll-proportion="3.083004" vertical-offset="810" max-vertical-offset="2460" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/getfile_url.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="604" selection-end="709" vertical-scroll-proportion="0.0" vertical-offset="184" max-vertical-offset="720">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/baidu_list.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="4" selection-start="678" selection-end="678" vertical-scroll-proportion="0.9432049" vertical-offset="0" max-vertical-offset="930" />
@@ -677,6 +675,13 @@
         <state line="44" column="23" selection-start="808" selection-end="808" vertical-scroll-proportion="-2.1422925" vertical-offset="1699" max-vertical-offset="2205" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/getfile_url.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="92" selection-start="828" selection-end="828" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mkdir.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="146" column="28" selection-start="4438" selection-end="4438" vertical-scroll-proportion="0.0" vertical-offset="829" max-vertical-offset="2415">
@@ -684,19 +689,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my_libs.py">
+    <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="479" column="41" selection-start="14294" selection-end="14294" vertical-scroll-proportion="0.0" vertical-offset="7054" max-vertical-offset="7650">
-          <folding>
-            <element signature="e#25#39#0" expanded="true" />
-          </folding>
+        <state line="14" column="0" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
+    <entry file="file://$PROJECT_DIR$/my_libs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="32" selection-start="593" selection-end="593" vertical-scroll-proportion="0.64102566" vertical-offset="0" max-vertical-offset="480">
-          <folding />
+        <state line="500" column="17" selection-start="14455" selection-end="14455" vertical-scroll-proportion="-0.53526974" vertical-offset="7887" max-vertical-offset="8610">
+          <folding>
+            <element signature="e#25#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -222,6 +222,29 @@ Ops_Types = [
 
 ]
 
+Dev_Types = [
+
+    # 版本类型
+
+    '-体验版',
+    '-开发版',
+    '-稳定版',
+    '-Android-原生版',
+
+]
+
+Area_Types = [
+
+    # 香港版 台湾版 新加坡版 马来西亚版
+    # [flag1, flag2', Area],
+
+    ['HK_', '_hk_', '-HK-香港'],
+    ['TW_', '_tw_', '-TW-台湾'],
+    ['SG_', '_sg_', '-SG-新加坡'],
+    ['MY_', '_my_', '-MY-马来西亚'],
+
+]
+
 
 def get_file_md5(filename):
     """
@@ -470,11 +493,31 @@ def get_op_idx(file_name):
     return op_idx
 
 
+def get_area_type(file_name):
+    """
+
+    @param file_name:
+    @return area:
+    @summary 返回区域
+    """
+    area = ''
+    for i in xrange(len(Area_Types)):
+        flag1 = Area_Types[i][0]
+        flag2 = Area_Types[i][1]
+        if flag1 in file_name or flag2 in file_name:
+            area = Area_Types[i][2]
+            break
+        else:
+            continue
+    return area
+
+
 def get_dev_type(file_name):
     """
 
     @param file_name:
     """
+    dev_type = ''
     dev_version = r'[0-9]{1}\.[0-9]{1,2}\.[0-9]{1,2}\_'
     stable_version = r'[A-Z]{3,7}[0-9]{1,2}\.[0-9]{1,2}\_'
     origin_version = r'[A-Z]{3}[0-9]{2}\_'
@@ -492,14 +535,35 @@ def get_dev_type(file_name):
     dev_search_result = re.findall(pattern_dev, file_name)
     stable_search_result = re.findall(pattern_stable, file_name)
     origin_search_result = re.findall(pattern_origin, file_name)
+    find_type = False
+    result = False
     if dev_search_result:
-        print('dev.')
-        print(dev_search_result)
+        find_type = 'dev.'
+        result = dev_search_result
+        if 'alpha' in file_name:
+            dev_type = Dev_Types[0]
+        else:
+            dev_type = Dev_Types[1]
     elif stable_search_result:
-        print('stable.')
-        print(stable_search_result)
+        find_type = 'stable.'
+        result = stable_search_result
+        dev_type = Dev_Types[2]
     elif origin_search_result:
-        print('origin.')
-        print(origin_search_result)
+        find_type = 'origin.'
+        result = origin_search_result
+        dev_type = Dev_Types[3]
     else:
         print('Not find.')
+
+    if result and find_type:
+        print(find_type)
+        print(result)
+
+    area = get_area_type(file_name)
+    if area != '':
+        dev_type = area + dev_type
+
+    if op_name != '':
+        dev_type = op_name
+
+    return dev_type

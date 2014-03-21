@@ -9,7 +9,8 @@ def test1():
     for root, dirs, files in os.walk(m_folder):
         for file_name in files:
             print(file_name)
-            get_dev_type(file_name)
+            dev_type = get_dev_type(file_name)
+            print(dev_type)
 
 
 def test2():
@@ -22,6 +23,7 @@ def test2():
 
 
 test1()
-# test2()
+print('#########################################################')
+test2()
 
 
