@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="判断版本类型的准备">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gen_url/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gen_url/tmp_libs.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/getfile_url.py" afterPath="$PROJECT_DIR$/gen_url/getfile_url.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mkdir.py" afterPath="$PROJECT_DIR$/gen_url/mkdir.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/my_libs.py" afterPath="$PROJECT_DIR$/gen_url/my_libs.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test.py" afterPath="$PROJECT_DIR$/gen_url/test.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test1.py" afterPath="$PROJECT_DIR$/gen_url/test1.py" />
+    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen_url/getfile_url.py" afterPath="$PROJECT_DIR$/gen_url/getfile_url.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Python.iws" />
@@ -39,7 +33,7 @@
       <file leaf-file-name="getfile_url.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gen_url/getfile_url.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="26" selection-start="603" selection-end="603" vertical-scroll-proportion="0.5256917" vertical-offset="184" max-vertical-offset="690">
+            <state line="11" column="26" selection-start="179" selection-end="179" vertical-scroll-proportion="0.32608697" vertical-offset="0" max-vertical-offset="675">
               <folding />
             </state>
           </provider>
@@ -102,6 +96,11 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="jiahuixing" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -142,6 +141,22 @@
     <option name="y" value="-5" />
     <option name="width" value="1377" />
     <option name="height" value="906" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Buildout</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -599,7 +614,11 @@
       <created>1395395961927</created>
       <updated>1395395961927</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="判断版本类型的准备">
+      <created>1395397979043</created>
+      <updated>1395397979043</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -774,7 +793,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gen_url/getfile_url.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="26" selection-start="603" selection-end="603" vertical-scroll-proportion="0.5256917" vertical-offset="184" max-vertical-offset="690">
+        <state line="11" column="26" selection-start="179" selection-end="179" vertical-scroll-proportion="0.32608697" vertical-offset="0" max-vertical-offset="675">
           <folding />
         </state>
       </provider>

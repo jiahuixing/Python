@@ -12,7 +12,6 @@ class Generate:
         self.get_version()
 
     def get_folder(self):
-        block = '.'
         argv_len = len(sys.argv)
         if argv_len >= 2:
             m_folder = sys.argv[1]
