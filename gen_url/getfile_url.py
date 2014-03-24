@@ -28,6 +28,7 @@ class Generate:
 
 
 if __name__ == '__main__':
+    start_time = time.ctime()
     for i in xrange(len(Rom_Properties)):
         print('i=%s,i_length=%s' % (i, len(Rom_Properties[i])))
     generate = Generate()
@@ -38,3 +39,6 @@ if __name__ == '__main__':
         print(redmi_url)
     if pad_url != '':
         print(pad_url)
+    end_time = time.ctime()
+    cost_time = end_time - start_time
+    print('start_time=%s,end_time=%s,cost_time=%s' % (start_time, end_time, cost_time))
