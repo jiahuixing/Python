@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from my_libs import *
+from tmp_libs import *
 
 
 class Generate:

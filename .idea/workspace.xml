@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="显示cost_time">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen_url/my_libs.py" afterPath="$PROJECT_DIR$/gen_url/my_libs.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen_url/tmp_libs.py" afterPath="$PROJECT_DIR$/gen_url/tmp_libs.py" />
+    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gen_url/tmp_getfile_url.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen_url/getfile_url.py" afterPath="$PROJECT_DIR$/gen_url/getfile_url.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Python.iws" />
@@ -34,7 +34,16 @@
       <file leaf-file-name="getfile_url.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gen_url/getfile_url.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="17" selection-start="980" selection-end="989" vertical-scroll-proportion="0.0" vertical-offset="267" max-vertical-offset="735">
+            <state line="40" column="13" selection-start="977" selection-end="977" vertical-scroll-proportion="0.0" vertical-offset="267" max-vertical-offset="735">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tmp_getfile_url.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gen_url/tmp_getfile_url.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="24" selection-start="942" selection-end="942" vertical-scroll-proportion="0.6474359" vertical-offset="267" max-vertical-offset="735">
               <folding />
             </state>
           </provider>
@@ -43,7 +52,7 @@
       <file leaf-file-name="my_libs.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gen_url/my_libs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="583" column="8" selection-start="16842" selection-end="16863" vertical-scroll-proportion="0.0" vertical-offset="8367" max-vertical-offset="8835">
+            <state line="433" column="15" selection-start="12693" selection-end="12695" vertical-scroll-proportion="51.914288" vertical-offset="8312" max-vertical-offset="8835">
               <folding>
                 <element signature="e#25#39#0" expanded="true" />
               </folding>
@@ -51,10 +60,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tmp_libs.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="tmp_libs.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gen_url/tmp_libs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="572" column="35" selection-start="15889" selection-end="15889" vertical-scroll-proportion="0.42307693" vertical-offset="8382" max-vertical-offset="8850">
+            <state line="572" column="35" selection-start="15889" selection-end="15889" vertical-scroll-proportion="0.0" vertical-offset="8382" max-vertical-offset="8850">
               <folding>
                 <element signature="e#25#39#0" expanded="true" />
               </folding>
@@ -118,7 +127,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/4.3.14/test1.py" />
         <option value="$PROJECT_DIR$/Methods.py" />
         <option value="$PROJECT_DIR$/T_Libs.py" />
         <option value="$PROJECT_DIR$/retarfile.py" />
@@ -131,9 +139,10 @@
         <option value="$PROJECT_DIR$/getfile_url.py" />
         <option value="$PROJECT_DIR$/gen_url/__init__.py" />
         <option value="$PROJECT_DIR$/gen_url/test.py" />
-        <option value="$PROJECT_DIR$/gen_url/getfile_url.py" />
         <option value="$PROJECT_DIR$/gen_url/my_libs.py" />
         <option value="$PROJECT_DIR$/gen_url/tmp_libs.py" />
+        <option value="$PROJECT_DIR$/gen_url/getfile_url.py" />
+        <option value="$PROJECT_DIR$/gen_url/tmp_getfile_url.py" />
       </list>
     </option>
   </component>
@@ -631,7 +640,11 @@
       <created>1395662433947</created>
       <updated>1395662433947</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="显示cost_time">
+      <created>1395662518158</created>
+      <updated>1395662518158</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -717,11 +730,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/git设置">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="2" selection-start="235" selection-end="235" vertical-scroll-proportion="0.18723994" vertical-offset="0" max-vertical-offset="721" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/friday.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="14" selection-start="125" selection-end="133" vertical-scroll-proportion="0.3" vertical-offset="0" max-vertical-offset="3435" />
@@ -792,28 +800,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gen_url/getfile_url.py">
+    <entry file="file://$PROJECT_DIR$/gen_url/tmp_libs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="17" selection-start="980" selection-end="989" vertical-scroll-proportion="0.0" vertical-offset="267" max-vertical-offset="735">
-          <folding />
+        <state line="572" column="35" selection-start="15889" selection-end="15889" vertical-scroll-proportion="0.0" vertical-offset="8382" max-vertical-offset="8850">
+          <folding>
+            <element signature="e#25#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gen_url/my_libs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="583" column="8" selection-start="16842" selection-end="16863" vertical-scroll-proportion="0.0" vertical-offset="8367" max-vertical-offset="8835">
+        <state line="433" column="15" selection-start="12693" selection-end="12695" vertical-scroll-proportion="51.914288" vertical-offset="8312" max-vertical-offset="8835">
           <folding>
             <element signature="e#25#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gen_url/tmp_libs.py">
+    <entry file="file://$PROJECT_DIR$/gen_url/getfile_url.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="572" column="35" selection-start="15889" selection-end="15889" vertical-scroll-proportion="0.42307693" vertical-offset="8382" max-vertical-offset="8850">
-          <folding>
-            <element signature="e#25#39#0" expanded="true" />
-          </folding>
+        <state line="40" column="13" selection-start="977" selection-end="977" vertical-scroll-proportion="0.0" vertical-offset="267" max-vertical-offset="735">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen_url/tmp_getfile_url.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="24" selection-start="942" selection-end="942" vertical-scroll-proportion="0.6474359" vertical-offset="267" max-vertical-offset="735">
+          <folding />
         </state>
       </provider>
     </entry>
