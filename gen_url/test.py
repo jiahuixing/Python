@@ -22,7 +22,19 @@ def test2():
         print(dev_search_result)
 
 
-test1()
+def test3():
+    time1 = time.time()
+    time2 = time.ctime()
+    print(type(time1))
+    print(time1)
+    print(type(time2))
+    print(time2)
+    time3 = time.strftime('%H-%M-%S')
+    print(time3)
+
+# test1()
+# print('#########################################################')
+# test2()
 print('#########################################################')
-test2()
+test3()
 

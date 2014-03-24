@@ -28,17 +28,17 @@ class Generate:
 
 
 if __name__ == '__main__':
-    start_time = time.ctime()
+    start_time = time.time()
     for i in xrange(len(Rom_Properties)):
-        print('i=%s,i_length=%s' % (i, len(Rom_Properties[i])))
+        debug_msg('i=%s,i_length=%s' % (i, len(Rom_Properties[i])))
     generate = Generate()
     xiaomi_url, redmi_url, pad_url = get_download_url(generate.m_folder, generate.m_version)
     if xiaomi_url != '':
-        print(xiaomi_url)
+        debug_msg(xiaomi_url)
     if redmi_url != '':
-        print(redmi_url)
+        debug_msg(redmi_url)
     if pad_url != '':
-        print(pad_url)
-    end_time = time.ctime()
-    cost_time = end_time - start_time
-    print('start_time=%s,end_time=%s,cost_time=%s' % (start_time, end_time, cost_time))
+        debug_msg(pad_url)
+    end_time = time.time()
+    cost_time = int(end_time - start_time)
+    debug_msg('start_time=%s\nend_time=%s\ncost_time=%s\n' % (start_time, end_time, cost_time))

@@ -253,7 +253,7 @@ def get_file_md5(filename):
     @return md5:
     @summary 获取rom的md5
     """
-    print('------get_file_md5------')
+    debug_msg('******get_file_md5******')
     if not os.path.isfile(filename):
         return
     my_hash = hashlib.md5()
@@ -274,7 +274,7 @@ def get_rom_type(name):
     @return rom_type:
     @summary 获取rom的类型
     """
-    print('------get_rom_type------')
+    debug_msg('******get_rom_type******')
     rom_type = ''
     for i in xrange(len(Rom_Types)):
         if Rom_Types[i][0] in name:
@@ -290,7 +290,7 @@ def get_rom_idx(name):
     @return :
     @summary 获取rom name 在Rom_Properties中的idx
     """
-    print('------get_rom_idx------')
+    debug_msg('******get_rom_idx******')
     model_idx = -1
     idx = -1
     name = str.lower(name)
@@ -317,7 +317,7 @@ def get_rom_size(filename):
     @return size:
     @summary 获得rom的size
     """
-    print('------get_rom_size------')
+    debug_msg('******get_rom_size******')
     size = os.path.getsize(filename) / 1024 / 1024
     size = str(size) + 'M'
     return size
@@ -350,10 +350,10 @@ def write_print_format(version, msg):
 def get_path_names():
     length = len(sys.argv)
     if length >= 2:
-        # print('argvs >= 2')
+        # debug_msg('argvs >= 2')
         version = sys.argv[1]
     else:
-        # print('argvs < 2')
+        # debug_msg('argvs < 2')
         version = get_date()
     internal_version = version + '-internal'
     return version, internal_version
@@ -367,20 +367,20 @@ def walk_dir(m_folder, topdown=True):
     @return info:
     @summary 遍历目录m_folder
     """
-    print('------walk_dir------')
+    debug_msg('******walk_dir******')
     info_xiaomi = dict()
     info_redmi = dict()
     info_pad = dict()
     for root, dirs, files in os.walk(m_folder, topdown):
         for file_name in files:
             tmp = []
-            print os.path.abspath(file_name)
+            print(os.path.abspath(file_name))
             if Rom_Types[0][0] in file_name or Rom_Types[1][0] in file_name or Rom_Types[2][0] in file_name:
                 if 'ota' not in file_name:
                     model_idx, idx, str_idx = get_rom_idx(file_name)
-                    # print('idx==%s str_idx=%s' % (idx, str_idx))
-                    print('model_idx==%s,idx==%s' % (model_idx, idx))
-                    # print(Rom_Properties[idx])
+                    # debug_msg('idx==%s str_idx=%s' % (idx, str_idx))
+                    debug_msg('model_idx==%s,idx==%s' % (model_idx, idx))
+                    # debug_msg(Rom_Properties[idx])
                     min_idx = '0'
                     if str_idx != min_idx:
                         size = get_rom_size(os.path.join(root, file_name))
@@ -391,22 +391,22 @@ def walk_dir(m_folder, topdown=True):
                         tmp.append(size)
                         tmp.append(md5)
                         tmp.append(file_name)
-                        # print(tmp)
+                        # debug_msg(tmp)
                         if model_idx == 0:
                             keys = info_xiaomi.keys()
-                            # print(keys)
+                            # debug_msg(keys)
                             if c_name not in keys:
                                 info_xiaomi[c_name] = []
                             info_xiaomi[c_name].append(tmp)
                         if model_idx == 1:
                             keys = info_redmi.keys()
-                            # print(keys)
+                            # debug_msg(keys)
                             if c_name not in keys:
                                 info_redmi[c_name] = []
                             info_redmi[c_name].append(tmp)
                         if model_idx == 2:
                             keys = info_pad.keys()
-                            # print(keys)
+                            # debug_msg(keys)
                             if c_name not in keys:
                                 info_pad[c_name] = []
                             info_pad[c_name].append(tmp)
@@ -428,7 +428,7 @@ def to_get_url(info, version):
     @return m_url:
     @summary 组合url
     """
-    print('------to_get_url------')
+    debug_msg('******to_get_url******')
     m_url = ''
     body = ''
     head = '【升级提醒】\n—————————————————————————————————————————————————— \n\n'
@@ -436,23 +436,23 @@ def to_get_url(info, version):
     url_head = 'http://ota.n.miui.com/ota/' + version + '/'
     if {} != info:
         keys = info.keys()
-        # print('pre_sort')
-        # print(keys)
+        # debug_msg('pre_sort')
+        # debug_msg(keys)
         # for key in keys:
-        #     print(key)
-        # print('after_sort')
+        #     debug_msg(key)
+        # debug_msg('after_sort')
         keys = sorted(keys)
-        # print(keys)
+        # debug_msg(keys)
         # for key in keys:
-        #     print(key)
+        #     debug_msg(key)
         for key in keys:
             if key != '':
-                #print('key:%s'%key)
+                #debug_msg('key:%s'%key)
                 length = len(info[key])
-                #print('length:%s'%length)
+                #debug_msg('length:%s'%length)
                 body += "%s %s\n\n" % (key, version)
                 for i in xrange(length):
-                    #print('i:%d'%i)
+                    #debug_msg('i:%d'%i)
                     tmp = info[key][i]
                     size = tmp[2]
                     md5 = tmp[3]
@@ -472,7 +472,7 @@ def get_download_url(m_folder, version):
     @return xiaomi_url, redmi_url, pad_url:
     @summary 获得to_get_url 中组合得到的url
     """
-    print('------get_download_url------')
+    debug_msg('******get_download_url******')
     info_xiaomi, info_redmi, info_pad = walk_dir(m_folder)
     # info = walk_dir(m_folder))
     xiaomi_url = to_get_url(info_xiaomi, version)
@@ -488,7 +488,7 @@ def get_op_idx(file_name):
     @return op_idx:
     @summary 获取运营商类型的idx
     """
-    print('------get_op_idx------')
+    debug_msg('******get_op_idx******')
     op_idx = -1
     name = str.lower(file_name)
     for i in xrange(len(Ops_Types)):
@@ -508,7 +508,7 @@ def get_area_type(file_name):
     @return area:
     @summary 返回区域
     """
-    print('------get_area_type------')
+    debug_msg('******get_area_type******')
     area = ''
     for i in xrange(len(Area_Types)):
         flag1 = Area_Types[i][0]
@@ -526,7 +526,7 @@ def get_dev_type(file_name):
 
     @param file_name:
     """
-    print('------get_dev_type------')
+    debug_msg('******get_dev_type******')
     dev_type = ''
     dev_version = r'[0-9]{1}\.[0-9]{1,2}\.[0-9]{1,2}\_'
     stable_version = r'[A-Z]{3,7}[0-9]{1,2}\.[0-9]{1,2}\_'
@@ -540,7 +540,7 @@ def get_dev_type(file_name):
     if op_idx != -1:
         op_name = Ops_Types[op_idx][1]
     if op_name != '':
-        print('op_name=%s' % op_name)
+        debug_msg('op_name=%s' % op_name)
 
     dev_search_result = re.findall(pattern_dev, file_name)
     stable_search_result = re.findall(pattern_stable, file_name)
@@ -566,8 +566,8 @@ def get_dev_type(file_name):
         print('Not find.')
 
     if result and find_type:
-        print(find_type)
-        print(result)
+        debug_msg(find_type)
+        debug_msg(result)
 
     area = get_area_type(file_name)
     if area != '':
@@ -577,3 +577,8 @@ def get_dev_type(file_name):
         dev_type = op_name
 
     return dev_type
+
+
+def debug_msg(msg, print_flag=1):
+    if print_flag == 1:
+        print('******%s******' % msg)
