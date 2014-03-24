@@ -253,7 +253,7 @@ def get_file_md5(filename):
     @return md5:
     @summary 获取rom的md5
     """
-    debug_msg('******get_file_md5******')
+    debug_msg('get_file_md5')
     if not os.path.isfile(filename):
         return
     my_hash = hashlib.md5()
@@ -274,7 +274,7 @@ def get_rom_type(name):
     @return rom_type:
     @summary 获取rom的类型
     """
-    debug_msg('******get_rom_type******')
+    debug_msg('get_rom_type')
     rom_type = ''
     for i in xrange(len(Rom_Types)):
         if Rom_Types[i][0] in name:
@@ -290,7 +290,7 @@ def get_rom_idx(name):
     @return :
     @summary 获取rom name 在Rom_Properties中的idx
     """
-    debug_msg('******get_rom_idx******')
+    debug_msg('get_rom_idx')
     model_idx = -1
     idx = -1
     name = str.lower(name)
@@ -317,7 +317,7 @@ def get_rom_size(filename):
     @return size:
     @summary 获得rom的size
     """
-    debug_msg('******get_rom_size******')
+    debug_msg('get_rom_size')
     size = os.path.getsize(filename) / 1024 / 1024
     size = str(size) + 'M'
     return size
@@ -367,7 +367,7 @@ def walk_dir(m_folder, topdown=True):
     @return info:
     @summary 遍历目录m_folder
     """
-    debug_msg('******walk_dir******')
+    debug_msg('walk_dir')
     info_xiaomi = dict()
     info_redmi = dict()
     info_pad = dict()
@@ -428,7 +428,7 @@ def to_get_url(info, version):
     @return m_url:
     @summary 组合url
     """
-    debug_msg('******to_get_url******')
+    debug_msg('to_get_url')
     m_url = ''
     body = ''
     head = '【升级提醒】\n—————————————————————————————————————————————————— \n\n'
@@ -472,7 +472,7 @@ def get_download_url(m_folder, version):
     @return xiaomi_url, redmi_url, pad_url:
     @summary 获得to_get_url 中组合得到的url
     """
-    debug_msg('******get_download_url******')
+    debug_msg('get_download_url')
     info_xiaomi, info_redmi, info_pad = walk_dir(m_folder)
     # info = walk_dir(m_folder))
     xiaomi_url = to_get_url(info_xiaomi, version)
@@ -488,7 +488,7 @@ def get_op_idx(file_name):
     @return op_idx:
     @summary 获取运营商类型的idx
     """
-    debug_msg('******get_op_idx******')
+    debug_msg('get_op_idx')
     op_idx = -1
     name = str.lower(file_name)
     for i in xrange(len(Ops_Types)):
@@ -508,7 +508,7 @@ def get_area_type(file_name):
     @return area:
     @summary 返回区域
     """
-    debug_msg('******get_area_type******')
+    debug_msg('get_area_type')
     area = ''
     for i in xrange(len(Area_Types)):
         flag1 = Area_Types[i][0]
@@ -526,7 +526,7 @@ def get_dev_type(file_name):
 
     @param file_name:
     """
-    debug_msg('******get_dev_type******')
+    debug_msg('get_dev_type')
     dev_type = ''
     dev_version = r'[0-9]{1}\.[0-9]{1,2}\.[0-9]{1,2}\_'
     stable_version = r'[A-Z]{3,7}[0-9]{1,2}\.[0-9]{1,2}\_'
