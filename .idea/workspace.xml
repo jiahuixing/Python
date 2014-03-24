@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen_url/my_libs.py" afterPath="$PROJECT_DIR$/gen_url/my_libs.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen_url/tmp_libs.py" afterPath="$PROJECT_DIR$/gen_url/tmp_libs.py" />
+    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="debug_msg">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen_url/getfile_url.py" afterPath="$PROJECT_DIR$/gen_url/getfile_url.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen_url/tmp_getfile_url.py" afterPath="$PROJECT_DIR$/gen_url/tmp_getfile_url.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Python.iws" />
@@ -34,16 +34,16 @@
       <file leaf-file-name="getfile_url.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gen_url/getfile_url.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="13" selection-start="977" selection-end="977" vertical-scroll-proportion="0.0" vertical-offset="267" max-vertical-offset="735">
+            <state line="43" column="4" selection-start="1061" selection-end="1148" vertical-scroll-proportion="0.0" vertical-offset="267" max-vertical-offset="735">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tmp_getfile_url.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="tmp_getfile_url.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gen_url/tmp_getfile_url.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="21" selection-start="964" selection-end="964" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735">
+            <state line="43" column="91" selection-start="1149" selection-end="1149" vertical-scroll-proportion="0.8076923" vertical-offset="267" max-vertical-offset="735">
               <folding />
             </state>
           </provider>
@@ -60,10 +60,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tmp_libs.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="tmp_libs.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gen_url/tmp_libs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="531" column="55" selection-start="14493" selection-end="14493" vertical-scroll-proportion="0.491453" vertical-offset="7735" max-vertical-offset="8850">
+            <state line="580" column="0" selection-start="15895" selection-end="15895" vertical-scroll-proportion="0.0" vertical-offset="8382" max-vertical-offset="8850">
               <folding>
                 <element signature="e#25#39#0" expanded="true" />
               </folding>
@@ -139,10 +139,10 @@
         <option value="$PROJECT_DIR$/getfile_url.py" />
         <option value="$PROJECT_DIR$/gen_url/__init__.py" />
         <option value="$PROJECT_DIR$/gen_url/test.py" />
-        <option value="$PROJECT_DIR$/gen_url/getfile_url.py" />
-        <option value="$PROJECT_DIR$/gen_url/tmp_getfile_url.py" />
         <option value="$PROJECT_DIR$/gen_url/my_libs.py" />
         <option value="$PROJECT_DIR$/gen_url/tmp_libs.py" />
+        <option value="$PROJECT_DIR$/gen_url/getfile_url.py" />
+        <option value="$PROJECT_DIR$/gen_url/tmp_getfile_url.py" />
       </list>
     </option>
   </component>
@@ -648,7 +648,11 @@
       <created>1395662747803</created>
       <updated>1395662747803</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="debug_msg">
+      <created>1395663834775</created>
+      <updated>1395663834775</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -726,7 +730,8 @@
     <MESSAGE value="判断版本类型的准备" />
     <MESSAGE value="删除无用" />
     <MESSAGE value="显示cost_time" />
-    <option name="LAST_COMMIT_MESSAGE" value="显示cost_time" />
+    <MESSAGE value="debug_msg" />
+    <option name="LAST_COMMIT_MESSAGE" value="debug_msg" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -804,20 +809,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gen_url/getfile_url.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="13" selection-start="977" selection-end="977" vertical-scroll-proportion="0.0" vertical-offset="267" max-vertical-offset="735">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gen_url/tmp_getfile_url.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="21" selection-start="964" selection-end="964" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gen_url/my_libs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="483" column="26" selection-start="14321" selection-end="14321" vertical-scroll-proportion="0.0" vertical-offset="7150" max-vertical-offset="8835">
@@ -829,10 +820,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gen_url/tmp_libs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="531" column="55" selection-start="14493" selection-end="14493" vertical-scroll-proportion="0.491453" vertical-offset="7735" max-vertical-offset="8850">
+        <state line="580" column="0" selection-start="15895" selection-end="15895" vertical-scroll-proportion="0.0" vertical-offset="8382" max-vertical-offset="8850">
           <folding>
             <element signature="e#25#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen_url/getfile_url.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="4" selection-start="1061" selection-end="1148" vertical-scroll-proportion="0.0" vertical-offset="267" max-vertical-offset="735">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen_url/tmp_getfile_url.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="91" selection-start="1149" selection-end="1149" vertical-scroll-proportion="0.8076923" vertical-offset="267" max-vertical-offset="735">
+          <folding />
         </state>
       </provider>
     </entry>

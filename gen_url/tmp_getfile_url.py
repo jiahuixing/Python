@@ -41,4 +41,4 @@ if __name__ == '__main__':
         print(pad_url)
     end_time = time.time()
     cost_time = int(end_time - start_time)
-    debug_msg('start_time=%s\nend_time=%s\ncost_time=%s\n' % (start_time, end_time, cost_time))
+    debug_msg('start_time=%s,end_time=%s,cost_time=%s' % (start_time, end_time, cost_time))
