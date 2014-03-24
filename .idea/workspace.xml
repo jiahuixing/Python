@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen_url/getfile_url.py" afterPath="$PROJECT_DIR$/gen_url/getfile_url.py" />
+    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="显示cost_time">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen_url/my_libs.py" afterPath="$PROJECT_DIR$/gen_url/my_libs.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen_url/test.py" afterPath="$PROJECT_DIR$/gen_url/test.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen_url/tmp_libs.py" afterPath="$PROJECT_DIR$/gen_url/tmp_libs.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -45,7 +43,7 @@
       <file leaf-file-name="my_libs.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gen_url/my_libs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="376" column="18" selection-start="10307" selection-end="10307" vertical-scroll-proportion="-4.114286" vertical-offset="5496" max-vertical-offset="8835">
+            <state line="583" column="8" selection-start="16842" selection-end="16863" vertical-scroll-proportion="0.0" vertical-offset="8367" max-vertical-offset="8835">
               <folding>
                 <element signature="e#25#39#0" expanded="true" />
               </folding>
@@ -56,7 +54,7 @@
       <file leaf-file-name="tmp_libs.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gen_url/tmp_libs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="374" column="31" selection-start="9438" selection-end="9438" vertical-scroll-proportion="0.26923078" vertical-offset="5484" max-vertical-offset="8850">
+            <state line="572" column="35" selection-start="15889" selection-end="15889" vertical-scroll-proportion="0.42307693" vertical-offset="8382" max-vertical-offset="8850">
               <folding>
                 <element signature="e#25#39#0" expanded="true" />
               </folding>
@@ -629,7 +627,11 @@
       <created>1395661048978</created>
       <updated>1395661048978</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="显示cost_time">
+      <created>1395662433947</created>
+      <updated>1395662433947</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -799,7 +801,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gen_url/my_libs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="376" column="18" selection-start="10307" selection-end="10307" vertical-scroll-proportion="-4.114286" vertical-offset="5496" max-vertical-offset="8835">
+        <state line="583" column="8" selection-start="16842" selection-end="16863" vertical-scroll-proportion="0.0" vertical-offset="8367" max-vertical-offset="8835">
           <folding>
             <element signature="e#25#39#0" expanded="true" />
           </folding>
@@ -808,7 +810,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gen_url/tmp_libs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="374" column="31" selection-start="9438" selection-end="9438" vertical-scroll-proportion="0.26923078" vertical-offset="5484" max-vertical-offset="8850">
+        <state line="572" column="35" selection-start="15889" selection-end="15889" vertical-scroll-proportion="0.42307693" vertical-offset="8382" max-vertical-offset="8850">
           <folding>
             <element signature="e#25#39#0" expanded="true" />
           </folding>

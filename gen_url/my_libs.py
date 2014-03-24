@@ -581,4 +581,4 @@ def get_dev_type(file_name):
 
 def debug_msg(msg, print_flag=1):
     if print_flag == 1:
-        print('******%s******' % msg)
+        print('**%s**' % msg)
