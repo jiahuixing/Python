@@ -4,7 +4,6 @@ import hashlib
 import os
 import sys
 import time
-import re
 
 # IMAGES_SUF = r'_4.[0-9]{1}_[a-zA-Z0-9]{10}.tar'
 
@@ -207,42 +206,6 @@ Rom_Types = [
     ['zip', '系统升级卡刷包'],
     ['tgz', 'Fastboot线刷包'],
     ['tar', 'Fastboot线刷包'],
-]
-
-Ops_Types = [
-
-    #运营商种类
-
-    #中国移动   0
-    ['chinamobile', '-CM-移动稳定版'],
-    #中国联通   1
-    ['chinaunicom', '-CU-联通定制版'],
-    #中国电信   2
-    ['chinatelecom', '-CT-电信定制版'],
-
-]
-
-Dev_Types = [
-
-    # 版本类型
-
-    '-体验版',
-    '-开发版',
-    '-稳定版',
-    '-Android-原生版',
-
-]
-
-Area_Types = [
-
-    # 香港版 台湾版 新加坡版 马来西亚版
-    # [flag1, flag2', Area],
-
-    ['HK_', '_hk_', '-HK-香港'],
-    ['TW_', '_tw_', '-TW-台湾'],
-    ['SG_', '_sg_', '-SG-新加坡'],
-    ['MY_', '_my_', '-MY-马来西亚'],
-
 ]
 
 
@@ -479,104 +442,6 @@ def get_download_url(m_folder, version):
     redmi_url = to_get_url(info_redmi, version)
     pad_url = to_get_url(info_pad, version)
     return xiaomi_url, redmi_url, pad_url
-
-
-def get_op_idx(file_name):
-    """
-
-    @param file_name:
-    @return op_idx:
-    @summary 获取运营商类型的idx
-    """
-    debug_msg('get_op_idx')
-    op_idx = -1
-    name = str.lower(file_name)
-    for i in xrange(len(Ops_Types)):
-        op = Ops_Types[i][0]
-        if op in name:
-            op_idx = i
-            break
-        else:
-            continue
-    return op_idx
-
-
-def get_area_type(file_name):
-    """
-
-    @param file_name:
-    @return area:
-    @summary 返回区域
-    """
-    debug_msg('get_area_type')
-    area = ''
-    for i in xrange(len(Area_Types)):
-        flag1 = Area_Types[i][0]
-        flag2 = Area_Types[i][1]
-        if flag1 in file_name or flag2 in file_name:
-            area = Area_Types[i][2]
-            break
-        else:
-            continue
-    return area
-
-
-def get_dev_type(file_name):
-    """
-
-    @param file_name:
-    """
-    debug_msg('get_dev_type')
-    dev_type = ''
-    dev_version = r'[0-9]{1}\.[0-9]{1,2}\.[0-9]{1,2}\_'
-    stable_version = r'[A-Z]{3,7}[0-9]{1,2}\.[0-9]{1,2}\_'
-    origin_version = r'[A-Z]{3}[0-9]{2}\_'
-    pattern_dev = re.compile(dev_version)
-    pattern_stable = re.compile(stable_version)
-    pattern_origin = re.compile(origin_version)
-
-    op_name = ''
-    op_idx = get_op_idx(file_name)
-    if op_idx != -1:
-        op_name = Ops_Types[op_idx][1]
-    if op_name != '':
-        debug_msg('op_name=%s' % op_name)
-
-    dev_search_result = re.findall(pattern_dev, file_name)
-    stable_search_result = re.findall(pattern_stable, file_name)
-    origin_search_result = re.findall(pattern_origin, file_name)
-    find_type = False
-    result = False
-    if dev_search_result:
-        find_type = 'dev.'
-        result = dev_search_result
-        if 'alpha' in file_name:
-            dev_type = Dev_Types[0]
-        else:
-            dev_type = Dev_Types[1]
-    elif stable_search_result:
-        find_type = 'stable.'
-        result = stable_search_result
-        dev_type = Dev_Types[2]
-    elif origin_search_result:
-        find_type = 'origin.'
-        result = origin_search_result
-        dev_type = Dev_Types[3]
-    else:
-        print('Not find.')
-
-    if result and find_type:
-        debug_msg(find_type)
-        debug_msg(result)
-
-    area = get_area_type(file_name)
-    if area != '':
-        dev_type = area + dev_type
-
-    if op_name != '':
-        dev_type = op_name
-
-    return dev_type
 
 
 def debug_msg(msg, print_flag=1):

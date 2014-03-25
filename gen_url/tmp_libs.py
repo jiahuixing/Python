@@ -214,7 +214,7 @@ Ops_Types = [
     #运营商种类
 
     #中国移动   0
-    ['chinamobile', '-CM-移动稳定版'],
+    ['chinamobile', '-CM-移动定制版'],
     #中国联通   1
     ['chinaunicom', '-CU-联通定制版'],
     #中国电信   2

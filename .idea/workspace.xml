@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="debug_msg">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen_url/getfile_url.py" afterPath="$PROJECT_DIR$/gen_url/getfile_url.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen_url/tmp_getfile_url.py" afterPath="$PROJECT_DIR$/gen_url/tmp_getfile_url.py" />
+    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen_url/my_libs.py" afterPath="$PROJECT_DIR$/gen_url/my_libs.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen_url/tmp_libs.py" afterPath="$PROJECT_DIR$/gen_url/tmp_libs.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Python.iws" />
@@ -40,19 +40,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tmp_getfile_url.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="tmp_getfile_url.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gen_url/tmp_getfile_url.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="91" selection-start="1149" selection-end="1149" vertical-scroll-proportion="0.8076923" vertical-offset="267" max-vertical-offset="735">
+            <state line="38" column="24" selection-start="942" selection-end="942" vertical-scroll-proportion="0.0" vertical-offset="81" max-vertical-offset="735">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="my_libs.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="my_libs.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gen_url/my_libs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="483" column="26" selection-start="14321" selection-end="14321" vertical-scroll-proportion="0.0" vertical-offset="7150" max-vertical-offset="8835">
+            <state line="446" column="0" selection-start="13820" selection-end="13820" vertical-scroll-proportion="0.7202797" vertical-offset="6381" max-vertical-offset="6810">
               <folding>
                 <element signature="e#25#39#0" expanded="true" />
               </folding>
@@ -63,7 +63,7 @@
       <file leaf-file-name="tmp_libs.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gen_url/tmp_libs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="580" column="0" selection-start="15895" selection-end="15895" vertical-scroll-proportion="0.0" vertical-offset="8382" max-vertical-offset="8850">
+            <state line="216" column="29" selection-start="6295" selection-end="6295" vertical-scroll-proportion="0.0" vertical-offset="3093" max-vertical-offset="8850">
               <folding>
                 <element signature="e#25#39#0" expanded="true" />
               </folding>
@@ -139,10 +139,10 @@
         <option value="$PROJECT_DIR$/getfile_url.py" />
         <option value="$PROJECT_DIR$/gen_url/__init__.py" />
         <option value="$PROJECT_DIR$/gen_url/test.py" />
-        <option value="$PROJECT_DIR$/gen_url/my_libs.py" />
-        <option value="$PROJECT_DIR$/gen_url/tmp_libs.py" />
         <option value="$PROJECT_DIR$/gen_url/getfile_url.py" />
         <option value="$PROJECT_DIR$/gen_url/tmp_getfile_url.py" />
+        <option value="$PROJECT_DIR$/gen_url/tmp_libs.py" />
+        <option value="$PROJECT_DIR$/gen_url/my_libs.py" />
       </list>
     </option>
   </component>
@@ -652,7 +652,11 @@
       <created>1395663834775</created>
       <updated>1395663834775</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="debug_msg">
+      <created>1395664447194</created>
+      <updated>1395664447194</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -660,16 +664,16 @@
     <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39043826" sideWeight="0.67018867" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39043826" sideWeight="0.67018867" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.49962264" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32802126" sideWeight="0.49962264" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290566" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17433962" sideWeight="0.7118194" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20754717" sideWeight="0.6613546" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20754717" sideWeight="0.60956174" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3997773" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1654952" sideWeight="0.2182628" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28818062" sideWeight="0.50037736" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33864543" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33864543" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24701196" sideWeight="0.67018867" order="7" side_tool="false" content_ui="tabs" x="616" y="74" width="514" height="898" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -809,24 +813,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gen_url/my_libs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="483" column="26" selection-start="14321" selection-end="14321" vertical-scroll-proportion="0.0" vertical-offset="7150" max-vertical-offset="8835">
-          <folding>
-            <element signature="e#25#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gen_url/tmp_libs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="580" column="0" selection-start="15895" selection-end="15895" vertical-scroll-proportion="0.0" vertical-offset="8382" max-vertical-offset="8850">
-          <folding>
-            <element signature="e#25#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gen_url/getfile_url.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="43" column="4" selection-start="1061" selection-end="1148" vertical-scroll-proportion="0.0" vertical-offset="267" max-vertical-offset="735">
@@ -836,8 +822,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gen_url/tmp_getfile_url.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="91" selection-start="1149" selection-end="1149" vertical-scroll-proportion="0.8076923" vertical-offset="267" max-vertical-offset="735">
+        <state line="38" column="24" selection-start="942" selection-end="942" vertical-scroll-proportion="0.0" vertical-offset="81" max-vertical-offset="735">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen_url/tmp_libs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="216" column="29" selection-start="6295" selection-end="6295" vertical-scroll-proportion="0.0" vertical-offset="3093" max-vertical-offset="8850">
+          <folding>
+            <element signature="e#25#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen_url/my_libs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="446" column="0" selection-start="13820" selection-end="13820" vertical-scroll-proportion="0.7202797" vertical-offset="6381" max-vertical-offset="6810">
+          <folding>
+            <element signature="e#25#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
