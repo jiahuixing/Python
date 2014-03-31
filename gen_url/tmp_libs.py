@@ -507,7 +507,7 @@ def get_area_type(file_name):
 
     @param file_name:
     @return area:
-    @summary 返回区域
+    @summary 返回区域类型
     """
     debug_msg('get_area_type')
     area = ''
@@ -526,6 +526,7 @@ def get_dev_type(file_name):
     """
 
     @param file_name:
+    @summary 获取版本类型
     """
     debug_msg('get_dev_type')
     dev_type = ''
@@ -581,16 +582,22 @@ def get_dev_type(file_name):
 
 
 def get_android_version(file_name):
+    """
+
+    @param file_name:
+    @return android version:
+    @summary 获取更新包的android版本
+    """
     a_version = False
     droid = r'[0-9]{1,2}\.[0-9]{1,2}'
     pattern_droid = re.compile(droid)
     find_result = re.findall(pattern_droid, file_name)
     if find_result:
-        print('android_version=%s' % find_result)
+        debug_msg('find_result=%s' % find_result)
         a_version = find_result[-1]
     return a_version
 
 
 def debug_msg(msg, print_flag=1):
     if print_flag == 1:
-        print('**%s**' % msg)
+        print('%s' % msg)
