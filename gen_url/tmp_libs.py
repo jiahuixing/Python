@@ -580,6 +580,17 @@ def get_dev_type(file_name):
     return dev_type
 
 
+def get_android_version(file_name):
+    a_version = False
+    droid = r'[0-9]{1,2}\.[0-9]{1,2}'
+    pattern_droid = re.compile(droid)
+    find_result = re.findall(pattern_droid, file_name)
+    if find_result:
+        print('android_version=%s' % find_result)
+        a_version = find_result[-1]
+    return a_version
+
+
 def debug_msg(msg, print_flag=1):
     if print_flag == 1:
         print('**%s**' % msg)
