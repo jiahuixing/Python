@@ -3,6 +3,7 @@ __author__ = 'jiahuixing'
 
 import os
 import time
+from xml.etree import ElementTree as ET
 
 
 def get_adb_device_list():
@@ -24,8 +25,8 @@ def get_adb_device_list():
                 # print(tmp)
                 adb_device_list.append(tmp[0])
                 # debug(device_list)
-        # debug(adb_device_list)
-    # debug(sorted(adb_device_list))
+                # debug(adb_device_list)
+                # debug(sorted(adb_device_list))
     return sorted(adb_device_list)
 
 
@@ -107,6 +108,38 @@ def remount_devices(adb_device_list):
                 if i != 1:
                     print('wait 3 seconds.')
                     time.sleep(3)
+
+
+def read_xml_file(file_path, tag):
+    """
+
+    @param file_path:
+    @copyright http://www.open-open.com/lib/view/open1329403902937.html
+    @return command
+    """
+    debug('file_path=%s,tag=%s' % (file_path, tag))
+    command = []
+    block = ' '
+    debug('abs=%s' % os.path.abspath(file_path))
+    if os.path.exists(file_path):
+        root = ET.parse(file_path)
+        debug(root)
+        tmp_s = root.findall(tag)
+        for tmp in tmp_s:
+            if isinstance(tmp, ET.Element):
+                children = list(tmp)
+                tmp_cmd = ''
+                for child in children:
+                    if isinstance(child, ET.Element):
+                        msg = 'tag:%s,text=%s' % (child.tag, child.text)
+                        debug(msg)
+                        tmp_cmd = tmp_cmd + child.text + block
+                debug(tmp_cmd)
+                command.append(tmp_cmd)
+    else:
+        print('not exists.')
+    debug(command)
+    return command
 
 
 def debug(msg, flag=1):

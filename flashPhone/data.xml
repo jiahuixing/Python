@@ -1,0 +1,27 @@
+<?xml   version="1.0"   encoding="utf-8"?>
+
+<data>
+
+    <!--push command-->
+    <push_command>
+        <type>adb -s %s push</type>
+        <content>~/music/account_preview /data/system/</content>
+    </push_command>
+    <push_command>
+        <type>adb -s %s shell</type>
+        <content>rm /system/app/Music.*</content>
+    </push_command>
+    <push_command>
+        <type>adb -s %s push</type>
+        <content>~/music/Music.apk /system/app/Music.apk</content>
+    </push_command>
+    <push_command>
+        <type>adb -s %s reboot</type>
+    </push_command>
+
+    <!--flash command-->
+    <flash_command>
+        <type>fastboot -s %s</type>
+        <content>flash</content>
+    </flash_command>
+</data>

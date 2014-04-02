@@ -24,15 +24,19 @@ class Operate:
 
     def push_files(self):
         device_list = self.adb_device_list
-        t_cmd = 'adb -s '
-        for device in device_list:
-            for c in Push:
-                cmd = t_cmd + device + c
-                debug(cmd)
-                os.system(cmd)
+        file_path = File_Path
+        tag = Tags['push']
+        commands = read_xml_file(file_path, tag)
+        if len(commands) > 0:
+            for device in device_list:
+                for command in commands:
+                    cmd = command % device
+                    debug(cmd)
+                    os.system(cmd)
 
     def flash_phone(self):
         device_list = self.adb_device_list
+        debug(device_list)
 
 
 rm = Operate()
