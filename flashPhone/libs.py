@@ -127,6 +127,7 @@ def read_xml_file(file_path, tag):
         tmp_s = root.findall(tag)
         for tmp in tmp_s:
             if isinstance(tmp, ET.Element):
+                # children = tmp.getchildren()
                 children = list(tmp)
                 tmp_cmd = ''
                 for child in children:
