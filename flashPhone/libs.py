@@ -4,6 +4,7 @@ __author__ = 'jiahuixing'
 import os
 import time
 from xml.etree import ElementTree as ET
+# import memcache
 
 
 def get_adb_device_list():
@@ -113,32 +114,40 @@ def remount_devices(adb_device_list):
 def read_xml_file(file_path, tag):
     """
 
-    @param file_path:
+
+    @param file_path must be a list include file_abs_path and file_name:
+    @param tag:
     @copyright http://www.open-open.com/lib/view/open1329403902937.html
     @return command
     """
-    debug('file_path=%s,tag=%s' % (file_path, tag))
     command = []
-    block = ' '
-    debug('abs=%s' % os.path.abspath(file_path))
-    if os.path.exists(file_path):
-        root = ET.parse(file_path)
-        debug(root)
-        tmp_s = root.findall(tag)
-        for tmp in tmp_s:
-            if isinstance(tmp, ET.Element):
-                # children = tmp.getchildren()
-                children = list(tmp)
-                tmp_cmd = ''
-                for child in children:
-                    if isinstance(child, ET.Element):
-                        msg = 'tag:%s,text=%s' % (child.tag, child.text)
-                        debug(msg)
-                        tmp_cmd = tmp_cmd + child.text + block
-                debug(tmp_cmd)
-                command.append(tmp_cmd)
+    if isinstance(file_path, list):
+        path = file_path[0]
+        os.chdir(path)
+        file_name = file_path[1]
+        debug('file_name=%s,tag=%s' % (file_name, tag))
+        block = ' '
+        debug('abs=%s' % os.path.abspath(file_name))
+        if os.path.exists(file_name):
+            root = ET.parse(file_name)
+            # debug(root)
+            tmp_s = root.findall(tag)
+            for tmp in tmp_s:
+                if isinstance(tmp, ET.Element):
+                    # children = tmp.getchildren()
+                    children = list(tmp)
+                    tmp_cmd = ''
+                    for child in children:
+                        if isinstance(child, ET.Element):
+                            # msg = 'tag:%s,text=%s' % (child.tag, child.text)
+                            # debug(msg)
+                            tmp_cmd = tmp_cmd + child.text + block
+                            # debug(tmp_cmd)
+                    command.append(tmp_cmd)
+        else:
+            print('not exists.')
     else:
-        print('not exists.')
+        print('file_path not list.')
     debug(command)
     return command
 

@@ -31,7 +31,7 @@ class Operate:
             for device in device_list:
                 for command in commands:
                     cmd = command % device
-                    debug(cmd)
+                    # debug(cmd)
                     os.system(cmd)
 
     def flash_phone(self):

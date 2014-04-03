@@ -3,17 +3,17 @@
 <data>
 
     <!--push command-->
-    <push_command>
-        <type>adb -s %s push</type>
-        <content>~/music/account_preview /data/system/</content>
-    </push_command>
+    <!--<push_command>-->
+    <!--<type>adb -s %s push</type>-->
+    <!--<content>~/music/account_preview /data/system/</content>-->
+    <!--</push_command>-->
     <push_command>
         <type>adb -s %s shell</type>
         <content>rm /system/app/Music.*</content>
     </push_command>
     <push_command>
         <type>adb -s %s push</type>
-        <content>~/music/Music.apk /system/app/Music.apk</content>
+        <content>~/music/Music-4.4.3.apk /system/app/Music.apk</content>
     </push_command>
     <push_command>
         <type>adb -s %s reboot</type>
