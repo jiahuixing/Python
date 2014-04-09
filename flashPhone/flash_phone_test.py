@@ -22,7 +22,7 @@ def test3():
     file_path = Tmp_File_Path[1]
     debug(file_path)
     root = ET.parse(file_path)
-    tag = 'command'
+    tag = 'commands'
     nodes = root.findall(tag)
     debug(type(nodes))
     debug(nodes)

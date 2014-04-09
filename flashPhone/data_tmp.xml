@@ -1,19 +1,28 @@
 <?xml   version="1.0"   encoding="utf-8"?>
 
-<commands>
+<shell>
     <!--push command-->
-    <command type="push">
-
-    </command>
+    <commands type="push">
+        <command>adb -s %s shell rm /system/app/Music.*</command>
+        <command>adb -s %s push ~/music/Music-4.4.3.apk /system/app/Music.apk</command>
+        <command>adb -s %s push ~/music/Music-4.4.3.apk /system/app/Music.apk</command>
+        <command>adb -s %s reboot</command>
+    </commands>
 
     <!--reboot command-->
-    <command type="reboot">
-
-    </command>
+    <commands type="reboot">
+        <command>adb -s %s shell rm /system/app/Music.*</command>
+        <command>adb -s %s push ~/music/Music-4.4.3.apk /system/app/Music.apk</command>
+        <command>adb -s %s push ~/music/Music-4.4.3.apk /system/app/Music.apk</command>
+        <command>adb -s %s reboot</command>
+    </commands>
 
     <!--flash command-->
-    <command type="flash">
+    <commands type="flash">
+        <command>adb -s %s shell rm /system/app/Music.*</command>
+        <command>adb -s %s push ~/music/Music-4.4.3.apk /system/app/Music.apk</command>
+        <command>adb -s %s push ~/music/Music-4.4.3.apk /system/app/Music.apk</command>
+        <command>adb -s %s reboot</command>
+    </commands>
 
-    </command>
-
-</commands>
+</shell>

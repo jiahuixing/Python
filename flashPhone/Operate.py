@@ -13,7 +13,7 @@ class Operate:
         while len(self.adb_device_list) == 0:
             self.adb_device_list = get_adb_device_list()
 
-    def root_remount(self):
+    def root_and_remount(self):
         """
 
         @summary 获取root remount权限
@@ -40,6 +40,6 @@ class Operate:
 
 
 rm = Operate()
-rm.root_remount()
-rm.push_files()
+rm.root_and_remount()
+# rm.push_files()
 
