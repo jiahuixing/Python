@@ -12,6 +12,7 @@ class Operate:
         debug('init')
         while len(self.adb_device_list) == 0:
             self.adb_device_list = get_adb_device_list()
+            time.sleep(3)
 
     def root_and_remount(self):
         """
@@ -39,7 +40,7 @@ class Operate:
         debug(device_list)
 
 
-rm = Operate()
-rm.root_and_remount()
+op = Operate()
+op.root_and_remount()
 # rm.push_files()
 
