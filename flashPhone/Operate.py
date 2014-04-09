@@ -12,6 +12,7 @@ class Operate:
         debug('init')
         while len(self.adb_device_list) == 0:
             self.adb_device_list = get_adb_device_list()
+            debug('wait for 3 seconds.')
             time.sleep(3)
 
     def root_and_remount(self):
@@ -40,7 +41,12 @@ class Operate:
         debug(device_list)
 
 
-op = Operate()
-op.root_and_remount()
+try:
+    op = Operate()
+    op.root_and_remount()
+except KeyboardInterrupt:
+    print('KeyboardInterrupt.')
+
+
 # rm.push_files()
 
