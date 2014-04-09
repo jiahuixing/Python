@@ -47,7 +47,7 @@
       <file leaf-file-name="Operate.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flashPhone/Operate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="21" selection-start="1562" selection-end="1562" vertical-scroll-proportion="0.77178425" vertical-offset="372" max-vertical-offset="1125">
+            <state line="55" column="29" selection-start="1367" selection-end="1367" vertical-scroll-proportion="0.7095436" vertical-offset="297" max-vertical-offset="1050">
               <folding />
             </state>
           </provider>
@@ -662,7 +662,11 @@
       <created>1397032631283</created>
       <updated>1397032631283</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Operate phone">
+      <created>1397032877937</created>
+      <updated>1397032877937</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -845,7 +849,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flashPhone/Operate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="21" selection-start="1562" selection-end="1562" vertical-scroll-proportion="0.77178425" vertical-offset="372" max-vertical-offset="1125">
+        <state line="55" column="29" selection-start="1367" selection-end="1367" vertical-scroll-proportion="0.7095436" vertical-offset="297" max-vertical-offset="1050">
           <folding />
         </state>
       </provider>

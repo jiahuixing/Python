@@ -52,6 +52,8 @@ Input num:
     if isinstance(input_num, int):
         if input_num == 1:
             op.root_and_remount()
+        # elif input_num == 2:
+        #     op.push_files()
         else:
             print('Input wrong num:%s.' % input_num)
     else:
@@ -62,9 +64,3 @@ except IOError:
     print('IOError.')
 except NameError:
     print('NameError.')
-
-
-
-
-# rm.push_files()
-
