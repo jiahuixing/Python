@@ -12,8 +12,9 @@ class Operate:
         debug('init')
         while len(self.adb_device_list) == 0:
             self.adb_device_list = get_adb_device_list()
-            debug('wait for 3 seconds.')
-            time.sleep(3)
+            if len(self.adb_device_list) == 0:
+                debug('wait for 3 seconds.')
+                time.sleep(3)
 
     def root_and_remount(self):
         """
@@ -43,9 +44,24 @@ class Operate:
 
 try:
     op = Operate()
-    op.root_and_remount()
+    info = '''
+Input num:
+1.root_and_remount
+    '''
+    input_num = input(info)
+    if isinstance(input_num, int):
+        if input_num == 1:
+            op.root_and_remount()
+        else:
+            print('Input wrong num:%s.' % input_num)
+    else:
+        print('Not a num:%s.' % input_num)
 except KeyboardInterrupt:
     print('KeyboardInterrupt.')
+except IOError:
+    print('IOError.')
+
+
 
 
 # rm.push_files()
