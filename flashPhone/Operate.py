@@ -60,6 +60,8 @@ except KeyboardInterrupt:
     print('KeyboardInterrupt.')
 except IOError:
     print('IOError.')
+except NameError:
+    print('NameError.')
 
 
 

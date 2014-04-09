@@ -47,7 +47,7 @@
       <file leaf-file-name="Operate.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flashPhone/Operate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="0" selection-start="1104" selection-end="1104" vertical-scroll-proportion="0.47717842" vertical-offset="270" max-vertical-offset="1095">
+            <state line="63" column="21" selection-start="1562" selection-end="1562" vertical-scroll-proportion="0.77178425" vertical-offset="372" max-vertical-offset="1125">
               <folding />
             </state>
           </provider>
@@ -658,7 +658,11 @@
       <created>1397030535082</created>
       <updated>1397030535082</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Operate phone">
+      <created>1397032631283</created>
+      <updated>1397032631283</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -750,11 +754,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/downTar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="23" selection-start="808" selection-end="808" vertical-scroll-proportion="-2.1422925" vertical-offset="1699" max-vertical-offset="2205" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gen_url/mkdir.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="146" column="28" selection-start="4446" selection-end="4446" vertical-scroll-proportion="0.0" vertical-offset="1692" max-vertical-offset="2415" />
@@ -837,9 +836,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/.PyCharm30/system/python_stubs/348993582/__builtin__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="288" column="4" selection-start="9433" selection-end="9433" vertical-scroll-proportion="0.33333334" vertical-offset="4079" max-vertical-offset="76080">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/flashPhone/Operate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="0" selection-start="1104" selection-end="1104" vertical-scroll-proportion="0.47717842" vertical-offset="270" max-vertical-offset="1095">
+        <state line="63" column="21" selection-start="1562" selection-end="1562" vertical-scroll-proportion="0.77178425" vertical-offset="372" max-vertical-offset="1125">
           <folding />
         </state>
       </provider>
