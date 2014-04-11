@@ -111,10 +111,13 @@ def remount_devices(adb_device_list):
                     time.sleep(3)
 
 
-def read_xml_file(file_path, tag):
+def read_xml_file(file_path, tag, attr_key=''):
     """
 
 
+
+    @param file_path:
+    @param attr_key:
     @param file_path must be a list include file_abs_path and file_name:
     @param tag:
     @copyright http://www.open-open.com/lib/view/open1329403902937.html
@@ -125,25 +128,27 @@ def read_xml_file(file_path, tag):
         path = file_path[0]
         os.chdir(path)
         file_name = file_path[1]
-        debug('file_name=%s,tag=%s' % (file_name, tag))
-        block = ' '
+        debug('file_name=%s,tag=%s,attr_key=%s' % (file_name, tag, attr_key))
         debug('abs=%s' % os.path.abspath(file_name))
         if os.path.exists(file_name):
             root = ET.parse(file_name)
-            # debug(root)
+            debug('root=%s' % root)
             tmp_s = root.findall(tag)
+            debug('tmp_s=%s' % tmp_s)
             for tmp in tmp_s:
                 if isinstance(tmp, ET.Element):
                     # children = tmp.getchildren()
-                    children = list(tmp)
-                    tmp_cmd = ''
-                    for child in children:
-                        if isinstance(child, ET.Element):
-                            # msg = 'tag:%s,text=%s' % (child.tag, child.text)
-                            # debug(msg)
-                            tmp_cmd = tmp_cmd + child.text + block
-                            # debug(tmp_cmd)
-                    command.append(tmp_cmd)
+                    emp_dict = dict()
+                    # debug('emp_dict=%s' % emp_dict)
+                    if tmp.attrib == emp_dict or tmp.attrib['type'] == attr_key:
+                        children = list(tmp)
+                        for child in children:
+                            if isinstance(child, ET.Element):
+                                # msg = 'tag:%s,text=%s' % (child.tag, child.text)
+                                # debug(msg)
+                                tmp_cmd = child.text
+                                # debug(tmp_cmd)
+                                command.append(tmp_cmd)
         else:
             print('not exists.')
     else:

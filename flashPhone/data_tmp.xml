@@ -1,10 +1,11 @@
 <?xml   version="1.0"   encoding="utf-8"?>
 
 <shell>
+
     <!--push command-->
     <commands type="push">
-        <command>adb -s %s shell rm /system/app/Music.*</command>
-        <command>adb -s %s push ~/music/Music-4.4.3.apk /system/app/Music.apk</command>
+        <command>adb -s %s shell rm %s</command>
+        <command>adb -s %s push %s %s</command>
         <command>adb -s %s reboot</command>
     </commands>
 
@@ -20,5 +21,17 @@
         <command>fastboot -s %s flash</command>
         <command>fastboot -s %s reboot</command>
     </commands>
+
+    <!--file paths for file account_preview-->
+    <file_paths type="account_preview">
+        <file_path type="rm_from_path">/data/system/</file_path>
+        <file_path type="push_termini_path">/data/system/</file_path>
+    </file_paths>
+
+    <!--file paths for Music apk-->
+    <file_paths type="apk">
+        <file_path type="rm_from_path">/system/app/Music.*</file_path>
+        <file_path type="push_termini_path">/system/app/Music.apk</file_path>
+    </file_paths>
 
 </shell>

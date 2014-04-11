@@ -4,6 +4,11 @@ __author__ = 'jiahuixing'
 from libs import *
 from data import *
 
+CONST = {
+    'block': ' ',
+    'work_path': '/home/jiahuixing/music',
+}
+
 
 class Operate:
     adb_device_list = []
@@ -25,73 +30,83 @@ class Operate:
         root_devices(device_list)
         remount_devices(device_list)
 
-    def push_file(self, file_name):
+    def push_file(self, file_name, push_path):
+        """
+
+        @param file_name:
+        @param push_path:
+        @summary adb push文件file_name到目录push_path
+        """
         device_list = self.adb_device_list
-        work_path = '/home/jiahuixing/music'
+        work_path = CONST['work_path']
+        block = CONST['block']
         os.chdir(work_path)
         push_command = 'adb -s %s push '
-        push_path = ' /data/system/'
         reboot_command = 'adb -s %s reboot'
         for device in device_list:
             if os.path.exists(file_name):
-                debug(device)
                 debug('file exists.')
-                push_cmd = (push_command % device) + file_name + push_path
+                push_cmd = (push_command % device) + file_name + block + push_path
                 reboot_cmd = reboot_command % device
+                debug('%s\n%s\n' % (push_cmd, reboot_cmd))
                 os.system(push_cmd)
                 os.system(reboot_cmd)
 
-    def delete_file(self, file_name):
+    def delete_file(self, file_name, file_path):
+        """
+
+        @param file_name:
+        @param file_path:
+        @summary 从file_path删除文件file_name
+        """
         delete_command = 'adb -s %s shell rm '
         reboot_command = 'adb -s %s reboot'
-        file_path = '/data/system/'
         device_list = self.adb_device_list
         for device in device_list:
-            debug(device)
             delete_cmd = (delete_command % device) + file_path + file_name
             reboot_cmd = reboot_command % device
+            debug('%s\n%s\n' % (delete_cmd, reboot_cmd))
             os.system(delete_cmd)
             os.system(reboot_cmd)
 
-    def push_files(self):
-        device_list = self.adb_device_list
-        file_path = File_Path
-        tag = Tags['push']
-        commands = read_xml_file(file_path, tag)
-        if len(commands) > 0:
+    def push_apk(self, termini_path):
+        """
+
+        @param termini_path:
+        @summary push Music apk到termini_path
+        """
+        rm_command = 'adb -s %s shell rm /system/app/Music.*'
+        push_command = 'adb -s %s push'
+        reboot_command = 'adb -s %s reboot'
+        apk = ''
+        work_path = CONST['work_path']
+        block = CONST['block']
+        os.chdir(work_path)
+        path_files = os.listdir(work_path)
+        for path_file in path_files:
+            if path_file.endswith('.apk') and path_file.startswith('Music'):
+                apk = path_file
+                break
+        if apk != '':
+            debug(apk)
+            device_list = self.adb_device_list
             for device in device_list:
-                for command in commands:
-                    cmd = command % device
-                    # debug(cmd)
-                    os.system(cmd)
+                rm_cmd = rm_command % device
+                push_cmd = (push_command % device) + block + apk + block + termini_path
+                reboot_cmd = reboot_command % device
+                debug('%s\n%s\n%s\n' % (rm_cmd, push_cmd, reboot_cmd))
+                os.system(rm_cmd)
+                os.system(push_cmd)
+                os.system(reboot_cmd)
+
+    def test_push(self, tag, attr):
+        work_path = CONST['work_path']
+        block = CONST['block']
+        device_list = self.adb_device_list
+        commands = read_xml_file(Tmp_File_Path, tag, attr)
+        for device in device_list:
+            debug(device)
 
     def flash_phone(self):
         device_list = self.adb_device_list
         debug(device_list)
-
-
-try:
-    op = Operate()
-    op.root_and_remount()
-    info = '''
-Input num:
-1.push_file:%s
-2.delete_file:%s
-    '''
-    local_file_name = 'account_preview'
-    input_num = input(info % (local_file_name, local_file_name))
-    if isinstance(input_num, int):
-        if input_num == 1:
-            op.push_file(local_file_name)
-        elif input_num == 2:
-            op.delete_file(local_file_name)
-        else:
-            print('Input wrong num:%s.' % input_num)
-    else:
-        print('Not a num:%s.' % input_num)
-except KeyboardInterrupt:
-    print('KeyboardInterrupt.')
-except IOError:
-    print('IOError.')
-except NameError:
-    print('NameError.')

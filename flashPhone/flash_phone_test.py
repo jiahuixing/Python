@@ -19,6 +19,7 @@ def test2():
 
 
 def test3():
+    os.chdir(Tmp_File_Path[0])
     file_path = Tmp_File_Path[1]
     debug(file_path)
     root = ET.parse(file_path)
@@ -36,4 +37,12 @@ def test3():
             debug('tag=%s,attr=%s,text=%s' % (command_node.tag, command_node.attrib, command_node.text))
 
 
-test3()
+def test4():
+    cmd = read_xml_file(Tmp_File_Path, 'commands', 'push')
+
+
+def test5():
+    init_data()
+
+
+test5()

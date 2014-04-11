@@ -11,13 +11,18 @@ Tmp_File_Path = [
     'data_tmp.xml',
 ]
 
-Tags = {
-    'push': 'push_command',
-    'flash': 'flash_command',
-}
+tags = [
+    'account_preview',
+    'apk'
+]
 
-Attr_s = {
-    'push': 'push',
-    'flash': 'flash',
-    'reboot': 'reboot',
-}
+Tags = dict()
+
+Attrs = dict()
+
+
+def init_data():
+    for tag in tags:
+        print(tag)
+        Tags[tag] = tag
+    print(Tags)
