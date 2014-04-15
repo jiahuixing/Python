@@ -45,4 +45,22 @@ def test5():
     init_data()
 
 
-test5()
+def test6():
+    json_analyse()
+
+
+class bcolors:
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+
+
+def test7():
+    print bcolors.OKGREEN + "OK: Install was fininsh" + bcolors.ENDC
+    print bcolors.FAIL + "Fail: Not found this file" + bcolors.ENDC
+
+
+test7()

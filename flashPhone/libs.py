@@ -4,6 +4,8 @@ __author__ = 'jiahuixing'
 import os
 import time
 from xml.etree import ElementTree as ET
+import urllib2
+import json
 # import memcache
 
 
@@ -155,6 +157,22 @@ def read_xml_file(file_path, tag, attr_key=''):
         print('file_path not list.')
     debug(command)
     return command
+
+
+def json_analyse():
+    url_result = urllib2.urlopen('http://fm.duokanbox.com/category').read()
+    debug('url_result=%s' % url_result)
+    json_r = json.loads(url_result)
+    debug('json_r=%s' % json_r)
+    # debug(type(json_r))
+    if isinstance(json_r, dict):
+        keys = json_r.keys()
+        debug('keys=%s' % keys)
+        for item in json_r.items():
+            # debug(type(item))
+            # debug(item)
+            # for i in xrange(len(item)):
+            debug('%s:%s' % (item[0], item[len(item) - 1]))
 
 
 def debug(msg, flag=1):

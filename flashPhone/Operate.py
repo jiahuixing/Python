@@ -110,3 +110,16 @@ class Operate:
     def flash_phone(self):
         device_list = self.adb_device_list
         debug(device_list)
+
+    # noinspection PyMethodMayBeStatic
+    def pull_apk_db(self):
+        work_path = CONST['work_path']
+        block = CONST['block']
+        pull_command = 'adb -s %s pull /data/data/com.miui.player/databases/com_miui_player.db'
+        to_path = '/home/jiahuixing/music/%s_com_miui_player.db'
+        device_list = get_adb_device_list()
+        for device in device_list:
+            pull_cmd = (pull_command % device) + block + (to_path % device)
+            debug(pull_cmd)
+            os.system(pull_cmd)
+
