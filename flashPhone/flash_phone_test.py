@@ -63,4 +63,16 @@ def test7():
     print bcolors.FAIL + "Fail: Not found this file" + bcolors.ENDC
 
 
-test7()
+BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE = range(8)
+
+
+def test8(fg=None, bg=None):
+    codes = []
+    if fg is not None: codes.append('3%d' % fg)
+    if bg is not None: codes.append('10%d' % bg)
+    debug(codes)
+    return '\033[%sm' % ';'.join(codes) if codes else ''
+
+
+rrr = test8(WHITE, BLUE) + 'hahahaaha'
+debug(rrr)
