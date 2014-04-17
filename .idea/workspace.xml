@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/flashPhone/libs.py" line="165" mnemonic="5" />
+    <bookmark url="file://$PROJECT_DIR$/flashPhone/libs.py" line="166" mnemonic="5" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/color_help" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gen_url/4.3.18/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flashPhone/flash_phone_test.py" afterPath="$PROJECT_DIR$/flashPhone/flash_phone_test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flashPhone/libs.py" afterPath="$PROJECT_DIR$/flashPhone/libs.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Python.iws" />
@@ -23,7 +24,7 @@
     <SUITE FILE_PATH="coverage/Python$test.coverage" NAME="test Coverage Results" MODIFIED="1396256367898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python$test__1_.coverage" NAME="flash_phone_test Coverage Results" MODIFIED="1397026046904" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flashPhone" />
     <SUITE FILE_PATH="coverage/Python$Unittests_in_flash_phone_test.coverage" NAME="Unittests in flash_phone_test Coverage Results" MODIFIED="1396529113570" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flashPhone" />
-    <SUITE FILE_PATH="coverage/Python$flash_phone_test.coverage" NAME="flash_phone_test Coverage Results" MODIFIED="1397564858301" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flashPhone" />
+    <SUITE FILE_PATH="coverage/Python$flash_phone_test.coverage" NAME="flash_phone_test Coverage Results" MODIFIED="1397727940609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flashPhone" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="$PROJECT_DIR$" />
@@ -37,38 +38,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="libs.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="libs.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flashPhone/libs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="37" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2775">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mkdir.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gen_url/mkdir.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="16" selection-start="667" selection-end="667" vertical-scroll-proportion="0.0" vertical-offset="530" max-vertical-offset="2415">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tmp_getfile_url.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gen_url/tmp_getfile_url.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="24" selection-start="942" selection-end="942" vertical-scroll-proportion="0.0" vertical-offset="290" max-vertical-offset="735">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tmp_libs.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gen_url/tmp_libs.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="566" column="9" selection-start="15642" selection-end="15642" vertical-scroll-proportion="0.0" vertical-offset="8330" max-vertical-offset="9060">
-              <folding />
+            <state line="192" column="18" selection-start="5323" selection-end="5323" vertical-scroll-proportion="0.71276593" vertical-offset="2545" max-vertical-offset="3015">
+              <folding>
+                <element signature="e#51#60#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -76,7 +52,7 @@
       <file leaf-file-name="Operate.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flashPhone/Operate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="107" column="0" selection-start="3403" selection-end="3428" vertical-scroll-proportion="0.0" vertical-offset="1370" max-vertical-offset="1950">
+            <state line="107" column="0" selection-start="3403" selection-end="3428" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1950">
               <folding />
             </state>
           </provider>
@@ -94,16 +70,7 @@
       <file leaf-file-name="do_operate.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flashPhone/do_operate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="24" selection-start="1063" selection-end="1063" vertical-scroll-proportion="0.0" vertical-offset="299" max-vertical-offset="780">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="data.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flashPhone/data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="1" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
+            <state line="6" column="4" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0" vertical-offset="310" max-vertical-offset="780">
               <folding />
             </state>
           </provider>
@@ -112,7 +79,7 @@
       <file leaf-file-name="flash_phone_test.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flashPhone/flash_phone_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="21" selection-start="297" selection-end="297" vertical-scroll-proportion="0.0" vertical-offset="530" max-vertical-offset="1245">
+            <state line="113" column="11" selection-start="2655" selection-end="2655" vertical-scroll-proportion="0.0" vertical-offset="1330" max-vertical-offset="1800">
               <folding>
                 <element signature="e#51#69#0" expanded="true" />
               </folding>
@@ -120,10 +87,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="color_help" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="color_help" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/color_help">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="4" selection-start="9" selection-end="9" vertical-scroll-proportion="0.033707865" vertical-offset="0" max-vertical-offset="445">
+            <state line="8" column="16" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
               <folding />
             </state>
           </provider>
@@ -164,7 +131,6 @@
         <option value="$PROJECT_DIR$/flashPhone/__init__.py" />
         <option value="$PROJECT_DIR$/flashPhone/data_tmp.xml" />
         <option value="$PROJECT_DIR$/flashPhone/data.py" />
-        <option value="$PROJECT_DIR$/flashPhone/libs.py" />
         <option value="$PROJECT_DIR$/gen_url/tmp_libs.py" />
         <option value="$PROJECT_DIR$/flashPhone/do_operate.py" />
         <option value="$PROJECT_DIR$/flashPhone/Operate.py" />
@@ -172,8 +138,9 @@
         <option value="$PROJECT_DIR$/flashPhone/flashphone.md" />
         <option value="$PROJECT_DIR$/Python.md" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/flashPhone/flash_phone_test.py" />
         <option value="$PROJECT_DIR$/color_help" />
+        <option value="$PROJECT_DIR$/flashPhone/libs.py" />
+        <option value="$PROJECT_DIR$/flashPhone/flash_phone_test.py" />
       </list>
     </option>
   </component>
@@ -774,7 +741,11 @@
       <created>1397563672405</created>
       <updated>1397563672405</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="color help">
+      <created>1397617137504</created>
+      <updated>1397617137504</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -858,37 +829,17 @@
     <MESSAGE value="增加一些说明" />
     <MESSAGE value="Operate phone &#10;read xml" />
     <MESSAGE value="Operate phone" />
-    <option name="LAST_COMMIT_MESSAGE" value="Operate phone" />
+    <MESSAGE value="color help" />
+    <option name="LAST_COMMIT_MESSAGE" value="color help" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.PyCharm30/system/python_stubs/348993582/__builtin__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="288" column="4" selection-start="9433" selection-end="9433" vertical-scroll-proportion="0.33333334" vertical-offset="4079" max-vertical-offset="76080">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flashPhone/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="50" selection-end="50" vertical-scroll-proportion="0.06396589" vertical-offset="0" max-vertical-offset="469">
-          <folding>
-            <element signature="e#51#65#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flashPhone/data_tmp.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="25" selection-start="952" selection-end="955" vertical-scroll-proportion="0.0" vertical-offset="176" max-vertical-offset="645">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/lib/python2.7/json/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-10.595506" vertical-offset="4715" max-vertical-offset="5160">
@@ -917,37 +868,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flashPhone/do_operate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="24" selection-start="1063" selection-end="1063" vertical-scroll-proportion="0.0" vertical-offset="299" max-vertical-offset="780">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gen_url/mkdir.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="16" selection-start="667" selection-end="667" vertical-scroll-proportion="0.0" vertical-offset="530" max-vertical-offset="2415">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flashPhone/Operate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="0" selection-start="3403" selection-end="3428" vertical-scroll-proportion="0.0" vertical-offset="1370" max-vertical-offset="1950">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/convertTar.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="67" column="29" selection-start="2030" selection-end="2030" vertical-scroll-proportion="0.55093557" vertical-offset="725" max-vertical-offset="1455">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flashPhone/libs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="37" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2775">
           <folding />
         </state>
       </provider>
@@ -961,24 +884,75 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="17" selection-start="28" selection-end="28" vertical-scroll-proportion="0.033707865" vertical-offset="0" max-vertical-offset="445">
+        <state line="4" column="0" selection-start="42" selection-end="42" vertical-scroll-proportion="0.1171875" vertical-offset="0" max-vertical-offset="512">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen_url/mkdir.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="16" selection-start="667" selection-end="667" vertical-scroll-proportion="-0.12695312" vertical-offset="530" max-vertical-offset="2415">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python2.7/threading.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="500" column="8" selection-start="15723" selection-end="15723" vertical-scroll-proportion="0.33333334" vertical-offset="7321" max-vertical-offset="14925">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen_url/test1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="470">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen_url/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="470">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flashPhone/do_operate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="4" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flashPhone/Operate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="107" column="0" selection-start="3403" selection-end="3428" vertical-scroll-proportion="0.0" vertical-offset="1370" max-vertical-offset="1950">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/color_help">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="16" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/flashPhone/flash_phone_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="21" selection-start="297" selection-end="297" vertical-scroll-proportion="0.0" vertical-offset="530" max-vertical-offset="1245">
+        <state line="113" column="11" selection-start="2655" selection-end="2655" vertical-scroll-proportion="0.0" vertical-offset="1330" max-vertical-offset="1800">
           <folding>
             <element signature="e#51#69#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/color_help">
+    <entry file="file://$PROJECT_DIR$/flashPhone/libs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="4" selection-start="9" selection-end="9" vertical-scroll-proportion="0.033707865" vertical-offset="0" max-vertical-offset="445">
-          <folding />
+        <state line="192" column="18" selection-start="5323" selection-end="5323" vertical-scroll-proportion="0.71276593" vertical-offset="2545" max-vertical-offset="3015">
+          <folding>
+            <element signature="e#51#60#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

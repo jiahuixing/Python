@@ -7,6 +7,7 @@ from xml.etree import ElementTree as ET
 import urllib2
 import json
 # import memcache
+import threading
 
 
 def get_adb_device_list():
@@ -178,3 +179,17 @@ def json_analyse():
 def debug(msg, flag=1):
     if flag == 1:
         print(msg)
+
+
+class MyThread(threading.Thread):
+    def __init__(self, thread_name):
+        """
+
+        @param thread_name:
+        @see http://www.cnblogs.com/tqsummer/archive/2011/01/25/1944771.html
+        """
+        threading.Thread.__init__(self, name=thread_name)
+
+    def run(self):
+        debug('name=%s' % self.getName())
+
