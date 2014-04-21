@@ -181,6 +181,34 @@ def debug(msg, flag=1):
         print(msg)
 
 
+COLOR_START = '\033[0'
+COLOR_END = '\033[0m'
+BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE = range(8)
+
+
+def color_msg(msg, fg=None, bg=None):
+    """
+
+    @param msg:
+    @param fg:
+    @param bg:
+    @return:
+    """
+    color = 0
+    color_fg = None
+    color_bg = None
+    if fg is not None:
+        color_fg = ';3%s' % fg
+        color += 1
+    if bg is not None:
+        color_bg = ';4%sm' % bg
+        color += 1
+    if color > 0:
+        return '%s%s%s%s%s' % (COLOR_START, color_fg, color_bg, msg, COLOR_END)
+    else:
+        return msg
+
+
 class MyThread(threading.Thread):
     def __init__(self, thread_name):
         """
@@ -191,5 +219,8 @@ class MyThread(threading.Thread):
         threading.Thread.__init__(self, name=thread_name)
 
     def run(self):
-        debug('name=%s' % self.getName())
+        debug('thread_name=%s' % self.getName())
+        super(MyThread, self).run()
+
+
 

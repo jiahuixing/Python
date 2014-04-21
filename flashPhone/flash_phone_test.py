@@ -78,13 +78,18 @@ def test8(fg=None, bg=None):
 # debug(rrr)
 
 
+def test9():
+    msg = color_msg('hahaha', fg=None, bg=WHITE)
+    debug(msg)
+
+
 import threading
 
 mylock = threading.RLock()
 num = 0
 
 
-class myThread(threading.Thread):
+class My_Thread(threading.Thread):
     def __init__(self, name):
         threading.Thread.__init__(self)
         self.t_name = name
@@ -104,11 +109,11 @@ class myThread(threading.Thread):
 
 
 def test():
-    thread1 = myThread('A')
-    thread2 = myThread('B')
+    thread1 = My_Thread('A')
+    thread2 = My_Thread('B')
     thread1.start()
     thread2.start()
 
 
 if __name__ == '__main__':
-    test6()
+    test()
