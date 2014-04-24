@@ -221,8 +221,6 @@ def adb_permission():
         except pexpect.TIMEOUT:
             debug('pexpect.TIMEOUT')
             child.close()
-    else:
-        return
 
 
 def color_msg(msg, fg=None, bg=None):

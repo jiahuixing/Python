@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flashPhone/devices_list.py" afterPath="$PROJECT_DIR$/flashPhone/devices_list.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flashPhone/libs.py" afterPath="$PROJECT_DIR$/flashPhone/libs.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -40,7 +39,7 @@
       <file leaf-file-name="libs.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flashPhone/libs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="208" column="35" selection-start="5761" selection-end="5761" vertical-scroll-proportion="0.68700784" vertical-offset="2771" max-vertical-offset="4065">
+            <state line="19" column="7" selection-start="297" selection-end="297" vertical-scroll-proportion="0.5610236" vertical-offset="0" max-vertical-offset="4035">
               <folding>
                 <element signature="e#51#60#0" expanded="true" />
               </folding>
@@ -60,7 +59,7 @@
       <file leaf-file-name="devices_list.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flashPhone/devices_list.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="17" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="870">
+            <state line="9" column="14" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="870">
               <folding />
             </state>
           </provider>
@@ -771,7 +770,11 @@
       <created>1398331896680</created>
       <updated>1398331896681</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="pexpect">
+      <created>1398332202697</created>
+      <updated>1398332202697</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -856,9 +859,9 @@
     <MESSAGE value="Operate phone" />
     <MESSAGE value="color help" />
     <MESSAGE value="threading test" />
-    <MESSAGE value="pexpect" />
     <MESSAGE value="sh files" />
-    <option name="LAST_COMMIT_MESSAGE" value="sh files" />
+    <MESSAGE value="pexpect" />
+    <option name="LAST_COMMIT_MESSAGE" value="pexpect" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -954,14 +957,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flashPhone/devices_list.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="17" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="870">
+        <state line="9" column="14" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="870">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/flashPhone/libs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="208" column="35" selection-start="5761" selection-end="5761" vertical-scroll-proportion="0.68700784" vertical-offset="2771" max-vertical-offset="4065">
+        <state line="19" column="7" selection-start="297" selection-end="297" vertical-scroll-proportion="0.5610236" vertical-offset="0" max-vertical-offset="4035">
           <folding>
             <element signature="e#51#60#0" expanded="true" />
           </folding>
