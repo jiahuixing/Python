@@ -44,10 +44,10 @@ if __name__ == '__main__':
     adb_s = dl.adb_devices_list()
     fastboot_s = dl.fastboot_devices_list()
     if len(adb_s) > 0:
-        debug(color_msg('adb devices:'))
+        debug(color_msg('adb devices'))
         for adb in adb_s:
             debug(adb)
     if len(fastboot_s) > 0:
-        debug(color_msg('fastboot devices:'))
+        debug(color_msg('fastboot devices'))
         for fastboot in fastboot_s:
             debug(fastboot)
