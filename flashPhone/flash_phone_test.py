@@ -79,7 +79,7 @@ def test8(fg=None, bg=None):
 
 
 def test9():
-    msg = color_msg('hahaha', fg=None, bg=WHITE)
+    msg = color_msg('hahaha')
     debug(msg)
 
 
@@ -146,4 +146,4 @@ def test10():
 
 
 if __name__ == '__main__':
-    test10()
+    test9()
