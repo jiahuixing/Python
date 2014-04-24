@@ -4,11 +4,10 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flashPhone/devices_list.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flashPhone/Operate.py" afterPath="$PROJECT_DIR$/flashPhone/Operate.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flashPhone/flash_phone_test.py" afterPath="$PROJECT_DIR$/flashPhone/flash_phone_test.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flashPhone/libs.py" afterPath="$PROJECT_DIR$/flashPhone/libs.py" />
+    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="pexpect">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flashPhone/bugreport.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flashPhone/devices.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flashPhone/root_devices" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Python.iws" />
@@ -62,7 +61,7 @@
       <file leaf-file-name="devices_list.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flashPhone/devices_list.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="35" selection-start="1322" selection-end="1322" vertical-scroll-proportion="0.8238748" vertical-offset="299" max-vertical-offset="825">
+            <state line="39" column="22" selection-start="1043" selection-end="1043" vertical-scroll-proportion="0.5596869" vertical-offset="299" max-vertical-offset="825">
               <folding />
             </state>
           </provider>
@@ -761,7 +760,11 @@
       <created>1398074186129</created>
       <updated>1398074186129</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="pexpect">
+      <created>1398331588220</created>
+      <updated>1398331588220</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -776,6 +779,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28818062" sideWeight="0.50037736" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1654952" sideWeight="0.2182628" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24701196" sideWeight="0.67018867" order="7" side_tool="false" content_ui="tabs" x="616" y="74" width="514" height="898" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32802126" sideWeight="0.49962264" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17433962" sideWeight="0.7118194" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24109931" sideWeight="0.7165563" order="0" side_tool="false" content_ui="combo" />
@@ -784,7 +788,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -847,7 +850,8 @@
     <MESSAGE value="Operate phone" />
     <MESSAGE value="color help" />
     <MESSAGE value="threading test" />
-    <option name="LAST_COMMIT_MESSAGE" value="threading test" />
+    <MESSAGE value="pexpect" />
+    <option name="LAST_COMMIT_MESSAGE" value="pexpect" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -952,7 +956,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flashPhone/devices_list.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="35" selection-start="1322" selection-end="1322" vertical-scroll-proportion="0.8238748" vertical-offset="299" max-vertical-offset="825">
+        <state line="39" column="22" selection-start="1043" selection-end="1043" vertical-scroll-proportion="0.5596869" vertical-offset="299" max-vertical-offset="825">
           <folding />
         </state>
       </provider>
