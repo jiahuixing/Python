@@ -1,0 +1,50 @@
+# -*- coding: utf-8 -*-
+__author__ = 'jiahuixing'
+
+from libs import *
+
+
+class Device_List:
+    def __init__(self):
+        adb_permission()
+
+    def adb_devices_list(self):
+        adb_device_list = []
+        cmd = 'adb devices'
+        child = os.popen(cmd)
+        for line in child.readlines():
+            line = str.strip(line, '\r\n')
+            if line:
+                tmp = line.split()
+                tmp_length = len(tmp)
+                if tmp_length == 2:
+                    adb_device_list.append(tmp)
+        return sorted(adb_device_list)
+
+
+    def fastboot_devices_list(self):
+        fastboot_devices = []
+        cmd = 'fastboot devices'
+        child = os.popen(cmd)
+        for line in child.readlines():
+            line = str.strip(line, '\r\n')
+            if line:
+                tmp = line.split()
+                tmp_length = len(tmp)
+                if tmp_length == 2:
+                    fastboot_devices.append(tmp)
+        return sorted(fastboot_devices)
+
+
+if __name__ == '__main__':
+    dl = Device_List()
+    adb_s = dl.adb_devices_list()
+    fastboot_s = dl.fastboot_devices_list()
+    if len(adb_s) > 0:
+        debug('adb devices:')
+        for adb in adb_s:
+            debug(adb)
+    if len(fastboot_s) > 0:
+        debug('fastboot devices:')
+        for fastboot in fastboot_s:
+            debug(fastboot)

@@ -2,6 +2,7 @@
 __author__ = 'jiahuixing'
 
 import os
+import pexpect
 import time
 from xml.etree import ElementTree as ET
 import urllib2
@@ -184,6 +185,46 @@ def debug(msg, flag=1):
 COLOR_START = '\033[0'
 COLOR_END = '\033[0m'
 BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE = range(8)
+
+
+def adb_permission():
+    no_per = 0
+    cmd = 'adb devices'
+    result = os.popen(cmd)
+    for line in result.readlines():
+        if 'no permissions' in line:
+            no_per = 1
+            break
+    if no_per == 1:
+        cmd = 'su'
+        password = '1\r'
+        child = pexpect.spawn(cmd, timeout=5)
+        try:
+            i = child.expect('：')
+            debug('i=%s' % i)
+            if i == 0:
+                child.send(password)
+                i = child.expect('#')
+                debug('i=%s' % i)
+                if i == 0:
+                    cmd = 'cd /home/jiahuixing/sdk/platform-tools/\r'
+                    child.send(cmd)
+                    cmd = 'ls -la\r'
+                    child.send(cmd)
+                    cmd = './adb kill-server\r'
+                    child.send(cmd)
+                    cmd = './adb devices\r'
+                    child.send(cmd)
+                    cmd = 'exit\r'
+                    child.send(cmd)
+        except pexpect.EOF:
+            debug('pexpect.EOF')
+            child.close()
+        except pexpect.TIMEOUT:
+            debug('pexpect.TIMEOUT')
+            child.close()
+    else:
+        return
 
 
 def color_msg(msg, fg=None, bg=None):

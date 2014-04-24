@@ -15,11 +15,13 @@ class Operate:
 
     def __init__(self):
         debug('init')
+        adb_permission()
         while len(self.adb_device_list) == 0:
             self.adb_device_list = get_adb_device_list()
             if len(self.adb_device_list) == 0:
                 debug('wait for 3 seconds.')
                 time.sleep(3)
+
 
     def root_and_remount(self):
         """

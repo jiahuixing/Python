@@ -92,19 +92,19 @@ num = 0
 class My_Thread(threading.Thread):
     def __init__(self, name):
         threading.Thread.__init__(self)
-        self.t_name = name
+        self.setName(name)
 
     def run(self):
         global num
         while True:
             mylock.acquire()
-            print '\nThread(%s) locked, Number: %d' % (self.t_name, num)
+            print '\nThread(%s) locked, Number: %d' % (self.getName(), num)
             if num >= 4:
                 mylock.release()
-                print '\nThread(%s) released, Number: %d' % (self.t_name, num)
+                print '\nThread(%s) released, Number: %d' % (self.getName(), num)
                 break
             num += 1
-            print '\nThread(%s) released, Number: %d' % (self.t_name, num)
+            print '\nThread(%s) released, Number: %d' % (self.getName(), num)
             mylock.release()
 
 
@@ -115,5 +115,35 @@ def test():
     thread2.start()
 
 
+def test10():
+    cmd = 'su'
+    password = '1\r'
+    child = pexpect.spawn(cmd, timeout=5)
+    try:
+        i = child.expect('：')
+        debug('i=%s' % i)
+        if i == 0:
+            child.send(password)
+            i = child.expect('#')
+            debug('i=%s' % i)
+            if i == 0:
+                cmd = 'cd /home/jiahuixing/sdk/platform-tools/\r'
+                child.send(cmd)
+                cmd = 'ls -la\r'
+                child.send(cmd)
+                cmd = './adb kill-server\r'
+                child.send(cmd)
+                cmd = './adb devices\r'
+                child.send(cmd)
+                cmd = 'exit\r'
+                child.send(cmd)
+    except pexpect.EOF:
+        debug('pexpect.EOF')
+        child.close()
+    except pexpect.TIMEOUT:
+        debug('pexpect.TIMEOUT')
+        child.close()
+
+
 if __name__ == '__main__':
-    test()
+    test10()
