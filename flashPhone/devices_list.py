@@ -8,7 +8,8 @@ class Device_List:
     def __init__(self):
         adb_permission()
 
-    def adb_devices_list(self):
+    @staticmethod
+    def adb_devices_list():
         adb_device_list = []
         cmd = 'adb devices'
         child = os.popen(cmd)
@@ -22,7 +23,8 @@ class Device_List:
         return sorted(adb_device_list)
 
 
-    def fastboot_devices_list(self):
+    @staticmethod
+    def fastboot_devices_list():
         fastboot_devices = []
         cmd = 'fastboot devices'
         child = os.popen(cmd)
