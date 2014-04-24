@@ -201,11 +201,9 @@ def adb_permission():
         child = pexpect.spawn(cmd, timeout=5)
         try:
             i = child.expect('：')
-            debug('i=%s' % i)
             if i == 0:
                 child.send(password)
                 i = child.expect('#')
-                debug('i=%s' % i)
                 if i == 0:
                     cmd = 'cd /home/jiahuixing/sdk/platform-tools/\r'
                     child.send(cmd)

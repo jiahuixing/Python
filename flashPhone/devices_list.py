@@ -4,7 +4,8 @@ __author__ = 'jiahuixing'
 from libs import *
 
 
-class Device_List:
+# noinspection PyPep8Naming
+class device_list:
     def __init__(self):
         adb_permission()
 
@@ -39,7 +40,7 @@ class Device_List:
 
 
 if __name__ == '__main__':
-    dl = Device_List()
+    dl = device_list()
     adb_s = dl.adb_devices_list()
     fastboot_s = dl.fastboot_devices_list()
     if len(adb_s) > 0:
