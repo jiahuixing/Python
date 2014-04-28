@@ -4,3 +4,4 @@ __author__ = 'jiahuixing'
 import Operate
 import libs
 import data
+import devices_list
