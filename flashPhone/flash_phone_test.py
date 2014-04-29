@@ -1,3 +1,6 @@
+import re
+import sys
+
 __author__ = 'jiahuixing'
 # -*- coding: utf-8 -*-
 
@@ -120,7 +123,7 @@ def test10():
     password = '1\r'
     child = pexpect.spawn(cmd, timeout=5)
     try:
-        i = child.expect('：')
+        i = child.expect(':')
         debug('i=%s' % i)
         if i == 0:
             child.send(password)
@@ -145,5 +148,22 @@ def test10():
         child.close()
 
 
+def test11():
+    debug(len(sys.argv))
+    debug(sys.argv[1])
+
+
+def test12():
+    pat = r'%s_%s_4\.[0-9]{1}_[a-z0-9]{10}\.tgz' % ('cancro_images', '4.4.26')
+    debug(pat)
+    debug(r'cancro_images_4.4.26_4\.[0-9]{1}_[a-z0-9]{10}\.tgz')
+    if pat == r'cancro_images_4.4.26_4\.[0-9]{1}_[a-z0-9]{10}\.tgz':
+        debug('1111111111111111111111')
+    pattern = re.compile(pat)
+    page = urllib2.urlopen('http://ota.n.miui.com/ota/4.4.26').read()
+    find = re.findall(pattern, page)
+    debug(list(set(find)))
+
+
 if __name__ == '__main__':
-    test10()
+    test12()

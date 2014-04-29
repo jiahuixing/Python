@@ -223,7 +223,7 @@ COLOR_END = '\033[0m'
 BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE = range(8)
 
 
-def color_msg(msg, fg=GREEN, bg=BLACK):
+def color_msg(msg, fg=GREEN, bg=WHITE):
     """
 
     @param msg:
@@ -246,6 +246,22 @@ def color_msg(msg, fg=GREEN, bg=BLACK):
         return '%s%s%s%s%s' % (COLOR_START, color_fg, color_bg, msg, COLOR_END)
     else:
         return msg
+
+
+def get_date():
+    """
+
+
+    @return m_date:
+    @summary 获取格式日期
+    """
+    block = '.'
+    year, mon, day = time.strftime('%Y'), time.strftime('%m'), time.strftime('%d')
+    year = year[-1]
+    mon = str(int(mon))
+    day = str(int(day))
+    m_date = year + block + mon + block + day
+    return m_date
 
 
 class MyThread(threading.Thread):
