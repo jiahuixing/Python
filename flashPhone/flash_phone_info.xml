@@ -1,27 +1,49 @@
 <?xml   version="1.0"   encoding="utf-8"?>
 <info>
+
     <device>
-        <name>aries_images</name>
+        <name>mione_plus_images</name>
         <tgz_pattern>%s_%s_4\.[0-9]{1}_[a-z0-9]{10}\.tgz</tgz_pattern>
     </device>
+
+    <device>
+    <name>aries_images</name>
+        <tgz_pattern>%s_%s_4\.[0-9]{1}_[a-z0-9]{10}\.tgz</tgz_pattern>
+    </device>
+
     <device>
         <name>aries_alpha_images</name>
         <tgz_pattern>%s_%s_4\.[0-9]{1}_[a-z0-9]{10}\.tgz</tgz_pattern>
     </device>
+
     <device>
         <name>cancro_images</name>
         <tgz_pattern>%s_%s_4\.[0-9]{1}_[a-z0-9]{10}\.tgz</tgz_pattern>
     </device>
+
     <device>
         <name>cancro_alpha_images</name>
         <tgz_pattern>%s_%s_4\.[0-9]{1}_[a-z0-9]{10}\.tgz</tgz_pattern>
     </device>
+
     <device>
         <name>pisces_images</name>
         <tgz_pattern>%s_%s_4\.[0-9]{1}_[a-z0-9]{10}\.tgz</tgz_pattern>
     </device>
+
     <device>
         <name>mocha_images</name>
         <tgz_pattern>%s_%s_4\.[0-9]{1}_[a-z0-9]{10}\.tgz</tgz_pattern>
     </device>
+
+    <device>
+        <name>taurus_images</name>
+        <tgz_pattern>%s_%s_4\.[0-9]{1}_[a-z0-9]{10}\.tgz</tgz_pattern>
+    </device>
+
+    <device>
+        <name>taurus_alpha_images</name>
+        <tgz_pattern>%s_%s_4\.[0-9]{1}_[a-z0-9]{10}\.tgz</tgz_pattern>
+    </device>
+
 </info>
