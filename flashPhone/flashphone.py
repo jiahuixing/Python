@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import re
+import sys
 
 __author__ = 'jiahuixing'
 
@@ -12,6 +13,7 @@ class FlashPhone:
     tgz = '.tgz'
     file_name = ''
     folder = '/home/jiahuixing/roms'
+    date = '4.4.26'
     adb_device = ''
     fastboot_device = ''
     adb_device_list = list()
@@ -20,14 +22,20 @@ class FlashPhone:
 
     def __init__(self):
         try:
+            self.get_date()
             self.to_flash_phone()
         except KeyboardInterrupt:
             debug('KeyboardInterrupt')
 
+    def get_date(self):
+        if len(sys.argv) > 1:
+            self.date = sys.argv[1]
+        else:
+            self.date = get_date()
+
     # noinspection PyMethodMayBeStatic
     def download_tgz(self):
         xml = 'flash_phone_info.xml'
-        date = '4.4.26'
         # date = get_date()
         os.chdir(work_path)
         info_s = list()
@@ -45,7 +53,7 @@ class FlashPhone:
                             if isinstance(child, ET.Element):
                                 # debug(color_msg('tag:%s,text:%s' % (child.tag, child.text)))
                                 tmp.append(child.text)
-                        tmp[1] = tmp[1] % (tmp[0], date)
+                        tmp[1] = tmp[1] % (tmp[0], self.date)
                         # debug(tmp)
                     info_s.append(tmp)
             # debug(color_msg(info_s))
@@ -55,11 +63,12 @@ class FlashPhone:
             if isinstance(i, int):
                 main_url = 'http://ota.n.miui.com/ota/'
                 page = urllib2.urlopen(main_url, timeout=5).read()
-                if date in page:
-                    td_main_url = main_url + date + '/'
+                if self.date in page:
+                    td_main_url = main_url + self.date + '/'
                     # debug(td_main_url)
                     choice = info_s[i]
                     rom = choice[0]
+                    debug('rom=%s' % rom)
                     pat = r'%s' % choice[1]
                     # debug('rom=%s,pat=%s' % (rom, pat))
                     page = urllib2.urlopen(td_main_url, timeout=5).read()
@@ -75,11 +84,16 @@ class FlashPhone:
                         # debug(cmd)
                         os.system(cmd)
                         self.file_name = tgz_name
-                        self.flag += 1
+                        if os.path.exists(self.file_name):
+                            self.flag += 1
+                    else:
+                        print('%s file not find on the site.' % self.date)
         except IOError:
             debug('IOError')
         except TypeError:
             debug('TypeError')
+        except KeyboardInterrupt:
+            debug('KeyboardInterrupt')
 
     def to_flash_phone(self):
         self.download_tgz()
@@ -106,6 +120,7 @@ class FlashPhone:
             self.adb_device_list = get_adb_device_list()
             while len(self.adb_device_list) == 0:
                 self.adb_device_list = get_adb_device_list()
+                print('Waiting for ur adb device.')
                 time.sleep(3)
             self.adb_device = self.adb_device_list[0]
             cmd = 'adb -s %s reboot bootloader' % self.adb_device
@@ -118,6 +133,7 @@ class FlashPhone:
             self.fastboot_device_list = get_fastboot_device_list()
             while len(self.fastboot_device_list) == 0:
                 self.fastboot_device_list = get_fastboot_device_list()
+                print('Waiting for ur fastboot device.')
                 time.sleep(3)
             self.fastboot_device = self.fastboot_device_list[0]
             if os.path.exists(self.folder):
