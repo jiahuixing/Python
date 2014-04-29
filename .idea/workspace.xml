@@ -57,7 +57,7 @@
       <file leaf-file-name="flashphone.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flashPhone/flashphone.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="56" selection-start="2578" selection-end="2578" vertical-scroll-proportion="0.54805726" vertical-offset="872" max-vertical-offset="2430">
+            <state line="138" column="30" selection-start="4824" selection-end="4824" vertical-scroll-proportion="0.4346049" vertical-offset="1751" max-vertical-offset="2550">
               <folding>
                 <element signature="e#24#33#0" expanded="true" />
               </folding>
@@ -809,7 +809,11 @@
       <created>1398759081689</created>
       <updated>1398759081689</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="flashphone">
+      <created>1398764207227</created>
+      <updated>1398764207227</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -824,15 +828,15 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28818062" sideWeight="0.50037736" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1654952" sideWeight="0.2182628" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24701196" sideWeight="0.67018867" order="7" side_tool="false" content_ui="tabs" x="616" y="74" width="514" height="898" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298292" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32802126" sideWeight="0.49962264" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17433962" sideWeight="0.7118194" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21690491" sideWeight="0.6662252" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33158585" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28646517" sideWeight="0.49962264" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28646517" sideWeight="0.49962264" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298292" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -1220,7 +1224,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flashPhone/flashphone.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="56" selection-start="2578" selection-end="2578" vertical-scroll-proportion="0.54805726" vertical-offset="872" max-vertical-offset="2430">
+        <state line="138" column="30" selection-start="4824" selection-end="4824" vertical-scroll-proportion="0.4346049" vertical-offset="1751" max-vertical-offset="2550">
           <folding>
             <element signature="e#24#33#0" expanded="true" />
           </folding>

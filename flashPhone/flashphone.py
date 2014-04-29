@@ -35,6 +35,8 @@ class FlashPhone:
 
     # noinspection PyMethodMayBeStatic
     def download_tgz(self):
+        msg = 'download_tgz'
+        print(color_msg(msg, GREEN, WHITE))
         xml = 'flash_phone_info.xml'
         # date = get_date()
         os.chdir(work_path)
@@ -104,6 +106,8 @@ class FlashPhone:
     # noinspection PyMethodMayBeStatic
     def un_tar(self):
         if self.flag == 1:
+            msg = 'un_tar'
+            print(color_msg(msg, GREEN, WHITE))
             file_name = self.file_name
             cmd = 'tar xvf %s' % file_name
             # debug(cmd)
@@ -117,6 +121,8 @@ class FlashPhone:
 
     def reboot_phone(self):
         if self.flag == 2:
+            msg = 'reboot_phone'
+            print(color_msg(msg, GREEN, WHITE))
             self.adb_device_list = get_adb_device_list()
             while len(self.adb_device_list) == 0:
                 self.adb_device_list = get_adb_device_list()
@@ -130,6 +136,8 @@ class FlashPhone:
 
     def flash_phone(self):
         if self.flag == 3:
+            msg = 'flash_phone'
+            print(color_msg(msg, GREEN, WHITE))
             self.fastboot_device_list = get_fastboot_device_list()
             while len(self.fastboot_device_list) == 0:
                 self.fastboot_device_list = get_fastboot_device_list()
