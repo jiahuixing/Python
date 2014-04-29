@@ -61,7 +61,7 @@ class FlashPhone:
                     choice = info_s[i]
                     rom = choice[0]
                     pat = r'%s' % choice[1]
-                    debug('rom=%s,pat=%s' % (rom, pat))
+                    # debug('rom=%s,pat=%s' % (rom, pat))
                     page = urllib2.urlopen(td_main_url, timeout=5).read()
                     pattern = re.compile(pat)
                     # debug('pattern=%s' % pattern)
