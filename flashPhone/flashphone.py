@@ -44,7 +44,6 @@ class FlashPhone:
     def download_tgz(self):
         msg = 'download_tgz'
         print(color_msg(msg, GREEN, WHITE))
-        # date = get_date()
         os.chdir(WORK_PATH)
         info_s = list()
         try:
