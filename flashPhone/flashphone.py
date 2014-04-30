@@ -166,8 +166,6 @@ class FlashPhone:
                     if isinstance(i, int):
                         if i < len(sh_files):
                             flash_script = sh_files[i]
-                            # flash_all_except = 'flash_all_except_storage.sh'
-                            # flash_all = 'flash_all.sh'
                             os.chdir(self.folder)
                             if os.path.exists(flash_script):
                                 cmd = 'chmod a+x %s' % flash_script
