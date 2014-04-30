@@ -4,8 +4,7 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="delete unused res">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
+    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="add debug msg">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flashPhone/flashphone.py" afterPath="$PROJECT_DIR$/flashPhone/flashphone.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -40,7 +39,7 @@
       <file leaf-file-name="flashphone.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flashPhone/flashphone.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="117" column="24" selection-start="3975" selection-end="3975" vertical-scroll-proportion="0.3706004" vertical-offset="1576" max-vertical-offset="2865">
+            <state line="180" column="35" selection-start="6788" selection-end="6788" vertical-scroll-proportion="0.61904764" vertical-offset="2401" max-vertical-offset="2895">
               <folding>
                 <element signature="e#51#60#0" expanded="true" />
               </folding>
@@ -831,12 +830,20 @@
       <created>1398842056826</created>
       <updated>1398842056826</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="delete unused res">
+      <created>1398842312066</created>
+      <updated>1398842312066</updated>
+    </task>
+    <task id="LOCAL-00074" summary="add debug msg">
+      <created>1398844547412</created>
+      <updated>1398844547412</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="52" y="-19" width="1677" height="937" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3298292" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39027596" sideWeight="0.67018867" order="10" side_tool="false" content_ui="tabs" />
@@ -894,7 +901,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="get_file_url.py&#10;mkdir.py&#10;my_libs.py&#10;" />
     <MESSAGE value="my_libs.py&#10;" />
     <MESSAGE value="mkdir.py&#10;my_libs.py&#10;" />
     <MESSAGE value="mkdir.py&#10;" />
@@ -919,7 +925,8 @@
     <MESSAGE value="flash phone&#10;use ls to get folder sh files and list them" />
     <MESSAGE value="print debug msg" />
     <MESSAGE value="delete unused res" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete unused res" />
+    <MESSAGE value="add debug msg" />
+    <option name="LAST_COMMIT_MESSAGE" value="add debug msg" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1241,7 +1248,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flashPhone/flashphone.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="24" selection-start="3975" selection-end="3975" vertical-scroll-proportion="0.3706004" vertical-offset="1576" max-vertical-offset="2865">
+        <state line="180" column="35" selection-start="6788" selection-end="6788" vertical-scroll-proportion="0.61904764" vertical-offset="2401" max-vertical-offset="2895">
           <folding>
             <element signature="e#51#60#0" expanded="true" />
           </folding>

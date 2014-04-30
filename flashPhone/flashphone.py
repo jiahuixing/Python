@@ -138,6 +138,7 @@ class FlashPhone:
             # debug(cmd)
             os.system(cmd)
             self.flag += 1
+            time.sleep(3)
 
     def flash_phone(self):
         if self.flag == 3:
