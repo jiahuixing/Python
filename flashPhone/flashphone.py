@@ -119,6 +119,7 @@ class FlashPhone:
             os.system(cmd)
             cmd = 'rm -rf %s' % file_name
             # debug(cmd)
+            debug(color_msg('rm tgz.', RED, WHITE))
             os.system(cmd)
             self.folder = file_name[0:-len('_f0e572b4f6.tgz')]
             # debug('folder=%s' % self.folder)
@@ -181,6 +182,7 @@ class FlashPhone:
                 os.chdir(WORK_PATH)
                 cmd = 'rm -rf %s' % self.folder
                 # debug(cmd)
+                debug(color_msg('rm folder.', RED, WHITE))
                 os.system(cmd)
 
 

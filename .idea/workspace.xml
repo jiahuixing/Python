@@ -39,7 +39,7 @@
       <file leaf-file-name="flashphone.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flashPhone/flashphone.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="180" column="35" selection-start="6788" selection-end="6788" vertical-scroll-proportion="0.61904764" vertical-offset="2401" max-vertical-offset="2895">
+            <state line="129" column="32" selection-start="4374" selection-end="4374" vertical-scroll-proportion="0.68115944" vertical-offset="1606" max-vertical-offset="2925">
               <folding>
                 <element signature="e#51#60#0" expanded="true" />
               </folding>
@@ -838,7 +838,11 @@
       <created>1398844547412</created>
       <updated>1398844547412</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="add debug msg">
+      <created>1398844845975</created>
+      <updated>1398844845975</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1248,7 +1252,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flashPhone/flashphone.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="180" column="35" selection-start="6788" selection-end="6788" vertical-scroll-proportion="0.61904764" vertical-offset="2401" max-vertical-offset="2895">
+        <state line="129" column="32" selection-start="4374" selection-end="4374" vertical-scroll-proportion="0.68115944" vertical-offset="1606" max-vertical-offset="2925">
           <folding>
             <element signature="e#51#60#0" expanded="true" />
           </folding>
