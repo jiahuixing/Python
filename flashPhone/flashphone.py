@@ -1,3 +1,4 @@
+#!/usr/local/bin/python -u
 # -*- coding: utf-8 -*-
 import re
 import sys
@@ -6,7 +7,7 @@ __author__ = 'jiahuixing'
 
 from libs import *
 
-work_path = '/home/jiahuixing/Python/flashPhone'
+WORK_PATH = '/home/jiahuixing/Python/flashPhone'
 
 
 class FlashPhone:
@@ -14,6 +15,7 @@ class FlashPhone:
     file_name = ''
     folder = '/home/jiahuixing/roms'
     date = '4.4.26'
+    xml = 'flash_phone_info.xml'
     adb_device = ''
     fastboot_device = ''
     adb_device_list = list()
@@ -32,17 +34,20 @@ class FlashPhone:
             self.date = sys.argv[1]
         else:
             self.date = get_date()
+        if self.date > '4.4.28':
+            self.xml = 'flash_phone_info.xml'
+        else:
+            self.xml = 'tmp_flash_phone_info.xml'
 
     # noinspection PyMethodMayBeStatic
     def download_tgz(self):
         msg = 'download_tgz'
         print(color_msg(msg, GREEN, WHITE))
-        xml = 'flash_phone_info.xml'
         # date = get_date()
-        os.chdir(work_path)
+        os.chdir(WORK_PATH)
         info_s = list()
         try:
-            root = ET.parse(xml)
+            root = ET.parse(self.xml)
             if root:
                 tag = 'device'
                 contents = root.findall(tag)
@@ -155,7 +160,7 @@ class FlashPhone:
                     cmd = './%s' % flash_all_except
                     # debug(cmd)
                     os.system(cmd)
-                    os.chdir(work_path)
+                    os.chdir(WORK_PATH)
                     cmd = 'rm -rf %s' % self.folder
                     # debug(cmd)
                     os.system(cmd)

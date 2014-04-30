@@ -154,16 +154,22 @@ def test11():
 
 
 def test12():
-    pat = r'%s_%s_4\.[0-9]{1}_[a-z0-9]{10}\.tgz' % ('cancro_images', '4.4.26')
+    pat = r'%s_%s_4\.[0-9]{1}_cn_[a-z0-9]{10}\.tgz' % ('cancro_images', '4.4.29')
     debug(pat)
-    debug(r'cancro_images_4.4.26_4\.[0-9]{1}_[a-z0-9]{10}\.tgz')
-    if pat == r'cancro_images_4.4.26_4\.[0-9]{1}_[a-z0-9]{10}\.tgz':
-        debug('1111111111111111111111')
     pattern = re.compile(pat)
-    page = urllib2.urlopen('http://ota.n.miui.com/ota/4.4.26').read()
+    page = urllib2.urlopen('http://ota.n.miui.com/ota/4.4.29').read()
     find = re.findall(pattern, page)
     debug(list(set(find)))
 
 
+def test13():
+    date = get_date()
+    debug(date)
+    if date > '4.4.28':
+        debug(1)
+    else:
+        debug(2)
+
+
 if __name__ == '__main__':
-    test12()
+    test13()
