@@ -165,6 +165,7 @@ class FlashPhone:
                     if isinstance(i, int):
                         if i < len(sh_files):
                             flash_script = sh_files[i]
+                            debug(color_msg('flash_script=%s' % flash_script, RED, WHITE))
                             os.chdir(self.folder)
                             if os.path.exists(flash_script):
                                 cmd = 'chmod a+x %s' % flash_script
