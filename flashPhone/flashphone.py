@@ -27,7 +27,7 @@ class FlashPhone:
             self.get_date()
             self.to_flash_phone()
         except KeyboardInterrupt:
-            debug('KeyboardInterrupt')
+            print('KeyboardInterrupt')
 
     def get_date(self):
         if len(sys.argv) > 1:
@@ -65,7 +65,7 @@ class FlashPhone:
                     info_s.append(tmp)
             # debug(color_msg(info_s))
             for i in xrange(len(info_s)):
-                debug(color_msg('%s:%s' % (i, info_s[i][0]), RED))
+                print(color_msg('%s:%s' % (i, info_s[i][0]), RED))
             i = input('Pls input ur choice num:')
             if isinstance(i, int):
                 main_url = 'http://ota.n.miui.com/ota/'
@@ -75,7 +75,7 @@ class FlashPhone:
                     # debug(td_main_url)
                     choice = info_s[i]
                     rom = choice[0]
-                    debug('rom=%s' % rom)
+                    print('rom=%s' % rom)
                     pat = r'%s' % choice[1]
                     # debug('rom=%s,pat=%s' % (rom, pat))
                     page = urllib2.urlopen(td_main_url, timeout=5).read()
@@ -96,11 +96,11 @@ class FlashPhone:
                     else:
                         print('%s file not find on the site.' % self.date)
         except IOError:
-            debug('IOError')
+            print('IOError')
         except TypeError:
-            debug('TypeError')
+            print('TypeError')
         except KeyboardInterrupt:
-            debug('KeyboardInterrupt')
+            print('KeyboardInterrupt')
 
     def to_flash_phone(self):
         self.download_tgz()
@@ -158,9 +158,9 @@ class FlashPhone:
                     for file_name in os.listdir(abs_folder):
                         if file_name.endswith('.sh'):
                             sh_files.append(file_name)
-                    debug(sh_files)
+                    # debug(sh_files)
                     for i in xrange(len(sh_files)):
-                        debug(color_msg('%s:%s' % (i, sh_files[i]), RED, WHITE))
+                        print(color_msg('%s:%s' % (i, sh_files[i]), RED, WHITE))
                     i = input('Pls input ur choice num:')
                     if isinstance(i, int):
                         if i < len(sh_files):
@@ -176,7 +176,7 @@ class FlashPhone:
                                 # debug(cmd)
                                 os.system(cmd)
             except OSError:
-                debug('OSError')
+                print('OSError')
             finally:
                 os.chdir(WORK_PATH)
                 cmd = 'rm -rf %s' % self.folder

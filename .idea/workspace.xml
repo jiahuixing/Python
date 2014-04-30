@@ -4,7 +4,7 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="flashphone">
+    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="flash phone&#10;use ls to get folder sh files and list them">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flashPhone/flashphone.py" afterPath="$PROJECT_DIR$/flashPhone/flashphone.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -57,7 +57,7 @@
       <file leaf-file-name="flashphone.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flashPhone/flashphone.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="157" column="60" selection-start="5738" selection-end="5738" vertical-scroll-proportion="0.39867842" vertical-offset="2174" max-vertical-offset="2895">
+            <state line="136" column="42" selection-start="4807" selection-end="4807" vertical-scroll-proportion="0.29955947" vertical-offset="1904" max-vertical-offset="2895">
               <folding>
                 <element signature="e#51#60#0" expanded="true" />
               </folding>
@@ -856,7 +856,11 @@
       <created>1398827620304</created>
       <updated>1398827620304</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="flash phone&#10;use ls to get folder sh files and list them">
+      <created>1398834975227</created>
+      <updated>1398834975227</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -918,7 +922,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="get_file_url.py&#10;mkdir.py&#10;T_libs.py" />
     <MESSAGE value="get_file_url.py&#10;mkdir.py&#10;my_libs.py" />
     <MESSAGE value="get_file_url.py&#10;mkdir.py&#10;" />
     <MESSAGE value="get_file_url.py&#10;mkdir.py&#10;my_libs.py&#10;" />
@@ -943,7 +946,8 @@
     <MESSAGE value="pexpect" />
     <MESSAGE value="color" />
     <MESSAGE value="flashphone" />
-    <option name="LAST_COMMIT_MESSAGE" value="flashphone" />
+    <MESSAGE value="flash phone&#10;use ls to get folder sh files and list them" />
+    <option name="LAST_COMMIT_MESSAGE" value="flash phone&#10;use ls to get folder sh files and list them" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1265,7 +1269,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flashPhone/flashphone.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="157" column="60" selection-start="5738" selection-end="5738" vertical-scroll-proportion="0.39867842" vertical-offset="2174" max-vertical-offset="2895">
+        <state line="136" column="42" selection-start="4807" selection-end="4807" vertical-scroll-proportion="0.29955947" vertical-offset="1904" max-vertical-offset="2895">
           <folding>
             <element signature="e#51#60#0" expanded="true" />
           </folding>
