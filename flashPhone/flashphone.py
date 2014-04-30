@@ -141,29 +141,47 @@ class FlashPhone:
 
     def flash_phone(self):
         if self.flag == 3:
-            msg = 'flash_phone'
-            print(color_msg(msg, GREEN, WHITE))
-            self.fastboot_device_list = get_fastboot_device_list()
-            while len(self.fastboot_device_list) == 0:
+            try:
+                msg = 'flash_phone'
+                print(color_msg(msg, GREEN, WHITE))
                 self.fastboot_device_list = get_fastboot_device_list()
-                print('Waiting for ur fastboot device.')
-                time.sleep(3)
-            self.fastboot_device = self.fastboot_device_list[0]
-            if os.path.exists(self.folder):
-                os.chdir(self.folder)
-                flash_all_except = 'flash_all_except_storage.sh'
-                # flash_all = 'flash_all.sh'
-                if os.path.exists(flash_all_except):
-                    cmd = 'chmod a+x %s' % flash_all_except
-                    # debug(cmd)
-                    os.system(cmd)
-                    cmd = './%s' % flash_all_except
-                    # debug(cmd)
-                    os.system(cmd)
-                    os.chdir(WORK_PATH)
-                    cmd = 'rm -rf %s' % self.folder
-                    # debug(cmd)
-                    os.system(cmd)
+                while len(self.fastboot_device_list) == 0:
+                    self.fastboot_device_list = get_fastboot_device_list()
+                    print('Waiting for ur fastboot device.')
+                    time.sleep(3)
+                self.fastboot_device = self.fastboot_device_list[0]
+                if os.path.exists(self.folder):
+                    sh_files = list()
+                    abs_folder = os.path.abspath(self.folder)
+                    # debug(abs_folder)
+                    # debug(os.listdir(abs_folder))
+                    for file_name in os.listdir(abs_folder):
+                        if file_name.endswith('.sh'):
+                            sh_files.append(file_name)
+                    debug(sh_files)
+                    for i in xrange(len(sh_files)):
+                        debug(color_msg('%s:%s' % (i, sh_files[i]), RED, WHITE))
+                    i = input('Pls input ur choice num:')
+                    if isinstance(i, int):
+                        if i < len(sh_files):
+                            flash_script = sh_files[i]
+                            # flash_all_except = 'flash_all_except_storage.sh'
+                            # flash_all = 'flash_all.sh'
+                            os.chdir(self.folder)
+                            if os.path.exists(flash_script):
+                                cmd = 'chmod a+x %s' % flash_script
+                                # debug(cmd)
+                                os.system(cmd)
+                                cmd = './%s' % flash_script
+                                # debug(cmd)
+                                os.system(cmd)
+            except OSError:
+                debug('OSError')
+            finally:
+                os.chdir(WORK_PATH)
+                cmd = 'rm -rf %s' % self.folder
+                # debug(cmd)
+                os.system(cmd)
 
 
 if __name__ == '__main__':
