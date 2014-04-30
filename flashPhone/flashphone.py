@@ -102,12 +102,6 @@ class FlashPhone:
         except KeyboardInterrupt:
             print('KeyboardInterrupt')
 
-    def to_flash_phone(self):
-        self.download_tgz()
-        self.un_tar()
-        self.reboot_phone()
-        self.flash_phone()
-
     # noinspection PyMethodMayBeStatic
     def un_tar(self):
         if self.flag == 1:
@@ -129,17 +123,21 @@ class FlashPhone:
         if self.flag == 2:
             msg = 'reboot_phone'
             print(color_msg(msg, GREEN, WHITE))
-            self.adb_device_list = get_adb_device_list()
-            while len(self.adb_device_list) == 0:
+            self.fastboot_device_list = get_fastboot_device_list()
+            if len(self.fastboot_device_list) > 0:
+                self.flag += 1
+            else:
                 self.adb_device_list = get_adb_device_list()
-                print('Waiting for ur adb device.')
+                while len(self.adb_device_list) == 0:
+                    self.adb_device_list = get_adb_device_list()
+                    print('Waiting for ur adb device.')
+                    time.sleep(3)
+                self.adb_device = self.adb_device_list[0]
+                cmd = 'adb -s %s reboot bootloader' % self.adb_device
+                # debug(cmd)
+                os.system(cmd)
+                self.flag += 1
                 time.sleep(3)
-            self.adb_device = self.adb_device_list[0]
-            cmd = 'adb -s %s reboot bootloader' % self.adb_device
-            # debug(cmd)
-            os.system(cmd)
-            self.flag += 1
-            time.sleep(3)
 
     def flash_phone(self):
         if self.flag == 3:
@@ -184,6 +182,12 @@ class FlashPhone:
                 # debug(cmd)
                 debug(color_msg('rm folder.', RED, WHITE))
                 os.system(cmd)
+
+    def to_flash_phone(self):
+        self.download_tgz()
+        self.un_tar()
+        self.reboot_phone()
+        self.flash_phone()
 
 
 if __name__ == '__main__':
