@@ -11,15 +11,16 @@ WORK_PATH = '/home/jiahuixing/Python/flashPhone'
 
 
 class FlashPhone:
-    tgz = '.tgz'
     file_name = ''
-    folder = '/home/jiahuixing/roms'
-    date = '4.4.26'
-    xml = 'flash_phone_info.xml'
+    folder = ''
+    date = ''
+    xml = ''
+
     adb_device = ''
     fastboot_device = ''
     adb_device_list = list()
     fastboot_device_list = list()
+
     flag = 0
 
     def __init__(self):
