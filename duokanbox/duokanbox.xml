@@ -8,8 +8,8 @@
         <url>http://fm.duokanbox.com/category</url>
         <param_or_not>1</param_or_not>
         <param>
-            <pn>%s</pn>
-            <size>%s</size>
+            <pn>pn=%s</pn>
+            <size>size=%s</size>
         </param>
     </site>
 
@@ -19,8 +19,8 @@
         <url>http://fm.duokanbox.com/channel/%s</url>
         <param_or_not>1</param_or_not>
         <param>
-            <pn>%s</pn>
-            <size>%s</size>
+            <pn>pn=%s</pn>
+            <size>size=%s</size>
         </param>
     </site>
 

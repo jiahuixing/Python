@@ -162,13 +162,49 @@ def test12():
     debug(list(set(find)))
 
 
-def test13():
-    date = get_date()
-    debug(date)
-    if date > '4.4.28':
-        debug(1)
+def compare_date(date1, date2):
+    dt1 = str.split(date1, '.')
+    dt2 = str.split(date2, '.')
+    for i in xrange(len(dt1)):
+        tmp = int(dt1[i])
+        dt1.pop(i)
+        # noinspection PyTypeChecker
+        dt1.insert(i, tmp)
+    for j in xrange(len(dt2)):
+        tmp = int(dt2[j])
+        dt2.pop(j)
+        # noinspection PyTypeChecker
+        dt2.insert(j, tmp)
+    debug(dt1)
+    debug(dt2)
+    if dt1[0] > dt2[0]:
+        result = 1
+    elif dt1[0] == dt2[0]:
+        if dt1[1] > dt2[1]:
+            result = 1
+        elif dt1[1] == dt2[1]:
+            if dt1[2] > dt2[2]:
+                result = 1
+            else:
+                result = 2
+        else:
+            result = 2
     else:
-        debug(2)
+        result = 2
+
+    return result
+
+
+def test13():
+    # date = get_date()
+    date = '4.4.3'
+    compare = '4.4.28'
+    cmp_result = compare_date(date, compare)
+    debug('cmp_result=%s' % cmp_result)
+    if cmp_result == 1:
+        debug('%s > %s' % (date, compare))
+    else:
+        debug('%s > %s' % (compare, date))
 
 
 if __name__ == '__main__':

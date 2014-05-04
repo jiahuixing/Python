@@ -35,10 +35,46 @@ class FlashPhone:
             self.date = sys.argv[1]
         else:
             self.date = get_date()
-        if self.date > '4.4.28':
+        debug('date=%s' % self.date)
+        cmp_result = self.compare_date(self.date, '4.4.28')
+        if cmp_result == 1:
             self.xml = 'flash_phone_info.xml'
         else:
             self.xml = 'tmp_flash_phone_info.xml'
+        debug('xml=%s' % self.xml)
+
+    @staticmethod
+    def compare_date(date1, date2):
+        dt1 = str.split(date1, '.')
+        dt2 = str.split(date2, '.')
+        for i in xrange(len(dt1)):
+            tmp = int(dt1[i])
+            dt1.pop(i)
+            # noinspection PyTypeChecker
+            dt1.insert(i, tmp)
+        for j in xrange(len(dt2)):
+            tmp = int(dt2[j])
+            dt2.pop(j)
+            # noinspection PyTypeChecker
+            dt2.insert(j, tmp)
+        # debug(dt1)
+        # debug(dt2)
+        if dt1[0] > dt2[0]:
+            result = 1
+        elif dt1[0] == dt2[0]:
+            if dt1[1] > dt2[1]:
+                result = 1
+            elif dt1[1] == dt2[1]:
+                if dt1[2] > dt2[2]:
+                    result = 1
+                else:
+                    result = 2
+            else:
+                result = 2
+        else:
+            result = 2
+
+        return result
 
     # noinspection PyMethodMayBeStatic
     def download_tgz(self):
@@ -77,7 +113,7 @@ class FlashPhone:
                     rom = choice[0]
                     print('rom=%s' % rom)
                     pat = r'%s' % choice[1]
-                    # debug('rom=%s,pat=%s' % (rom, pat))
+                    debug('rom=%s,pat=%s' % (rom, pat))
                     page = urllib2.urlopen(td_main_url, timeout=5).read()
                     pattern = re.compile(pat)
                     # debug('pattern=%s' % pattern)
