@@ -4,7 +4,7 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="fix bug in comparing 2 date">
+    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="add some debug msg">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flashPhone/flashphone.py" afterPath="$PROJECT_DIR$/flashPhone/flashphone.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -39,7 +39,7 @@
       <file leaf-file-name="flashphone.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flashPhone/flashphone.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="216" column="28" selection-start="8006" selection-end="8006" vertical-scroll-proportion="0.50729924" vertical-offset="2962" max-vertical-offset="3510">
+            <state line="114" column="51" selection-start="3488" selection-end="3488" vertical-scroll-proportion="0.44708028" vertical-offset="1465" max-vertical-offset="3525">
               <folding>
                 <element signature="e#51#60#0" expanded="true" />
               </folding>
@@ -859,7 +859,11 @@
       <created>1399192405243</created>
       <updated>1399192405244</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="add some debug msg">
+      <created>1399192783846</created>
+      <updated>1399192783847</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -901,7 +905,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="mkdir.py&#10;getfile_url.py&#10;my_libs.py&#10;" />
     <MESSAGE value="getfile_url.py&#10;my_libs.py&#10;" />
     <MESSAGE value="使用re 查找文件名中是否含有版本号" />
     <MESSAGE value="判断版本类型的准备" />
@@ -926,7 +929,8 @@
     <MESSAGE value="mocha pattern" />
     <MESSAGE value="dior pattern" />
     <MESSAGE value="fix bug in comparing 2 date" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix bug in comparing 2 date" />
+    <MESSAGE value="add some debug msg" />
+    <option name="LAST_COMMIT_MESSAGE" value="add some debug msg" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1214,7 +1218,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flashPhone/flashphone.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="216" column="28" selection-start="8006" selection-end="8006" vertical-scroll-proportion="0.50729924" vertical-offset="2962" max-vertical-offset="3510">
+        <state line="114" column="51" selection-start="3488" selection-end="3488" vertical-scroll-proportion="0.44708028" vertical-offset="1465" max-vertical-offset="3525">
           <folding>
             <element signature="e#51#60#0" expanded="true" />
           </folding>

@@ -35,7 +35,8 @@ class FlashPhone:
             self.date = sys.argv[1]
         else:
             self.date = get_date()
-        cmp_result = self.compare_date(self.date, '4.4.28')
+        tmp_date = '4.4.28'
+        cmp_result = self.compare_date(self.date, tmp_date)
         if cmp_result == 1:
             self.xml = 'flash_phone_info.xml'
         else:
@@ -110,9 +111,9 @@ class FlashPhone:
                     # debug(td_main_url)
                     choice = info_s[i]
                     rom = choice[0]
-                    debug(color_msg('rom=%s' % rom))
                     pat = r'%s' % choice[1]
-                    debug('rom=%s,pat=%s' % (rom, pat))
+                    debug(color_msg('rom=%s' % rom))
+                    debug(color_msg('pat=%s' % pat))
                     page = urllib2.urlopen(td_main_url, timeout=5).read()
                     pattern = re.compile(pat)
                     # debug('pattern=%s' % pattern)
@@ -175,8 +176,8 @@ class FlashPhone:
                 time.sleep(3)
 
     def flash_phone(self):
-        if self.flag == 3:
-            try:
+        try:
+            if self.flag == 3:
                 msg = 'flash_phone'
                 print(color_msg(msg, GREEN, WHITE))
                 self.fastboot_device_list = get_fastboot_device_list()
@@ -209,14 +210,14 @@ class FlashPhone:
                                 cmd = './%s' % flash_script
                                 # debug(cmd)
                                 os.system(cmd)
-            except OSError:
-                print('OSError')
-            finally:
-                os.chdir(WORK_PATH)
-                cmd = 'rm -rf %s' % self.folder
-                # debug(cmd)
-                debug(color_msg('rm folder.', RED, WHITE))
-                os.system(cmd)
+        except OSError:
+            print('OSError')
+        finally:
+            os.chdir(WORK_PATH)
+            cmd = 'rm -rf %s' % self.folder
+            # debug(cmd)
+            debug(color_msg('rm folder.', RED, WHITE))
+            os.system(cmd)
 
     def to_flash_phone(self):
         self.download_tgz()
