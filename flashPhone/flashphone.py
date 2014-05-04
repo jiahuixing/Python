@@ -35,13 +35,11 @@ class FlashPhone:
             self.date = sys.argv[1]
         else:
             self.date = get_date()
-        debug('date=%s' % self.date)
         cmp_result = self.compare_date(self.date, '4.4.28')
         if cmp_result == 1:
             self.xml = 'flash_phone_info.xml'
         else:
             self.xml = 'tmp_flash_phone_info.xml'
-        debug('xml=%s' % self.xml)
 
     @staticmethod
     def compare_date(date1, date2):
@@ -83,6 +81,7 @@ class FlashPhone:
         os.chdir(WORK_PATH)
         info_s = list()
         try:
+            debug('date=%s,xml=%s' % (self.date, self.xml))
             root = ET.parse(self.xml)
             if root:
                 tag = 'device'
@@ -111,7 +110,7 @@ class FlashPhone:
                     # debug(td_main_url)
                     choice = info_s[i]
                     rom = choice[0]
-                    print('rom=%s' % rom)
+                    debug(color_msg('rom=%s' % rom))
                     pat = r'%s' % choice[1]
                     debug('rom=%s,pat=%s' % (rom, pat))
                     page = urllib2.urlopen(td_main_url, timeout=5).read()
