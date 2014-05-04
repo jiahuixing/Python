@@ -33,7 +33,7 @@
 
     <device>
         <name>mocha_images</name>
-        <tgz_pattern>%s_%s_4\.[0-9]{1}_cn_[a-z0-9]{10}\.tgz</tgz_pattern>
+        <tgz_pattern>%s_%s_4\.[0-9]{1}_[a-z0-9]{10}\.tgz</tgz_pattern>
     </device>
 
     <device>
