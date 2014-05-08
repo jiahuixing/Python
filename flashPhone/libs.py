@@ -183,6 +183,10 @@ def debug(msg, flag=1):
 
 
 def adb_permission():
+    """
+
+    @summary 获取adb permission
+    """
     no_per = 0
     cmd = 'adb devices'
     result = os.popen(cmd)
