@@ -207,5 +207,9 @@ def test13():
         debug('%s > %s' % (compare, date))
 
 
+def test14():
+    print(time.strftime('%Y-%m-%d-%H-%M-%S'))
+
+
 if __name__ == '__main__':
-    test13()
+    test14()
