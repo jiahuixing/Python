@@ -4,10 +4,10 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="permission">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flashPhone/bugreport.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flashPhone/bugreport.sh" afterPath="$PROJECT_DIR$/flashPhone/bugreport.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flashPhone/flash_phone_test.py" afterPath="$PROJECT_DIR$/flashPhone/flash_phone_test.py" />
+    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="bugreport">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/duokanbox/duokanbox.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/duokanbox/duokanbox.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flashPhone/bugreport.py" afterPath="$PROJECT_DIR$/flashPhone/bugreport.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/jiahuixing.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/jiahuixing.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -60,7 +60,7 @@
       <file leaf-file-name="bugreport.sh" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flashPhone/bugreport.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120">
+            <state line="2" column="6" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120">
               <folding />
             </state>
           </provider>
@@ -69,7 +69,7 @@
       <file leaf-file-name="bugreport.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flashPhone/bugreport.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="20" selection-start="417" selection-end="417" vertical-scroll-proportion="0.38828337" vertical-offset="0" max-vertical-offset="734">
+            <state line="38" column="71" selection-start="1140" selection-end="1140" vertical-scroll-proportion="0.5095368" vertical-offset="196" max-vertical-offset="930">
               <folding />
             </state>
           </provider>
@@ -78,7 +78,7 @@
       <file leaf-file-name="flash_phone_test.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flashPhone/flash_phone_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="210" column="42" selection-start="4966" selection-end="4974" vertical-scroll-proportion="0.0" vertical-offset="2776" max-vertical-offset="3285">
+            <state line="210" column="42" selection-start="4966" selection-end="4974" vertical-scroll-proportion="0.0" vertical-offset="2776" max-vertical-offset="3300">
               <folding />
             </state>
           </provider>
@@ -87,34 +87,7 @@
       <file leaf-file-name="data.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flashPhone/data.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="23" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="480">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="duokanbox.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/duokanbox/duokanbox.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="28" selection-start="369" selection-end="369" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="480">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="duokanbox.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/duokanbox/duokanbox.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="31" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="330">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="flash_phone_info.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flashPhone/flash_phone_info.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="13" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="885">
+            <state line="8" column="26" selection-start="232" selection-end="235" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
               <folding />
             </state>
           </provider>
@@ -123,7 +96,7 @@
       <file leaf-file-name="devices_list.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flashPhone/devices_list.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="29" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0" vertical-offset="196" max-vertical-offset="930">
+            <state line="34" column="28" selection-start="878" selection-end="878" vertical-scroll-proportion="0.0" vertical-offset="161" max-vertical-offset="930">
               <folding />
             </state>
           </provider>
@@ -920,13 +893,18 @@
       <created>1399528473331</created>
       <updated>1399528473331</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="bugreport">
+      <created>1399550670570</created>
+      <updated>1399550670570</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="52" y="-19" width="1677" height="937" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298292" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39027596" sideWeight="0.67018867" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.49962264" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290566" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -935,16 +913,15 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28818062" sideWeight="0.50037736" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1654952" sideWeight="0.2182628" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24377458" sideWeight="0.67018867" order="7" side_tool="false" content_ui="tabs" x="616" y="74" width="514" height="898" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298292" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32802126" sideWeight="0.49962264" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17433962" sideWeight="0.7118194" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13175885" sideWeight="0.6662252" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33114323" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28515112" sideWeight="0.49962264" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298292" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298292" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -962,7 +939,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="使用re 查找文件名中是否含有版本号" />
     <MESSAGE value="判断版本类型的准备" />
     <MESSAGE value="删除无用" />
     <MESSAGE value="显示cost_time" />
@@ -987,7 +963,8 @@
     <MESSAGE value="fix bug in comparing 2 date" />
     <MESSAGE value="add some debug msg" />
     <MESSAGE value="permission" />
-    <option name="LAST_COMMIT_MESSAGE" value="permission" />
+    <MESSAGE value="bugreport" />
+    <option name="LAST_COMMIT_MESSAGE" value="bugreport" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1216,27 +1193,6 @@
         <state line="13" column="17" selection-start="197" selection-end="197" vertical-scroll-proportion="-0.031055901" vertical-offset="195" max-vertical-offset="1980" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/duokanbox/duokanbox.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="31" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flashPhone/data.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="23" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/duokanbox/duokanbox.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="28" selection-start="369" selection-end="369" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/flashPhone/flash_phone_info.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="13" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885">
@@ -1251,23 +1207,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flashPhone/bugreport.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/flashPhone/libs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="260" column="12" selection-start="7127" selection-end="7131" vertical-scroll-proportion="-8.703704" vertical-offset="3590" max-vertical-offset="4380">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flashPhone/devices_list.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="29" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0" vertical-offset="8" max-vertical-offset="930">
           <folding />
         </state>
       </provider>
@@ -1279,9 +1221,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/flashPhone/devices_list.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="28" selection-start="878" selection-end="878" vertical-scroll-proportion="0.0" vertical-offset="161" max-vertical-offset="930">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flashPhone/data.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="26" selection-start="232" selection-end="235" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flashPhone/bugreport.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="6" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/flashPhone/bugreport.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="20" selection-start="417" selection-end="417" vertical-scroll-proportion="0.38828337" vertical-offset="0" max-vertical-offset="734">
+        <state line="38" column="71" selection-start="1140" selection-end="1140" vertical-scroll-proportion="0.5095368" vertical-offset="196" max-vertical-offset="930">
           <folding />
         </state>
       </provider>

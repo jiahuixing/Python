@@ -5,6 +5,9 @@ __author__ = 'jiahuixing'
 from libs import *
 
 
+work_path = '/home/jiahuixing/bugreport/'
+
+
 class Bugreport:
     adb_device_list = list()
 
@@ -25,14 +28,26 @@ class Bugreport:
         self.adb_device_list = sorted(adb_device_list)
 
     def get_bugreport(self):
-        for i in xrange(self.adb_device_list):
+        for i in xrange(len(self.adb_device_list)):
             device = self.adb_device_list[i][0]
             now = time.strftime('%H_%M_%S')
             tpm = '%s_%s' % (get_date(), now)
-            file_path = '/home/jiahuixing/bugreport/'
-            file_name = '%s%s-%s' % (file_path, device, tpm)
-            cmd = 'adb -s %s bugreport > %s' % (device, file_name)
-            debug(color_msg('cmd'))
+            name = 'bugreport-%s-%s' % (device, tpm)
+            bug_suffix = '.txt'
+            txt_name = '%s%s' % (name, bug_suffix)
+            debug(color_msg(txt_name))
+            cmd = 'adb -s %s bugreport > %s%s' % (device, work_path, txt_name)
+            debug(cmd)
+            os.system(cmd)
+            tgz_suffix = '.tar.gz'
+            tgz_name = '%s%s' % (name, tgz_suffix)
+            debug(color_msg(tgz_name))
+            os.chdir(work_path)
+            cmd = 'tar -zcvf %s %s%s' % (tgz_name, name, bug_suffix)
+            debug(cmd)
+            os.system(cmd)
+            cmd = 'rm -rf %s' % txt_name
+            debug(cmd)
             os.system(cmd)
 
 
