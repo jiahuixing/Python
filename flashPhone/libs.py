@@ -191,30 +191,36 @@ def adb_permission():
             no_per = 1
             break
     if no_per == 1:
+        debug(color_msg('no permissions', RED))
         cmd = 'su'
         password = '1\r'
         child = pexpect.spawn(cmd, timeout=5)
         try:
             i = child.expect('：')
             if i == 0:
+                debug(color_msg('expect :'))
                 child.send(password)
                 i = child.expect('#')
                 if i == 0:
+                    debug(color_msg('expect #'))
                     cmd = 'cd /home/jiahuixing/sdk/platform-tools/\r'
                     child.send(cmd)
-                    cmd = 'ls -la\r'
-                    child.send(cmd)
+                    # cmd = 'ls -la\r'
+                    # child.send(cmd)
+                    debug(color_msg('adb kill-server'))
                     cmd = './adb kill-server\r'
                     child.send(cmd)
+                    debug(color_msg('adb start-server'))
                     cmd = './adb devices\r'
                     child.send(cmd)
+                    debug(color_msg('exit'))
                     cmd = 'exit\r'
                     child.send(cmd)
         except pexpect.EOF:
-            debug('pexpect.EOF')
+            debug('EOF')
             child.close()
         except pexpect.TIMEOUT:
-            debug('pexpect.TIMEOUT')
+            debug('TIMEOUT')
             child.close()
 
 
