@@ -211,5 +211,17 @@ def test14():
     print(time.strftime('%Y-%m-%d-%H-%M-%S'))
 
 
+def test15():
+    try:
+        cmd = 'adb shell getprop | grep ro.product.name'
+        child = os.popen(cmd)
+        build_name = child.readline().strip('\n').strip('\r').replace('[', '').replace(']', '').split(':')[1]
+        debug(build_name)
+    except IndexError:
+        print('IndexError')
+        # for line in child.readlines():
+        #     debug(line)
+
+
 if __name__ == '__main__':
-    test14()
+    test15()

@@ -21,12 +21,13 @@ class FlashPhone:
     adb_device_list = list()
     fastboot_device_list = list()
 
+    info_s = list()
+
     flag = 0
 
     def __init__(self):
         try:
             self.get_date()
-            self.to_flash_phone()
         except KeyboardInterrupt:
             print('KeyboardInterrupt')
 
@@ -44,62 +45,73 @@ class FlashPhone:
 
     @staticmethod
     def compare_date(date1, date2):
-        dt1 = str.split(date1, '.')
-        dt2 = str.split(date2, '.')
-        for i in xrange(len(dt1)):
-            tmp = int(dt1[i])
-            dt1.pop(i)
-            # noinspection PyTypeChecker
-            dt1.insert(i, tmp)
-        for j in xrange(len(dt2)):
-            tmp = int(dt2[j])
-            dt2.pop(j)
-            # noinspection PyTypeChecker
-            dt2.insert(j, tmp)
-        # debug(dt1)
-        # debug(dt2)
-        if dt1[0] > dt2[0]:
-            result = 1
-        elif dt1[0] == dt2[0]:
-            if dt1[1] > dt2[1]:
+        abc = r'[a-zA-Z]{1}'
+        pattern = re.compile(abc)
+        find = re.findall(pattern, date1)
+        if len(find) > 0:
+            result = 2
+        else:
+            dt1 = str.split(date1, '.')
+            dt2 = str.split(date2, '.')
+            for i in xrange(len(dt1)):
+                tmp = int(dt1[i])
+                dt1.pop(i)
+                # noinspection PyTypeChecker
+                dt1.insert(i, tmp)
+            for j in xrange(len(dt2)):
+                tmp = int(dt2[j])
+                dt2.pop(j)
+                # noinspection PyTypeChecker
+                dt2.insert(j, tmp)
+            # debug(dt1)
+            # debug(dt2)
+            if dt1[0] > dt2[0]:
                 result = 1
-            elif dt1[1] == dt2[1]:
-                if dt1[2] > dt2[2]:
+            elif dt1[0] == dt2[0]:
+                if dt1[1] > dt2[1]:
                     result = 1
+                elif dt1[1] == dt2[1]:
+                    if dt1[2] > dt2[2]:
+                        result = 1
+                    else:
+                        result = 2
                 else:
                     result = 2
             else:
                 result = 2
-        else:
-            result = 2
 
         return result
+
+    def get_info(self):
+        debug('date=%s,xml=%s' % (self.date, self.xml))
+        info_s = list()
+        root = ET.parse(self.xml)
+        if root:
+            tag = 'device'
+            contents = root.findall(tag)
+            for content in contents:
+                tmp = list()
+                if isinstance(content, ET.Element):
+                    children = list(content)
+                    # debug(children)
+                    for child in children:
+                        if isinstance(child, ET.Element):
+                            # debug(color_msg('tag:%s,text:%s' % (child.tag, child.text)))
+                            tmp.append(child.text)
+                    tmp[1] = tmp[1] % (tmp[0], self.date)
+                    # debug(tmp)
+                info_s.append(tmp)
+        # debug(color_msg(info_s))
+        self.info_s = info_s
 
     # noinspection PyMethodMayBeStatic
     def download_tgz(self):
         msg = 'download_tgz'
         print(color_msg(msg, GREEN, WHITE))
         os.chdir(WORK_PATH)
-        info_s = list()
         try:
-            debug('date=%s,xml=%s' % (self.date, self.xml))
-            root = ET.parse(self.xml)
-            if root:
-                tag = 'device'
-                contents = root.findall(tag)
-                for content in contents:
-                    tmp = list()
-                    if isinstance(content, ET.Element):
-                        children = list(content)
-                        # debug(children)
-                        for child in children:
-                            if isinstance(child, ET.Element):
-                                # debug(color_msg('tag:%s,text:%s' % (child.tag, child.text)))
-                                tmp.append(child.text)
-                        tmp[1] = tmp[1] % (tmp[0], self.date)
-                        # debug(tmp)
-                    info_s.append(tmp)
-            # debug(color_msg(info_s))
+            self.get_info()
+            info_s = self.info_s
             for i in xrange(len(info_s)):
                 print(color_msg('%s:%s' % (i, info_s[i][0]), RED))
             i = input('Pls input ur choice num:')
@@ -154,6 +166,34 @@ class FlashPhone:
             self.folder = file_name[0:-len('_f0e572b4f6.tgz')]
             # debug('folder=%s' % self.folder)
             self.flag += 1
+
+    # noinspection PyMethodMayBeStatic
+    def input_msg(self, input_type):
+        if len(self.adb_device_list) > 0:
+            input_msg = 'Pls input ur choice num:'
+            i = input(input_msg)
+            if isinstance(i, int):
+                pass
+            if input_type == 0:
+                pass
+            elif input_type == 1:
+                pass
+
+    # noinspection PyMethodMayBeStatic
+    def get_adb_device_type(self):
+        adb_device_type = None
+        try:
+            cmd = 'adb shell getprop | grep ro.product.name'
+            child = os.popen(cmd)
+            build_name = child.readline().strip('\n').strip('\r').replace('[', '').replace(']', '').split(':')[1]
+            debug(build_name)
+            for i in xrange(len(self.info_s)):
+                if build_name == self.info_s[i][0]:
+                    adb_device_type = i
+        except IndexError:
+            print('IndexError')
+        finally:
+            return adb_device_type
 
     def reboot_phone(self):
         if self.flag == 2:
@@ -225,6 +265,10 @@ class FlashPhone:
         self.reboot_phone()
         self.flash_phone()
 
+    def test(self):
+        threading.Thread(target=self.input_msg(0))
+
 
 if __name__ == '__main__':
     fp = FlashPhone()
+    fp.to_flash_phone()
