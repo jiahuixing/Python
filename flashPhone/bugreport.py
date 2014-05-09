@@ -4,8 +4,8 @@ __author__ = 'jiahuixing'
 
 from libs import *
 
-
-work_path = '/home/jiahuixing/bugreport/'
+root_path = '/home/jiahuixing'
+bug_path = 'bugreport'
 
 
 class Bugreport:
@@ -28,6 +28,11 @@ class Bugreport:
         self.adb_device_list = sorted(adb_device_list)
 
     def get_bugreport(self):
+        work_path = '%s/%s/' % (root_path, bug_path)
+        debug(work_path)
+        os.chdir(root_path)
+        if not os.path.exists(bug_path):
+            os.mkdir(bug_path)
         for i in xrange(len(self.adb_device_list)):
             device = self.adb_device_list[i][0]
             now = time.strftime('%H_%M_%S')
