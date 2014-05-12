@@ -248,7 +248,7 @@ class FlashPhone:
                                 # debug(cmd)
                                 os.system(cmd)
                                 cmd = './%s' % flash_script
-                                # debug(cmd)
+                                debug(color_msg(cmd))
                                 os.system(cmd)
         except OSError:
             print('OSError')
@@ -256,7 +256,7 @@ class FlashPhone:
             os.chdir(WORK_PATH)
             cmd = 'rm -rf %s' % self.folder
             # debug(cmd)
-            debug(color_msg('rm folder.', RED, WHITE))
+            debug(color_msg('rm folder %s.' % self.folder, RED, WHITE))
             os.system(cmd)
 
     def to_flash_phone(self):
