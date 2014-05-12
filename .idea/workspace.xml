@@ -4,8 +4,8 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="flash phone">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flashPhone/pidcat.py" />
+    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="add file pidcat.py">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/flashPhone/pidcat.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Python.iws" />
@@ -39,7 +39,7 @@
       <file leaf-file-name="flashphone.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flashPhone/flashphone.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="158" column="30" selection-start="5151" selection-end="5151" vertical-scroll-proportion="0.41304347" vertical-offset="2066" max-vertical-offset="4185">
+            <state line="156" column="43" selection-start="5077" selection-end="5077" vertical-scroll-proportion="0.5672878" vertical-offset="2066" max-vertical-offset="4185">
               <folding>
                 <element signature="e#51#60#0" expanded="true" />
               </folding>
@@ -939,30 +939,34 @@
       <created>1399877627792</created>
       <updated>1399877627792</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="add file pidcat.py">
+      <created>1399890016062</created>
+      <updated>1399890016062</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="52" y="-19" width="1677" height="937" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3298292" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39027596" sideWeight="0.67018867" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.49962264" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32802126" sideWeight="0.49962264" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290566" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3997773" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28818062" sideWeight="0.50037736" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1654952" sideWeight="0.2182628" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24377458" sideWeight="0.67018867" order="7" side_tool="false" content_ui="tabs" x="616" y="74" width="514" height="898" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298292" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32802126" sideWeight="0.49962264" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17433962" sideWeight="0.7118194" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18955873" sideWeight="0.6662252" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3997773" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1654952" sideWeight="0.2182628" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28818062" sideWeight="0.50037736" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33027524" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24377458" sideWeight="0.67018867" order="7" side_tool="false" content_ui="tabs" x="616" y="74" width="514" height="898" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298292" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28178245" sideWeight="0.6" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298292" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28440368" sideWeight="0.49962264" order="4" side_tool="false" content_ui="tabs" />
@@ -1003,7 +1007,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="显示cost_time" />
     <MESSAGE value="debug_msg" />
     <MESSAGE value="delete 未用资源" />
     <MESSAGE value="获取android版本号" />
@@ -1028,7 +1031,8 @@
     <MESSAGE value="bugreport" />
     <MESSAGE value="flash phone cp files" />
     <MESSAGE value="flash phone" />
-    <option name="LAST_COMMIT_MESSAGE" value="flash phone" />
+    <MESSAGE value="add file pidcat.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="add file pidcat.py" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1322,7 +1326,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flashPhone/flashphone.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="158" column="30" selection-start="5151" selection-end="5151" vertical-scroll-proportion="0.41304347" vertical-offset="2066" max-vertical-offset="4185">
+        <state line="156" column="43" selection-start="5077" selection-end="5077" vertical-scroll-proportion="0.5672878" vertical-offset="2066" max-vertical-offset="4185">
           <folding>
             <element signature="e#51#60#0" expanded="true" />
           </folding>
