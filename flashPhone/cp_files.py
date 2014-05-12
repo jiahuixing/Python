@@ -9,11 +9,12 @@ valid_suffix = [
     'py',
     'xml',
     'ini',
+    'sh',
 ]
 
 ignore_files = [
     'cp_files.py',
-    'duokanboxtest.py',
+    'flash_phone_test.py',
 ]
 
 
@@ -28,13 +29,14 @@ def file_suffix(file_name):
 
 
 def cp_files():
-    work_path = '/home/jiahuixing/DuoKanBox'
+    work_path = '/home/jiahuixing/Python/flashPhone'
+    termini_path = '/home/jiahuixing/SVN/Tools/trunk'
     os.chdir(work_path)
     for file_name in os.listdir(work_path):
         if file_name not in ignore_files:
             if file_suffix(file_name) == 1:
                 debug(file_name)
-                cmd = 'sudo cp %s /home/jiahuixing/SVN/Music/trunk' % file_name
+                cmd = 'sudo cp %s %s' % (file_name, termini_path)
                 child = pexpect.spawn(cmd)
                 try:
                     i = child.expect('jiahuixing:')

@@ -179,6 +179,7 @@ def json_analyse():
 
 def debug(msg, flag=1):
     if flag == 1:
+        print('---------------------------------')
         print(msg)
 
 
