@@ -4,8 +4,8 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="add file pidcat.py">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/flashPhone/pidcat.py" afterPath="" />
+    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment=" delete file pidcat.py">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flashPhone/flashphone.py" afterPath="$PROJECT_DIR$/flashPhone/flashphone.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Python.iws" />
@@ -39,7 +39,7 @@
       <file leaf-file-name="flashphone.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flashPhone/flashphone.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="156" column="43" selection-start="5077" selection-end="5077" vertical-scroll-proportion="0.5672878" vertical-offset="2066" max-vertical-offset="4185">
+            <state line="257" column="0" selection-start="9326" selection-end="9326" vertical-scroll-proportion="0.4099379" vertical-offset="3657" max-vertical-offset="4185">
               <folding>
                 <element signature="e#51#60#0" expanded="true" />
               </folding>
@@ -943,7 +943,11 @@
       <created>1399890016062</created>
       <updated>1399890016062</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary=" delete file pidcat.py">
+      <created>1399890231923</created>
+      <updated>1399890231923</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1007,7 +1011,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="debug_msg" />
     <MESSAGE value="delete 未用资源" />
     <MESSAGE value="获取android版本号" />
     <MESSAGE value="增加一些说明" />
@@ -1032,7 +1035,8 @@
     <MESSAGE value="flash phone cp files" />
     <MESSAGE value="flash phone" />
     <MESSAGE value="add file pidcat.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="add file pidcat.py" />
+    <MESSAGE value=" delete file pidcat.py" />
+    <option name="LAST_COMMIT_MESSAGE" value=" delete file pidcat.py" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1326,7 +1330,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flashPhone/flashphone.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="156" column="43" selection-start="5077" selection-end="5077" vertical-scroll-proportion="0.5672878" vertical-offset="2066" max-vertical-offset="4185">
+        <state line="257" column="0" selection-start="9326" selection-end="9326" vertical-scroll-proportion="0.4099379" vertical-offset="3657" max-vertical-offset="4185">
           <folding>
             <element signature="e#51#60#0" expanded="true" />
           </folding>

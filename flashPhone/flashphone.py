@@ -26,10 +26,7 @@ class FlashPhone:
     flag = 0
 
     def __init__(self):
-        try:
-            self.get_date()
-        except KeyboardInterrupt:
-            print('KeyboardInterrupt')
+        self.get_date()
 
     def get_date(self):
         if len(sys.argv) > 1:
@@ -260,10 +257,13 @@ class FlashPhone:
             os.system(cmd)
 
     def to_flash_phone(self):
-        self.download_tgz()
-        self.un_tar()
-        self.reboot_phone()
-        self.flash_phone()
+        try:
+            self.download_tgz()
+            self.un_tar()
+            self.reboot_phone()
+            self.flash_phone()
+        except KeyboardInterrupt:
+            print('KeyboardInterrupt')
 
     def test(self):
         threading.Thread(target=self.input_msg(0))
