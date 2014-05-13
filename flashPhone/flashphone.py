@@ -106,46 +106,39 @@ class FlashPhone:
         msg = 'download_tgz'
         print(color_msg(msg, GREEN, WHITE))
         os.chdir(WORK_PATH)
-        try:
-            self.get_info()
-            info_s = self.info_s
-            for i in xrange(len(info_s)):
-                print(color_msg('%s:%s' % (i, info_s[i][0]), RED))
-            i = input('Pls input ur choice num:')
-            if isinstance(i, int):
-                main_url = 'http://ota.n.miui.com/ota/'
-                page = urllib2.urlopen(main_url, timeout=5).read()
-                if self.date in page:
-                    td_main_url = main_url + self.date + '/'
-                    # debug(td_main_url)
-                    choice = info_s[i]
-                    rom = choice[0]
-                    pat = r'%s' % choice[1]
-                    debug(color_msg('rom=%s' % rom))
-                    debug(color_msg('pat=%s' % pat))
-                    page = urllib2.urlopen(td_main_url, timeout=5).read()
-                    pattern = re.compile(pat)
-                    # debug('pattern=%s' % pattern)
-                    f_result = re.findall(pattern, page)
-                    if f_result:
-                        tgz_name = list(set(f_result))[0]
-                        # debug('tgz_name=%s' % tgz_name)
-                        td_tgz_url = td_main_url + tgz_name
-                        # debug('td_tgz_url=%s' % td_tgz_url)
-                        cmd = 'wget %s' % td_tgz_url
-                        # debug(cmd)
-                        os.system(cmd)
-                        self.file_name = tgz_name
-                        if os.path.exists(self.file_name):
-                            self.flag += 1
-                    else:
-                        print('%s file not find on the site.' % self.date)
-        except IOError:
-            print('IOError')
-        except TypeError:
-            print('TypeError')
-        except KeyboardInterrupt:
-            print('KeyboardInterrupt')
+        self.get_info()
+        info_s = self.info_s
+        for i in xrange(len(info_s)):
+            print(color_msg('%s:%s' % (i, info_s[i][0]), RED))
+        i = input('Pls input ur choice num:')
+        if isinstance(i, int):
+            main_url = 'http://ota.n.miui.com/ota/'
+            page = urllib2.urlopen(main_url, timeout=5).read()
+            if self.date in page:
+                td_main_url = main_url + self.date + '/'
+                # debug(td_main_url)
+                choice = info_s[i]
+                rom = choice[0]
+                pat = r'%s' % choice[1]
+                debug(color_msg('rom=%s' % rom))
+                debug(color_msg('pat=%s' % pat))
+                page = urllib2.urlopen(td_main_url, timeout=5).read()
+                pattern = re.compile(pat)
+                # debug('pattern=%s' % pattern)
+                f_result = re.findall(pattern, page)
+                if f_result:
+                    tgz_name = list(set(f_result))[0]
+                    # debug('tgz_name=%s' % tgz_name)
+                    td_tgz_url = td_main_url + tgz_name
+                    # debug('td_tgz_url=%s' % td_tgz_url)
+                    cmd = 'wget %s' % td_tgz_url
+                    # debug(cmd)
+                    os.system(cmd)
+                    self.file_name = tgz_name
+                    if os.path.exists(self.file_name):
+                        self.flag += 1
+                else:
+                    print('%s file not find on the site.' % self.date)
 
     # noinspection PyMethodMayBeStatic
     def un_tar(self):
@@ -187,8 +180,6 @@ class FlashPhone:
             for i in xrange(len(self.info_s)):
                 if build_name == self.info_s[i][0]:
                     adb_device_type = i
-        except IndexError:
-            print('IndexError')
         finally:
             return adb_device_type
 
@@ -213,43 +204,40 @@ class FlashPhone:
                 time.sleep(3)
 
     def flash_phone(self):
-        try:
-            if self.flag == 3:
-                msg = 'flash_phone'
-                print(color_msg(msg, GREEN, WHITE))
+        if self.flag == 3:
+            msg = 'flash_phone'
+            print(color_msg(msg, GREEN, WHITE))
+            self.fastboot_device_list = get_fastboot_device_list()
+            while len(self.fastboot_device_list) == 0:
                 self.fastboot_device_list = get_fastboot_device_list()
-                while len(self.fastboot_device_list) == 0:
-                    self.fastboot_device_list = get_fastboot_device_list()
-                    print('Waiting for ur fastboot device.')
-                    time.sleep(3)
-                self.fastboot_device = self.fastboot_device_list[0]
-                if os.path.exists(self.folder):
-                    sh_files = list()
-                    abs_folder = os.path.abspath(self.folder)
-                    # debug(abs_folder)
-                    # debug(os.listdir(abs_folder))
-                    for file_name in os.listdir(abs_folder):
-                        if file_name.endswith('.sh'):
-                            sh_files.append(file_name)
-                    # debug(sh_files)
-                    for i in xrange(len(sh_files)):
-                        print(color_msg('%s:%s' % (i, sh_files[i]), RED, WHITE))
-                    i = input('Pls input ur choice num:')
-                    if isinstance(i, int):
-                        if i < len(sh_files):
-                            flash_script = sh_files[i]
-                            debug(color_msg('flash_script=%s' % flash_script, RED, WHITE))
-                            os.chdir(self.folder)
-                            if os.path.exists(flash_script):
-                                cmd = 'chmod a+x %s' % flash_script
-                                # debug(cmd)
-                                os.system(cmd)
-                                cmd = './%s' % flash_script
-                                debug(color_msg(cmd))
-                                os.system(cmd)
-        except OSError:
-            print('OSError')
-        finally:
+                print('Waiting for ur fastboot device.')
+                time.sleep(3)
+            self.fastboot_device = self.fastboot_device_list[0]
+            if os.path.exists(self.folder):
+                sh_files = list()
+                abs_folder = os.path.abspath(self.folder)
+                # debug(abs_folder)
+                # debug(os.listdir(abs_folder))
+                for file_name in os.listdir(abs_folder):
+                    if file_name.endswith('.sh'):
+                        sh_files.append(file_name)
+                # debug(sh_files)
+                for i in xrange(len(sh_files)):
+                    print(color_msg('%s:%s' % (i, sh_files[i]), RED, WHITE))
+                i = input('Pls input ur choice num:')
+                if isinstance(i, int):
+                    if i < len(sh_files):
+                        flash_script = sh_files[i]
+                        debug(color_msg('flash_script=%s' % flash_script, RED, WHITE))
+                        os.chdir(self.folder)
+                        if os.path.exists(flash_script):
+                            cmd = 'chmod a+x %s' % flash_script
+                            # debug(cmd)
+                            os.system(cmd)
+                            cmd = './%s' % flash_script
+                            debug(color_msg(cmd))
+                            os.system(cmd)
+        if self.folder != '':
             os.chdir(WORK_PATH)
             cmd = 'rm -rf %s' % self.folder
             # debug(cmd)
@@ -264,6 +252,14 @@ class FlashPhone:
             self.flash_phone()
         except KeyboardInterrupt:
             print('KeyboardInterrupt')
+        except IndexError:
+            print('IndexError')
+        except OSError:
+            print('OSError')
+        except IOError:
+            print('IOError')
+        except TypeError:
+            print('TypeError')
 
     def test(self):
         threading.Thread(target=self.input_msg(0))
