@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="dj friday">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen_url/friday.py" afterPath="$PROJECT_DIR$/gen_url/friday.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cp_files.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/baidu_list.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/convertTar.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/downTar.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/flashPhone/cp_files.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/friday.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/retarfile.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen_url/friday_lib.py" afterPath="$PROJECT_DIR$/gen_url/friday_lib.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -49,7 +55,7 @@
       <file leaf-file-name="tmp_libs.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gen_url/tmp_libs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="464" column="16" selection-start="13042" selection-end="13042" vertical-scroll-proportion="0.0" vertical-offset="6700" max-vertical-offset="9060">
+            <state line="464" column="16" selection-start="13042" selection-end="13042" vertical-scroll-proportion="0.0" vertical-offset="6960" max-vertical-offset="9120">
               <folding />
             </state>
           </provider>
@@ -58,25 +64,36 @@
       <file leaf-file-name="tmp_getfile_url.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gen_url/tmp_getfile_url.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="45" selection-start="795" selection-end="795" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735">
+            <state line="34" column="45" selection-start="795" selection-end="795" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="735">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="friday.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="friday.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gen_url/friday.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="32" selection-start="618" selection-end="618" vertical-scroll-proportion="0.40735695" vertical-offset="151" max-vertical-offset="885">
+            <state line="20" column="34" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="friday_lib.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="cp_files.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cp_files.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="25" selection-start="596" selection-end="596" vertical-scroll-proportion="0.0" vertical-offset="278" max-vertical-offset="1035">
+              <folding>
+                <element signature="e#78#87#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="friday_lib.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gen_url/friday_lib.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="363" column="31" selection-start="10606" selection-end="10606" vertical-scroll-proportion="0.0" vertical-offset="4936" max-vertical-offset="5700">
+            <state line="11" column="13" selection-start="189" selection-end="189" vertical-scroll-proportion="-0.30570653" vertical-offset="360" max-vertical-offset="5700">
               <folding />
             </state>
           </provider>
@@ -145,6 +162,7 @@
         <option value="$PROJECT_DIR$/gen_url/tmp_libs.py" />
         <option value="$PROJECT_DIR$/gen_url/dj.py" />
         <option value="$PROJECT_DIR$/gen_url/friday.py" />
+        <option value="$PROJECT_DIR$/cp_files.py" />
         <option value="$PROJECT_DIR$/gen_url/friday_lib.py" />
       </list>
     </option>
@@ -221,7 +239,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -274,6 +291,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -459,9 +477,6 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
-      <method />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -483,6 +498,9 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -948,56 +966,38 @@
       <created>1400048291431</created>
       <updated>1400048291431</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="dj friday">
+      <created>1400055902074</created>
+      <updated>1400055902074</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="52" y="-19" width="1677" height="937" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298292" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39027596" sideWeight="0.67018867" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.49962264" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290566" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28178245" sideWeight="0.6" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3997773" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28818062" sideWeight="0.50037736" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1654952" sideWeight="0.2182628" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24377458" sideWeight="0.67018867" order="7" side_tool="false" content_ui="tabs" x="616" y="74" width="514" height="898" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298292" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32802126" sideWeight="0.49962264" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290566" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17433962" sideWeight="0.7118194" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18893723" sideWeight="0.6662252" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19080174" sideWeight="0.6662252" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3997773" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1654952" sideWeight="0.2182628" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28818062" sideWeight="0.50037736" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33027524" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24377458" sideWeight="0.67018867" order="7" side_tool="false" content_ui="tabs" x="616" y="74" width="514" height="898" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298292" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28178245" sideWeight="0.6" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298292" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28440368" sideWeight="0.49962264" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28440368" sideWeight="0.49962264" order="4" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298292" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39027596" sideWeight="0.67018867" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.49962264" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290566" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28178245" sideWeight="0.6" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3997773" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28818062" sideWeight="0.50037736" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1654952" sideWeight="0.2182628" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24377458" sideWeight="0.67018867" order="7" side_tool="false" content_ui="tabs" x="616" y="74" width="514" height="898" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298292" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32802126" sideWeight="0.49962264" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17433962" sideWeight="0.7118194" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18893723" sideWeight="0.6662252" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28440368" sideWeight="0.49962264" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33027524" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -1047,6 +1047,29 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/gen_url/friday.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="34" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="885">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cp_files.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="14" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0" vertical-offset="301" max-vertical-offset="1035">
+          <folding>
+            <element signature="e#78#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen_url/friday_lib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="363" column="31" selection-start="10606" selection-end="10606" vertical-scroll-proportion="0.0" vertical-offset="5445" max-vertical-offset="5730">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/flashPhone/do_operate.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="35" selection-start="1273" selection-end="1273" vertical-scroll-proportion="0.0" vertical-offset="92" max-vertical-offset="780" />
@@ -1136,11 +1159,6 @@
         <state line="22" column="24" selection-start="537" selection-end="537" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="420" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/convertTar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="29" selection-start="2030" selection-end="2030" vertical-scroll-proportion="0.55093557" vertical-offset="725" max-vertical-offset="1455" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="42" selection-end="42" vertical-scroll-proportion="0.1171875" vertical-offset="0" max-vertical-offset="512" />
@@ -1196,11 +1214,6 @@
         <state line="8" column="23" selection-start="151" selection-end="151" vertical-scroll-proportion="0.24742268" vertical-offset="0" max-vertical-offset="485" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/downTar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="543" selection-end="543" vertical-scroll-proportion="1.0206186" vertical-offset="0" max-vertical-offset="2250" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/flashPhone/flashphone.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="0" selection-start="143" selection-end="143" vertical-scroll-proportion="0.16348773" vertical-offset="0" max-vertical-offset="734" />
@@ -1223,19 +1236,9 @@
         <state line="13" column="17" selection-start="197" selection-end="197" vertical-scroll-proportion="-0.031055901" vertical-offset="195" max-vertical-offset="1980" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/baidu_list.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="86" selection-start="760" selection-end="760" vertical-scroll-proportion="0.33333334" vertical-offset="292" max-vertical-offset="930" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/flashPhone/flashphone.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="152" column="24" selection-start="4864" selection-end="4864" vertical-scroll-proportion="0.3395445" vertical-offset="2116" max-vertical-offset="4125" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flashPhone/cp_files.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="8" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="855" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/flashPhone/flash_phone_info.xml">
@@ -1295,35 +1298,38 @@
     </entry>
     <entry file="file:///usr/lib/python2.7/os.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="549" column="33" selection-start="17741" selection-end="17743" vertical-scroll-proportion="0.33239037" vertical-offset="8000" max-vertical-offset="11190">
-          <folding />
-        </state>
+        <state line="549" column="33" selection-start="17741" selection-end="17743" vertical-scroll-proportion="0.33239037" vertical-offset="8000" max-vertical-offset="11190" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.PyCharm30/system/python_stubs/348993582/posix.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="666" column="4" selection-start="15672" selection-end="15672" vertical-scroll-proportion="0.45504087" vertical-offset="9656" max-vertical-offset="23160">
-          <folding />
-        </state>
+        <state line="666" column="4" selection-start="15672" selection-end="15672" vertical-scroll-proportion="0.45504087" vertical-offset="9656" max-vertical-offset="23160" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.PyCharm30/system/python_stubs/348993582/__builtin__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2677" column="26" selection-start="91284" selection-end="91288" vertical-scroll-proportion="0.33239037" vertical-offset="39920" max-vertical-offset="77445">
+        <state line="2677" column="26" selection-start="91284" selection-end="91288" vertical-scroll-proportion="0.33239037" vertical-offset="39920" max-vertical-offset="77445" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cp_files.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="25" selection-start="596" selection-end="596" vertical-scroll-proportion="0.0" vertical-offset="278" max-vertical-offset="1035">
+          <folding>
+            <element signature="e#78#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen_url/friday.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="34" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gen_url/friday_lib.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="363" column="31" selection-start="10606" selection-end="10606" vertical-scroll-proportion="0.0" vertical-offset="4936" max-vertical-offset="5700">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gen_url/friday.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="32" selection-start="618" selection-end="618" vertical-scroll-proportion="0.40735695" vertical-offset="151" max-vertical-offset="885">
+        <state line="11" column="13" selection-start="189" selection-end="189" vertical-scroll-proportion="-0.30570653" vertical-offset="360" max-vertical-offset="5700">
           <folding />
         </state>
       </provider>

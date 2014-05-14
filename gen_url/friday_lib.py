@@ -9,7 +9,7 @@ __author__ = 'jiahuixing'
 import os
 
 #work path:put this python file into this folder
-WORK_PATH = '/home/jiahuixing/Python/gen_url'
+WORK_PATH = '/data/ota'
 
 IGNORE_OTA = 'ota'
 GLOBAL_SIGN = 'global'
