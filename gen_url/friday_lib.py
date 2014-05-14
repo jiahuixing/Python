@@ -310,6 +310,7 @@ def walk_dir(folder_name):
 
 
 def get_download_url(folder, version):
+    debug_msg('------get_download_url------')
     xiaomi_url, redmi_url, pad_url = '', '', ''
     try:
         info_xiaomi, info_redmi, info_pad = walk_dir(folder)
@@ -347,3 +348,29 @@ def to_get_url(info, version):
         return m_url
     else:
         print('Wrong info.')
+
+
+def print_url(url):
+    if url != '':
+        print(url)
+
+
+def write_to_file(xiaomi_url, redmi_url, pad_url, flag=0):
+    if flag == 1:
+        doc_name = 'url.txt'
+        os.chdir(WORK_PATH)
+        mode = 'a+'
+        if os.path.exists(doc_name):
+            os.remove(doc_name)
+        if xiaomi_url != '':
+            file_open = open(doc_name, mode)
+            file_open.writelines(xiaomi_url)
+            file_open.close()
+        if redmi_url != '':
+            file_open = open(doc_name, mode)
+            file_open.writelines(redmi_url)
+            file_open.close()
+        if pad_url != '':
+            file_open = open(doc_name, mode)
+            file_open.writelines(pad_url)
+            file_open.close()

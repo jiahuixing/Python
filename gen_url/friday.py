@@ -39,12 +39,12 @@ if __name__ == '__main__':
     generate = Generate()
     debug_msg('m_folder=%s, m_version=%s' % (generate.m_folder, generate.m_version))
     xiaomi_url, redmi_url, pad_url = get_download_url(generate.m_folder, generate.m_version)
-    if xiaomi_url != '':
-        print(xiaomi_url)
-    if redmi_url != '':
-        print(redmi_url)
-    if pad_url != '':
-        print(pad_url)
+
+    print_url(xiaomi_url)
+    print_url(redmi_url)
+    print_url(pad_url)
+
+    write_to_file(xiaomi_url, redmi_url, pad_url)
 
     end_time = time.time()
     cost_time = int(end_time - start_time)
