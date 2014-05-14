@@ -35,9 +35,10 @@ if __name__ == '__main__':
     start_time = time.time()
 
     for i in xrange(len(Rom_Properties)):
-        debug_msg('i=%s,i_length=%s' % (i, len(Rom_Properties[i])))
+        print('i=%s,i_length=%s' % (i, len(Rom_Properties[i])))
     generate = Generate()
-    xiaomi_url, redmi_url, pad_url = to_get_url(generate.m_folder, generate.m_version)
+    debug_msg('m_folder=%s, m_version=%s' % (generate.m_folder, generate.m_version))
+    xiaomi_url, redmi_url, pad_url = get_download_url(generate.m_folder, generate.m_version)
     if xiaomi_url != '':
         print(xiaomi_url)
     if redmi_url != '':

@@ -107,7 +107,7 @@ def debug_msg(msg, flag=1):
 
 
 def get_file_md5(file_name):
-    print('------get_file_md5------')
+    # print('------get_file_md5------')
     if not os.path.isfile(file_name):
         return
     my_hash = hashlib.md5()
@@ -122,7 +122,7 @@ def get_file_md5(file_name):
 
 
 def get_rom_size(file_name):
-    print('------get_rom_size------')
+    # print('------get_rom_size------')
     size = os.path.getsize(file_name) / 1024 / 1024
     size = str(size) + 'M'
     return size
@@ -169,7 +169,7 @@ def get_rom_idx(file_name):
 
 
 def get_rom_type(name):
-    debug_msg('get_rom_type')
+    # debug_msg('------get_rom_type------')
     rom_type = ''
     for i in xrange(len(Rom_Types)):
         if Rom_Types[i][0] in name:
@@ -179,7 +179,7 @@ def get_rom_type(name):
 
 
 def get_op_type(file_name):
-    print('------get_op_type------')
+    # debug_msg('------get_op_type------')
     op_type = -1
     name = str.lower(file_name)
     for i in xrange(len(Ops_Types)):
@@ -193,7 +193,7 @@ def get_op_type(file_name):
 
 
 def get_area_type(file_name):
-    print('------get_area_type------')
+    # debug_msg('------get_area_type------')
     area_type = ''
     name = str.lower(file_name)
     if GLOBAL_SIGN in name:
@@ -210,12 +210,12 @@ def get_area_type(file_name):
 
 
 def get_dev_type(file_name):
-    print('------get_dev_type------')
+    # debug_msg('------get_dev_type------')
     dev_type = ''
     op_type = get_op_type(file_name)
     if op_type != -1:
         op_name = Ops_Types[op_type][1]
-        debug_msg('op_name=%s' % op_name)
+        # debug_msg('op_name=%s' % op_name)
         dev_type = op_name
     else:
         dev_version = r'[0-9]{1}\.[0-9]{1,2}\.[0-9]{1,2}\_'
@@ -237,20 +237,21 @@ def get_dev_type(file_name):
             find_type = 'stable.'
             result = stable_search_result
             dev_type = Dev_Types[2]
-        else:
-            print('Not find.')
+        # else:
+        #     print('Not find.')
 
-        if result and find_type:
-            debug_msg(find_type)
-            debug_msg(result)
+        # if result and find_type:
+        #     A(find_type)
+        #     debug_msg(result)
         area_type = get_area_type(file_name)
         if area_type != '':
             dev_type = area_type + dev_type
+    # debug_msg('dev_type=%s' % dev_type)
     return dev_type
 
 
 def walk_dir(folder_name):
-    print('------walk_dir------')
+    debug_msg('------walk_dir------')
     info_xiaomi = dict()
     info_redmi = dict()
     info_pad = dict()
@@ -267,20 +268,27 @@ def walk_dir(folder_name):
                 model_idx, idx, str_idx = get_rom_idx(file_name)
                 min_idx = '0'
                 if str_idx != min_idx:
-                    debug_msg(file_name)
-                    debug_msg('model_idx=%s,idx=%s' % (model_idx, idx))
+                    # debug_msg(file_name)
+                    # debug_msg('model_idx=%s,idx=%s' % (model_idx, idx))
                     dev_type = get_dev_type(file_name)
-                    name = '%s%s' % (Rom_Properties[model_idx][idx], dev_type)
+                    name = '%s%s' % (Rom_Properties[model_idx][idx][2], dev_type)
                     md5 = get_file_md5(file_name)
                     size = get_rom_size(file_name)
                     rom_type = get_rom_type(file_name)
-                    debug_msg('size=%s,rom_type=%s,md5=%s' % (size, rom_type, md5))
+                    # debug_msg('size=%s,rom_type=%s,md5=%s' % (size, rom_type, md5))
                     tmp.append(model_idx)
                     tmp.append(idx)
                     tmp.append(md5)
                     tmp.append(size)
                     tmp.append(rom_type)
                     tmp.append(file_name)
+                    debug_msg('----------------------------------------------------')
+                    debug_msg('file_name = %s' % file_name)
+                    debug_msg('name = %s' % name)
+                    debug_msg('md5 = %s' % md5)
+                    debug_msg('size = %s' % size)
+                    debug_msg('rom_type = %s' % rom_type)
+                    debug_msg('----------------------------------------------------')
                     if model_idx == 0:
                         keys = info_xiaomi.keys()
                         if name not in keys:
@@ -301,8 +309,22 @@ def walk_dir(folder_name):
         print('folder:%s not exist.' % folder_name)
 
 
+def get_download_url(folder, version):
+    xiaomi_url, redmi_url, pad_url = '', '', ''
+    try:
+        info_xiaomi, info_redmi, info_pad = walk_dir(folder)
+        # info = walk_dir(folder))
+        xiaomi_url = to_get_url(info_xiaomi, version)
+        redmi_url = to_get_url(info_redmi, version)
+        pad_url = to_get_url(info_pad, version)
+    except KeyboardInterrupt:
+        print('KeyboardInterrupt')
+    finally:
+        return xiaomi_url, redmi_url, pad_url
+
+
 def to_get_url(info, version):
-    head = '【升级提醒】\n—————————————————————————————————————————————————— \n\n'
+    head = '\n【升级提醒】\n—————————————————————————————————————————————————— \n\n'
     body = ''
     end = ' '
     m_url = ''
