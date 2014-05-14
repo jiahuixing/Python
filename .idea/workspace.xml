@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="dj friday">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen_url/friday.py" afterPath="$PROJECT_DIR$/gen_url/friday.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen_url/friday_lib.py" afterPath="$PROJECT_DIR$/gen_url/friday_lib.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/jiahuixing.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/jiahuixing.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gen_url/new_friday.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen_url/friday.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Python.iws" />
@@ -65,22 +64,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cp_files.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="cp_files.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cp_files.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="25" selection-start="596" selection-end="596" vertical-scroll-proportion="0.0" vertical-offset="486" max-vertical-offset="1035">
+            <state line="48" column="32" selection-start="1156" selection-end="1156" vertical-scroll-proportion="0.75409836" vertical-offset="306" max-vertical-offset="1035">
               <folding>
                 <element signature="e#78#87#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="friday.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gen_url/friday.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="47" selection-start="1092" selection-end="1092" vertical-scroll-proportion="0.76502734" vertical-offset="270" max-vertical-offset="885">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -293,16 +283,16 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="151" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="168" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="310" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="307" />
     <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="175" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="632" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="628" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1072" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="320" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="317" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="317" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="314" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
@@ -973,7 +963,11 @@
       <created>1400064403110</created>
       <updated>1400064403110</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="dj friday">
+      <created>1400065221980</created>
+      <updated>1400065221980</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1050,13 +1044,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gen_url/friday.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="34" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="885">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cp_files.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="14" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0" vertical-offset="301" max-vertical-offset="1035">
@@ -1325,17 +1312,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cp_files.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="25" selection-start="596" selection-end="596" vertical-scroll-proportion="0.0" vertical-offset="278" max-vertical-offset="1035">
+        <state line="48" column="32" selection-start="1156" selection-end="1156" vertical-scroll-proportion="0.75409836" vertical-offset="306" max-vertical-offset="1035">
           <folding>
             <element signature="e#78#87#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gen_url/friday.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="47" selection-start="1092" selection-end="1092" vertical-scroll-proportion="0.76502734" vertical-offset="270" max-vertical-offset="885">
-          <folding />
         </state>
       </provider>
     </entry>
