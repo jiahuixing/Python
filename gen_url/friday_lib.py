@@ -8,6 +8,7 @@ __author__ = 'jiahuixing'
 
 import os
 
+# WORK_PATH = '/home/jiahuixing/Python/gen_url'
 WORK_PATH = '/data/ota'
 
 IGNORE_OTA = 'ota'
@@ -282,6 +283,7 @@ def walk_dir(folder_name):
                     tmp.append(size)
                     tmp.append(rom_type)
                     tmp.append(file_name)
+                    tmp.append(name)
                     debug_msg('----------------------------------------------------')
                     debug_msg('file_name = %s' % file_name)
                     debug_msg('name = %s' % name)
@@ -342,7 +344,9 @@ def to_get_url(info, version):
                         size = tmp[3]
                         rom_type = tmp[4]
                         file_name = tmp[5]
-                        body = '%s%s %s MD5: %s\n%s%s \n\n' % (body, rom_type, size, md5, domain, file_name)
+                        name = tmp[6]
+                        body = '%s%s MIUI %s %s \n%s%s\nsize:%s    md5:%s\n' % (
+                            body, name, version, rom_type, domain, file_name, size, md5)
                     body += '—————————————————————————————————————————————————— \n\n'
             m_url = head + body + end
         return m_url
