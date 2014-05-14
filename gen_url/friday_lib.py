@@ -8,7 +8,6 @@ __author__ = 'jiahuixing'
 
 import os
 
-#work path:put this python file into this folder
 WORK_PATH = '/data/ota'
 
 IGNORE_OTA = 'ota'
@@ -168,11 +167,11 @@ def get_rom_idx(file_name):
     return model_idx, idx, str_idx
 
 
-def get_rom_type(name):
+def get_rom_type(file_name):
     # debug_msg('------get_rom_type------')
     rom_type = ''
     for i in xrange(len(Rom_Types)):
-        if Rom_Types[i][0] in name:
+        if Rom_Types[i][0] in file_name:
             rom_type = Rom_Types[i][1]
             break
     return rom_type
@@ -224,18 +223,19 @@ def get_dev_type(file_name):
         pattern_stable = re.compile(stable_version)
         dev_search_result = re.findall(pattern_dev, file_name)
         stable_search_result = re.findall(pattern_stable, file_name)
-        find_type = False
-        result = False
+        # find_type = False
+        # result = False
         if dev_search_result:
-            find_type = 'dev.'
-            result = dev_search_result
-            if 'alpha' in file_name:
+            # find_type = 'dev.'
+            # result = dev_search_result
+            name = str.lower(file_name)
+            if 'alpha' in name:
                 dev_type = Dev_Types[0]
             else:
                 dev_type = Dev_Types[1]
         elif stable_search_result:
-            find_type = 'stable.'
-            result = stable_search_result
+            # find_type = 'stable.'
+            # result = stable_search_result
             dev_type = Dev_Types[2]
         # else:
         #     print('Not find.')
@@ -309,11 +309,11 @@ def walk_dir(folder_name):
         print('folder:%s not exist.' % folder_name)
 
 
-def get_download_url(folder, version):
+def get_download_url(version):
     debug_msg('------get_download_url------')
     xiaomi_url, redmi_url, pad_url = '', '', ''
     try:
-        info_xiaomi, info_redmi, info_pad = walk_dir(folder)
+        info_xiaomi, info_redmi, info_pad = walk_dir(version)
         # info = walk_dir(folder))
         xiaomi_url = to_get_url(info_xiaomi, version)
         redmi_url = to_get_url(info_redmi, version)
@@ -335,7 +335,7 @@ def to_get_url(info, version):
             keys = sorted(info.keys())
             for key in keys:
                 if key != '':
-                    body += "%s %s\n\n" % (key, version)
+                    # body += "%s %s\n\n" % (key, version)
                     for i in xrange(len(info[key])):
                         tmp = info[key][i]
                         md5 = tmp[2]

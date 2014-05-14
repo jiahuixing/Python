@@ -38,7 +38,7 @@ if __name__ == '__main__':
         print('i=%s,i_length=%s' % (i, len(Rom_Properties[i])))
     generate = Generate()
     debug_msg('m_folder=%s, m_version=%s' % (generate.m_folder, generate.m_version))
-    xiaomi_url, redmi_url, pad_url = get_download_url(generate.m_folder, generate.m_version)
+    xiaomi_url, redmi_url, pad_url = get_download_url(generate.m_version)
 
     print_url(xiaomi_url)
     print_url(redmi_url)
