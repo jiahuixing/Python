@@ -14,7 +14,6 @@ valid_suffix = [
 ]
 
 ignore_files = [
-    'cp_files.py',
     'flash_phone_test.py',
 ]
 
@@ -45,20 +44,19 @@ def cp_files():
             if is_in == 1:
                 print('------%s------' % file_name)
                 cmd = 'sudo cp -r %s %s' % (file_name, termini_path)
-                if file_or_folder == 0:
-                    child = pexpect.spawn(cmd)
-                    try:
-                        i = child.expect('jiahuixing:')
-                        if i == 0:
-                            cmd = '1\r'
-                            child.send(cmd)
-                            k = 1
-                    except pexpect.EOF:
-                        print('pexpect.EOF')
-                    except pexpect.TIMEOUT:
-                        print('pexpect.TIMEOUT')
-                else:
-                    os.system(cmd)
+                # if file_or_folder == 0:
+                child = pexpect.spawn(cmd)
+                try:
+                    i = child.expect('jiahuixing:')
+                    if i == 0:
+                        cmd = '1\r'
+                        child.send(cmd)
+                except pexpect.EOF:
+                    print('pexpect.EOF')
+                except pexpect.TIMEOUT:
+                    print('pexpect.TIMEOUT')
+                    # else:
+                    #     os.system(cmd)
 
 
 cp_files()

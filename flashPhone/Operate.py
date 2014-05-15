@@ -6,7 +6,7 @@ from data import *
 
 CONST = {
     'block': ' ',
-    'work_path': '/home/jiahuixing/music',
+    'WORK_PATH': '/home/jiahuixing/music',
 }
 
 
@@ -21,7 +21,6 @@ class Operate:
             if len(self.adb_device_list) == 0:
                 debug('wait for 3 seconds.')
                 time.sleep(3)
-
 
     def root_and_remount(self):
         """
@@ -40,7 +39,7 @@ class Operate:
         @summary adb push文件file_name到目录push_path
         """
         device_list = self.adb_device_list
-        work_path = CONST['work_path']
+        work_path = CONST['WORK_PATH']
         block = CONST['block']
         os.chdir(work_path)
         push_command = 'adb -s %s push '
@@ -81,7 +80,7 @@ class Operate:
         push_command = 'adb -s %s push'
         reboot_command = 'adb -s %s reboot'
         apk = ''
-        work_path = CONST['work_path']
+        work_path = CONST['WORK_PATH']
         block = CONST['block']
         os.chdir(work_path)
         path_files = os.listdir(work_path)
@@ -102,7 +101,7 @@ class Operate:
                 os.system(reboot_cmd)
 
     def test_push(self, tag, attr):
-        work_path = CONST['work_path']
+        work_path = CONST['WORK_PATH']
         block = CONST['block']
         device_list = self.adb_device_list
         commands = read_xml_file(Tmp_File_Path, tag, attr)
@@ -115,7 +114,7 @@ class Operate:
 
     # noinspection PyMethodMayBeStatic
     def pull_apk_db(self):
-        work_path = CONST['work_path']
+        work_path = CONST['WORK_PATH']
         block = CONST['block']
         pull_command = 'adb -s %s pull /data/data/com.miui.player/databases/com_miui_player.db'
         to_path = '/home/jiahuixing/music/%s_com_miui_player.db'
