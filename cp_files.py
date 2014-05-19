@@ -42,7 +42,7 @@ def cp_files():
             is_in = file_suffix(file_name)
             if is_in == 1:
                 print('------%s------' % file_name)
-                cmd = 'sudo cp -r %s %s' % (file_name, termini_path)
+                cmd = 'sudo cp -rf %s %s' % (file_name, termini_path)
                 print('cmd = %s' % cmd)
                 # if file_or_folder == 0:
                 child = pexpect.spawn(cmd)
