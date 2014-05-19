@@ -14,12 +14,12 @@ class Operate:
     adb_device_list = []
 
     def __init__(self):
-        debug('init')
+        debug_msg('init')
         adb_permission()
         while len(self.adb_device_list) == 0:
             self.adb_device_list = get_adb_device_list()
             if len(self.adb_device_list) == 0:
-                debug('wait for 3 seconds.')
+                debug_msg('wait for 3 seconds.')
                 time.sleep(3)
 
     def root_and_remount(self):
@@ -46,10 +46,10 @@ class Operate:
         reboot_command = 'adb -s %s reboot'
         for device in device_list:
             if os.path.exists(file_name):
-                debug('file exists.')
+                debug_msg('file exists.')
                 push_cmd = (push_command % device) + file_name + block + push_path
                 reboot_cmd = reboot_command % device
-                debug('%s\n%s\n' % (push_cmd, reboot_cmd))
+                debug_msg('%s\n%s\n' % (push_cmd, reboot_cmd))
                 os.system(push_cmd)
                 os.system(reboot_cmd)
 
@@ -66,7 +66,7 @@ class Operate:
         for device in device_list:
             delete_cmd = (delete_command % device) + file_path + file_name
             reboot_cmd = reboot_command % device
-            debug('%s\n%s\n' % (delete_cmd, reboot_cmd))
+            debug_msg('%s\n%s\n' % (delete_cmd, reboot_cmd))
             os.system(delete_cmd)
             os.system(reboot_cmd)
 
@@ -89,13 +89,13 @@ class Operate:
                 apk = path_file
                 break
         if apk != '':
-            debug(apk)
+            debug_msg(apk)
             device_list = self.adb_device_list
             for device in device_list:
                 rm_cmd = rm_command % device
                 push_cmd = (push_command % device) + block + apk + block + termini_path
                 reboot_cmd = reboot_command % device
-                debug('%s\n%s\n%s\n' % (rm_cmd, push_cmd, reboot_cmd))
+                debug_msg('%s\n%s\n%s\n' % (rm_cmd, push_cmd, reboot_cmd))
                 os.system(rm_cmd)
                 os.system(push_cmd)
                 os.system(reboot_cmd)
@@ -106,11 +106,11 @@ class Operate:
         device_list = self.adb_device_list
         commands = read_xml_file(Tmp_File_Path, tag, attr)
         for device in device_list:
-            debug(device)
+            debug_msg(device)
 
     def flash_phone(self):
         device_list = self.adb_device_list
-        debug(device_list)
+        debug_msg(device_list)
 
     # noinspection PyMethodMayBeStatic
     def pull_apk_db(self):
@@ -121,6 +121,6 @@ class Operate:
         device_list = get_adb_device_list()
         for device in device_list:
             pull_cmd = (pull_command % device) + block + (to_path % device)
-            debug(pull_cmd)
+            debug_msg(pull_cmd)
             os.system(pull_cmd)
 

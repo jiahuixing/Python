@@ -80,7 +80,7 @@ class FlashPhone:
         return result
 
     def get_info(self):
-        debug('date=%s,xml=%s' % (self.date, self.xml))
+        debug_msg('date=%s,xml=%s' % (self.date, self.xml))
         info_s = list()
         root = ET.parse(self.xml)
         if root:
@@ -120,8 +120,8 @@ class FlashPhone:
                 choice = info_s[i]
                 rom = choice[0]
                 pat = r'%s' % choice[1]
-                debug(color_msg('rom=%s' % rom))
-                debug(color_msg('pat=%s' % pat))
+                debug_msg(color_msg('rom=%s' % rom))
+                debug_msg(color_msg('pat=%s' % pat))
                 page = urllib2.urlopen(td_main_url, timeout=5).read()
                 pattern = re.compile(pat)
                 # debug('pattern=%s' % pattern)
@@ -151,7 +151,7 @@ class FlashPhone:
             os.system(cmd)
             cmd = 'rm -rf %s' % file_name
             # debug(cmd)
-            debug(color_msg('rm tgz \"%s\".' % file_name, RED, WHITE))
+            debug_msg(color_msg('rm tgz \"%s\".' % file_name, RED, WHITE))
             os.system(cmd)
             self.folder = file_name[0:-len('_f0e572b4f6.tgz')]
             # debug('folder=%s' % self.folder)
@@ -176,7 +176,7 @@ class FlashPhone:
             cmd = 'adb shell getprop | grep ro.product.name'
             child = os.popen(cmd)
             build_name = child.readline().strip('\n').strip('\r').replace('[', '').replace(']', '').split(':')[1]
-            debug(build_name)
+            debug_msg(build_name)
             for i in xrange(len(self.info_s)):
                 if build_name == self.info_s[i][0]:
                     adb_device_type = i
@@ -228,20 +228,20 @@ class FlashPhone:
                 if isinstance(i, int):
                     if i < len(sh_files):
                         flash_script = sh_files[i]
-                        debug(color_msg('flash_script=%s' % flash_script, RED, WHITE))
+                        debug_msg(color_msg('flash_script=%s' % flash_script, RED, WHITE))
                         os.chdir(self.folder)
                         if os.path.exists(flash_script):
                             cmd = 'chmod a+x %s' % flash_script
                             # debug(cmd)
                             os.system(cmd)
                             cmd = './%s' % flash_script
-                            debug(color_msg(cmd))
+                            debug_msg(color_msg(cmd))
                             os.system(cmd)
         if self.folder != '':
             os.chdir(WORK_PATH)
             cmd = 'rm -rf %s' % self.folder
             # debug(cmd)
-            debug(color_msg('rm folder \"%s\".' % self.folder, RED, WHITE))
+            debug_msg(color_msg('rm folder \"%s\".' % self.folder, RED, WHITE))
             os.system(cmd)
 
     def to_flash_phone(self):
@@ -253,7 +253,7 @@ class FlashPhone:
             self.flash_phone()
             end_time = time.time()
             cost_time = int(end_time - start_time)
-            debug(color_msg('cost_time = %s seconds' % cost_time, RED))
+            debug_msg(color_msg('cost_time = %s seconds' % cost_time, RED))
         except KeyboardInterrupt:
             print('KeyboardInterrupt')
         except IndexError:

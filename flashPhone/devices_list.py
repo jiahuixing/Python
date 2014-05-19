@@ -43,15 +43,15 @@ if __name__ == '__main__':
     dl = device_list()
     adb_s = dl.adb_devices_list()
     if len(adb_s) > 0:
-        debug(color_msg('adb devices', GREEN, WHITE))
+        debug_msg(color_msg('adb devices', GREEN, WHITE))
         for adb in adb_s:
-            debug(adb)
+            debug_msg(adb)
     else:
-        debug(color_msg('no adb device.', RED, WHITE))
+        debug_msg(color_msg('no adb device.', RED, WHITE))
     fastboot_s = dl.fastboot_devices_list()
     if len(fastboot_s) > 0:
-        debug(color_msg('fastboot devices', GREEN, WHITE))
+        debug_msg(color_msg('fastboot devices', GREEN, WHITE))
         for fastboot in fastboot_s:
-            debug(fastboot)
+            debug_msg(fastboot)
     else:
-        debug(color_msg('no fastboot device.', RED, WHITE))
+        debug_msg(color_msg('no fastboot device.', RED, WHITE))

@@ -24,20 +24,20 @@ def test2():
 def test3():
     os.chdir(Tmp_File_Path[0])
     file_path = Tmp_File_Path[1]
-    debug(file_path)
+    debug_msg(file_path)
     root = ET.parse(file_path)
     commands_tag = 'commands'
     commands_nodes = root.findall(commands_tag)
-    debug(type(commands_nodes))
-    debug(commands_nodes)
+    debug_msg(type(commands_nodes))
+    debug_msg(commands_nodes)
     for commands_node in list(commands_nodes):
         assert isinstance(commands_node, ET.Element)
-        debug('tag=%s,attr=%s' % (commands_node.tag, commands_node.attrib))
+        debug_msg('tag=%s,attr=%s' % (commands_node.tag, commands_node.attrib))
         command_tag = 'command'
         command_nodes = commands_node.findall(command_tag)
         for command_node in list(command_nodes):
             assert isinstance(command_node, ET.Element)
-            debug('tag=%s,attr=%s,text=%s' % (command_node.tag, command_node.attrib, command_node.text))
+            debug_msg('tag=%s,attr=%s,text=%s' % (command_node.tag, command_node.attrib, command_node.text))
 
 
 def test4():
@@ -73,7 +73,7 @@ def test8(fg=None, bg=None):
     codes = []
     if fg is not None: codes.append('3%d' % fg)
     if bg is not None: codes.append('10%d' % bg)
-    debug(codes)
+    debug_msg(codes)
     return '\033[%sm' % ';'.join(codes) if codes else ''
 
 
@@ -83,7 +83,7 @@ def test8(fg=None, bg=None):
 
 def test9():
     msg = color_msg('hahaha')
-    debug(msg)
+    debug_msg(msg)
 
 
 import threading
@@ -124,11 +124,11 @@ def test10():
     child = pexpect.spawn(cmd, timeout=5)
     try:
         i = child.expect(':')
-        debug('i=%s' % i)
+        debug_msg('i=%s' % i)
         if i == 0:
             child.send(password)
             i = child.expect('#')
-            debug('i=%s' % i)
+            debug_msg('i=%s' % i)
             if i == 0:
                 cmd = 'cd /home/jiahuixing/sdk/platform-tools/\r'
                 child.send(cmd)
@@ -141,25 +141,25 @@ def test10():
                 cmd = 'exit\r'
                 child.send(cmd)
     except pexpect.EOF:
-        debug('pexpect.EOF')
+        debug_msg('pexpect.EOF')
         child.close()
     except pexpect.TIMEOUT:
-        debug('pexpect.TIMEOUT')
+        debug_msg('pexpect.TIMEOUT')
         child.close()
 
 
 def test11():
-    debug(len(sys.argv))
-    debug(sys.argv[1])
+    debug_msg(len(sys.argv))
+    debug_msg(sys.argv[1])
 
 
 def test12():
     pat = r'%s_%s_4\.[0-9]{1}_cn_[a-z0-9]{10}\.tgz' % ('cancro_images', '4.4.29')
-    debug(pat)
+    debug_msg(pat)
     pattern = re.compile(pat)
     page = urllib2.urlopen('http://ota.n.miui.com/ota/4.4.29').read()
     find = re.findall(pattern, page)
-    debug(list(set(find)))
+    debug_msg(list(set(find)))
 
 
 def compare_date(date1, date2):
@@ -175,8 +175,8 @@ def compare_date(date1, date2):
         dt2.pop(j)
         # noinspection PyTypeChecker
         dt2.insert(j, tmp)
-    debug(dt1)
-    debug(dt2)
+    debug_msg(dt1)
+    debug_msg(dt2)
     if dt1[0] > dt2[0]:
         result = 1
     elif dt1[0] == dt2[0]:
@@ -200,11 +200,11 @@ def test13():
     date = '4.4.3'
     compare = '4.4.28'
     cmp_result = compare_date(date, compare)
-    debug('cmp_result=%s' % cmp_result)
+    debug_msg('cmp_result=%s' % cmp_result)
     if cmp_result == 1:
-        debug('%s > %s' % (date, compare))
+        debug_msg('%s > %s' % (date, compare))
     else:
-        debug('%s > %s' % (compare, date))
+        debug_msg('%s > %s' % (compare, date))
 
 
 def test14():
@@ -216,7 +216,7 @@ def test15():
         cmd = 'adb shell getprop | grep ro.product.name'
         child = os.popen(cmd)
         build_name = child.readline().strip('\n').strip('\r').replace('[', '').replace(']', '').split(':')[1]
-        debug(build_name)
+        debug_msg(build_name)
     except IndexError:
         print('IndexError')
         # for line in child.readlines():

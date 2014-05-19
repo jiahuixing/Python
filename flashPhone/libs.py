@@ -65,13 +65,13 @@ def root_devices(adb_device_list):
     """
     cmd = 'adb -s '
     root_cmd = []
-    debug(adb_device_list)
+    debug_msg(adb_device_list)
     if isinstance(adb_device_list, list):
         for device in adb_device_list:
-            debug(device)
+            debug_msg(device)
             tmp = cmd + device + ' root'
             root_cmd.append(tmp)
-        debug(root_cmd)
+        debug_msg(root_cmd)
     else:
         print('not ins')
 
@@ -89,7 +89,7 @@ def remount_devices(adb_device_list):
     cmd = 'adb -s '
     succeeded = 'remount succeeded'
     remount_cmd = []
-    debug(adb_device_list)
+    debug_msg(adb_device_list)
     if isinstance(adb_device_list, list):
         for device in adb_device_list:
             # print(device)
@@ -132,13 +132,13 @@ def read_xml_file(file_path, tag, attr_key=''):
         path = file_path[0]
         os.chdir(path)
         file_name = file_path[1]
-        debug('file_name=%s,tag=%s,attr_key=%s' % (file_name, tag, attr_key))
-        debug('abs=%s' % os.path.abspath(file_name))
+        debug_msg('file_name=%s,tag=%s,attr_key=%s' % (file_name, tag, attr_key))
+        debug_msg('abs=%s' % os.path.abspath(file_name))
         if os.path.exists(file_name):
             root = ET.parse(file_name)
-            debug('root=%s' % root)
+            debug_msg('root=%s' % root)
             tmp_s = root.findall(tag)
-            debug('tmp_s=%s' % tmp_s)
+            debug_msg('tmp_s=%s' % tmp_s)
             for tmp in tmp_s:
                 if isinstance(tmp, ET.Element):
                     # children = tmp.getchildren()
@@ -157,27 +157,27 @@ def read_xml_file(file_path, tag, attr_key=''):
             print('not exists.')
     else:
         print('file_path not list.')
-    debug(command)
+    debug_msg(command)
     return command
 
 
 def json_analyse():
     url_result = urllib2.urlopen('http://fm.duokanbox.com/category').read()
-    debug('url_result=%s' % url_result)
+    debug_msg('url_result=%s' % url_result)
     json_r = json.loads(url_result)
-    debug('json_r=%s' % json_r)
+    debug_msg('json_r=%s' % json_r)
     # debug(type(json_r))
     if isinstance(json_r, dict):
         keys = json_r.keys()
-        debug('keys=%s' % keys)
+        debug_msg('keys=%s' % keys)
         for item in json_r.items():
             # debug(type(item))
             # debug(item)
             # for i in xrange(len(item)):
-            debug('%s:%s' % (item[0], item[len(item) - 1]))
+            debug_msg('%s:%s' % (item[0], item[len(item) - 1]))
 
 
-def debug(msg, flag=1):
+def debug_msg(msg, flag=1):
     if flag == 1:
         print('---------------------------------')
         print(msg)
@@ -196,36 +196,36 @@ def adb_permission():
             no_per = 1
             break
     if no_per == 1:
-        debug(color_msg('no permissions', RED))
+        debug_msg(color_msg('no permissions', RED))
         cmd = 'su'
         password = '1\r'
         child = pexpect.spawn(cmd, timeout=5)
         try:
             i = child.expect('：')
             if i == 0:
-                debug(color_msg('expect :'))
+                debug_msg(color_msg('expect :'))
                 child.send(password)
                 i = child.expect('#')
                 if i == 0:
-                    debug(color_msg('expect #'))
+                    debug_msg(color_msg('expect #'))
                     cmd = 'cd /home/jiahuixing/sdk/platform-tools/\r'
                     child.send(cmd)
                     # cmd = 'ls -la\r'
                     # child.send(cmd)
-                    debug(color_msg('adb kill-server'))
+                    debug_msg(color_msg('adb kill-server'))
                     cmd = './adb kill-server\r'
                     child.send(cmd)
-                    debug(color_msg('adb start-server'))
+                    debug_msg(color_msg('adb start-server'))
                     cmd = './adb devices\r'
                     child.send(cmd)
-                    debug(color_msg('exit'))
+                    debug_msg(color_msg('exit'))
                     cmd = 'exit\r'
                     child.send(cmd)
         except pexpect.EOF:
-            debug('EOF')
+            debug_msg('EOF')
             child.close()
         except pexpect.TIMEOUT:
-            debug('TIMEOUT')
+            debug_msg('TIMEOUT')
             child.close()
 
 
@@ -287,7 +287,7 @@ class MyThread(threading.Thread):
         threading.Thread.__init__(self, name=thread_name)
 
     def run(self):
-        debug('thread_name=%s' % self.getName())
+        debug_msg('thread_name=%s' % self.getName())
         super(MyThread, self).run()
 
 

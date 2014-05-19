@@ -29,7 +29,7 @@ class Bugreport:
 
     def get_bugreport(self):
         work_path = '%s/%s/' % (root_path, bug_path)
-        debug(work_path)
+        debug_msg(work_path)
         os.chdir(root_path)
         if not os.path.exists(bug_path):
             os.mkdir(bug_path)
@@ -40,19 +40,19 @@ class Bugreport:
             name = 'bugreport-%s-%s' % (device, tpm)
             bug_suffix = '.txt'
             txt_name = '%s%s' % (name, bug_suffix)
-            debug(color_msg(txt_name))
+            debug_msg(color_msg(txt_name))
             cmd = 'adb -s %s bugreport > %s%s' % (device, work_path, txt_name)
-            debug(cmd)
+            debug_msg(cmd)
             os.system(cmd)
             tgz_suffix = '.tar.gz'
             tgz_name = '%s%s' % (name, tgz_suffix)
-            debug(color_msg(tgz_name))
+            debug_msg(color_msg(tgz_name))
             os.chdir(work_path)
             cmd = 'tar -zcvf %s %s%s' % (tgz_name, name, bug_suffix)
-            debug(cmd)
+            debug_msg(cmd)
             os.system(cmd)
             cmd = 'rm -rf %s' % txt_name
-            debug(cmd)
+            debug_msg(cmd)
             os.system(cmd)
 
 
