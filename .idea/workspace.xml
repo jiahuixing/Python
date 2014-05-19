@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="flash phone">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen_url/cp_file.py" afterPath="$PROJECT_DIR$/gen_url/cp_file.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen_url/friday_lib.py" afterPath="$PROJECT_DIR$/gen_url/friday_lib.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen_url/new_friday.py" afterPath="$PROJECT_DIR$/gen_url/new_friday.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Python.iws" />
@@ -36,10 +37,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="new_friday.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="new_friday.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gen_url/new_friday.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="26" selection-start="1143" selection-end="1143" vertical-scroll-proportion="0.0" vertical-offset="379" max-vertical-offset="900">
+            <state line="44" column="24" selection-start="1041" selection-end="1041" vertical-scroll-proportion="0.5031056" vertical-offset="417" max-vertical-offset="900">
               <folding />
             </state>
           </provider>
@@ -48,16 +49,16 @@
       <file leaf-file-name="friday_lib.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gen_url/friday_lib.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="313" column="4" selection-start="8922" selection-end="8922" vertical-scroll-proportion="0.0" vertical-offset="4969" max-vertical-offset="5760">
+            <state line="371" column="45" selection-start="10941" selection-end="10941" vertical-scroll-proportion="0.0" vertical-offset="5247" max-vertical-offset="5730">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cp_file.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="cp_file.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gen_url/cp_file.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="49" selection-start="670" selection-end="670" vertical-scroll-proportion="0.49482402" vertical-offset="331" max-vertical-offset="1065">
+            <state line="33" column="25" selection-start="565" selection-end="565" vertical-scroll-proportion="0.0" vertical-offset="346" max-vertical-offset="1080">
               <folding>
                 <element signature="e#78#87#0" expanded="true" />
               </folding>
@@ -68,7 +69,7 @@
       <file leaf-file-name="libs.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gen_url/libs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0" vertical-offset="154" max-vertical-offset="675">
+            <state line="39" column="18" selection-start="191" selection-end="1006" vertical-scroll-proportion="0.0" vertical-offset="192" max-vertical-offset="675">
               <folding />
             </state>
           </provider>
@@ -132,18 +133,18 @@
         <option value="$PROJECT_DIR$/gen_url/friday1.py" />
         <option value="$PROJECT_DIR$/gen_url/tmp_libs.py" />
         <option value="$PROJECT_DIR$/gen_url/dj.py" />
-        <option value="$PROJECT_DIR$/gen_url/friday_lib.py" />
         <option value="$PROJECT_DIR$/gen_url/friday.py" />
         <option value="$PROJECT_DIR$/flashPhone/Operate.py" />
         <option value="$PROJECT_DIR$/tmp_cp.py" />
         <option value="$PROJECT_DIR$/cp_files.py" />
-        <option value="$PROJECT_DIR$/gen_url/new_friday.py" />
         <option value="$PROJECT_DIR$/gen_url/test.py" />
         <option value="$PROJECT_DIR$/gen_url/libs.py" />
         <option value="$PROJECT_DIR$/flashPhone/libs.py" />
         <option value="$PROJECT_DIR$/flashPhone/devices_list.py" />
         <option value="$PROJECT_DIR$/flashPhone/flashphone.py" />
         <option value="$PROJECT_DIR$/gen_url/cp_file.py" />
+        <option value="$PROJECT_DIR$/gen_url/new_friday.py" />
+        <option value="$PROJECT_DIR$/gen_url/friday_lib.py" />
       </list>
     </option>
   </component>
@@ -1027,7 +1028,11 @@
       <created>1400492551887</created>
       <updated>1400492551887</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="flash phone">
+      <created>1400493002852</created>
+      <updated>1400493002852</updated>
+    </task>
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1378,33 +1383,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gen_url/new_friday.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="26" selection-start="1143" selection-end="1143" vertical-scroll-proportion="0.0" vertical-offset="417" max-vertical-offset="900">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gen_url/libs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gen_url/friday_lib.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="313" column="4" selection-start="8922" selection-end="8922" vertical-scroll-proportion="0.0" vertical-offset="4420" max-vertical-offset="5760">
+        <state line="39" column="18" selection-start="191" selection-end="1006" vertical-scroll-proportion="0.0" vertical-offset="192" max-vertical-offset="675">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gen_url/cp_file.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="49" selection-start="670" selection-end="670" vertical-scroll-proportion="0.49482402" vertical-offset="331" max-vertical-offset="1065">
+        <state line="33" column="25" selection-start="565" selection-end="565" vertical-scroll-proportion="0.0" vertical-offset="346" max-vertical-offset="1080">
           <folding>
             <element signature="e#78#87#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen_url/friday_lib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="371" column="45" selection-start="10941" selection-end="10941" vertical-scroll-proportion="0.0" vertical-offset="5247" max-vertical-offset="5730">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen_url/new_friday.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="24" selection-start="1041" selection-end="1041" vertical-scroll-proportion="0.5031056" vertical-offset="417" max-vertical-offset="900">
+          <folding />
         </state>
       </provider>
     </entry>

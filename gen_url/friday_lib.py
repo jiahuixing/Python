@@ -7,6 +7,7 @@ import time
 __author__ = 'jiahuixing'
 
 import os
+# from libs import color_msg
 
 # WORK_PATH = '/home/jiahuixing/Python/gen_url'
 WORK_PATH = '/data/ota'
@@ -359,22 +360,20 @@ def print_url(url):
         print(url)
 
 
-def write_to_file(xiaomi_url, redmi_url, pad_url, flag=0):
+def write_url(xiaomi_url, redmi_url, pad_url, flag=0):
     if flag == 1:
         doc_name = 'url.txt'
         os.chdir(WORK_PATH)
         mode = 'a+'
         if os.path.exists(doc_name):
             os.remove(doc_name)
-        if xiaomi_url != '':
-            file_open = open(doc_name, mode)
-            file_open.writelines(xiaomi_url)
-            file_open.close()
-        if redmi_url != '':
-            file_open = open(doc_name, mode)
-            file_open.writelines(redmi_url)
-            file_open.close()
-        if pad_url != '':
-            file_open = open(doc_name, mode)
-            file_open.writelines(pad_url)
-            file_open.close()
+        write_to_file(xiaomi_url, doc_name, mode)
+        write_to_file(redmi_url, doc_name, mode)
+        write_to_file(pad_url, doc_name, mode)
+
+
+def write_to_file(url, doc_name, mode='a+'):
+    if url != '':
+        file_open = open(doc_name, mode)
+        file_open.writelines(url)
+        file_open.close()

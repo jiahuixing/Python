@@ -45,7 +45,7 @@ if __name__ == '__main__':
     print_url(redmi_url)
     print_url(pad_url)
 
-    write_to_file(xiaomi_url, redmi_url, pad_url)
+    write_url(xiaomi_url, redmi_url, pad_url)
 
     end_time = time.time()
     cost_time = int(end_time - start_time)
