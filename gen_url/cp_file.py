@@ -5,6 +5,9 @@ __author__ = 'jiahuixing'
 import os
 import pexpect
 
+from libs import *
+
+
 valid_suffix = [
     'py',
     'xml',
@@ -15,6 +18,7 @@ valid_suffix = [
 ignore_files = [
     'cp_file.py',
     'mkdir.py',
+    'test.py',
 ]
 
 
@@ -32,7 +36,7 @@ def file_suffix(file_name):
     return is_in
 
 
-def cp_files():
+def cp_file():
     work_path = '/home/jiahuixing/Python/gen_url'
     termini_path = '/home/jiahuixing/SVN/Friday/trunk/'
     os.chdir(work_path)
@@ -40,6 +44,7 @@ def cp_files():
         if file_name not in ignore_files:
             is_in = file_suffix(file_name)
             if is_in == 1:
+                file_name = color_msg(file_name)
                 cmd = 'sudo cp -rf %s %s' % (file_name, termini_path)
                 print('cmd = %s' % cmd)
                 # if file_or_folder == 0:
@@ -58,4 +63,4 @@ def cp_files():
                     #     os.system(cmd)
 
 
-cp_files()
+cp_file()
