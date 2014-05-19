@@ -237,12 +237,6 @@ class FlashPhone:
                             cmd = './%s' % flash_script
                             debug_msg(color_msg(cmd))
                             os.system(cmd)
-        if self.folder != '':
-            os.chdir(WORK_PATH)
-            cmd = 'rm -rf %s' % self.folder
-            # debug(cmd)
-            debug_msg(color_msg('rm folder \"%s\".' % self.folder, RED))
-            os.system(cmd)
 
     def to_flash_phone(self):
         try:
@@ -264,6 +258,13 @@ class FlashPhone:
             print('IOError')
         except TypeError:
             print('TypeError')
+        finally:
+            if self.folder != '':
+                os.chdir(WORK_PATH)
+                cmd = 'rm -rf %s' % self.folder
+                # debug(cmd)
+                debug_msg(color_msg('rm folder \"%s\".' % self.folder, RED))
+                os.system(cmd)
 
 
 # import threading
