@@ -24,14 +24,13 @@ def file_suffix(file_name):
     if os.path.isdir(file_name):
         if not str.startswith(file_name, '.'):
             is_in = 1
-            file_or_folder = 1
     else:
         for i in xrange(len(valid_suffix)):
             suffix = valid_suffix[i]
             if str.endswith(file_name, suffix):
                 is_in = 1
                 break
-    return is_in, file_or_folder
+    return is_in
 
 
 def cp_files():
@@ -40,10 +39,11 @@ def cp_files():
     os.chdir(work_path)
     for file_name in os.listdir(work_path):
         if file_name not in ignore_files:
-            is_in, file_or_folder = file_suffix(file_name)
+            is_in = file_suffix(file_name)
             if is_in == 1:
                 print('------%s------' % file_name)
                 cmd = 'sudo cp -r %s %s' % (file_name, termini_path)
+                print('cmd = %s' % cmd)
                 # if file_or_folder == 0:
                 child = pexpect.spawn(cmd)
                 try:
