@@ -49,6 +49,6 @@ if __name__ == '__main__':
 
     end_time = time.time()
     cost_time = int(end_time - start_time)
-    # debug_msg('start_time=%s,end_time=%s,cost_time=%s' % (start_time, end_time, cost_time))
+    debug_msg('start_time=%s,end_time=%s,cost_time=%s' % (start_time, end_time, cost_time))
 
 

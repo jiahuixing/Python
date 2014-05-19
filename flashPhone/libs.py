@@ -242,21 +242,23 @@ def color_msg(msg, fg=GREEN, bg=WHITE):
     @param bg:
     @return:
     """
-    color = 0
-    color_fg = None
-    color_bg = None
+    color = list()
     if fg is not None:
-        color_fg = ';3%d' % fg
+        color_fg = '3%d' % fg
         # debug('color_fg=%s' % color_fg)
-        color += 1
+        color.append(color_fg)
     if bg is not None:
-        color_bg = ';4%dm' % bg
+        color_bg = '4%d' % bg
         # debug('color_bg=%s' % color_bg)
-        color += 1
-    if color > 1:
-        return '%s%s%s%s%s' % (COLOR_START, color_fg, color_bg, msg, COLOR_END)
-    else:
-        return msg
+        color.append(color_bg)
+    if len(color) > 0:
+        color_str = ';'.join(color)
+        # debug(color)
+        # debug(color_str)
+        msg = '%s%sm%s%s' % (COLOR_START, color_str, msg, COLOR_END)
+    # if color == 2:
+    #     return '%s%s%s%s%s' % (COLOR_START, color_fg, color_bg, msg, COLOR_END)
+    return msg
 
 
 def get_date():

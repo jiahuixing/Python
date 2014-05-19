@@ -1,18 +1,21 @@
-__author__ = 'jiahuixing'
+#!/usr/local/bin/python -u
 # -*- coding: utf-8 -*-
+__author__ = 'jiahuixing'
 
-from tmp_libs import *
+from libs import *
 
 
 def test1():
-    m_folder = sys.argv[1]
-    for root, dirs, files in os.walk(m_folder):
-        for file_name in files:
-            print(file_name)
-            a_version = get_android_version(file_name)
-            print('a_version=%s' % a_version)
+    msg = 'hahahahh'
+    # msg = color_msg(msg)
+    debug_msg(color_msg(msg))
+
+
+def test2():
+    msg = '\033[0;32m%s\033[0m' % 'woshiyansezi'
+    debug_msg(msg)
 
 
 test1()
 
-
+test2()
