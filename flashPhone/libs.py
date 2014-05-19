@@ -234,7 +234,7 @@ COLOR_END = '\033[0m'
 BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE = range(8)
 
 
-def color_msg(msg, fg=GREEN, bg=WHITE):
+def color_msg(msg, fg=GREEN, bg=None):
     """
 
     @param msg:

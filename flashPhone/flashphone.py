@@ -104,7 +104,7 @@ class FlashPhone:
     # noinspection PyMethodMayBeStatic
     def download_tgz(self):
         msg = 'download_tgz'
-        print(color_msg(msg, GREEN, WHITE))
+        print(color_msg(msg, GREEN))
         os.chdir(WORK_PATH)
         self.get_info()
         info_s = self.info_s
@@ -144,14 +144,14 @@ class FlashPhone:
     def un_tar(self):
         if self.flag == 1:
             msg = 'un_tar'
-            print(color_msg(msg, GREEN, WHITE))
+            print(color_msg(msg, GREEN))
             file_name = self.file_name
             cmd = 'tar xvf %s' % file_name
             # debug(cmd)
             os.system(cmd)
             cmd = 'rm -rf %s' % file_name
             # debug(cmd)
-            debug_msg(color_msg('rm tgz \"%s\".' % file_name, RED, WHITE))
+            debug_msg(color_msg('rm tgz \"%s\".' % file_name, RED))
             os.system(cmd)
             self.folder = file_name[0:-len('_f0e572b4f6.tgz')]
             # debug('folder=%s' % self.folder)
@@ -186,7 +186,7 @@ class FlashPhone:
     def reboot_phone(self):
         if self.flag == 2:
             msg = 'reboot_phone'
-            print(color_msg(msg, GREEN, WHITE))
+            print(color_msg(msg, GREEN))
             self.fastboot_device_list = get_fastboot_device_list()
             if len(self.fastboot_device_list) > 0:
                 self.flag += 1
@@ -206,7 +206,7 @@ class FlashPhone:
     def flash_phone(self):
         if self.flag == 3:
             msg = 'flash_phone'
-            print(color_msg(msg, GREEN, WHITE))
+            print(color_msg(msg, GREEN))
             self.fastboot_device_list = get_fastboot_device_list()
             while len(self.fastboot_device_list) == 0:
                 self.fastboot_device_list = get_fastboot_device_list()
@@ -223,12 +223,12 @@ class FlashPhone:
                         sh_files.append(file_name)
                 # debug(sh_files)
                 for i in xrange(len(sh_files)):
-                    print(color_msg('%s:%s' % (i, sh_files[i]), RED, WHITE))
+                    print(color_msg('%s:%s' % (i, sh_files[i]), RED))
                 i = input('Pls input ur choice num:')
                 if isinstance(i, int):
                     if i < len(sh_files):
                         flash_script = sh_files[i]
-                        debug_msg(color_msg('flash_script=%s' % flash_script, RED, WHITE))
+                        debug_msg(color_msg('flash_script=%s' % flash_script, RED))
                         os.chdir(self.folder)
                         if os.path.exists(flash_script):
                             cmd = 'chmod a+x %s' % flash_script
@@ -241,7 +241,7 @@ class FlashPhone:
             os.chdir(WORK_PATH)
             cmd = 'rm -rf %s' % self.folder
             # debug(cmd)
-            debug_msg(color_msg('rm folder \"%s\".' % self.folder, RED, WHITE))
+            debug_msg(color_msg('rm folder \"%s\".' % self.folder, RED))
             os.system(cmd)
 
     def to_flash_phone(self):
