@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="FileZilla Share" uploadOnCheckin="1c69fc7f-bc24-4c3e-8a97-c276b487f861">
+  <component name="PublishConfigData" serverName="FileZilla Share" persistUploadOnCheckin="false">
     <serverData>
       <paths name="FileZilla Share">
         <serverdata>
@@ -10,7 +10,6 @@
         </serverdata>
       </paths>
     </serverData>
-    <option name="myUploadOnCheckinName" value="FileZilla Share" />
   </component>
 </project>
 

@@ -4,8 +4,9 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="dj friday">
+    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="cp files">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cp_files.py" afterPath="$PROJECT_DIR$/cp_files.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Python.iws" />
@@ -66,7 +67,7 @@
       <file leaf-file-name="cp_files.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cp_files.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="20" selection-start="1148" selection-end="1148" vertical-scroll-proportion="0.4099379" vertical-offset="507" max-vertical-offset="990">
+            <state line="43" column="25" selection-start="906" selection-end="906" vertical-scroll-proportion="0.3726708" vertical-offset="450" max-vertical-offset="1005">
               <folding />
             </state>
           </provider>
@@ -1004,7 +1005,11 @@
       <created>1400478297609</created>
       <updated>1400478297609</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <task id="LOCAL-00107" summary="cp files">
+      <created>1400483797077</created>
+      <updated>1400483797077</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1069,10 +1074,10 @@
     <MESSAGE value="flash phone cp files" />
     <MESSAGE value="add file pidcat.py" />
     <MESSAGE value=" delete file pidcat.py" />
-    <MESSAGE value="cp files" />
     <MESSAGE value="flash phone" />
     <MESSAGE value="dj friday" />
-    <option name="LAST_COMMIT_MESSAGE" value="dj friday" />
+    <MESSAGE value="cp files" />
+    <option name="LAST_COMMIT_MESSAGE" value="cp files" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1364,7 +1369,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cp_files.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="20" selection-start="1148" selection-end="1148" vertical-scroll-proportion="0.4099379" vertical-offset="507" max-vertical-offset="990">
+        <state line="43" column="25" selection-start="906" selection-end="906" vertical-scroll-proportion="0.3726708" vertical-offset="450" max-vertical-offset="1005">
           <folding />
         </state>
       </provider>
