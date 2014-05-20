@@ -7,7 +7,6 @@ import time
 __author__ = 'jiahuixing'
 
 import os
-# from libs import color_msg
 
 # WORK_PATH = '/home/jiahuixing/Python/gen_url'
 WORK_PATH = '/data/ota'
@@ -100,6 +99,37 @@ Area_Types = [
     ['TW_', 'tw_', '-台湾'],
 
 ]
+
+COLOR_START = '\033[0;'
+COLOR_END = '\033[0m'
+BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE = range(8)
+
+
+def color_msg(msg, fg=GREEN, bg=None):
+    """
+
+    @param msg:
+    @param fg:
+    @param bg:
+    @return:
+    """
+    color = list()
+    if fg is not None:
+        color_fg = '3%d' % fg
+        # debug_msg('color_fg=%s' % color_fg)
+        color.append(color_fg)
+    if bg is not None:
+        color_bg = '4%d' % bg
+        # debug_msg('color_bg=%s' % color_bg)
+        color.append(color_bg)
+    if len(color) > 0:
+        color_str = ';'.join(color)
+        # debug_msg(color)
+        # debug_msg(color_str)
+        msg = '%s%sm%s%s' % (COLOR_START, color_str, msg, COLOR_END)
+    # if color == 2:
+    #     return '%s%s%s%s%s' % (COLOR_START, color_fg, color_bg, msg, COLOR_END)
+    return msg
 
 
 def debug_msg(msg, flag=1):
@@ -253,7 +283,7 @@ def get_dev_type(file_name):
 
 
 def walk_dir(folder_name):
-    debug_msg('------walk_dir------')
+    debug_msg(color_msg('------walk_dir------'))
     info_xiaomi = dict()
     info_redmi = dict()
     info_pad = dict()
@@ -285,13 +315,13 @@ def walk_dir(folder_name):
                     tmp.append(rom_type)
                     tmp.append(file_name)
                     tmp.append(name)
-                    debug_msg('----------------------------------------------------')
-                    debug_msg('file_name = %s' % file_name)
-                    debug_msg('name = %s' % name)
-                    debug_msg('md5 = %s' % md5)
-                    debug_msg('size = %s' % size)
-                    debug_msg('rom_type = %s' % rom_type)
-                    debug_msg('----------------------------------------------------')
+                    debug_msg(color_msg('----------------------------------------------------'))
+                    debug_msg(color_msg('file_name = %s' % file_name))
+                    debug_msg(color_msg('name = %s' % name))
+                    debug_msg(color_msg('md5 = %s' % md5))
+                    debug_msg(color_msg('size = %s' % size))
+                    debug_msg(color_msg('rom_type = %s' % rom_type))
+                    debug_msg(color_msg('----------------------------------------------------'))
                     if model_idx == 0:
                         keys = info_xiaomi.keys()
                         if name not in keys:
@@ -313,7 +343,7 @@ def walk_dir(folder_name):
 
 
 def get_download_url(version):
-    debug_msg('------get_download_url------')
+    debug_msg(color_msg('------get_download_url------'))
     xiaomi_url, redmi_url, pad_url = '', '', ''
     try:
         info_xiaomi, info_redmi, info_pad = walk_dir(version)
