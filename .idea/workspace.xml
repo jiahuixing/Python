@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="dj friday">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen_url/new_friday.py" afterPath="$PROJECT_DIR$/gen_url/new_friday.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flashPhone/flashphone.py" afterPath="$PROJECT_DIR$/flashPhone/flashphone.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Python.iws" />
@@ -57,7 +57,7 @@
       <file leaf-file-name="new_friday.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gen_url/new_friday.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="26" selection-start="1139" selection-end="1139" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="900">
+            <state line="49" column="26" selection-start="1139" selection-end="1139" vertical-scroll-proportion="0.0" vertical-offset="735" max-vertical-offset="900">
               <folding />
             </state>
           </provider>
@@ -66,18 +66,25 @@
       <file leaf-file-name="cp_files.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cp_files.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1035">
-              <folding>
-                <element signature="e#78#87#0" expanded="true" />
-              </folding>
+            <state line="19" column="0" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="1035">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="friday_lib.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="friday_lib.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gen_url/friday_lib.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="42" selection-start="736" selection-end="736" vertical-scroll-proportion="0.38828337" vertical-offset="135" max-vertical-offset="6180">
+            <state line="379" column="16" selection-start="11142" selection-end="11142" vertical-scroll-proportion="0.0" vertical-offset="5423" max-vertical-offset="6180">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="flashphone.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/flashPhone/flashphone.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="249" column="26" selection-start="8804" selection-end="8804" vertical-scroll-proportion="0.5163044" vertical-offset="3340" max-vertical-offset="4320">
               <folding />
             </state>
           </provider>
@@ -86,10 +93,8 @@
       <file leaf-file-name="cp_file.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gen_url/cp_file.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="45" selection-start="1148" selection-end="1148" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1125">
-              <folding>
-                <element signature="e#78#87#0" expanded="true" />
-              </folding>
+            <state line="49" column="45" selection-start="1148" selection-end="1148" vertical-scroll-proportion="0.0" vertical-offset="735" max-vertical-offset="1125">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -97,7 +102,7 @@
       <file leaf-file-name="libs.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gen_url/libs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="14" selection-start="78" selection-end="888" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+            <state line="14" column="14" selection-start="284" selection-end="284" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="675">
               <folding />
             </state>
           </provider>
@@ -167,12 +172,12 @@
         <option value="$PROJECT_DIR$/gen_url/test.py" />
         <option value="$PROJECT_DIR$/gen_url/libs.py" />
         <option value="$PROJECT_DIR$/flashPhone/devices_list.py" />
-        <option value="$PROJECT_DIR$/flashPhone/flashphone.py" />
         <option value="$PROJECT_DIR$/flashPhone/libs.py" />
         <option value="$PROJECT_DIR$/cp_files.py" />
         <option value="$PROJECT_DIR$/gen_url/cp_file.py" />
         <option value="$PROJECT_DIR$/gen_url/new_friday.py" />
         <option value="$PROJECT_DIR$/gen_url/friday_lib.py" />
+        <option value="$PROJECT_DIR$/flashPhone/flashphone.py" />
       </list>
     </option>
   </component>
@@ -505,9 +510,6 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
-      <method />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -529,6 +531,9 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -1072,7 +1077,11 @@
       <created>1400563600889</created>
       <updated>1400563600889</updated>
     </task>
-    <option name="localTasksCounter" value="117" />
+    <task id="LOCAL-00117" summary="dj friday">
+      <created>1400565003530</created>
+      <updated>1400565003530</updated>
+    </task>
+    <option name="localTasksCounter" value="118" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1081,24 +1090,24 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39027596" sideWeight="0.67018867" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.49962264" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290566" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2798949" sideWeight="0.6" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3997773" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28818062" sideWeight="0.50037736" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1654952" sideWeight="0.2182628" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24246396" sideWeight="0.67018867" order="7" side_tool="false" content_ui="tabs" x="616" y="74" width="514" height="898" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298292" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32802126" sideWeight="0.49962264" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290566" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17433962" sideWeight="0.7118194" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20323183" sideWeight="0.6662252" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28383705" sideWeight="0.49962264" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20571783" sideWeight="0.6662252" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3997773" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1654952" sideWeight="0.2182628" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28818062" sideWeight="0.50037736" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298292" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24246396" sideWeight="0.67018867" order="7" side_tool="false" content_ui="tabs" x="616" y="74" width="514" height="898" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298292" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2798949" sideWeight="0.6" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298292" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28383705" sideWeight="0.49962264" order="4" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1153,9 +1162,7 @@
     <entry file="file://$PROJECT_DIR$/cp_files.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="14" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0" vertical-offset="301" max-vertical-offset="1035">
-          <folding>
-            <element signature="e#78#87#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1366,11 +1373,6 @@
         <state line="464" column="16" selection-start="13042" selection-end="13042" vertical-scroll-proportion="-0.124223605" vertical-offset="6960" max-vertical-offset="9060" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flashPhone/flashphone.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="264" column="28" selection-start="9329" selection-end="9329" vertical-scroll-proportion="0.248497" vertical-offset="3836" max-vertical-offset="4335" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gen_url/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="0" selection-start="274" selection-end="274" vertical-scroll-proportion="0.4894434" vertical-offset="0" max-vertical-offset="521" />
@@ -1386,42 +1388,10 @@
         <state line="34" column="45" selection-start="795" selection-end="795" vertical-scroll-proportion="0.9769674" vertical-offset="1" max-vertical-offset="735" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flashPhone/devices_list.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="17" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="930">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/flashPhone/libs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="222" column="35" selection-start="6439" selection-end="6439" vertical-scroll-proportion="0.0" vertical-offset="2884" max-vertical-offset="4425">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gen_url/libs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="14" selection-start="78" selection-end="888" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gen_url/cp_file.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="45" selection-start="1148" selection-end="1148" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="1125">
-          <folding>
-            <element signature="e#78#87#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cp_files.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1035">
-          <folding>
-            <element signature="e#78#87#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1432,9 +1402,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/flashPhone/devices_list.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="17" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="930">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen_url/libs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="14" selection-start="284" selection-end="284" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen_url/cp_file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="45" selection-start="1148" selection-end="1148" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="1125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cp_files.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1035">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/gen_url/friday_lib.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="42" selection-start="736" selection-end="736" vertical-scroll-proportion="0.38828337" vertical-offset="135" max-vertical-offset="6180">
+        <state line="379" column="16" selection-start="11142" selection-end="11142" vertical-scroll-proportion="0.0" vertical-offset="5423" max-vertical-offset="6180">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flashPhone/flashphone.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="249" column="26" selection-start="8804" selection-end="8804" vertical-scroll-proportion="0.5163044" vertical-offset="3340" max-vertical-offset="4320">
           <folding />
         </state>
       </provider>

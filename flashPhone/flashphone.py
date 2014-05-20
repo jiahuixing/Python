@@ -239,15 +239,12 @@ class FlashPhone:
                             os.system(cmd)
 
     def to_flash_phone(self):
+        start_time = time.time()
         try:
-            start_time = time.time()
             self.download_tgz()
             self.un_tar()
             self.reboot_phone()
             self.flash_phone()
-            end_time = time.time()
-            cost_time = int(end_time - start_time)
-            debug_msg(color_msg('cost_time = %s seconds' % cost_time, RED))
         except KeyboardInterrupt:
             print('KeyboardInterrupt')
         except IndexError:
@@ -265,6 +262,9 @@ class FlashPhone:
                 # debug(cmd)
                 debug_msg(color_msg('rm folder \"%s\".' % self.folder, RED))
                 os.system(cmd)
+            end_time = time.time()
+            cost_time = int(end_time - start_time)
+            debug_msg(color_msg('cost_time = %s seconds' % cost_time, RED))
 
 
 # import threading
