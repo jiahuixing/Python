@@ -4,8 +4,8 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="dj friday&#10;add old named info">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flashPhone/bugreport.py" afterPath="$PROJECT_DIR$/flashPhone/bugreport.py" />
+    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="bugreport">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cp_files.py" afterPath="$PROJECT_DIR$/cp_files.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Python.iws" />
@@ -45,19 +45,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cp_files.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="cp_files.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cp_files.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="25" selection-start="750" selection-end="750" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="1020">
-              <folding />
+            <state line="29" column="47" selection-start="557" selection-end="557" vertical-scroll-proportion="0.34741145" vertical-offset="180" max-vertical-offset="1050">
+              <folding>
+                <element signature="e#78#87#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bugreport.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="bugreport.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flashPhone/bugreport.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="28" selection-start="872" selection-end="872" vertical-scroll-proportion="0.42915532" vertical-offset="225" max-vertical-offset="1170">
+            <state line="72" column="23" selection-start="2207" selection-end="2207" vertical-scroll-proportion="0.0" vertical-offset="436" max-vertical-offset="1170">
               <folding />
             </state>
           </provider>
@@ -163,12 +165,12 @@
         <option value="$PROJECT_DIR$/gen_url/libs.py" />
         <option value="$PROJECT_DIR$/flashPhone/devices_list.py" />
         <option value="$PROJECT_DIR$/flashPhone/libs.py" />
-        <option value="$PROJECT_DIR$/cp_files.py" />
         <option value="$PROJECT_DIR$/gen_url/cp_file.py" />
         <option value="$PROJECT_DIR$/flashPhone/flashphone.py" />
         <option value="$PROJECT_DIR$/gen_url/new_friday.py" />
         <option value="$PROJECT_DIR$/gen_url/friday_lib.py" />
         <option value="$PROJECT_DIR$/flashPhone/bugreport.py" />
+        <option value="$PROJECT_DIR$/cp_files.py" />
       </list>
     </option>
   </component>
@@ -1088,7 +1090,11 @@
       <created>1400574878146</created>
       <updated>1400574878146</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="bugreport">
+      <created>1400579746612</created>
+      <updated>1400579746612</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1146,7 +1152,6 @@
     <MESSAGE value="fix bug in comparing 2 date" />
     <MESSAGE value="add some debug msg" />
     <MESSAGE value="permission" />
-    <MESSAGE value="bugreport" />
     <MESSAGE value="flash phone cp files" />
     <MESSAGE value="add file pidcat.py" />
     <MESSAGE value=" delete file pidcat.py" />
@@ -1156,7 +1161,8 @@
     <MESSAGE value="flash phone" />
     <MESSAGE value="dj friday" />
     <MESSAGE value="dj friday&#10;add old named info" />
-    <option name="LAST_COMMIT_MESSAGE" value="dj friday&#10;add old named info" />
+    <MESSAGE value="bugreport" />
+    <option name="LAST_COMMIT_MESSAGE" value="bugreport" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1169,7 +1175,9 @@
     <entry file="file://$PROJECT_DIR$/cp_files.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="14" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0" vertical-offset="301" max-vertical-offset="1035">
-          <folding />
+          <folding>
+            <element signature="e#78#87#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1439,17 +1447,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cp_files.py">
+    <entry file="file://$PROJECT_DIR$/flashPhone/bugreport.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="25" selection-start="750" selection-end="750" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="1020">
+        <state line="72" column="23" selection-start="2207" selection-end="2207" vertical-scroll-proportion="0.0" vertical-offset="436" max-vertical-offset="1170">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flashPhone/bugreport.py">
+    <entry file="file://$PROJECT_DIR$/cp_files.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="28" selection-start="872" selection-end="872" vertical-scroll-proportion="0.42915532" vertical-offset="225" max-vertical-offset="1170">
-          <folding />
+        <state line="29" column="47" selection-start="557" selection-end="557" vertical-scroll-proportion="0.34741145" vertical-offset="180" max-vertical-offset="1050">
+          <folding>
+            <element signature="e#78#87#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

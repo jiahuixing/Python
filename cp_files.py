@@ -5,6 +5,8 @@ __author__ = 'jiahuixing'
 import os
 import pexpect
 
+from flashPhone.libs import color_msg
+
 
 valid_suffix = [
     'py',
@@ -43,7 +45,8 @@ def cp_files():
             if is_in == 1:
                 print('------%s------' % file_name)
                 cmd = 'sudo cp -rf %s %s' % (file_name, termini_path)
-                print('cmd = %s' % cmd)
+                color_cmd = 'sudo cp -rf %s %s' % (color_msg(file_name), termini_path)
+                print('cmd = %s' % color_cmd)
                 # if file_or_folder == 0:
                 child = pexpect.spawn(cmd)
                 try:
