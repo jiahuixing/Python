@@ -4,9 +4,8 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="flash phone">
+    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="dj friday">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen_url/friday_lib.py" afterPath="$PROJECT_DIR$/gen_url/friday_lib.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen_url/new_friday.py" afterPath="$PROJECT_DIR$/gen_url/new_friday.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Python.iws" />
@@ -76,7 +75,7 @@
       <file leaf-file-name="friday_lib.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gen_url/friday_lib.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="401" column="36" selection-start="11796" selection-end="11796" vertical-scroll-proportion="0.51055664" vertical-offset="5719" max-vertical-offset="6240">
+            <state line="12" column="0" selection-start="199" selection-end="199" vertical-scroll-proportion="0.28790787" vertical-offset="0" max-vertical-offset="6240">
               <folding />
             </state>
           </provider>
@@ -1086,7 +1085,11 @@
       <created>1400569682043</created>
       <updated>1400569682043</updated>
     </task>
-    <option name="localTasksCounter" value="119" />
+    <task id="LOCAL-00119" summary="dj friday">
+      <created>1400573177672</created>
+      <updated>1400573177673</updated>
+    </task>
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1152,9 +1155,9 @@
     <MESSAGE value="cp files" />
     <MESSAGE value="libs" />
     <MESSAGE value="libs color msg" />
-    <MESSAGE value="dj friday" />
     <MESSAGE value="flash phone" />
-    <option name="LAST_COMMIT_MESSAGE" value="flash phone" />
+    <MESSAGE value="dj friday" />
+    <option name="LAST_COMMIT_MESSAGE" value="dj friday" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1444,7 +1447,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gen_url/friday_lib.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="401" column="36" selection-start="11796" selection-end="11796" vertical-scroll-proportion="0.51055664" vertical-offset="5719" max-vertical-offset="6240">
+        <state line="12" column="0" selection-start="199" selection-end="199" vertical-scroll-proportion="0.28790787" vertical-offset="0" max-vertical-offset="6240">
           <folding />
         </state>
       </provider>

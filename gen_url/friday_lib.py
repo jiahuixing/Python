@@ -8,8 +8,8 @@ __author__ = 'jiahuixing'
 
 import os
 
-WORK_PATH = '/home/jiahuixing/Python/gen_url'
-# WORK_PATH = '/data/ota'
+# WORK_PATH = '/home/jiahuixing/Python/gen_url'
+WORK_PATH = '/data/ota'
 
 IGNORE_OTA = 'ota'
 GLOBAL_SIGN = 'global'
