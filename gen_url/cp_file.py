@@ -44,23 +44,26 @@ def cp_file():
         if file_name not in ignore_files:
             is_in = file_suffix(file_name)
             if is_in == 1:
-                file_name = color_msg(file_name)
                 cmd = 'sudo cp -rf %s %s' % (file_name, termini_path)
-                print('cmd = %s' % cmd)
-                # if file_or_folder == 0:
-                child = pexpect.spawn(cmd)
+                file_name = color_msg(file_name)
+                print_cmd = 'sudo cp -rf %s %s' % (file_name, termini_path)
+                print('cmd = %s' % print_cmd)
+                child = pexpect.spawn(cmd, timeout=5)
                 try:
                     i = child.expect('jiahuixing:')
                     if i == 0:
                         # print('i=%s' % i)
                         cmd = '1'
                         child.sendline(cmd)
-                except pexpect.EOF:
-                    print('pexpect.EOF')
+                        child.expect(pexpect.EOF)
+                # except pexpect.EOF:
+                #     print('pexpect.EOF')
                 except pexpect.TIMEOUT:
                     print('pexpect.TIMEOUT')
                     # else:
                     #     os.system(cmd)
+                finally:
+                    child.close()
 
 
 cp_file()

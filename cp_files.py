@@ -49,11 +49,12 @@ def cp_files():
                 try:
                     i = child.expect('jiahuixing:')
                     if i == 0:
-                        print('i=%s' % i)
+                        # print('i=%s' % i)
                         cmd = '1'
                         child.sendline(cmd)
-                except pexpect.EOF:
-                    print('pexpect.EOF')
+                        child.expect(pexpect.EOF)
+                # except pexpect.EOF:
+                #     print('pexpect.EOF')
                 except pexpect.TIMEOUT:
                     print('pexpect.TIMEOUT')
                     # else:

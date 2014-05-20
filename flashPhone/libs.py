@@ -223,9 +223,9 @@ def adb_permission():
                     child.send(cmd)
         except pexpect.EOF:
             debug_msg('EOF')
-            child.close()
         except pexpect.TIMEOUT:
             debug_msg('TIMEOUT')
+        finally:
             child.close()
 
 
