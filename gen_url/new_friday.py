@@ -26,7 +26,8 @@ class Generate:
     def get_version(self):
         if len(sys.argv) >= 2:
             # if len(sys.argv) >= 3:
-            version = sys.argv[1]
+            # version = sys.argv[1]
+            version = str.replace(sys.argv[1], '/', '')
         else:
             version = get_date()
         self.m_version = version

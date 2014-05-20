@@ -8,8 +8,8 @@ __author__ = 'jiahuixing'
 
 import os
 
-# WORK_PATH = '/home/jiahuixing/Python/gen_url'
-WORK_PATH = '/data/ota'
+WORK_PATH = '/home/jiahuixing/Python/gen_url'
+# WORK_PATH = '/data/ota'
 
 IGNORE_OTA = 'ota'
 GLOBAL_SIGN = 'global'
@@ -229,14 +229,14 @@ def get_area_type(file_name):
     name = str.lower(file_name)
     if GLOBAL_SIGN in name:
         area_type = '国际'
-        for i in xrange(len(Area_Types)):
-            flag1 = Area_Types[i][0]
-            flag2 = Area_Types[i][1]
-            if flag1 in file_name or flag2 in file_name:
-                area_type = Area_Types[i][2]
-                break
-            else:
-                continue
+    for i in xrange(len(Area_Types)):
+        flag1 = Area_Types[i][0]
+        flag2 = Area_Types[i][1]
+        if flag1 in file_name or flag2 in file_name:
+            area_type = Area_Types[i][2]
+            break
+        else:
+            continue
     return area_type
 
 
@@ -316,6 +316,7 @@ def walk_dir(folder_name):
                     tmp.append(file_name)
                     tmp.append(name)
                     debug_msg(color_msg('----------------------------------------------------'))
+                    debug_msg(color_msg('model_idx = %s,idx = %s' % (model_idx, idx)))
                     debug_msg(color_msg('file_name = %s' % file_name))
                     debug_msg(color_msg('name = %s' % name))
                     debug_msg(color_msg('md5 = %s' % md5))
@@ -337,6 +338,9 @@ def walk_dir(folder_name):
                         if name not in keys:
                             info_pad[name] = list()
                         info_pad[name].append(tmp)
+        # debug_msg(info_xiaomi)
+        # debug_msg(info_redmi)
+        # debug_msg(info_pad)
         return info_xiaomi, info_redmi, info_pad
     else:
         print('folder:%s not exist.' % folder_name)
