@@ -75,7 +75,7 @@
       <file leaf-file-name="friday_lib.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gen_url/friday_lib.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="199" selection-end="199" vertical-scroll-proportion="0.28790787" vertical-offset="0" max-vertical-offset="6240">
+            <state line="15" column="0" selection-start="242" selection-end="242" vertical-scroll-proportion="0.2656676" vertical-offset="0" max-vertical-offset="6615">
               <folding />
             </state>
           </provider>
@@ -1089,7 +1089,11 @@
       <created>1400573177672</created>
       <updated>1400573177673</updated>
     </task>
-    <option name="localTasksCounter" value="120" />
+    <task id="LOCAL-00120" summary="dj friday">
+      <created>1400573206306</created>
+      <updated>1400573206306</updated>
+    </task>
+    <option name="localTasksCounter" value="121" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1099,7 +1103,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39027596" sideWeight="0.67018867" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.49962264" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290566" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2798949" sideWeight="0.6" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2798949" sideWeight="0.6" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3997773" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28818062" sideWeight="0.50037736" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1654952" sideWeight="0.2182628" order="1" side_tool="true" content_ui="tabs" />
@@ -1447,7 +1451,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gen_url/friday_lib.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="199" selection-end="199" vertical-scroll-proportion="0.28790787" vertical-offset="0" max-vertical-offset="6240">
+        <state line="15" column="0" selection-start="242" selection-end="242" vertical-scroll-proportion="0.2656676" vertical-offset="0" max-vertical-offset="6615">
           <folding />
         </state>
       </provider>

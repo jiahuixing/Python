@@ -19,7 +19,7 @@ MAIN_URL = 'http://bigota.d.miui.com'
 Rom_Properties = [
 
     [
-        #小米手机机型
+        #小米手机机型 new named
         ['mione_plus_', 'Mioneplus_', '小米手机1/1S'],
         ['aries_', 'MI2_', '小米手机2/2S'],
         ['aries_alpha_', 'MI2Alpha_', '小米手机2/2S'],
@@ -31,9 +31,16 @@ Rom_Properties = [
         ['cancro_', 'MI3W_', '小米手机3-CDMA/WCDMA'],
         ['cancro_alpha_', 'MI3WAlpha_', '小米手机3-CDMA/WCDMA'],
         ['cancro_global_', 'MI3WGlobal_', '小米手机3-CDMA/WCDMA'],
+
+        #小米手机机型 old named
+        ['cancro_my_', 'MI3WMY_', '小米手机3-CDMA/WCDMA'],
+        ['cancro_sg_', 'MI3WSG_', '小米手机3-CDMA/WCDMA'],
+        ['cancro_tw_', 'MI3WTW_', '小米手机3-CDMA/WCDMA'],
+        ['cancro_hk_', 'MI3WHK_', '小米手机3-CDMA/WCDMA'],
+
     ],
     [
-        #红米手机机型
+        #红米手机机型 new named
         ['wt93007_', 'HM2_', '红米手机-TD'],
         ['wt98007_', 'HM2W_', '红米手机-WCDMA'],
         ['wt98007_global_', 'HM2WGlobal_', '红米手机-WCDMA'],
@@ -44,11 +51,29 @@ Rom_Properties = [
         ['lcsh92_wet_tdd_', 'H3TD_', '红米Note-TD'],
         ['lcsh92_wet_jb9_', 'H3W_', '红米Note-WCDMA'],
         ['lcsh92_wet_jb9_global_', 'H3WGlobal_', '红米Note-WCDMA'],
+
+        #红米手机机型 old named
+        ['HM2013023_tw_', 'HM2WTW_', '红米手机-WCDMA'],
+        ['HM2013023_sg_', 'HM2WSG_', '红米手机-WCDMA'],
+        ['HM2013023_my_', 'HM2WMY_', '红米手机-WCDMA'],
+        ['HM2013023_hk_', 'HM2WHK_', '红米手机-WCDMA'],
+
+        ['armani_tw_', 'H2ATW_', '红米手机1S'],
+        ['armani_hk_', 'H2AHK_', '红米手机1S'],
+        ['armani_my_', 'H2AMY_', '红米手机1S'],
+        ['armani_sg_', 'H2ASG_', '红米手机1S'],
+
+        ['lcsh92_wet_jb9_sg_', 'H3WSG_', '红米Note-WCDMA'],
+        ['lcsh92_wet_jb9_my_', 'H3WMY_', '红米Note-WCDMA'],
+        ['lcsh92_wet_jb9_hk_', 'H3WHK_', '红米Note-WCDMA'],
+        ['lcsh92_wet_jb9_tw_', 'H3WTW_', '红米Note-WCDMA'],
+
     ],
 
     [
-        #小米Pad机型
+        #小米Pad机型 new named
         ['MOCHA_', 'mocha_', '小米平板X6'],
+
     ],
 
 ]
@@ -298,7 +323,7 @@ def walk_dir(folder_name):
                 #model_idx idx md5 size file_name
                 tmp = list()
                 model_idx, idx, str_idx = get_rom_idx(file_name)
-                min_idx = '0'
+                min_idx = 0
                 if str_idx != min_idx:
                     # debug_msg(file_name)
                     # debug_msg('model_idx=%s,idx=%s' % (model_idx, idx))
@@ -380,7 +405,7 @@ def to_get_url(info, version):
                         rom_type = tmp[4]
                         file_name = tmp[5]
                         name = tmp[6]
-                        body = '%s%s MIUI %s %s \n%s%s\nsize:%s    md5:%s\n' % (
+                        body = '%s%s MIUI %s %s \n%s%s\nsize:%s    md5:%s\n\n' % (
                             body, name, version, rom_type, domain, file_name, size, md5)
                     body += '—————————————————————————————————————————————————— \n\n'
             m_url = head + body + end
