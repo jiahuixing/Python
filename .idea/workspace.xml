@@ -4,8 +4,8 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="bugreport">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cp_files.py" afterPath="$PROJECT_DIR$/cp_files.py" />
+    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="cp files">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flashPhone/bugreport.py" afterPath="$PROJECT_DIR$/flashPhone/bugreport.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Python.iws" />
@@ -39,27 +39,7 @@
       <file leaf-file-name="new_friday.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gen_url/new_friday.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="47" selection-start="1021" selection-end="1021" vertical-scroll-proportion="0.0" vertical-offset="181" max-vertical-offset="915">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cp_files.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cp_files.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="47" selection-start="557" selection-end="557" vertical-scroll-proportion="0.34741145" vertical-offset="180" max-vertical-offset="1050">
-              <folding>
-                <element signature="e#78#87#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bugreport.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flashPhone/bugreport.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="23" selection-start="2207" selection-end="2207" vertical-scroll-proportion="0.0" vertical-offset="436" max-vertical-offset="1170">
+            <state line="10" column="19" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0" vertical-offset="181" max-vertical-offset="915">
               <folding />
             </state>
           </provider>
@@ -77,7 +57,7 @@
       <file leaf-file-name="flashphone.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flashPhone/flashphone.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="266" column="45" selection-start="9403" selection-end="9403" vertical-scroll-proportion="0.0" vertical-offset="2146" max-vertical-offset="4320">
+            <state line="243" column="29" selection-start="8601" selection-end="8613" vertical-scroll-proportion="0.0" vertical-offset="3136" max-vertical-offset="4320">
               <folding />
             </state>
           </provider>
@@ -86,7 +66,7 @@
       <file leaf-file-name="cp_file.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gen_url/cp_file.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="45" selection-start="1148" selection-end="1148" vertical-scroll-proportion="0.0" vertical-offset="735" max-vertical-offset="1125">
+            <state line="57" column="24" selection-start="1453" selection-end="1478" vertical-scroll-proportion="0.0" vertical-offset="346" max-vertical-offset="1080">
               <folding />
             </state>
           </provider>
@@ -95,8 +75,19 @@
       <file leaf-file-name="libs.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gen_url/libs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="14" selection-start="284" selection-end="284" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="675">
+            <state line="14" column="14" selection-start="284" selection-end="284" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bugreport.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/flashPhone/bugreport.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="28" selection-start="553" selection-end="553" vertical-scroll-proportion="0.5517711" vertical-offset="0" max-vertical-offset="1485">
+              <folding>
+                <element signature="e#78#92#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -169,8 +160,8 @@
         <option value="$PROJECT_DIR$/flashPhone/flashphone.py" />
         <option value="$PROJECT_DIR$/gen_url/new_friday.py" />
         <option value="$PROJECT_DIR$/gen_url/friday_lib.py" />
-        <option value="$PROJECT_DIR$/flashPhone/bugreport.py" />
         <option value="$PROJECT_DIR$/cp_files.py" />
+        <option value="$PROJECT_DIR$/flashPhone/bugreport.py" />
       </list>
     </option>
   </component>
@@ -1094,7 +1085,11 @@
       <created>1400579746612</created>
       <updated>1400579746612</updated>
     </task>
-    <option name="localTasksCounter" value="123" />
+    <task id="LOCAL-00123" summary="cp files">
+      <created>1400583757396</created>
+      <updated>1400583757396</updated>
+    </task>
+    <option name="localTasksCounter" value="124" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1155,14 +1150,14 @@
     <MESSAGE value="flash phone cp files" />
     <MESSAGE value="add file pidcat.py" />
     <MESSAGE value=" delete file pidcat.py" />
-    <MESSAGE value="cp files" />
     <MESSAGE value="libs" />
     <MESSAGE value="libs color msg" />
     <MESSAGE value="flash phone" />
     <MESSAGE value="dj friday" />
     <MESSAGE value="dj friday&#10;add old named info" />
     <MESSAGE value="bugreport" />
-    <option name="LAST_COMMIT_MESSAGE" value="bugreport" />
+    <MESSAGE value="cp files" />
+    <option name="LAST_COMMIT_MESSAGE" value="cp files" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1398,34 +1393,6 @@
         <state line="34" column="45" selection-start="795" selection-end="795" vertical-scroll-proportion="0.9769674" vertical-offset="1" max-vertical-offset="735" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gen_url/libs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="14" selection-start="284" selection-end="284" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gen_url/cp_file.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="45" selection-start="1148" selection-end="1148" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="1125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flashPhone/flashphone.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="266" column="45" selection-start="9403" selection-end="9403" vertical-scroll-proportion="0.0" vertical-offset="2146" max-vertical-offset="4320">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gen_url/friday_lib.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="318" column="24" selection-start="8269" selection-end="8269" vertical-scroll-proportion="0.0" vertical-offset="2070" max-vertical-offset="6615">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/flashPhone/devices_list.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="17" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="930">
@@ -1440,25 +1407,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cp_files.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="47" selection-start="559" selection-end="559" vertical-scroll-proportion="0.52997273" vertical-offset="76" max-vertical-offset="1080">
+          <folding>
+            <element signature="e#78#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/gen_url/new_friday.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="47" selection-start="1021" selection-end="1021" vertical-scroll-proportion="0.0" vertical-offset="394" max-vertical-offset="915">
+        <state line="10" column="19" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0" vertical-offset="181" max-vertical-offset="915">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen_url/friday_lib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="318" column="24" selection-start="8269" selection-end="8269" vertical-scroll-proportion="0.0" vertical-offset="2070" max-vertical-offset="6615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flashPhone/flashphone.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="243" column="29" selection-start="8601" selection-end="8613" vertical-scroll-proportion="0.0" vertical-offset="3136" max-vertical-offset="4320">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen_url/libs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="14" selection-start="284" selection-end="284" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen_url/cp_file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="24" selection-start="1453" selection-end="1478" vertical-scroll-proportion="0.0" vertical-offset="346" max-vertical-offset="1080">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/flashPhone/bugreport.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="23" selection-start="2207" selection-end="2207" vertical-scroll-proportion="0.0" vertical-offset="436" max-vertical-offset="1170">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cp_files.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="47" selection-start="557" selection-end="557" vertical-scroll-proportion="0.34741145" vertical-offset="180" max-vertical-offset="1050">
+        <state line="27" column="28" selection-start="553" selection-end="553" vertical-scroll-proportion="0.5517711" vertical-offset="0" max-vertical-offset="1485">
           <folding>
-            <element signature="e#78#87#0" expanded="true" />
+            <element signature="e#78#92#0" expanded="true" />
           </folding>
         </state>
       </provider>

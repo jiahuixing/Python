@@ -6,6 +6,7 @@ from libs import *
 
 root_path = '/home/jiahuixing'
 bug_path = 'bugreport'
+svn_path = '/home/jiahuixing/SVN/Bugreport/trunk/'
 
 bug_suffix = '.txt'
 tgz_suffix = '.tar.gz'
@@ -15,6 +16,7 @@ class Bugreport:
     work_path = ''
     file_name = ''
     txt_name = ''
+    tgz_name = ''
     adb_device_list = list()
 
     def __init__(self):
@@ -51,20 +53,38 @@ class Bugreport:
                 debug_msg(cmd)
                 os.system(cmd)
                 self.tar_file()
+                self.push_tgz()
         else:
             print('adb device not found.')
 
     # noinspection PyMethodMayBeStatic
     def tar_file(self):
-        tgz_name = '%s%s' % (self.file_name, tgz_suffix)
-        debug_msg(color_msg(tgz_name))
+        self.tgz_name = '%s%s' % (self.file_name, tgz_suffix)
+        debug_msg(color_msg(self.tgz_name))
         os.chdir(self.work_path)
-        cmd = 'tar -zcvf %s %s%s' % (tgz_name, self.file_name, bug_suffix)
+        cmd = 'tar -zcvf %s %s%s' % (self.tgz_name, self.file_name, bug_suffix)
         debug_msg(cmd)
         os.system(cmd)
         cmd = 'rm -rf %s' % self.txt_name
         debug_msg(cmd)
         os.system(cmd)
+
+    def push_tgz(self):
+        cmd = 'sudo cp -rf %s %s' % (self.tgz_name, svn_path)
+        debug_msg(cmd)
+        child = pexpect.spawn(cmd, timeout=5)
+        try:
+            i = child.expect(':')
+            if i == 0:
+                child.sendline('1')
+                child.expect(pexpect.EOF)
+        except pexpect.TIMEOUT:
+            print('TIMEOUT')
+        finally:
+            child.close()
+            cmd = 'rm -rf %s' % self.tgz_name
+            debug_msg(cmd)
+            os.system(cmd)
 
 
 if __name__ == '__main__':
