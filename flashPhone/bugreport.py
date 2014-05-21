@@ -37,6 +37,7 @@ class Bugreport:
         self.adb_device_list = sorted(adb_device_list)
 
     def get_bugreport(self):
+        debug_msg(color_msg('------get_bugreport------', RED))
         if len(self.adb_device_list) > 0:
             debug_msg(self.work_path)
             os.chdir(root_path)
@@ -59,6 +60,7 @@ class Bugreport:
 
     # noinspection PyMethodMayBeStatic
     def tar_file(self):
+        debug_msg(color_msg('------tar_file------', RED))
         self.tgz_name = '%s%s' % (self.file_name, tgz_suffix)
         debug_msg(color_msg(self.tgz_name))
         os.chdir(self.work_path)
@@ -70,6 +72,7 @@ class Bugreport:
         os.system(cmd)
 
     def push_tgz(self):
+        debug_msg(color_msg('------push_tgz------', RED))
         cmd = 'sudo cp -rf %s %s' % (self.tgz_name, svn_path)
         debug_msg(cmd)
         child = pexpect.spawn(cmd, timeout=5)
