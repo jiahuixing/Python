@@ -121,7 +121,7 @@ class FlashPhone:
                 rom = choice[0]
                 pat = r'%s' % choice[1]
                 debug_msg(color_msg('rom=%s' % rom))
-                debug_msg(color_msg('pat=%s' % pat))
+                # debug_msg(color_msg('pat=%s' % pat))
                 page = urllib2.urlopen(td_main_url, timeout=5).read()
                 pattern = re.compile(pat)
                 # debug('pattern=%s' % pattern)
@@ -267,6 +267,8 @@ class FlashPhone:
             print('IOError')
         except TypeError:
             print('TypeError')
+        except NameError:
+            print('NameError')
         finally:
             self.delete_file()
             end_time = time.time()
