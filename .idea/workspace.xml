@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="flash phone">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flashPhone/flash_phone_test.py" afterPath="$PROJECT_DIR$/flashPhone/flash_phone_test.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flashPhone/flashphone.py" afterPath="$PROJECT_DIR$/flashPhone/flashphone.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flashPhone/push.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Python.iws" />
@@ -46,10 +45,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="flashphone.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="flashphone.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flashPhone/flashphone.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="270" column="59" selection-start="9561" selection-end="9561" vertical-scroll-proportion="1.3882834" vertical-offset="3016" max-vertical-offset="4380">
+            <state line="243" column="39" selection-start="8701" selection-end="8701" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4380">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="push.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/flashPhone/push.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="0" selection-start="513" selection-end="513" vertical-scroll-proportion="0.5517711" vertical-offset="0" max-vertical-offset="1485">
               <folding />
             </state>
           </provider>
@@ -162,6 +170,7 @@
         <option value="$PROJECT_DIR$/flashPhone/bugreport.py" />
         <option value="$PROJECT_DIR$/flashPhone/flash_phone_test.py" />
         <option value="$PROJECT_DIR$/flashPhone/flashphone.py" />
+        <option value="$PROJECT_DIR$/flashPhone/push.py" />
       </list>
     </option>
   </component>
@@ -1117,7 +1126,11 @@
       <created>1400751656907</created>
       <updated>1400751656907</updated>
     </task>
-    <option name="localTasksCounter" value="131" />
+    <task id="LOCAL-00131" summary="flash phone">
+      <created>1400762905606</created>
+      <updated>1400762905606</updated>
+    </task>
+    <option name="localTasksCounter" value="132" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1195,13 +1208,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gen_url/friday_lib.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="363" column="31" selection-start="10606" selection-end="10606" vertical-scroll-proportion="0.0" vertical-offset="5445" max-vertical-offset="5730">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/flashPhone/do_operate.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="35" selection-start="1273" selection-end="1273" vertical-scroll-proportion="0.0" vertical-offset="92" max-vertical-offset="780" />
@@ -1481,7 +1487,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flashPhone/flashphone.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="270" column="59" selection-start="9561" selection-end="9561" vertical-scroll-proportion="1.3882834" vertical-offset="3016" max-vertical-offset="4380">
+        <state line="243" column="39" selection-start="8701" selection-end="8701" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4380">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flashPhone/push.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="513" selection-end="513" vertical-scroll-proportion="0.5517711" vertical-offset="0" max-vertical-offset="1485">
           <folding />
         </state>
       </provider>
