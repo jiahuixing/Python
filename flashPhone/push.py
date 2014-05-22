@@ -18,10 +18,10 @@ class Push:
     device_list = list()
 
     def __init__(self):
-        self.init_op()
+        self.init_apk()
         self.adb_device_list = self.get_adb_device_list()
 
-    def init_op(self):
+    def init_apk(self):
         if len(sys.argv) > 1:
             self.apk = str.replace(sys.argv[1], '/', '')
         else:

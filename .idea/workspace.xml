@@ -4,8 +4,8 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="flash phone">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flashPhone/push.py" />
+    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="push">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flashPhone/push.py" afterPath="$PROJECT_DIR$/flashPhone/push.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Python.iws" />
@@ -49,7 +49,9 @@
         <entry file="file://$PROJECT_DIR$/flashPhone/flashphone.py">
           <provider selected="true" editor-type-id="text-editor">
             <state line="243" column="39" selection-start="8701" selection-end="8701" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4380">
-              <folding />
+              <folding>
+                <marker date="1400762695573" expanded="true" signature="188:9577" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -57,7 +59,7 @@
       <file leaf-file-name="push.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flashPhone/push.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="0" selection-start="513" selection-end="513" vertical-scroll-proportion="0.5517711" vertical-offset="0" max-vertical-offset="1485">
+            <state line="32" column="21" selection-start="629" selection-end="629" vertical-scroll-proportion="0.5108992" vertical-offset="90" max-vertical-offset="1485">
               <folding />
             </state>
           </provider>
@@ -1130,7 +1132,11 @@
       <created>1400762905606</created>
       <updated>1400762905606</updated>
     </task>
-    <option name="localTasksCounter" value="132" />
+    <task id="LOCAL-00132" summary="push">
+      <created>1400763327626</created>
+      <updated>1400763327626</updated>
+    </task>
+    <option name="localTasksCounter" value="133" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1173,7 +1179,6 @@
       <TodoPanelSettings />
     </option>
     <option name="SHOW_FILE_HISTORY_DETAILS" value="false" />
-    <MESSAGE value="color help" />
     <MESSAGE value="threading test" />
     <MESSAGE value="sh files" />
     <MESSAGE value="pexpect" />
@@ -1198,7 +1203,8 @@
     <MESSAGE value="cp files" />
     <MESSAGE value="bugreport" />
     <MESSAGE value="flash phone" />
-    <option name="LAST_COMMIT_MESSAGE" value="flash phone" />
+    <MESSAGE value="push" />
+    <option name="LAST_COMMIT_MESSAGE" value="push" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1488,13 +1494,15 @@
     <entry file="file://$PROJECT_DIR$/flashPhone/flashphone.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="243" column="39" selection-start="8701" selection-end="8701" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4380">
-          <folding />
+          <folding>
+            <marker date="1400762695573" expanded="true" signature="188:9577" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/flashPhone/push.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="513" selection-end="513" vertical-scroll-proportion="0.5517711" vertical-offset="0" max-vertical-offset="1485">
+        <state line="32" column="21" selection-start="629" selection-end="629" vertical-scroll-proportion="0.5108992" vertical-offset="90" max-vertical-offset="1485">
           <folding />
         </state>
       </provider>
