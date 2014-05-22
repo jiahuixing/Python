@@ -50,7 +50,7 @@ class Push:
         else:
             print('No device.')
 
-    def operate_devices(self):
+    def push_apk(self):
         if len(self.device_list) > 0:
             rm_files = 'Music.*'
             for device in self.device_list:
@@ -92,4 +92,4 @@ class Device:
 if __name__ == '__main__':
     push = Push()
     push.init_devices()
-    push.operate_devices()
+    push.push_apk()
