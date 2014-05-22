@@ -256,12 +256,17 @@ class FlashPhone:
         except TypeError:
             print('TypeError')
         finally:
+            os.chdir(WORK_PATH)
+            if self.file_name != '':
+                if os.path.exists(self.file_name):
+                    cmd = 'rm -rf %s' % self.file_name
+                    debug_msg(color_msg('rm file \"%s\".' % self.file_name, RED))
+                    os.system(cmd)
             if self.folder != '':
-                os.chdir(WORK_PATH)
-                cmd = 'rm -rf %s' % self.folder
-                # debug(cmd)
-                debug_msg(color_msg('rm folder \"%s\".' % self.folder, RED))
-                os.system(cmd)
+                if os.path.exists(self.folder):
+                    cmd = 'rm -rf %s' % self.folder
+                    debug_msg(color_msg('rm folder \"%s\".' % self.folder, RED))
+                    os.system(cmd)
             end_time = time.time()
             cost_time = int(end_time - start_time)
             debug_msg(color_msg('cost_time = %s seconds' % cost_time, RED))
