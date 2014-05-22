@@ -11,7 +11,7 @@ WORK_PATH = '/home/jiahuixing/Python/flashPhone'
 
 
 class FlashPhone:
-    file_name = ''
+    tgz_name = ''
     folder = ''
     date = ''
     xml = ''
@@ -134,8 +134,8 @@ class FlashPhone:
                     cmd = 'wget %s' % td_tgz_url
                     # debug(cmd)
                     os.system(cmd)
-                    self.file_name = tgz_name
-                    if os.path.exists(self.file_name):
+                    self.tgz_name = tgz_name
+                    if os.path.exists(self.tgz_name):
                         self.flag += 1
                 else:
                     print('%s file not find on the site.' % self.date)
@@ -145,15 +145,14 @@ class FlashPhone:
         if self.flag == 1:
             msg = 'un_tar'
             print(color_msg(msg, GREEN))
-            file_name = self.file_name
-            cmd = 'tar xvf %s' % file_name
+            cmd = 'tar xvf %s' % self.tgz_name
             # debug(cmd)
             os.system(cmd)
-            # cmd = 'rm -rf %s' % file_name
+            # cmd = 'rm -rf %s' % tgz_name
             # # debug(cmd)
-            # debug_msg(color_msg('rm tgz \"%s\".' % file_name, RED))
+            # debug_msg(color_msg('rm tgz \"%s\".' % tgz_name, RED))
             # os.system(cmd)
-            self.folder = file_name[0:-len('_f0e572b4f6.tgz')]
+            self.folder = self.tgz_name[0:-len('_f0e572b4f6.tgz')]
             # debug('folder=%s' % self.folder)
             self.flag += 1
 
@@ -240,10 +239,10 @@ class FlashPhone:
 
     def delete_file(self):
         os.chdir(WORK_PATH)
-        if self.file_name != '':
-            if os.path.exists(self.file_name):
-                cmd = 'rm -rf %s' % self.file_name
-                debug_msg(color_msg('rm file \"%s\".' % self.file_name, RED))
+        if self.tgz_name != '':
+            if os.path.exists(self.tgz_name):
+                cmd = 'rm -rf %s' % self.tgz_name
+                debug_msg(color_msg('rm file \"%s\".' % self.tgz_name, RED))
                 os.system(cmd)
         if self.folder != '':
             if os.path.exists(self.folder):
