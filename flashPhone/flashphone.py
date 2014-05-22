@@ -17,6 +17,7 @@ class FlashPhone:
     xml = ''
 
     adb_device = ''
+    product_name = ''
     fastboot_device = ''
     adb_device_list = list()
     fastboot_device_list = list()
@@ -76,7 +77,6 @@ class FlashPhone:
                     result = 2
             else:
                 result = 2
-
         return result
 
     def get_info(self):
@@ -170,17 +170,12 @@ class FlashPhone:
 
     # noinspection PyMethodMayBeStatic
     def get_adb_device_type(self):
-        adb_device_type = None
-        try:
-            cmd = 'adb shell getprop | grep ro.product.name'
-            child = os.popen(cmd)
-            build_name = child.readline().strip('\n').strip('\r').replace('[', '').replace(']', '').split(':')[1]
-            debug_msg(build_name)
-            for i in xrange(len(self.info_s)):
-                if build_name == self.info_s[i][0]:
-                    adb_device_type = i
-        finally:
-            return adb_device_type
+        product_name = None
+        if self.adb_device != '':
+            cmd = 'adb -s %s shell getprop ro.product.name' % self.adb_device
+            result = os.popen(cmd)
+            product_name = result.readline().strip('\n').strip('\r')
+        return product_name
 
     def reboot_phone(self):
         if self.flag == 2:

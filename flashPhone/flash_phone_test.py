@@ -212,15 +212,10 @@ def test14():
 
 
 def test15():
-    try:
-        cmd = 'adb shell getprop | grep ro.product.name'
-        child = os.popen(cmd)
-        build_name = child.readline().strip('\n').strip('\r').replace('[', '').replace(']', '').split(':')[1]
-        debug_msg(build_name)
-    except IndexError:
-        print('IndexError')
-        # for line in child.readlines():
-        #     debug(line)
+    cmd = 'adb shell getprop ro.product.name'
+    result = os.popen(cmd)
+    product_name = result.readline().strip('\n').strip('\r')
+    print(product_name + 'aaaa')
 
 
 if __name__ == '__main__':
