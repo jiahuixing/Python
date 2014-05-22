@@ -4,7 +4,7 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="bugreport">
+    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="flash phone">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flashPhone/flashphone.py" afterPath="$PROJECT_DIR$/flashPhone/flashphone.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -66,7 +66,7 @@
       <file leaf-file-name="flashphone.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flashPhone/flashphone.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="161" column="41" selection-start="5213" selection-end="5213" vertical-scroll-proportion="0.366485" vertical-offset="2131" max-vertical-offset="4395">
+            <state line="156" column="35" selection-start="5064" selection-end="5064" vertical-scroll-proportion="0.69346046" vertical-offset="1816" max-vertical-offset="4440">
               <folding />
             </state>
           </provider>
@@ -1109,7 +1109,11 @@
       <created>1400665902525</created>
       <updated>1400665902525</updated>
     </task>
-    <option name="localTasksCounter" value="127" />
+    <task id="LOCAL-00127" summary="flash phone">
+      <created>1400745586815</created>
+      <updated>1400745586815</updated>
+    </task>
+    <option name="localTasksCounter" value="128" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1172,12 +1176,12 @@
     <MESSAGE value=" delete file pidcat.py" />
     <MESSAGE value="libs" />
     <MESSAGE value="libs color msg" />
-    <MESSAGE value="flash phone" />
     <MESSAGE value="dj friday" />
     <MESSAGE value="dj friday&#10;add old named info" />
     <MESSAGE value="cp files" />
     <MESSAGE value="bugreport" />
-    <option name="LAST_COMMIT_MESSAGE" value="bugreport" />
+    <MESSAGE value="flash phone" />
+    <option name="LAST_COMMIT_MESSAGE" value="flash phone" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1471,7 +1475,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flashPhone/flashphone.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="161" column="41" selection-start="5213" selection-end="5213" vertical-scroll-proportion="0.366485" vertical-offset="2131" max-vertical-offset="4395">
+        <state line="156" column="35" selection-start="5064" selection-end="5064" vertical-scroll-proportion="0.69346046" vertical-offset="1816" max-vertical-offset="4440">
           <folding />
         </state>
       </provider>

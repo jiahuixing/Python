@@ -149,10 +149,10 @@ class FlashPhone:
             cmd = 'tar xvf %s' % file_name
             # debug(cmd)
             os.system(cmd)
-            cmd = 'rm -rf %s' % file_name
-            # debug(cmd)
-            debug_msg(color_msg('rm tgz \"%s\".' % file_name, RED))
-            os.system(cmd)
+            # cmd = 'rm -rf %s' % file_name
+            # # debug(cmd)
+            # debug_msg(color_msg('rm tgz \"%s\".' % file_name, RED))
+            # os.system(cmd)
             self.folder = file_name[0:-len('_f0e572b4f6.tgz')]
             # debug('folder=%s' % self.folder)
             self.flag += 1
@@ -238,6 +238,19 @@ class FlashPhone:
                             debug_msg(color_msg(cmd))
                             os.system(cmd)
 
+    def delete_file(self):
+        os.chdir(WORK_PATH)
+        if self.file_name != '':
+            if os.path.exists(self.file_name):
+                cmd = 'rm -rf %s' % self.file_name
+                debug_msg(color_msg('rm file \"%s\".' % self.file_name, RED))
+                os.system(cmd)
+        if self.folder != '':
+            if os.path.exists(self.folder):
+                cmd = 'rm -rf %s' % self.folder
+                debug_msg(color_msg('rm folder \"%s\".' % self.folder, RED))
+                os.system(cmd)
+
     def to_flash_phone(self):
         start_time = time.time()
         try:
@@ -256,17 +269,7 @@ class FlashPhone:
         except TypeError:
             print('TypeError')
         finally:
-            os.chdir(WORK_PATH)
-            if self.file_name != '':
-                if os.path.exists(self.file_name):
-                    cmd = 'rm -rf %s' % self.file_name
-                    debug_msg(color_msg('rm file \"%s\".' % self.file_name, RED))
-                    os.system(cmd)
-            if self.folder != '':
-                if os.path.exists(self.folder):
-                    cmd = 'rm -rf %s' % self.folder
-                    debug_msg(color_msg('rm folder \"%s\".' % self.folder, RED))
-                    os.system(cmd)
+            self.delete_file()
             end_time = time.time()
             cost_time = int(end_time - start_time)
             debug_msg(color_msg('cost_time = %s seconds' % cost_time, RED))
