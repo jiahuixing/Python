@@ -121,10 +121,10 @@ class FlashPhone:
                 rom = choice[0]
                 pat = r'%s' % choice[1]
                 debug_msg(color_msg('rom=%s' % rom))
-                # debug_msg(color_msg('pat=%s' % pat))
+                debug_msg(color_msg('pat=%s' % pat))
                 page = urllib2.urlopen(td_main_url, timeout=5).read()
                 pattern = re.compile(pat)
-                # debug('pattern=%s' % pattern)
+                # debug_msg('pattern=%s' % pattern)
                 f_result = re.findall(pattern, page)
                 if f_result:
                     tgz_name = list(set(f_result))[0]
