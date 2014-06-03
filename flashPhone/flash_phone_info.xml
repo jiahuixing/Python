@@ -51,4 +51,9 @@
         <tgz_pattern>%s_%s_4\.[0-9]{1}_cn_[a-z0-9]{10}\.tgz</tgz_pattern>
     </device>
 
+    <device>
+        <name>cancro_global_images</name>
+        <tgz_pattern>%s_%s_4\.[0-9]{1}_hk_[a-z0-9]{10}\.tgz</tgz_pattern>
+    </device>
+
 </info>
