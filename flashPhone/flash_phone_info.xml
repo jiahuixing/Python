@@ -56,4 +56,19 @@
         <tgz_pattern>%s_%s_4\.[0-9]{1}_hk_[a-z0-9]{10}\.tgz</tgz_pattern>
     </device>
 
+    <device>
+        <name>armani_global_images</name>
+        <tgz_pattern>%s_%s_4\.[0-9]{1}_hk_[a-z0-9]{10}\.tgz</tgz_pattern>
+    </device>
+
+    <device>
+        <name>lcsh92_wet_jb9_global_images</name>
+        <tgz_pattern>%s_%s_4\.[0-9]{1}_hk_[a-z0-9]{10}\.tgz</tgz_pattern>
+    </device>
+
+    <device>
+        <name>wt98007_global_images</name>
+        <tgz_pattern>%s_%s_4\.[0-9]{1}_hk_[a-z0-9]{10}\.tgz</tgz_pattern>
+    </device>
+
 </info>

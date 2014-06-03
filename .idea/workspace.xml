@@ -4,7 +4,7 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="pisces name pattern">
+    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="add cancro hk pattern">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flashPhone/flash_phone_info.xml" afterPath="$PROJECT_DIR$/flashPhone/flash_phone_info.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -57,7 +57,7 @@
       <file leaf-file-name="flash_phone_info.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flashPhone/flash_phone_info.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="12" selection-start="1308" selection-end="1308" vertical-scroll-proportion="0.67391306" vertical-offset="224" max-vertical-offset="960">
+            <state line="59" column="39" selection-start="1627" selection-end="1627" vertical-scroll-proportion="0.59128064" vertical-offset="451" max-vertical-offset="1185">
               <folding />
             </state>
           </provider>
@@ -1168,13 +1168,18 @@
       <created>1401431109299</created>
       <updated>1401431109299</updated>
     </task>
-    <option name="localTasksCounter" value="139" />
+    <task id="LOCAL-00139" summary="add cancro hk pattern">
+      <created>1401787611671</created>
+      <updated>1401787611671</updated>
+    </task>
+    <option name="localTasksCounter" value="140" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="52" y="-19" width="1677" height="937" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298292" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39027596" sideWeight="0.67018867" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.49962264" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32802126" sideWeight="0.49962264" order="12" side_tool="false" content_ui="tabs" />
@@ -1191,7 +1196,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2798949" sideWeight="0.6" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298292" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28383705" sideWeight="0.49962264" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1211,7 +1215,6 @@
       <TodoPanelSettings />
     </option>
     <option name="SHOW_FILE_HISTORY_DETAILS" value="false" />
-    <MESSAGE value="flashphone" />
     <MESSAGE value="flash phone&#10;use ls to get folder sh files and list them" />
     <MESSAGE value="print debug msg" />
     <MESSAGE value="delete unused res" />
@@ -1236,7 +1239,8 @@
     <MESSAGE value="mione plus name pattern" />
     <MESSAGE value="cancro name pattern" />
     <MESSAGE value="pisces name pattern" />
-    <option name="LAST_COMMIT_MESSAGE" value="pisces name pattern" />
+    <MESSAGE value="add cancro hk pattern" />
+    <option name="LAST_COMMIT_MESSAGE" value="add cancro hk pattern" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1515,7 +1519,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flashPhone/flash_phone_info.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="12" selection-start="1308" selection-end="1308" vertical-scroll-proportion="0.67391306" vertical-offset="224" max-vertical-offset="960">
+        <state line="59" column="39" selection-start="1627" selection-end="1627" vertical-scroll-proportion="0.59128064" vertical-offset="451" max-vertical-offset="1185">
           <folding />
         </state>
       </provider>
