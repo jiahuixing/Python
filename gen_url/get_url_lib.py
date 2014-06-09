@@ -311,9 +311,11 @@ def walk_dir(folder_name):
                     tmp.append(rom_type)
                     tmp.append(file_name)
                     tmp.append(name)
+                    # noinspection PyPep8
                     debug_msg(color_msg(
-                        'model_idx = %s,idx = %s\nfile_name = %s\nname = %s\nmd5 = %s\nsize = %s\nrom_type = %s') % (
-                                  model_idx, idx, file_name, name, md5, size, rom_type))
+                        'model_idx = %s,idx = %s\nfile_name = %s\nname = %s\n'
+                        'md5 = %s\nsize = %s\nrom_type_idx = %s rom_type = %s') % (
+                                  model_idx, idx, file_name, name, md5, size, rom_type_idx, rom_type))
                     empty_list = list()
                     if model_idx == 0:
                         keys = info_xiaomi.keys()
@@ -377,7 +379,6 @@ def make_url(info, version):
             for key in keys:
                 if key != '':
                     body = "%s%s %s\n\n" % (body, key, version)
-                    # body += "%s %s\n\n" % (key, version)
                     fastboot_info = ''
                     zip_info = ''
                     for i in xrange(len(info[key][0])):
@@ -386,7 +387,7 @@ def make_url(info, version):
                         size = tmp[3]
                         rom_type = tmp[4]
                         file_name = tmp[5]
-                        name = tmp[6]
+                        # name = tmp[6]
                         fastboot_info = '%s\n%s %s MD5: %s\n%s%s\n\n' % (
                             fastboot_info, rom_type, size, md5, domain, file_name)
                     for j in xrange(len(info[key][1])):
@@ -395,7 +396,7 @@ def make_url(info, version):
                         size = tmp[3]
                         rom_type = tmp[4]
                         file_name = tmp[5]
-                        name = tmp[6]
+                        # name = tmp[6]
                         zip_info = '%s\n%s %s MD5: %s\n%s%s\n\n' % (
                             zip_info, rom_type, size, md5, domain, file_name)
                     body = '%s%s%s' % (body, fastboot_info, zip_info)
@@ -411,7 +412,7 @@ def print_url(url):
         print(url)
 
 
-def write_url(xiaomi_url, redmi_url, pad_url, flag=0):
+def write_url(xiaomi_url, redmi_url, pad_url, flag=1):
     if flag == 1:
         doc_name = 'url.txt'
         os.chdir(WORK_PATH)
