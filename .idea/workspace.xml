@@ -4,8 +4,9 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="add cancro hk pattern">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flashPhone/flash_phone_info.xml" afterPath="$PROJECT_DIR$/flashPhone/flash_phone_info.xml" />
+    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="add 3 devices hk pattern">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flashPhone/flashphone.py" afterPath="$PROJECT_DIR$/flashPhone/flashphone.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen_url/friday_lib.py" afterPath="$PROJECT_DIR$/gen_url/friday_lib.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Python.iws" />
@@ -39,70 +40,34 @@
       <file leaf-file-name="friday_lib.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gen_url/friday_lib.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="186" column="12" selection-start="4409" selection-end="4417" vertical-scroll-proportion="0.0" vertical-offset="2790" max-vertical-offset="6645">
+            <state line="343" column="45" selection-start="9475" selection-end="9475" vertical-scroll-proportion="0.0" vertical-offset="4900" max-vertical-offset="6630">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="flashphone.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="flashphone.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flashPhone/flashphone.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="143" column="8" selection-start="4575" selection-end="4575" vertical-scroll-proportion="0.0" vertical-offset="1604" max-vertical-offset="4380">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="flash_phone_info.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/flashPhone/flash_phone_info.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="39" selection-start="1627" selection-end="1627" vertical-scroll-proportion="0.59128064" vertical-offset="451" max-vertical-offset="1185">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="push.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flashPhone/push.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="23" selection-start="2088" selection-end="2088" vertical-scroll-proportion="0.0" vertical-offset="1110" max-vertical-offset="1500">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="flash_phone_test.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flashPhone/flash_phone_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="214" column="0" selection-start="5074" selection-end="5207" vertical-scroll-proportion="0.0" vertical-offset="3210" max-vertical-offset="3420">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cp_file.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gen_url/cp_file.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="1125">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Operate.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flashPhone/Operate.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="8" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="1980">
+            <state line="267" column="9" selection-start="9416" selection-end="9416" vertical-scroll-proportion="1.0" vertical-offset="3281" max-vertical-offset="4410">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="libs.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gen_url/libs.py">
+        <entry file="file://$PROJECT_DIR$/flashPhone/libs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="14" selection-start="284" selection-end="284" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="675">
+            <state line="7" column="14" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4500">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new_friday.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gen_url/new_friday.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="11" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="915">
               <folding />
             </state>
           </provider>
@@ -167,20 +132,20 @@
         <option value="$PROJECT_DIR$/gen_url/test.py" />
         <option value="$PROJECT_DIR$/gen_url/libs.py" />
         <option value="$PROJECT_DIR$/flashPhone/devices_list.py" />
-        <option value="$PROJECT_DIR$/flashPhone/libs.py" />
         <option value="$PROJECT_DIR$/gen_url/cp_file.py" />
         <option value="$PROJECT_DIR$/gen_url/new_friday.py" />
-        <option value="$PROJECT_DIR$/gen_url/friday_lib.py" />
         <option value="$PROJECT_DIR$/cp_files.py" />
         <option value="$PROJECT_DIR$/push.py" />
         <option value="$PROJECT_DIR$/flashPhone/do_operate.py" />
         <option value="$PROJECT_DIR$/flashPhone/bugreport.py" />
         <option value="$PROJECT_DIR$/flashPhone/flash_phone_test.py" />
         <option value="$PROJECT_DIR$/flashPhone/push.py" />
-        <option value="$PROJECT_DIR$/flashPhone/flashphone.py" />
         <option value="$PROJECT_DIR$/flashPhone/tmp_flash_phone_info.xml" />
         <option value="$PROJECT_DIR$/flashPhone/global_flash_phone_info.xml" />
         <option value="$PROJECT_DIR$/flashPhone/flash_phone_info.xml" />
+        <option value="$PROJECT_DIR$/gen_url/friday_lib.py" />
+        <option value="$PROJECT_DIR$/flashPhone/libs.py" />
+        <option value="$PROJECT_DIR$/flashPhone/flashphone.py" />
       </list>
     </option>
   </component>
@@ -312,19 +277,19 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="154" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="171" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="153" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="170" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="310" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="307" />
     <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="178" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="632" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1076" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="320" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="317" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="177" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="627" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1066" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="317" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="315" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
@@ -513,9 +478,6 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
-      <method />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -537,6 +499,9 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -1172,20 +1137,23 @@
       <created>1401787611671</created>
       <updated>1401787611671</updated>
     </task>
-    <option name="localTasksCounter" value="140" />
+    <task id="LOCAL-00140" summary="add 3 devices hk pattern">
+      <created>1401788090053</created>
+      <updated>1401788090053</updated>
+    </task>
+    <option name="localTasksCounter" value="141" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="52" y="-19" width="1677" height="937" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298292" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39027596" sideWeight="0.67018867" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.49962264" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32802126" sideWeight="0.49962264" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290566" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17433962" sideWeight="0.7118194" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22311994" sideWeight="0.6662252" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.230578" sideWeight="0.6662252" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3997773" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1654952" sideWeight="0.2182628" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28818062" sideWeight="0.50037736" order="5" side_tool="true" content_ui="tabs" />
@@ -1196,6 +1164,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2798949" sideWeight="0.6" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298292" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28383705" sideWeight="0.49962264" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1215,7 +1184,6 @@
       <TodoPanelSettings />
     </option>
     <option name="SHOW_FILE_HISTORY_DETAILS" value="false" />
-    <MESSAGE value="flash phone&#10;use ls to get folder sh files and list them" />
     <MESSAGE value="print debug msg" />
     <MESSAGE value="delete unused res" />
     <MESSAGE value="add debug msg" />
@@ -1240,7 +1208,8 @@
     <MESSAGE value="cancro name pattern" />
     <MESSAGE value="pisces name pattern" />
     <MESSAGE value="add cancro hk pattern" />
-    <option name="LAST_COMMIT_MESSAGE" value="add cancro hk pattern" />
+    <MESSAGE value="add 3 devices hk pattern" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 3 devices hk pattern" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1250,6 +1219,13 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/gen_url/libs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="14" selection-start="284" selection-end="284" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="675">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/flashPhone/flash_phone_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="65" column="46" selection-start="1580" selection-end="1580" vertical-scroll-proportion="0.0" vertical-offset="975" max-vertical-offset="2325" />
@@ -1436,13 +1412,6 @@
         <state line="31" column="47" selection-start="559" selection-end="559" vertical-scroll-proportion="0.52997273" vertical-offset="76" max-vertical-offset="1080" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gen_url/friday_lib.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="186" column="12" selection-start="4409" selection-end="4417" vertical-scroll-proportion="0.0" vertical-offset="2790" max-vertical-offset="6645">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/flashPhone/root_devices.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="518" />
@@ -1479,33 +1448,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gen_url/new_friday.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="13" selection-start="665" selection-end="665" vertical-scroll-proportion="0.5163148" vertical-offset="181" max-vertical-offset="915" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/flashPhone/flash_phone_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="214" column="0" selection-start="5074" selection-end="5207" vertical-scroll-proportion="0.0" vertical-offset="2922" max-vertical-offset="3405">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flashPhone/push.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="23" selection-start="2088" selection-end="2088" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1485">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flashPhone/libs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="245" column="22" selection-start="6875" selection-end="6875" vertical-scroll-proportion="0.5163044" vertical-offset="3220" max-vertical-offset="4425" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flashPhone/flashphone.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="143" column="8" selection-start="4575" selection-end="4575" vertical-scroll-proportion="0.0" vertical-offset="1604" max-vertical-offset="4380">
           <folding />
         </state>
       </provider>
@@ -1517,9 +1462,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/flashPhone/push.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="23" selection-start="2088" selection-end="2088" vertical-scroll-proportion="0.4701087" vertical-offset="749" max-vertical-offset="1485">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen_url/new_friday.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="11" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="915">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen_url/friday_lib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="343" column="45" selection-start="9475" selection-end="9475" vertical-scroll-proportion="0.0" vertical-offset="4900" max-vertical-offset="6630">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/flashPhone/flash_phone_info.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="39" selection-start="1627" selection-end="1627" vertical-scroll-proportion="0.59128064" vertical-offset="451" max-vertical-offset="1185">
+        <state line="15" column="49" selection-start="426" selection-end="426" vertical-scroll-proportion="0.30570653" vertical-offset="0" max-vertical-offset="1185">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flashPhone/libs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="14" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4500">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flashPhone/flashphone.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="267" column="9" selection-start="9416" selection-end="9416" vertical-scroll-proportion="1.0" vertical-offset="3281" max-vertical-offset="4410">
           <folding />
         </state>
       </provider>

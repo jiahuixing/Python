@@ -264,6 +264,8 @@ class FlashPhone:
             print('TypeError')
         except NameError:
             print('NameError')
+        except urllib2.HTTPError, e:
+            print('HTTPError:%s' % e.code)
         finally:
             self.delete_file()
             end_time = time.time()
