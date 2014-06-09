@@ -141,19 +141,13 @@ def color_msg(msg, fg=GREEN, bg=None):
     color = list()
     if fg is not None:
         color_fg = '3%d' % fg
-        # debug_msg('color_fg=%s' % color_fg)
         color.append(color_fg)
     if bg is not None:
         color_bg = '4%d' % bg
-        # debug_msg('color_bg=%s' % color_bg)
         color.append(color_bg)
     if len(color) > 0:
         color_str = ';'.join(color)
-        # debug_msg(color)
-        # debug_msg(color_str)
         msg = '%s%sm%s%s' % (COLOR_START, color_str, msg, COLOR_END)
-    # if color == 2:
-    #     return '%s%s%s%s%s' % (COLOR_START, color_fg, color_bg, msg, COLOR_END)
     return msg
 
 
@@ -164,7 +158,6 @@ def debug_msg(msg, flag=1):
 
 
 def get_file_md5(file_name):
-    # print('------get_file_md5------')
     if not os.path.isfile(file_name):
         return
     my_hash = hashlib.md5()
@@ -179,7 +172,6 @@ def get_file_md5(file_name):
 
 
 def get_rom_size(file_name):
-    # print('------get_rom_size------')
     size = os.path.getsize(file_name) / 1024 / 1024
     size = str(size) + 'M'
     return size
@@ -226,7 +218,6 @@ def get_rom_idx(file_name):
 
 
 def get_rom_type(file_name):
-    # debug_msg('------get_rom_type------')
     rom_type = ''
     for i in xrange(len(Rom_Types)):
         if Rom_Types[i][0] in file_name:
@@ -236,7 +227,6 @@ def get_rom_type(file_name):
 
 
 def get_op_type(file_name):
-    # debug_msg('------get_op_type------')
     op_type = -1
     name = str.lower(file_name)
     for i in xrange(len(Ops_Types)):
@@ -250,7 +240,6 @@ def get_op_type(file_name):
 
 
 def get_area_type(file_name):
-    # debug_msg('------get_area_type------')
     area_type = ''
     name = str.lower(file_name)
     if GLOBAL_SIGN in name:
@@ -267,12 +256,10 @@ def get_area_type(file_name):
 
 
 def get_dev_type(file_name):
-    # debug_msg('------get_dev_type------')
     dev_type = ''
     op_type = get_op_type(file_name)
     if op_type != -1:
         op_name = Ops_Types[op_type][1]
-        # debug_msg('op_name=%s' % op_name)
         dev_type = op_name
     else:
         dev_version = r'[0-9]{1}\.[0-9]{1,2}\.[0-9]{1,2}\_'
@@ -281,30 +268,17 @@ def get_dev_type(file_name):
         pattern_stable = re.compile(stable_version)
         dev_search_result = re.findall(pattern_dev, file_name)
         stable_search_result = re.findall(pattern_stable, file_name)
-        # find_type = False
-        # result = False
         if dev_search_result:
-            # find_type = 'dev.'
-            # result = dev_search_result
             name = str.lower(file_name)
             if 'alpha' in name:
                 dev_type = Dev_Types[0]
             else:
                 dev_type = Dev_Types[1]
         elif stable_search_result:
-            # find_type = 'stable.'
-            # result = stable_search_result
             dev_type = Dev_Types[2]
-        # else:
-        #     print('Not find.')
-
-        # if result and find_type:
-        #     A(find_type)
-        #     debug_msg(result)
         area_type = get_area_type(file_name)
         if area_type != '':
             dev_type = area_type + dev_type
-    # debug_msg('dev_type=%s' % dev_type)
     return dev_type
 
 
@@ -321,19 +295,15 @@ def walk_dir(folder_name):
         for file_name in file_names:
             valid = is_valid_file(file_name)
             if valid == 1:
-                #model_idx idx md5 size file_name
                 tmp = list()
                 model_idx, idx, str_idx = get_rom_idx(file_name)
                 min_idx = 0
                 if str_idx != min_idx:
-                    # debug_msg(file_name)
-                    # debug_msg('model_idx=%s,idx=%s' % (model_idx, idx))
                     dev_type = get_dev_type(file_name)
                     name = '%s%s' % (Rom_Properties[model_idx][idx][2], dev_type)
                     md5 = get_file_md5(file_name)
                     size = get_rom_size(file_name)
                     rom_type = get_rom_type(file_name)
-                    # debug_msg('size=%s,rom_type=%s,md5=%s' % (size, rom_type, md5))
                     tmp.append(model_idx)
                     tmp.append(idx)
                     tmp.append(md5)
@@ -341,14 +311,10 @@ def walk_dir(folder_name):
                     tmp.append(rom_type)
                     tmp.append(file_name)
                     tmp.append(name)
-                    debug_msg(color_msg('----------------------------------------------------'))
-                    debug_msg(color_msg('model_idx = %s,idx = %s' % (model_idx, idx)))
-                    debug_msg(color_msg('file_name = %s' % file_name))
-                    debug_msg(color_msg('name = %s' % name))
-                    debug_msg(color_msg('md5 = %s' % md5))
-                    debug_msg(color_msg('size = %s' % size))
-                    debug_msg(color_msg('rom_type = %s' % rom_type))
-                    debug_msg(color_msg('----------------------------------------------------'))
+                    # noinspection PyPep8
+                    debug_msg(color_msg(
+                        'model_idx = %s,idx = %s\nfile_name = %s\nname = %s\nmd5 = %s\nsize = %s\nrom_type = %s') % (
+                                  model_idx, idx, file_name, name, md5, size, rom_type))
                     if model_idx == 0:
                         keys = info_xiaomi.keys()
                         if name not in keys:
@@ -364,9 +330,6 @@ def walk_dir(folder_name):
                         if name not in keys:
                             info_pad[name] = list()
                         info_pad[name].append(tmp)
-        # debug_msg(info_xiaomi)
-        # debug_msg(info_redmi)
-        # debug_msg(info_pad)
         return info_xiaomi, info_redmi, info_pad
     else:
         print('folder:%s not exist.' % folder_name)
@@ -378,16 +341,16 @@ def get_download_url(version):
     try:
         info_xiaomi, info_redmi, info_pad = walk_dir(version)
         # info = walk_dir(folder))
-        xiaomi_url = to_get_url(info_xiaomi, version)
-        redmi_url = to_get_url(info_redmi, version)
-        pad_url = to_get_url(info_pad, version)
+        xiaomi_url = make_url(info_xiaomi, version)
+        redmi_url = make_url(info_redmi, version)
+        pad_url = make_url(info_pad, version)
     except KeyboardInterrupt:
         print('KeyboardInterrupt')
     finally:
         return xiaomi_url, redmi_url, pad_url
 
 
-def to_get_url(info, version):
+def make_url(info, version):
     head = '\n【升级提醒】\n—————————————————————————————————————————————————— \n\n'
     body = ''
     end = ' '
