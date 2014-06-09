@@ -24,15 +24,15 @@ ignore_files = [
 
 def file_suffix(file_name):
     is_in = 0
-    if os.path.isdir(file_name):
-        if not str.startswith(file_name, '.'):
+    # if os.path.isdir(file_name):
+    #     if not str.startswith(file_name, '.'):
+    #         is_in = 1
+    # else:
+    for i in xrange(len(valid_suffix)):
+        suffix = valid_suffix[i]
+        if str.endswith(file_name, suffix):
             is_in = 1
-    else:
-        for i in xrange(len(valid_suffix)):
-            suffix = valid_suffix[i]
-            if str.endswith(file_name, suffix):
-                is_in = 1
-                break
+            break
     return is_in
 
 
