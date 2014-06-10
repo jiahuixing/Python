@@ -1,4 +1,4 @@
-#!/usr/local/bin/python -u
+# !/usr/local/bin/python -u
 # -*- coding: utf-8 -*-
 __author__ = 'jiahuixing'
 
@@ -16,6 +16,8 @@ def test2():
     debug_msg(msg)
 
 
-test1()
+def test3():
+    print('哈哈哈哈哈')
 
-test2()
+
+test3()

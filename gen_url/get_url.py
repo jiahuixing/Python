@@ -1,4 +1,4 @@
-#!/usr/local/bin/python -u
+# !/usr/local/bin/python -u
 # -*- coding: utf-8 -*-
 import sys
 
@@ -23,9 +23,9 @@ class Generate:
 
 if __name__ == '__main__':
     start_time = time.time()
-
     for i in xrange(len(Rom_Properties)):
-        print('i=%s,i_length=%s' % (i, len(Rom_Properties[i])))
+        model_type = Model_Types[i]
+        debug_msg('i:%s,机型:%s,数量:%s' % (i, model_type, len(Rom_Properties[i])))
     generate = Generate()
     debug_msg('m_version=%s' % generate.m_version)
     xiaomi_url, redmi_url, pad_url = get_download_url(generate.m_version)

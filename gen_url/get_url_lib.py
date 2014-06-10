@@ -1,4 +1,4 @@
-#!/usr/local/bin/python -u
+# !/usr/local/bin/python -u
 # -*- coding: utf-8 -*-
 __author__ = 'jiahuixing'
 
@@ -15,10 +15,16 @@ GLOBAL_SIGN = 'global'
 
 MAIN_URL = 'http://ota.n.miui.com/ota'
 
+Model_Types = [
+    '小米手机',
+    '红米手机',
+    '小米平板',
+]
+
 Rom_Properties = [
 
     [
-        #小米手机机型 new named
+        # 小米手机机型 new named
         ['mione_plus_', 'Mioneplus_', '小米手机1/1S'],
         ['aries_', 'MI2_', '小米手机2/2S'],
         ['aries_alpha_', 'MI2Alpha_', '小米手机2/2S'],
@@ -31,7 +37,7 @@ Rom_Properties = [
         ['cancro_alpha_', 'MI3WAlpha_', '小米手机3-CDMA/WCDMA'],
         ['cancro_global_', 'MI3WGlobal_', '小米手机3-CDMA/WCDMA'],
 
-        #小米手机机型 old named
+        # 小米手机机型 old named
         ['cancro_my_', 'MI3WMY_', '小米手机3-CDMA/WCDMA'],
         ['cancro_sg_', 'MI3WSG_', '小米手机3-CDMA/WCDMA'],
         ['cancro_tw_', 'MI3WTW_', '小米手机3-CDMA/WCDMA'],
@@ -39,7 +45,7 @@ Rom_Properties = [
 
     ],
     [
-        #红米手机机型 new named
+        # 红米手机机型 new named
         ['wt93007_', 'HM2_', '红米手机-TD'],
         ['wt98007_', 'HM2W_', '红米手机-WCDMA'],
         ['wt98007_global_', 'HM2WGlobal_', '红米手机-WCDMA'],
@@ -52,7 +58,7 @@ Rom_Properties = [
         ['lcsh92_wet_jb9_global_', 'H3WGlobal_', '红米Note-WCDMA'],
         ['wt96007_', 'WT96007_', 'WT96007-TD'],
 
-        #红米手机机型 old named
+        # 红米手机机型 old named
         ['HM2013023_tw_', 'HM2WTW_', '红米手机-WCDMA'],
         ['HM2013023_sg_', 'HM2WSG_', '红米手机-WCDMA'],
         ['HM2013023_my_', 'HM2WMY_', '红米手机-WCDMA'],
@@ -71,7 +77,7 @@ Rom_Properties = [
     ],
 
     [
-        #小米Pad机型 new named
+        # 小米Pad机型 new named
         ['MOCHA_', 'mocha_', '小米平板X6'],
 
     ],
@@ -80,7 +86,7 @@ Rom_Properties = [
 
 Rom_Types = [
 
-    #rom的类型 线刷包 | 卡刷包
+    # rom的类型 线刷包 | 卡刷包
 
     ['.zip', '系统升级卡刷包'],
     ['.tgz', 'Fastboot线刷包'],
@@ -89,11 +95,11 @@ Rom_Types = [
 
 Ops_Types = [
 
-    #运营商种类
+    # 运营商种类
 
-    #中国移动   0
+    # 中国移动   0
     ['chinamobile', '中国移动定制'],
-    #中国联通   1
+    # 中国联通   1
     ['chinaunicom', '中国联通定制'],
     #中国电信   2
     ['chinatelecom', '中国电信定制'],
@@ -283,6 +289,27 @@ def get_dev_type(file_name):
     return dev_type
 
 
+def sort_file_names(file_names):
+    zip_files = list()
+    fast_boot_files = list()
+    if isinstance(file_names, list):
+        length = len(file_names)
+        for file_name in file_names:
+            if 'zip' in file_name:
+                zip_files.append(file_name)
+            else:
+                if 'tgz' in file_name or 'tar' in file_name:
+                    fast_boot_files.append(file_name)
+    new_file_names = list()
+    if len(fast_boot_files) > 0:
+        for fast_boot_file in fast_boot_files:
+            new_file_names.append(fast_boot_file)
+    if len(zip_files) > 0:
+        for zip_file in zip_files:
+            new_file_names.append(zip_file)
+    return new_file_names
+
+
 def walk_dir(folder_name):
     debug_msg(color_msg('------walk_dir------'))
     info_xiaomi = dict()
@@ -291,6 +318,7 @@ def walk_dir(folder_name):
     os.chdir(WORK_PATH)
     if os.path.exists(folder_name):
         file_names = os.listdir(folder_name)
+        file_names = sort_file_names(file_names)
         file_path = '%s/%s' % (WORK_PATH, folder_name)
         os.chdir(file_path)
         for file_name in file_names:
@@ -323,33 +351,18 @@ def walk_dir(folder_name):
                     if model_idx == 0:
                         keys = info_xiaomi.keys()
                         if name not in keys:
-                            info_xiaomi[name] = dict()
-                            info_xiaomi[name][key_fast_boot] = empty_list
-                            info_xiaomi[name][key_zip] = empty_list
-                        if rom_type_idx == 0:
-                            info_xiaomi[name][key_zip].append(tmp_info)
-                        else:
-                            info_xiaomi[name][key_fast_boot].append(tmp_info)
+                            info_xiaomi[name] = list()
+                        info_xiaomi[name].append(tmp_info)
                     elif model_idx == 1:
                         keys = info_redmi.keys()
                         if name not in keys:
-                            info_redmi[name] = dict()
-                            info_redmi[name][key_fast_boot] = empty_list
-                            info_redmi[name][key_zip] = empty_list
-                        if rom_type_idx == 0:
-                            info_redmi[name][key_zip].append(tmp_info)
-                        else:
-                            info_redmi[name][key_fast_boot].append(tmp_info)
+                            info_redmi[name] = list()
+                        info_redmi[name].append(tmp_info)
                     elif model_idx == 2:
                         keys = info_pad.keys()
                         if name not in keys:
-                            info_pad[name] = dict()
-                            info_pad[name][key_fast_boot] = empty_list
-                            info_pad[name][key_zip] = empty_list
-                        if rom_type_idx == 0:
-                            info_pad[name][key_zip].append(tmp_info)
-                        else:
-                            info_pad[name][key_fast_boot].append(tmp_info)
+                            info_pad[name] = list()
+                        info_pad[name].append(tmp_info)
         return info_xiaomi, info_redmi, info_pad
     else:
         print('folder:%s not exist.' % folder_name)
@@ -382,31 +395,15 @@ def make_url(info, version):
             for key in keys:
                 if key != '':
                     body = "%s%s %s\n\n" % (body, key, version)
-                    fastboot_info = ''
-                    zip_info = ''
-                    key_fast_boot = 'fastboot'
-                    key_zip = 'zip'
-                    length = len(info[key][key_fast_boot])
-                    if length > 0:
-                        for i in xrange(length):
-                            tmp = info[key][key_fast_boot][i]
-                            md5 = tmp[2]
-                            size = tmp[3]
-                            rom_type = tmp[4]
-                            file_name = tmp[5]
-                            fastboot_info = '%s\n%s %s MD5: %s\n%s%s\n\n' % (
-                                fastboot_info, rom_type, size, md5, domain, file_name)
-                    length = len(info[key][key_zip])
-                    if length > 0:
-                        for j in xrange(length):
-                            tmp = info[key][key_zip][j]
-                            md5 = tmp[2]
-                            size = tmp[3]
-                            rom_type = tmp[4]
-                            file_name = tmp[5]
-                            zip_info = '%s\n%s %s MD5: %s\n%s%s\n\n' % (
-                                zip_info, rom_type, size, md5, domain, file_name)
-                    body = '%s%s%s' % (body, fastboot_info, zip_info)
+                    length = len(info[key])
+                    for i in xrange(length):
+                        tmp = info[key][i]
+                        md5 = tmp[2]
+                        size = tmp[3]
+                        rom_type = tmp[4]
+                        file_name = tmp[5]
+                        body = '%s\n%s %s MD5: %s\n%s%s\n\n' % (
+                            body, rom_type, size, md5, domain, file_name)
                     body += '—————————————————————————————————————————————————— \n\n'
             m_url = head + body + end
         return m_url
