@@ -4,7 +4,7 @@ import sys
 
 __author__ = 'jiahuixing'
 
-from get_url_lib import *
+from gen_url.tommy.get_url_lib import *
 
 
 class Generate:

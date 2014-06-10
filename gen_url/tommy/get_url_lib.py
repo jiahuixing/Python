@@ -101,7 +101,7 @@ Ops_Types = [
     ['chinamobile', '中国移动定制'],
     # 中国联通   1
     ['chinaunicom', '中国联通定制'],
-    #中国电信   2
+    # 中国电信   2
     ['chinatelecom', '中国电信定制'],
 
 ]
