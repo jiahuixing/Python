@@ -7,8 +7,8 @@ import hashlib
 import re
 import time
 
-WORK_PATH = '/home/jiahuixing/Python/gen_url'
-# WORK_PATH = '/data/ota'
+# WORK_PATH = '/home/jiahuixing/Python/gen_url/tommy'
+WORK_PATH = '/data/ota'
 
 IGNORE_OTA = 'ota'
 GLOBAL_SIGN = 'global'
@@ -416,7 +416,7 @@ def print_url(url):
         print(url)
 
 
-def write_url(xiaomi_url, redmi_url, pad_url, flag=1):
+def write_url(xiaomi_url, redmi_url, pad_url, flag=0):
     if flag == 1:
         doc_name = 'url.txt'
         os.chdir(WORK_PATH)

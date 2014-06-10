@@ -1,38 +1,51 @@
-#!/usr/local/bin/python -u
+# !/usr/local/bin/python -u
 # -*- coding: utf-8 -*-
+
 __author__ = 'jiahuixing'
 
 import os
 import pexpect
+import re
 
 from libs import *
 
 
-valid_suffix = [
+Valid_Suffix = [
     'py',
     'xml',
     'ini',
     'sh',
 ]
 
-ignore_files = [
+Ignore_Files = [
     'cp_file.py',
     'mkdir.py',
     'test.py',
 ]
 
 
+def re_find(file_name):
+    pat = r'[0-9]{1}\.[0-9]{1,2}\.[0-9]{1,2}'
+    pattern = re.compile(pat)
+    find = re.findall(pattern, file_name)
+    if find:
+        return 1
+    else:
+        return 0
+
+
 def file_suffix(file_name):
     is_in = 0
-    # if os.path.isdir(file_name):
-    #     if not str.startswith(file_name, '.'):
-    #         is_in = 1
-    # else:
-    for i in xrange(len(valid_suffix)):
-        suffix = valid_suffix[i]
-        if str.endswith(file_name, suffix):
-            is_in = 1
-            break
+    if os.path.isdir(file_name):
+        if not str.startswith(file_name, '.'):
+            if re_find(file_name) == 0:
+                is_in = 1
+    else:
+        for i in xrange(len(Valid_Suffix)):
+            suffix = Valid_Suffix[i]
+            if str.endswith(file_name, suffix):
+                is_in = 1
+                break
     return is_in
 
 
@@ -41,7 +54,7 @@ def cp_file():
     termini_path = '/home/jiahuixing/SVN/Friday/trunk/'
     os.chdir(work_path)
     for file_name in os.listdir(work_path):
-        if file_name not in ignore_files:
+        if file_name not in Ignore_Files:
             is_in = file_suffix(file_name)
             if is_in == 1:
                 cmd = 'sudo cp -rf %s %s' % (file_name, termini_path)
@@ -57,11 +70,11 @@ def cp_file():
                         child.sendline(cmd)
                         child.expect(pexpect.EOF)
                 # except pexpect.EOF:
-                #     print('pexpect.EOF')
+                # print('pexpect.EOF')
                 except pexpect.TIMEOUT:
                     print('pexpect.TIMEOUT')
                     # else:
-                    #     os.system(cmd)
+                    # os.system(cmd)
                 finally:
                     child.close()
 
