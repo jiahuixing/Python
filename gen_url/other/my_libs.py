@@ -10,7 +10,7 @@ import time
 Rom_Properties = [
 
     [
-        ##############################################小米手机##############################################
+        # #############################################小米手机##############################################
 
         # 小米手机1/1S
 
@@ -92,7 +92,7 @@ Rom_Properties = [
 
     ],
     [
-        ##############################################红米手机##############################################
+        # #############################################红米手机##############################################
 
         # 红米手机2 TD
 
@@ -188,7 +188,7 @@ Rom_Properties = [
 
     ],
     [
-        ##############################################小米Pad##############################################
+        # #############################################小米Pad##############################################
 
         # 小米平板X6
 
@@ -201,7 +201,7 @@ Rom_Properties = [
 
 Rom_Types = [
 
-    #rom的类型 线刷包 | 卡刷包
+    # rom的类型 线刷包 | 卡刷包
 
     ['zip', '系统升级卡刷包'],
     ['tgz', 'Fastboot线刷包'],
@@ -262,7 +262,8 @@ def get_rom_idx(name):
         model = Rom_Properties[i]
         model_type_num = len(model)
         for j in xrange(model_type_num):
-            mask = str.lower(model[j][0])
+            tmp = str(model[j][0])
+            mask = str.lower(tmp)
             if mask in name:
                 model_idx = i
                 idx = j
@@ -402,12 +403,12 @@ def to_get_url(info, version):
         # debug_msg('pre_sort')
         # debug_msg(keys)
         # for key in keys:
-        #     debug_msg(key)
+        # debug_msg(key)
         # debug_msg('after_sort')
         keys = sorted(keys)
         # debug_msg(keys)
         # for key in keys:
-        #     debug_msg(key)
+        # debug_msg(key)
         for key in keys:
             if key != '':
                 #debug_msg('key:%s'%key)

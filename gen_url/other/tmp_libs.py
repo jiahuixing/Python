@@ -11,7 +11,7 @@ import re
 Rom_Properties = [
 
     [
-        ##############################################小米手机##############################################
+        # #############################################小米手机##############################################
 
         # 小米手机1/1S
 
@@ -93,7 +93,7 @@ Rom_Properties = [
 
     ],
     [
-        ##############################################红米手机##############################################
+        # #############################################红米手机##############################################
 
         # 红米手机2 TD
 
@@ -189,7 +189,7 @@ Rom_Properties = [
 
     ],
     [
-        ##############################################小米Pad##############################################
+        # #############################################小米Pad##############################################
 
         # 小米平板X6
 
@@ -202,7 +202,7 @@ Rom_Properties = [
 
 Rom_Types = [
 
-    #rom的类型 线刷包 | 卡刷包
+    # rom的类型 线刷包 | 卡刷包
 
     ['zip', '系统升级卡刷包'],
     ['tgz', 'Fastboot线刷包'],
@@ -211,11 +211,11 @@ Rom_Types = [
 
 Ops_Types = [
 
-    #运营商种类
+    # 运营商种类
 
-    #中国移动   0
+    # 中国移动   0
     ['chinamobile', '-CM-移动定制版'],
-    #中国联通   1
+    # 中国联通   1
     ['chinaunicom', '-CU-联通定制版'],
     #中国电信   2
     ['chinatelecom', '-CT-电信定制版'],
@@ -299,7 +299,8 @@ def get_rom_idx(name):
         model = Rom_Properties[i]
         model_type_num = len(model)
         for j in xrange(model_type_num):
-            mask = str.lower(model[j][0])
+            tmp = str(model[j][0])
+            mask = str.lower(tmp)
             if mask in name:
                 model_idx = i
                 idx = j
@@ -440,15 +441,15 @@ def to_get_url(info, version):
         # debug_msg('pre_sort')
         # debug_msg(keys)
         # for key in keys:
-        #     debug_msg(key)
+        # debug_msg(key)
         # debug_msg('after_sort')
         keys = sorted(keys)
         # debug_msg(keys)
         # for key in keys:
-        #     debug_msg(key)
+        # debug_msg(key)
         for key in keys:
             if key != '':
-                #debug_msg('key:%s'%key)
+                # debug_msg('key:%s'%key)
                 length = len(info[key])
                 #debug_msg('length:%s'%length)
                 body += "%s %s\n\n" % (key, version)

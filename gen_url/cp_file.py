@@ -7,7 +7,7 @@ import os
 import pexpect
 import re
 
-from libs import *
+from other.libs import *
 
 
 Valid_Suffix = [
