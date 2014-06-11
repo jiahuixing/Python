@@ -4,13 +4,11 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="mv">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gen_url/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/gen_url/other/test.py" afterPath="$PROJECT_DIR$/gen_url/test.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen_url/tommy/__init__.py" afterPath="$PROJECT_DIR$/gen_url/tommy/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen_url/tommy/get_url.py" afterPath="$PROJECT_DIR$/gen_url/tommy/get_url.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen_url/tommy/get_url_lib.py" afterPath="$PROJECT_DIR$/gen_url/tommy/get_url_lib.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/jiahuixing.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/jiahuixing.xml" />
+    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="tommy">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen_url/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen_url/dj/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen_url/other/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen_url/tommy/__init__.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Python.iws" />
@@ -56,8 +54,8 @@
       <file leaf-file-name="get_url_lib.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gen_url/tommy/get_url_lib.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4277929" vertical-offset="5776" max-vertical-offset="6525">
-              <caret line="406" column="0" selection-start-line="406" selection-start-column="0" selection-end-line="406" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.24386922" vertical-offset="5791" max-vertical-offset="6540">
+              <caret line="398" column="41" selection-start-line="398" selection-start-column="41" selection-end-line="398" selection-end-column="41" />
               <folding>
                 <element signature="e#79#88#0" expanded="true" />
               </folding>
@@ -68,11 +66,9 @@
       <file leaf-file-name="test.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gen_url/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
-              <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
-              <folding>
-                <element signature="e#79#103#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="615">
+              <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -1255,7 +1251,11 @@
       <created>1402467860448</created>
       <updated>1402467860448</updated>
     </task>
-    <option name="localTasksCounter" value="153" />
+    <task id="LOCAL-00153" summary="tommy">
+      <created>1402480886974</created>
+      <updated>1402480886974</updated>
+    </task>
+    <option name="localTasksCounter" value="154" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1322,11 +1322,11 @@
     <MESSAGE value="add 3 devices hk pattern" />
     <MESSAGE value="flash phone" />
     <MESSAGE value="cp files to folder" />
-    <MESSAGE value="tommy" />
     <MESSAGE value="dj" />
     <MESSAGE value="delete un used debug msg" />
     <MESSAGE value="mv" />
-    <option name="LAST_COMMIT_MESSAGE" value="mv" />
+    <MESSAGE value="tommy" />
+    <option name="LAST_COMMIT_MESSAGE" value="tommy" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1609,14 +1609,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gen_url/other/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="734">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gen_url/other/getfile_url.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735">
@@ -1675,33 +1667,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gen_url/tommy/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10217984" vertical-offset="0" max-vertical-offset="734">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-          <folding>
-            <element signature="e#79#93#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gen_url/dj/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.081743866" vertical-offset="0" max-vertical-offset="734">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#79#96#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gen_url/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
-          <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
-          <folding>
-            <element signature="e#79#103#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="615">
+          <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1715,8 +1685,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gen_url/tommy/get_url_lib.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4277929" vertical-offset="5776" max-vertical-offset="6525">
-          <caret line="406" column="0" selection-start-line="406" selection-start-column="0" selection-end-line="406" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.24386922" vertical-offset="5791" max-vertical-offset="6540">
+          <caret line="398" column="41" selection-start-line="398" selection-start-column="41" selection-end-line="398" selection-end-column="41" />
           <folding>
             <element signature="e#79#88#0" expanded="true" />
           </folding>
