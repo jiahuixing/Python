@@ -7,13 +7,13 @@ import hashlib
 import re
 import time
 
-# WORK_PATH = '/home/jiahuixing/Python/gen_url/tommy'
-WORK_PATH = '/data/ota'
+from get_url import Generate
+
 
 IGNORE_OTA = 'ota'
 GLOBAL_SIGN = 'global'
 
-MAIN_URL = 'http://ota.n.miui.com/ota'
+MAIN_URL = 'http://ota.n.miui.com/'
 
 Model_Types = [
     '小米手机',
@@ -309,16 +309,16 @@ def sort_file_names(file_names):
     return new_file_names
 
 
-def walk_dir(folder_name):
+def walk_dir(generate=Generate()):
     debug_msg(color_msg('------walk_dir------'))
+    os.chdir(generate.work_path)
     info_xiaomi = dict()
     info_redmi = dict()
     info_pad = dict()
-    os.chdir(WORK_PATH)
-    if os.path.exists(folder_name):
-        file_names = os.listdir(folder_name)
+    if os.path.exists(generate.m_version):
+        file_names = os.listdir(generate.m_version)
         file_names = sort_file_names(file_names)
-        file_path = '%s/%s' % (WORK_PATH, folder_name)
+        file_path = '%s/%s' % (generate.work_path, generate.m_version)
         os.chdir(file_path)
         for file_name in file_names:
             valid = is_valid_file(file_name)
@@ -361,36 +361,36 @@ def walk_dir(folder_name):
                         info_pad[name].append(tmp_info)
         return info_xiaomi, info_redmi, info_pad
     else:
-        print('folder:%s not exist.' % folder_name)
+        print('folder:%s not exist.' % generate.m_version)
 
 
-def get_download_url(version):
+def get_download_url(generate=Generate()):
     debug_msg(color_msg('------get_download_url------'))
     xiaomi_url, redmi_url, pad_url = '', '', ''
     try:
-        info_xiaomi, info_redmi, info_pad = walk_dir(version)
+        info_xiaomi, info_redmi, info_pad = walk_dir(generate)
         # info = walk_dir(folder))
-        xiaomi_url = make_url(info_xiaomi, version)
-        redmi_url = make_url(info_redmi, version)
-        pad_url = make_url(info_pad, version)
+        xiaomi_url = make_url(info_xiaomi, generate)
+        redmi_url = make_url(info_redmi, generate)
+        pad_url = make_url(info_pad, generate)
     except KeyboardInterrupt:
         print('KeyboardInterrupt')
     finally:
         return xiaomi_url, redmi_url, pad_url
 
 
-def make_url(info, version):
+def make_url(info, generate=Generate()):
     head = '\n【升级提醒】\n—————————————————————————————————————————————————— \n\n'
     body = ''
     end = ' '
     m_url = ''
-    domain = '%s/%s/' % (MAIN_URL, version)
+    domain = '%s/%s/%s/' % (MAIN_URL, generate.m_folder, generate.m_version)
     if isinstance(info, dict):
         if len(info) > 0:
             keys = sorted(info.keys())
             for key in keys:
                 if key != '':
-                    body = "%s%s %s\n\n" % (body, key, version)
+                    body = "%s%s %s\n\n" % (body, key, generate.m_version)
                     length = len(info[key])
                     for i in xrange(length):
                         tmp = info[key][i]
@@ -412,10 +412,10 @@ def print_url(url):
         print(url)
 
 
-def write_url(xiaomi_url, redmi_url, pad_url, flag=0):
+def write_url(xiaomi_url, redmi_url, pad_url, generate=Generate(), flag=0):
     if flag == 1:
+        os.chdir(generate.work_path)
         doc_name = 'url.txt'
-        os.chdir(WORK_PATH)
         mode = 'a+'
         if os.path.exists(doc_name):
             os.remove(doc_name)
