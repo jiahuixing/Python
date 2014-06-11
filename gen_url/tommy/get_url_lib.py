@@ -293,7 +293,6 @@ def sort_file_names(file_names):
     zip_files = list()
     fast_boot_files = list()
     if isinstance(file_names, list):
-        length = len(file_names)
         for file_name in file_names:
             if 'zip' in file_name:
                 zip_files.append(file_name)
@@ -345,9 +344,6 @@ def walk_dir(folder_name):
                         'model_idx = %s,idx = %s\nfile_name = %s\nname = %s\n'
                         'md5 = %s\nsize = %s\nrom_type_idx = %s rom_type = %s') % (
                                   model_idx, idx, file_name, name, md5, size, rom_type_idx, rom_type))
-                    empty_list = list()
-                    key_fast_boot = 'fastboot'
-                    key_zip = 'zip'
                     if model_idx == 0:
                         keys = info_xiaomi.keys()
                         if name not in keys:
