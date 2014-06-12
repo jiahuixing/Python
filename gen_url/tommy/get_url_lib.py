@@ -3,6 +3,7 @@
 __author__ = 'jiahuixing'
 
 import os
+import sys
 import hashlib
 import re
 import time
@@ -358,14 +359,13 @@ def walk_dir(generate):
                         info_pad[name].append(tmp_info)
         return info_xiaomi, info_redmi, info_pad
     else:
-        print('folder:%s not exist.' % generate.m_version)
+        debug_msg(color_msg('folder:%s not exist.' % generate.m_version, RED))
+        sys.exit()
 
 
 def get_download_url(generate):
     debug_msg(color_msg('------get_download_url------'))
-    xiaomi_url, redmi_url, pad_url = '', '', ''
     info_xiaomi, info_redmi, info_pad = walk_dir(generate)
-    # info = walk_dir(folder))
     xiaomi_url = make_url(info_xiaomi, generate)
     redmi_url = make_url(info_redmi, generate)
     pad_url = make_url(info_pad, generate)
@@ -397,7 +397,7 @@ def make_url(info, generate):
             m_url = head + body + end
         return m_url
     else:
-        print('Wrong info.')
+        debug_msg('Wrong info.')
 
 
 def print_url(url):

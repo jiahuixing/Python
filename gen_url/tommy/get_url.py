@@ -1,6 +1,5 @@
 # !/usr/local/bin/python -u
 # -*- coding: utf-8 -*-
-import sys
 
 __author__ = 'jiahuixing'
 
@@ -46,11 +45,9 @@ if __name__ == '__main__':
             debug_msg(color_msg('i:%s\n机型:%s\n数量:%s' % (i, model_type, len(Rom_Properties[i]))))
         generate = Generate()
         xiaomi_url, redmi_url, pad_url = get_download_url(generate)
-
         print_url(xiaomi_url)
         print_url(redmi_url)
         print_url(pad_url)
-
         write_url(xiaomi_url, redmi_url, pad_url, generate)
     except NameError:
         print('NameError')
@@ -58,6 +55,9 @@ if __name__ == '__main__':
     except KeyboardInterrupt:
         print('KeyboardInterrupt')
         print(KeyboardInterrupt)
+    except TypeError:
+        print('TypeError')
+        print(TypeError)
     finally:
         end_time = time.time()
         cost_time = int(end_time - start_time)
