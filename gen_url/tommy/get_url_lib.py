@@ -7,9 +7,6 @@ import hashlib
 import re
 import time
 
-from get_url import Generate
-
-
 IGNORE_OTA = 'ota'
 GLOBAL_SIGN = 'global'
 
@@ -309,7 +306,7 @@ def sort_file_names(file_names):
     return new_file_names
 
 
-def walk_dir(generate=Generate()):
+def walk_dir(generate):
     debug_msg(color_msg('------walk_dir------'))
     os.chdir(generate.work_path)
     info_xiaomi = dict()
@@ -364,22 +361,18 @@ def walk_dir(generate=Generate()):
         print('folder:%s not exist.' % generate.m_version)
 
 
-def get_download_url(generate=Generate()):
+def get_download_url(generate):
     debug_msg(color_msg('------get_download_url------'))
     xiaomi_url, redmi_url, pad_url = '', '', ''
-    try:
-        info_xiaomi, info_redmi, info_pad = walk_dir(generate)
-        # info = walk_dir(folder))
-        xiaomi_url = make_url(info_xiaomi, generate)
-        redmi_url = make_url(info_redmi, generate)
-        pad_url = make_url(info_pad, generate)
-    except KeyboardInterrupt:
-        print('KeyboardInterrupt')
-    finally:
-        return xiaomi_url, redmi_url, pad_url
+    info_xiaomi, info_redmi, info_pad = walk_dir(generate)
+    # info = walk_dir(folder))
+    xiaomi_url = make_url(info_xiaomi, generate)
+    redmi_url = make_url(info_redmi, generate)
+    pad_url = make_url(info_pad, generate)
+    return xiaomi_url, redmi_url, pad_url
 
 
-def make_url(info, generate=Generate()):
+def make_url(info, generate):
     head = '\n【升级提醒】\n—————————————————————————————————————————————————— \n\n'
     body = ''
     end = ' '
@@ -412,7 +405,7 @@ def print_url(url):
         print(url)
 
 
-def write_url(xiaomi_url, redmi_url, pad_url, generate=Generate(), flag=0):
+def write_url(xiaomi_url, redmi_url, pad_url, generate, flag=0):
     if flag == 1:
         os.chdir(generate.work_path)
         doc_name = 'url.txt'
