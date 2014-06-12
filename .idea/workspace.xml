@@ -4,9 +4,8 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="tommy&#10;fix a bug of an '/'">
+    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="tommy &#10;change argv">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen_url/tommy/ota_url.py" afterPath="$PROJECT_DIR$/gen_url/tommy/ota_url.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen_url/tommy/ota_url_lib.py" afterPath="$PROJECT_DIR$/gen_url/tommy/ota_url_lib.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Python.iws" />
@@ -39,21 +38,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ota_url_lib.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ota_url_lib.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gen_url/tommy/ota_url_lib.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33651227" vertical-offset="5333" max-vertical-offset="6345">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1352" max-vertical-offset="6345">
               <caret line="376" column="14" selection-start-line="376" selection-start-column="14" selection-end-line="376" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ota_url.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ota_url.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gen_url/tommy/ota_url.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="1230">
-              <caret line="25" column="29" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.34604904" vertical-offset="481" max-vertical-offset="1230">
+              <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -137,8 +136,8 @@
         <option value="$PROJECT_DIR$/flashPhone/flashphone.py" />
         <option value="$PROJECT_DIR$/gen_url/tommy/get_url_lib.py" />
         <option value="$PROJECT_DIR$/gen_url/tommy/get_url.py" />
-        <option value="$PROJECT_DIR$/gen_url/tommy/ota_url.py" />
         <option value="$PROJECT_DIR$/gen_url/tommy/ota_url_lib.py" />
+        <option value="$PROJECT_DIR$/gen_url/tommy/ota_url.py" />
       </list>
     </option>
   </component>
@@ -1265,7 +1264,11 @@
       <created>1402559668463</created>
       <updated>1402559668463</updated>
     </task>
-    <option name="localTasksCounter" value="160" />
+    <task id="LOCAL-00160" summary="tommy &#10;change argv">
+      <created>1402562434379</created>
+      <updated>1402562434379</updated>
+    </task>
+    <option name="localTasksCounter" value="161" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1311,7 +1314,6 @@
       <TodoPanelSettings />
     </option>
     <option name="SHOW_FILE_HISTORY_DETAILS" value="false" />
-    <MESSAGE value="permission" />
     <MESSAGE value="flash phone cp files" />
     <MESSAGE value="add file pidcat.py" />
     <MESSAGE value=" delete file pidcat.py" />
@@ -1336,7 +1338,8 @@
     <MESSAGE value="tommy" />
     <MESSAGE value="tommy&#10;change file name" />
     <MESSAGE value="tommy&#10;fix a bug of an '/'" />
-    <option name="LAST_COMMIT_MESSAGE" value="tommy&#10;fix a bug of an '/'" />
+    <MESSAGE value="tommy &#10;change argv" />
+    <option name="LAST_COMMIT_MESSAGE" value="tommy &#10;change argv" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1604,13 +1607,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gen_url/dj/friday_lib.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1305" max-vertical-offset="6075">
-          <caret line="102" column="13" selection-start-line="102" selection-start-column="13" selection-end-line="102" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gen_url/other/getfile_url.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735">
@@ -1683,18 +1679,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gen_url/tommy/ota_url.py">
+    <entry file="file://$PROJECT_DIR$/gen_url/dj/friday_lib.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="1230">
-          <caret line="25" column="29" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="29" />
+        <state vertical-scroll-proportion="3.2683923" vertical-offset="3316" max-vertical-offset="6075">
+          <caret line="383" column="0" selection-start-line="383" selection-start-column="0" selection-end-line="383" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gen_url/tommy/ota_url_lib.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33651227" vertical-offset="5333" max-vertical-offset="6345">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5333" max-vertical-offset="6345">
           <caret line="376" column="14" selection-start-line="376" selection-start-column="14" selection-end-line="376" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen_url/tommy/ota_url.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34604904" vertical-offset="481" max-vertical-offset="1230">
+          <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
           <folding />
         </state>
       </provider>

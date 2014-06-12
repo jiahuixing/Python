@@ -40,20 +40,20 @@ class Generate:
                     'm_version = %s\n' % (
                         argv_2, count, split_list, m_folder, m_sub_address, work_path, m_version)))
             else:
-                debug_msg(color_msg('请使用正确的参数\n例:python ota_url.py /data/eng/4.6.11-internal 4.6.11'))
+                debug_msg(color_msg('请使用正确的参数 例:python ota_url.py /data/eng/4.6.11-internal 4.6.11', RED))
                 sys.exit()
         else:
-            debug_msg(color_msg('请使用正确的参数\n例:python ota_url.py /data/eng/4.6.11-internal 4.6.11'))
+            debug_msg(color_msg('请使用正确的参数 例:python ota_url.py /data/eng/4.6.11-internal 4.6.11', RED))
             sys.exit()
 
 
 if __name__ == '__main__':
     start_time = time.time()
     try:
+        generate = Generate()
         for i in xrange(len(Rom_Properties)):
             model_type = Model_Types[i]
             debug_msg(color_msg('i:%s\n机型:%s\n数量:%s' % (i, model_type, len(Rom_Properties[i]))))
-        generate = Generate()
         xiaomi_url, redmi_url, pad_url = get_download_url(generate)
         print_url(xiaomi_url)
         print_url(redmi_url)
@@ -71,6 +71,6 @@ if __name__ == '__main__':
     finally:
         end_time = time.time()
         cost_time = int(end_time - start_time)
-        debug_msg(color_msg('cost_time = %s seconds.' % cost_time))
+        # debug_msg(color_msg('cost_time = %s seconds.' % cost_time))
 
 
