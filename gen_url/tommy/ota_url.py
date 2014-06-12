@@ -3,7 +3,7 @@
 
 __author__ = 'jiahuixing'
 
-from get_url_lib import *
+from ota_url_lib import *
 
 
 class Generate:
