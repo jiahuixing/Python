@@ -11,7 +11,7 @@ import time
 IGNORE_OTA = 'ota'
 GLOBAL_SIGN = 'global'
 
-MAIN_URL = 'http://ota.n.miui.com/'
+MAIN_URL = 'http://ota.n.miui.com'
 
 Model_Types = [
     '小米手机',

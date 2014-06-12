@@ -4,11 +4,8 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="tommy">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gen_url/tommy/ota_url.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gen_url/tommy/ota_url_lib.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen_url/tommy/get_url.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen_url/tommy/get_url_lib.py" afterPath="" />
+    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="tommy&#10;change file name">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen_url/tommy/ota_url_lib.py" afterPath="$PROJECT_DIR$/gen_url/tommy/ota_url_lib.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Python.iws" />
@@ -51,21 +48,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ota_url_lib.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ota_url_lib.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gen_url/tommy/ota_url_lib.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6375">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.96049047" vertical-offset="0" max-vertical-offset="6375">
+              <caret line="51" column="45" selection-start-line="51" selection-start-column="45" selection-end-line="51" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ota_url.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ota_url.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gen_url/tommy/ota_url.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5706522" vertical-offset="0" max-vertical-offset="1080">
-              <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1080">
+              <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -100,7 +97,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/color_help" />
         <option value="$PROJECT_DIR$/flashPhone/flashPhone.py" />
         <option value="$PROJECT_DIR$/flashPhone/Flash_Phone.py" />
         <option value="$PROJECT_DIR$/flashPhone/flash_phone.py" />
@@ -151,6 +147,7 @@
         <option value="$PROJECT_DIR$/gen_url/tommy/get_url_lib.py" />
         <option value="$PROJECT_DIR$/gen_url/tommy/get_url.py" />
         <option value="$PROJECT_DIR$/gen_url/tommy/ota_url.py" />
+        <option value="$PROJECT_DIR$/gen_url/tommy/ota_url_lib.py" />
       </list>
     </option>
   </component>
@@ -1269,13 +1266,18 @@
       <created>1402555765917</created>
       <updated>1402555765917</updated>
     </task>
-    <option name="localTasksCounter" value="158" />
+    <task id="LOCAL-00158" summary="tommy&#10;change file name">
+      <created>1402557030922</created>
+      <updated>1402557030922</updated>
+    </task>
+    <option name="localTasksCounter" value="159" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="52" y="-19" width="1677" height="937" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298292" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39027596" sideWeight="0.67018867" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.49962264" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32802126" sideWeight="0.49962264" order="12" side_tool="false" content_ui="tabs" />
@@ -1292,7 +1294,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2798949" sideWeight="0.6" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298292" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.282523" sideWeight="0.49962264" order="4" side_tool="false" content_ui="tabs" />
@@ -1315,7 +1316,6 @@
       <TodoPanelSettings />
     </option>
     <option name="SHOW_FILE_HISTORY_DETAILS" value="false" />
-    <MESSAGE value="fix bug in comparing 2 date" />
     <MESSAGE value="add some debug msg" />
     <MESSAGE value="permission" />
     <MESSAGE value="flash phone cp files" />
@@ -1340,7 +1340,8 @@
     <MESSAGE value="delete un used debug msg" />
     <MESSAGE value="mv" />
     <MESSAGE value="tommy" />
-    <option name="LAST_COMMIT_MESSAGE" value="tommy" />
+    <MESSAGE value="tommy&#10;change file name" />
+    <option name="LAST_COMMIT_MESSAGE" value="tommy&#10;change file name" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1686,18 +1687,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gen_url/tommy/ota_url_lib.py">
+    <entry file="file://$PROJECT_DIR$/gen_url/tommy/ota_url.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6375">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1080">
+          <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gen_url/tommy/ota_url.py">
+    <entry file="file://$PROJECT_DIR$/gen_url/tommy/ota_url_lib.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5706522" vertical-offset="0" max-vertical-offset="1080">
-          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.96049047" vertical-offset="0" max-vertical-offset="6375">
+          <caret line="51" column="45" selection-start-line="51" selection-start-column="45" selection-end-line="51" selection-end-column="45" />
           <folding />
         </state>
       </provider>
