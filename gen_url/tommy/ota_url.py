@@ -7,6 +7,8 @@ from ota_url_lib import *
 
 
 class Generate:
+    main_url = ''
+    m_sub_address = ''
     m_folder = ''
     m_version = ''
     work_path = ''
@@ -15,25 +17,33 @@ class Generate:
         self.get_version_and_folder()
 
     def get_version_and_folder(self):
-        if len(sys.argv) >= 2:
-            argv = str.rstrip(sys.argv[1], '/')
-            count = str.count(argv, '/')
+        if len(sys.argv) >= 3:
+            argv_2 = str.rstrip(sys.argv[1], '/')
+            argv_3 = str.rstrip(sys.argv[2], '/')
+            count = str.count(argv_2, '/')
             if count >= 3:
-                split_list = str.split(argv, '/')
-                m_version = split_list[-1]
-                self.m_version = m_version
-                m_folder = split_list[-2]
+                main_url = 'http://ota.n.miui.com'
+                self.main_url = main_url
+                split_list = str.split(argv_2, '/')
+                m_folder = split_list[-1]
                 self.m_folder = m_folder
-                work_path = str.replace(argv, m_version, '', 1)
+                m_sub_address = split_list[-2]
+                self.m_sub_address = m_sub_address
+                work_path = str.replace(argv_2, m_folder, '', 1)
                 self.work_path = work_path
+                m_version = argv_3
+                self.m_version = m_version
                 debug_msg(color_msg(
-                    'argv = %s\ncount = %s\nsplit_list = %s\nm_version = %s\nm_folder = %s\nwork_path = %s\n' % (
-                        argv, count, split_list, m_version, m_folder, work_path)))
+                    'argv_2 = %s\nargv_3=\n'
+                    'count = %s\nsplit_list = %s\n'
+                    'm_folder = %s\nm_sub_address = %s\nwork_path = %s\n'
+                    'm_version = %s\n' % (
+                        argv_2, count, split_list, m_folder, m_sub_address, work_path, m_version)))
             else:
-                debug_msg(color_msg('请输入含有版本号的文件夹 例: /data/ota/4.6.11/'))
+                debug_msg(color_msg('请使用正确的参数\n例:python ota_url.py /data/eng/4.6.11-internal 4.6.11'))
                 sys.exit()
         else:
-            debug_msg(color_msg('请输入含有版本号的文件夹 例: /data/ota/4.6.11/'))
+            debug_msg(color_msg('请使用正确的参数\n例:python ota_url.py /data/eng/4.6.11-internal 4.6.11'))
             sys.exit()
 
 

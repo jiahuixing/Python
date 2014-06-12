@@ -11,8 +11,6 @@ import time
 IGNORE_OTA = 'ota'
 GLOBAL_SIGN = 'global'
 
-MAIN_URL = 'http://ota.n.miui.com'
-
 Model_Types = [
     '小米手机',
     '红米手机',
@@ -313,10 +311,10 @@ def walk_dir(generate):
     info_xiaomi = dict()
     info_redmi = dict()
     info_pad = dict()
-    if os.path.exists(generate.m_version):
-        file_names = os.listdir(generate.m_version)
+    if os.path.exists(generate.m_folder):
+        file_names = os.listdir(generate.m_folder)
         file_names = sort_file_names(file_names)
-        file_path = '%s/%s' % (generate.work_path, generate.m_version)
+        file_path = '%s/%s' % (generate.work_path, generate.m_folder)
         os.chdir(file_path)
         for file_name in file_names:
             valid = is_valid_file(file_name)
@@ -359,7 +357,7 @@ def walk_dir(generate):
                         info_pad[name].append(tmp_info)
         return info_xiaomi, info_redmi, info_pad
     else:
-        debug_msg(color_msg('folder:%s not exist.' % generate.m_version, RED))
+        debug_msg(color_msg('folder:%s not exist.' % generate.m_folder, RED))
         sys.exit()
 
 
@@ -377,7 +375,7 @@ def make_url(info, generate):
     body = ''
     end = ' '
     m_url = ''
-    domain = '%s/%s/%s/' % (MAIN_URL, generate.m_folder, generate.m_version)
+    domain = '%s/%s/%s/' % (generate.main_url, generate.m_sub_address, generate.m_folder)
     if isinstance(info, dict):
         if len(info) > 0:
             keys = sorted(info.keys())
