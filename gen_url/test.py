@@ -33,4 +33,21 @@ def test4():
         arg, count, tmp_list, m_version, m_folder, work_path)))
 
 
-test4()
+def test5():
+    from optparse import OptionParser
+
+    usage_msg = 'usage: %prog [options] arg'
+    parser = OptionParser(usage=usage_msg)
+    parser.add_option('-d', '--dj', dest='dj_ota_folder', help='dj\'sota folder')
+    parser.add_option('-t', '--tommy', dest='tommy_ota_folder', help='tommy\'sota folder')
+    parser.add_option('-v', '--version', dest='ota_version', help='ota version')
+    (options, args) = parser.parse_args()
+    print(len(sys.argv))
+    print(options)
+    print(options.dj_ota_folder)
+    print(options.tommy_ota_folder)
+    print(options.ota_version)
+    OptionParser.print_help(parser)
+
+
+test5()

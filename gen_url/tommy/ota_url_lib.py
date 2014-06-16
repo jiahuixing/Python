@@ -7,6 +7,7 @@ import sys
 import hashlib
 import re
 import time
+from optparse import OptionParser
 
 IGNORE_OTA = 'ota'
 GLOBAL_SIGN = 'global'
@@ -126,6 +127,29 @@ Area_Types = [
     ['TW_', 'tw_', '台湾'],
 
 ]
+
+
+def init_options():
+    usage_msg = 'usage: %prog [options] arg'
+    parser = OptionParser(usage=usage_msg)
+    parser.add_option('-d', '--dj', dest='dj_ota_folder')
+    parser.add_option('-t', '--tommy', dest='tommy_ota_folder')
+    parser.add_option('-v', '--version', dest='ota_version')
+    (options, args) = parser.parse_args()
+    print(len(sys.argv))
+    print(options)
+    print(options.dj_ota_folder)
+    print(options.tommy_ota_folder)
+    print(options.ota_version)
+    return options
+
+
+def judge_options(options):
+    pass
+    if options.tommy_ota_folder and options.tommy_ota_folder:
+        debug_msg(options.he)
+        sys.exit()
+
 
 COLOR_START = '\033[0;'
 COLOR_END = '\033[0m'
