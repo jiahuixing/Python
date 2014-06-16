@@ -47,8 +47,10 @@ Rom_Properties = [
         ['wt98007_', 'HM2W_', '红米手机-WCDMA'],
         ['wt98007_global_', 'HM2WGlobal_', '红米手机-WCDMA'],
         ['armani_', 'H2A_', '红米手机1S'],
+        ['armani_global', 'H2AGlobal_', '红米手机1S'],
         ['wt93807_', 'H2S82TD_', 'H2S-TD'],
         ['wt98807_', 'H2S82W_', 'H2S-WCDMA'],
+        ['wt98807_global', 'H2S82W_Global', 'H2S-WCDMA'],
         ['dior_', 'H3LTE_', '红米Note-LTE'],
         ['lcsh92_wet_tdd_', 'H3TD_', '红米Note-TD'],
         ['lcsh92_wet_jb9_', 'H3W_', '红米Note-WCDMA'],
@@ -118,8 +120,8 @@ Area_Types = [
     # [flag1, flag2', Area],
 
     ['HK_', 'hk_', '香港'],
-    ['ID_', 'id_', '印度'],
-    ['IN_', 'in_', '印度尼西亚'],
+    ['ID_', 'id_', '印度尼西亚'],
+    ['IN_', 'in_', '印度'],
     ['MY_', 'my_', '马来西亚'],
     ['PH_', 'ph_', '菲律宾'],
     ['SG_', 'sg_', '新加坡'],
@@ -307,7 +309,7 @@ def get_dev_type(file_name):
     dev_type = ''
     name = str.lower(file_name)
     dev_version = r'[0-9]{1}\.[0-9]{1,2}\.[0-9]{1,2}\_'
-    stable_version = r'[A-Z]{3,7}[0-9]{1,2}\.[0-9]{1,2}\_'
+    stable_version = r'[a-z]{3,7}[0-9]{1,2}\.[0-9]{1,2}\_'
     pattern_dev = re.compile(dev_version)
     pattern_stable = re.compile(stable_version)
     dev_search_result = re.findall(pattern_dev, name)
