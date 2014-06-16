@@ -7,7 +7,7 @@ import sys
 import hashlib
 import re
 import time
-from optparse import OptionParser
+import optparse
 
 IGNORE_OTA = 'ota'
 GLOBAL_SIGN = 'global'
@@ -131,24 +131,40 @@ Area_Types = [
 
 def init_options():
     usage_msg = 'usage: %prog [options] arg'
-    parser = OptionParser(usage=usage_msg)
+    parser = optparse.OptionParser(usage=usage_msg)
     parser.add_option('-d', '--dj', dest='dj_ota_folder')
     parser.add_option('-t', '--tommy', dest='tommy_ota_folder')
     parser.add_option('-v', '--version', dest='ota_version')
     (options, args) = parser.parse_args()
-    print(len(sys.argv))
-    print(options)
-    print(options.dj_ota_folder)
-    print(options.tommy_ota_folder)
-    print(options.ota_version)
+    # print(len(sys.argv))
+    # print(options)
+    # print(options.dj_ota_folder)
+    # print(options.tommy_ota_folder)
+    # print(options.ota_version)
     return options
 
 
 def judge_options(options):
-    pass
-    if options.tommy_ota_folder and options.tommy_ota_folder:
-        debug_msg(options.he)
-        sys.exit()
+    who = 0
+    argv_length = len(sys.argv[1:])
+    exp_msg = '正确的用法:\n1. python ota_url.py -t /data/eng/4.6.11-internal -v 4.6.11\n' \
+              '2. python ota_url.py -d /data/eng/4.6.11-internal -v 4.6.11'
+    if argv_length == 4:
+        if options.ota_version is not None:
+            if options.tommy_ota_folder is not None:
+                who = 1
+            elif options.dj_ota_folder is not None:
+                who = 2
+            else:
+                debug_msg(color_msg('错误的参数', RED))
+                debug_msg(color_msg(exp_msg, RED))
+        else:
+            debug_msg(color_msg('没有输入版本号', RED))
+            debug_msg(color_msg(exp_msg, RED))
+    else:
+        debug_msg(color_msg('错误的参数个数', RED))
+        debug_msg(color_msg(exp_msg, RED))
+    return who
 
 
 COLOR_START = '\033[0;'
@@ -399,7 +415,10 @@ def make_url(info, generate):
     body = ''
     end = ' '
     m_url = ''
-    domain = '%s/%s/%s/' % (generate.main_url, generate.m_sub_address, generate.m_folder)
+    if generate.m_who == 1:
+        domain = '%s/%s/%s/' % (generate.main_url, generate.m_sub_address, generate.m_folder)
+    else:
+        domain = '%s/%s/' % (generate.main_url, generate.m_folder)
     if isinstance(info, dict):
         if len(info) > 0:
             keys = sorted(info.keys())

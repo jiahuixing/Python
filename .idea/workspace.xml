@@ -4,8 +4,9 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="tommy &#10;change argv">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/adb/colored_adb_logcat.py" />
+    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="colored adb logcat &amp;&amp; init options">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/jiahuixing.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/jiahuixing.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen_url/tommy/ota_url.py" afterPath="$PROJECT_DIR$/gen_url/tommy/ota_url.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen_url/tommy/ota_url_lib.py" afterPath="$PROJECT_DIR$/gen_url/tommy/ota_url_lib.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen_url/test.py" afterPath="$PROJECT_DIR$/gen_url/test.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -40,11 +41,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ota_url_lib.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ota_url_lib.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gen_url/tommy/ota_url_lib.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1786" max-vertical-offset="6765">
-              <caret line="149" column="28" selection-start-line="149" selection-start-column="28" selection-end-line="149" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.5572207" vertical-offset="6026" max-vertical-offset="7050">
+              <caret line="429" column="42" selection-start-line="429" selection-start-column="42" selection-end-line="429" selection-end-column="42" />
               <folding>
                 <element signature="e#79#88#0" expanded="true" />
               </folding>
@@ -55,22 +56,10 @@
       <file leaf-file-name="test.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gen_url/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="121" max-vertical-offset="870">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="151" max-vertical-offset="885">
+              <caret line="50" column="35" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
               <folding>
                 <element signature="e#79#89#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="colored_adb_logcat.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/adb/colored_adb_logcat.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.366485" vertical-offset="46" max-vertical-offset="780">
-              <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-              <folding>
-                <element signature="e#79#107#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -79,8 +68,8 @@
       <file leaf-file-name="ota_url.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gen_url/tommy/ota_url.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1230">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state vertical-scroll-proportion="-4.259259" vertical-offset="95" max-vertical-offset="1380">
+              <caret line="14" column="9" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -162,10 +151,10 @@
         <option value="$PROJECT_DIR$/flashPhone/flashphone.py" />
         <option value="$PROJECT_DIR$/gen_url/tommy/get_url_lib.py" />
         <option value="$PROJECT_DIR$/gen_url/tommy/get_url.py" />
+        <option value="$PROJECT_DIR$/adb/colored_adb_logcat.py" />
+        <option value="$PROJECT_DIR$/gen_url/test.py" />
         <option value="$PROJECT_DIR$/gen_url/tommy/ota_url.py" />
         <option value="$PROJECT_DIR$/gen_url/tommy/ota_url_lib.py" />
-        <option value="$PROJECT_DIR$/gen_url/test.py" />
-        <option value="$PROJECT_DIR$/adb/colored_adb_logcat.py" />
       </list>
     </option>
   </component>
@@ -1232,7 +1221,11 @@
       <created>1402563256958</created>
       <updated>1402563256958</updated>
     </task>
-    <option name="localTasksCounter" value="162" />
+    <task id="LOCAL-00162" summary="colored adb logcat &amp;&amp; init options">
+      <created>1402900607216</created>
+      <updated>1402900607216</updated>
+    </task>
+    <option name="localTasksCounter" value="163" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1278,7 +1271,6 @@
       <TodoPanelSettings />
     </option>
     <option name="SHOW_FILE_HISTORY_DETAILS" value="false" />
-    <MESSAGE value="flash phone cp files" />
     <MESSAGE value="add file pidcat.py" />
     <MESSAGE value=" delete file pidcat.py" />
     <MESSAGE value="libs" />
@@ -1303,7 +1295,8 @@
     <MESSAGE value="tommy&#10;change file name" />
     <MESSAGE value="tommy&#10;fix a bug of an '/'" />
     <MESSAGE value="tommy &#10;change argv" />
-    <option name="LAST_COMMIT_MESSAGE" value="tommy &#10;change argv" />
+    <MESSAGE value="colored adb logcat &amp;&amp; init options" />
+    <option name="LAST_COMMIT_MESSAGE" value="colored adb logcat &amp;&amp; init options" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1652,40 +1645,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gen_url/tommy/ota_url_lib.py">
+    <entry file="file://$PROJECT_DIR$/adb/colored_adb_logcat.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1786" max-vertical-offset="6765">
-          <caret line="149" column="28" selection-start-line="149" selection-start-column="28" selection-end-line="149" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.4482289" vertical-offset="46" max-vertical-offset="780">
+          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
           <folding>
             <element signature="e#79#88#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gen_url/tommy/ota_url.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1230">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gen_url/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="121" max-vertical-offset="870">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="151" max-vertical-offset="885">
+          <caret line="50" column="35" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
           <folding>
             <element signature="e#79#89#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/adb/colored_adb_logcat.py">
+    <entry file="file://$PROJECT_DIR$/gen_url/tommy/ota_url.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.366485" vertical-offset="46" max-vertical-offset="780">
-          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+        <state vertical-scroll-proportion="-4.259259" vertical-offset="95" max-vertical-offset="1380">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen_url/tommy/ota_url_lib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5572207" vertical-offset="6026" max-vertical-offset="7050">
+          <caret line="429" column="42" selection-start-line="429" selection-start-column="42" selection-end-line="429" selection-end-column="42" />
           <folding>
-            <element signature="e#79#107#0" expanded="true" />
+            <element signature="e#79#88#0" expanded="true" />
           </folding>
         </state>
       </provider>

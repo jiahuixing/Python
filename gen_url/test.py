@@ -42,7 +42,7 @@ def test5():
     parser.add_option('-t', '--tommy', dest='tommy_ota_folder', help='tommy\'sota folder')
     parser.add_option('-v', '--version', dest='ota_version', help='ota version')
     (options, args) = parser.parse_args()
-    print(len(sys.argv))
+    print(len(sys.argv[1:]))
     print(options)
     print(options.dj_ota_folder)
     print(options.tommy_ota_folder)
