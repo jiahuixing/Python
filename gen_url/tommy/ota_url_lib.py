@@ -131,6 +131,13 @@ Area_Types = [
 ]
 
 
+# noinspection PyClassHasNoInit
+class DefaultFolder:
+    PYTHON_FILE_PATH = '/data/files'
+    USER_OTA_PATH = '/data/ota/'
+    ENG_PATH = '/data/eng/'
+
+
 def init_options():
     usage_msg = 'usage: %prog [options] arg'
     parser = optparse.OptionParser(usage=usage_msg)
@@ -305,21 +312,31 @@ def get_area_type(file_name):
     return area_type
 
 
-def get_dev_type(file_name):
-    dev_type = ''
-    name = str.lower(file_name)
+def search_dev(file_name):
+    dev = 0
     dev_version = r'[0-9]{1}\.[0-9]{1,2}\.[0-9]{1,2}\_'
     stable_version = r'[a-z]{3,7}[0-9]{1,2}\.[0-9]{1,2}\_'
     pattern_dev = re.compile(dev_version)
     pattern_stable = re.compile(stable_version)
-    dev_search_result = re.findall(pattern_dev, name)
-    stable_search_result = re.findall(pattern_stable, name)
+    dev_search_result = re.findall(pattern_dev, file_name)
+    stable_search_result = re.findall(pattern_stable, file_name)
     if dev_search_result:
+        dev = 1
+    elif stable_search_result:
+        dev = 2
+    return dev
+
+
+def get_dev_type(file_name):
+    dev_type = ''
+    name = str.lower(file_name)
+    dev = search_dev(name)
+    if dev == 1:
         if 'alpha' in name:
             dev_type = Dev_Types[0]
         else:
             dev_type = Dev_Types[1]
-    elif stable_search_result:
+    elif dev == 2:
         dev_type = Dev_Types[2]
     area_type = get_area_type(file_name)
     if area_type != '':
