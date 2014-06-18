@@ -7,7 +7,11 @@ __author__ = 'jiahuixing'
 
 from libs import *
 
-WORK_PATH = '/home/jiahuixing/Python/flashPhone'
+
+# noinspection PyClassHasNoInit
+class FlashInfo:
+    work_path = '/home/jiahuixing/Python/flashPhone'
+    main_url = 'http://ota.n.miui.com/ota/'
 
 
 class FlashPhone:
@@ -105,14 +109,14 @@ class FlashPhone:
     def download_tgz(self):
         msg = 'download_tgz'
         print(color_msg(msg, GREEN))
-        os.chdir(WORK_PATH)
+        os.chdir(FlashInfo.work_path)
         self.get_info()
         info_s = self.info_s
         for i in xrange(len(info_s)):
             print(color_msg('%s:%s' % (i, info_s[i][0]), RED))
         i = input('Pls input ur choice num:')
         if isinstance(i, int):
-            main_url = 'http://ota.n.miui.com/ota/'
+            main_url = FlashInfo.main_url
             page = urllib2.urlopen(main_url, timeout=5).read()
             if self.date in page:
                 td_main_url = main_url + self.date + '/'
@@ -233,7 +237,7 @@ class FlashPhone:
                             os.system(cmd)
 
     def delete_file(self):
-        os.chdir(WORK_PATH)
+        os.chdir(FlashInfo.work_path)
         if self.tgz_name != '':
             if os.path.exists(self.tgz_name):
                 cmd = 'rm -rf %s' % self.tgz_name
@@ -276,7 +280,7 @@ class FlashPhone:
 # import threading
 #
 # def input_func( context ):
-#     context[ 'data' ] = input( 'input:' )
+# context[ 'data' ] = input( 'input:' )
 #
 # context = { 'data' : 'default' }
 # t = threading.Thread( target = input_func ,args = ( context , ) )
