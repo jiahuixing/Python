@@ -9,9 +9,6 @@ import re
 import time
 import optparse
 
-IGNORE_OTA = 'ota'
-GLOBAL_SIGN = 'global'
-
 Model_Types = [
     '小米手机',
     '红米手机',
@@ -138,6 +135,12 @@ class DefaultFolder:
     ENG_PATH = '/data/eng/'
 
 
+# noinspection PyClassHasNoInit
+class Sign:
+    IGNORE_OTA = 'ota'
+    GLOBAL_SIGN = 'global'
+
+
 def init_options():
     usage_msg = 'usage: %prog [options] arg'
     parser = optparse.OptionParser(usage=usage_msg)
@@ -233,7 +236,7 @@ def get_date():
 
 def is_valid_file(file_name):
     valid = 0
-    if IGNORE_OTA not in file_name:
+    if Sign.IGNORE_OTA not in file_name:
         for i in xrange(len(Rom_Types)):
             rom_type = Rom_Types[i][0]
             if str.endswith(file_name, rom_type):
@@ -299,7 +302,7 @@ def get_op_type(file_name):
 def get_area_type(file_name):
     area_type = ''
     name = str.lower(file_name)
-    if GLOBAL_SIGN in name:
+    if Sign.GLOBAL_SIGN in name:
         area_type = '国际'
     for i in xrange(len(Area_Types)):
         flag1 = Area_Types[i][0]
