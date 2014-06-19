@@ -7,15 +7,6 @@ import sys
 from optparse import OptionParser
 
 
-def init_options():
-    usage_msg = 'usage: %prog [options] arg'
-    parser = OptionParser(usage=usage_msg)
-    parser.add_option('-s', '--serial', dest='device_serial_num', help='device serial num')
-    parser.add_option('-a', '--adb_args', dest='adb_args', help='adb args')
-    (options, args) = parser.parse_args()
-    return options
-
-
 # noinspection PyClassHasNoInit
 class COLOR:
     WHITE = '\033[37m'
@@ -25,6 +16,15 @@ class COLOR:
     YELLOW = '\033[33m'
     RED = '\033[91m'
     ENDC = '\033[1;m'
+
+
+def init_options():
+    usage_msg = 'usage: %prog [options] arg'
+    parser = OptionParser(usage=usage_msg)
+    parser.add_option('-s', '--serial', dest='device_serial_num', help='device serial num')
+    parser.add_option('-a', '--adb_args', dest='adb_args', help='adb args')
+    (options, args) = parser.parse_args()
+    return options
 
 
 m_options = init_options()
@@ -54,7 +54,7 @@ else:
     input_source = sys.stdin
 
 
-def switch_color(line):
+def switch_color(m_line):
     signs = [
         'E/',
         'D/',
@@ -72,7 +72,7 @@ def switch_color(line):
     ]
     color = None
     for sign in signs:
-        if sign in line:
+        if sign in m_line:
             index = signs.index(sign)
             color = colors[index]
             break
