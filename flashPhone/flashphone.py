@@ -12,6 +12,10 @@ from libs import *
 class FlashInfo:
     work_path = '/home/jiahuixing/Python/flashPhone'
     main_url = 'http://ota.n.miui.com/ota/'
+    Sign = [
+        'http://ota.n.miui.com',
+        '.tgz',
+    ]
 
 
 class FlashPhone:
@@ -28,6 +32,7 @@ class FlashPhone:
 
     info_s = list()
 
+    sign = 0
     flag = 0
 
     def __init__(self):
@@ -38,17 +43,20 @@ class FlashPhone:
             self.date = sys.argv[1]
         else:
             self.date = get_date()
-        tmp_date = '4.4.28'
-        t_tmp_date = '4.3.8'
-        cmp_result = self.compare_date(self.date, tmp_date)
-        if cmp_result == 1:
-            self.xml = 'flash_phone_info.xml'
+        if FlashInfo.Sign[0] in self.date and FlashInfo.Sign[1] in self.date:
+            self.sign = 1
         else:
-            cmp_result = self.compare_date(self.date, t_tmp_date)
+            tmp_date = '4.4.28'
+            t_tmp_date = '4.3.8'
+            cmp_result = self.compare_date(self.date, tmp_date)
             if cmp_result == 1:
-                self.xml = 'tmp_flash_phone_info.xml'
+                self.xml = 'flash_phone_info.xml'
             else:
-                self.xml = 't_tmp_flash_phone_info.xml'
+                cmp_result = self.compare_date(self.date, t_tmp_date)
+                if cmp_result == 1:
+                    self.xml = 'tmp_flash_phone_info.xml'
+                else:
+                    self.xml = 't_tmp_flash_phone_info.xml'
 
     @staticmethod
     def compare_date(date1, date2):
@@ -113,41 +121,49 @@ class FlashPhone:
     # noinspection PyMethodMayBeStatic
     def download_tgz(self):
         msg = 'download_tgz'
-        print(color_msg(msg, GREEN))
         os.chdir(FlashInfo.work_path)
-        self.get_info()
-        info_s = self.info_s
-        for i in xrange(len(info_s)):
-            print(color_msg('%s:%s' % (i, info_s[i][0]), RED))
-        i = input('Pls input ur choice num:')
-        if isinstance(i, int):
-            main_url = FlashInfo.main_url
-            page = urllib2.urlopen(main_url, timeout=5).read()
-            if self.date in page:
-                td_main_url = main_url + self.date + '/'
-                # debug(td_main_url)
-                choice = info_s[i]
-                rom = choice[0]
-                pat = r'%s' % choice[1]
-                debug_msg(color_msg('rom=%s' % rom))
-                debug_msg(color_msg('pat=%s' % pat))
-                page = urllib2.urlopen(td_main_url, timeout=5).read()
-                pattern = re.compile(pat)
-                # debug_msg('pattern=%s' % pattern)
-                f_result = re.findall(pattern, page)
-                if f_result:
-                    tgz_name = list(set(f_result))[0]
-                    # debug('tgz_name=%s' % tgz_name)
-                    td_tgz_url = td_main_url + tgz_name
-                    # debug('td_tgz_url=%s' % td_tgz_url)
-                    cmd = 'wget %s' % td_tgz_url
-                    # debug(cmd)
-                    os.system(cmd)
-                    self.tgz_name = tgz_name
-                    if os.path.exists(self.tgz_name):
-                        self.flag += 1
-                else:
-                    print('%s file not find on the site.' % self.date)
+        print(color_msg(msg, GREEN))
+        if self.sign == 0:
+            self.get_info()
+            info_s = self.info_s
+            for i in xrange(len(info_s)):
+                print(color_msg('%s:%s' % (i, info_s[i][0]), RED))
+            i = input('Pls input ur choice num:')
+            if isinstance(i, int):
+                main_url = FlashInfo.main_url
+                page = urllib2.urlopen(main_url, timeout=5).read()
+                if self.date in page:
+                    td_main_url = main_url + self.date + '/'
+                    # debug(td_main_url)
+                    choice = info_s[i]
+                    rom = choice[0]
+                    pat = r'%s' % choice[1]
+                    debug_msg(color_msg('rom=%s' % rom))
+                    debug_msg(color_msg('pat=%s' % pat))
+                    page = urllib2.urlopen(td_main_url, timeout=5).read()
+                    pattern = re.compile(pat)
+                    # debug_msg('pattern=%s' % pattern)
+                    f_result = re.findall(pattern, page)
+                    if f_result:
+                        tgz_name = list(set(f_result))[0]
+                        # debug('tgz_name=%s' % tgz_name)
+                        td_tgz_url = td_main_url + tgz_name
+                        # debug('td_tgz_url=%s' % td_tgz_url)
+                        cmd = 'wget %s' % td_tgz_url
+                        # debug(cmd)
+                        os.system(cmd)
+                        self.tgz_name = tgz_name
+                        if os.path.exists(self.tgz_name):
+                            self.flag += 1
+                    else:
+                        print('%s file not find on the site.' % self.date)
+        else:
+            cmd = 'wget %s' % self.date
+            os.system(cmd)
+            tgz_name = str.split(self.date, '/')[-1]
+            self.tgz_name = tgz_name
+            if os.path.exists(self.tgz_name):
+                self.flag += 1
 
     # noinspection PyMethodMayBeStatic
     def un_tar(self):

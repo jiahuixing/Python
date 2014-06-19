@@ -4,15 +4,8 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="colored adb logcat">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen_url/other/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen_url/other/getfile_url.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen_url/other/libs.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen_url/other/mkdir.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen_url/other/my_libs.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen_url/other/test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen_url/other/tmp_getfile_url.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen_url/other/tmp_libs.py" afterPath="" />
+    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="delete">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flashPhone/flashphone.py" afterPath="$PROJECT_DIR$/flashPhone/flashphone.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Python.iws" />
@@ -45,22 +38,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ota_url.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gen_url/tommy/ota_url.py">
+      <file leaf-file-name="flashphone.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/flashPhone/flashphone.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5708447" vertical-offset="646" max-vertical-offset="1380">
-              <caret line="71" column="16" selection-start-line="71" selection-start-column="16" selection-end-line="71" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gen_url/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="106" max-vertical-offset="840">
-              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-              <folding />
+            <state vertical-scroll-proportion="0.42915532" vertical-offset="300" max-vertical-offset="4800">
+              <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
+              <folding>
+                <element signature="e#51#60#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -143,8 +128,8 @@
         <option value="$PROJECT_DIR$/gen_url/tommy/ota_url_lib.py" />
         <option value="$PROJECT_DIR$/flashPhone/tmp_flash_phone_info.xml" />
         <option value="$PROJECT_DIR$/flashPhone/t_tmp_flash_phone.info.xml" />
-        <option value="$PROJECT_DIR$/flashPhone/flashphone.py" />
         <option value="$PROJECT_DIR$/adb/colored_adb_logcat.py" />
+        <option value="$PROJECT_DIR$/flashPhone/flashphone.py" />
       </list>
     </option>
   </component>
@@ -1301,7 +1286,11 @@
       <created>1403179969371</created>
       <updated>1403179969371</updated>
     </task>
-    <option name="localTasksCounter" value="173" />
+    <task id="LOCAL-00173" summary="delete">
+      <created>1403180276104</created>
+      <updated>1403180276104</updated>
+    </task>
+    <option name="localTasksCounter" value="174" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1347,7 +1336,6 @@
       <TodoPanelSettings />
     </option>
     <option name="SHOW_FILE_HISTORY_DETAILS" value="false" />
-    <MESSAGE value="cp files" />
     <MESSAGE value="bugreport" />
     <MESSAGE value="push" />
     <MESSAGE value="fix dior pattern" />
@@ -1372,7 +1360,8 @@
     <MESSAGE value="flash phone" />
     <MESSAGE value="colored adb logcat &amp;&amp; init options" />
     <MESSAGE value="colored adb logcat" />
-    <option name="LAST_COMMIT_MESSAGE" value="colored adb logcat" />
+    <MESSAGE value="delete" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1643,16 +1632,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flashPhone/flashphone.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23735955" vertical-offset="461" max-vertical-offset="4560">
-          <caret line="42" column="27" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
-          <folding>
-            <element signature="e#51#60#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/flashPhone/tmp_flash_phone_info.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.44241574" vertical-offset="0" max-vertical-offset="810">
@@ -1687,14 +1666,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gen_url/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="106" max-vertical-offset="840">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/adb/colored_adb_logcat.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.1839237" vertical-offset="346" max-vertical-offset="1485">
@@ -1707,9 +1678,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gen_url/tommy/ota_url.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5708447" vertical-offset="646" max-vertical-offset="1380">
+        <state vertical-scroll-proportion="0.0" vertical-offset="421" max-vertical-offset="1380">
           <caret line="71" column="16" selection-start-line="71" selection-start-column="16" selection-end-line="71" selection-end-column="16" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen_url/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.03950954" vertical-offset="106" max-vertical-offset="840">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flashPhone/flashphone.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42915532" vertical-offset="300" max-vertical-offset="4800">
+          <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
+          <folding>
+            <element signature="e#51#60#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
