@@ -53,6 +53,32 @@ if os.isatty(sys.stdin.fileno()):
 else:
     input_source = sys.stdin
 
+
+def switch_color(line):
+    signs = [
+        'E/',
+        'D/',
+        'V/',
+        'W/',
+        'I/',
+    ]
+
+    colors = [
+        COLOR.RED,
+        COLOR.BLUE,
+        COLOR.WHITE,
+        COLOR.YELLOW,
+        COLOR.GREEN,
+    ]
+    color = None
+    for sign in signs:
+        if sign in line:
+            index = signs.index(sign)
+            color = colors[index]
+            break
+    return color
+
+
 while True:
     try:
         line = input_source.readline()
@@ -62,21 +88,8 @@ while True:
     if len(line) == 0:
         break
     else:
-        out_color = COLOR.WHITE
-        # if line[0] == 'E':
-        if 'E/' in line:
-            out_color = COLOR.RED
-        # elif line[0] == 'D':
-        elif 'D/' in line:
-            out_color = COLOR.BLUE
-        # elif line[0] == 'V':
-        elif 'V/' in line:
+        out_color = switch_color(line)
+        if out_color is None:
             out_color = COLOR.WHITE
-        # elif line[0] == 'W':
-        elif 'W/' in line:
-            out_color = COLOR.YELLOW
-        # elif line[0] == 'I':
-        elif 'I/' in line:
-            out_color = COLOR.GREEN
         line = line.strip()
         print out_color + line + COLOR.ENDC

@@ -4,7 +4,7 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="flash phone">
+    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="colored adb logcat &amp;&amp; init options">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adb/colored_adb_logcat.py" afterPath="$PROJECT_DIR$/adb/colored_adb_logcat.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -51,8 +51,8 @@
       <file leaf-file-name="colored_adb_logcat.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/adb/colored_adb_logcat.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6257198" vertical-offset="739" max-vertical-offset="1305">
-              <caret line="71" column="30" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.59692895" vertical-offset="979" max-vertical-offset="1500">
+              <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
               <folding>
                 <element signature="e#79#88#0" expanded="true" />
               </folding>
@@ -1290,7 +1290,11 @@
       <created>1403150098781</created>
       <updated>1403150098781</updated>
     </task>
-    <option name="localTasksCounter" value="169" />
+    <task id="LOCAL-00169" summary="colored adb logcat &amp;&amp; init options">
+      <created>1403164744734</created>
+      <updated>1403164744734</updated>
+    </task>
+    <option name="localTasksCounter" value="170" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1354,14 +1358,14 @@
     <MESSAGE value="tommy&#10;change file name" />
     <MESSAGE value="tommy&#10;fix a bug of an '/'" />
     <MESSAGE value="tommy &#10;change argv" />
-    <MESSAGE value="colored adb logcat &amp;&amp; init options" />
     <MESSAGE value="add options &amp;&amp; use it" />
     <MESSAGE value="add some info" />
     <MESSAGE value="mkdir" />
     <MESSAGE value="sign" />
     <MESSAGE value="info" />
     <MESSAGE value="flash phone" />
-    <option name="LAST_COMMIT_MESSAGE" value="flash phone" />
+    <MESSAGE value="colored adb logcat &amp;&amp; init options" />
+    <option name="LAST_COMMIT_MESSAGE" value="colored adb logcat &amp;&amp; init options" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1687,7 +1691,7 @@
         <state vertical-scroll-proportion="0.23735955" vertical-offset="461" max-vertical-offset="4560">
           <caret line="42" column="27" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
           <folding>
-            <element signature="e#51#60#0" expanded="true" />
+            <element signature="e#51#60#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1736,8 +1740,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/adb/colored_adb_logcat.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6257198" vertical-offset="739" max-vertical-offset="1305">
-          <caret line="71" column="30" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.59692895" vertical-offset="979" max-vertical-offset="1500">
+          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
           <folding>
             <element signature="e#79#88#0" expanded="true" />
           </folding>
