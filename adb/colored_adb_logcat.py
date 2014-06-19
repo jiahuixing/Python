@@ -48,12 +48,6 @@ else:
 
 # adb_args = ' '.join(sys.argv[1:])
 
-if os.isatty(sys.stdin.fileno()):
-    input_source = os.popen(adb)
-else:
-    input_source = sys.stdin
-
-
 def switch_color(m_line):
     signs = [
         'E/',
@@ -78,6 +72,11 @@ def switch_color(m_line):
             break
     return color
 
+
+if os.isatty(sys.stdin.fileno()):
+    input_source = os.popen(adb)
+else:
+    input_source = sys.stdin
 
 while True:
     try:

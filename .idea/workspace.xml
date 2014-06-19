@@ -51,8 +51,8 @@
       <file leaf-file-name="colored_adb_logcat.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/adb/colored_adb_logcat.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.497121" vertical-offset="165" max-vertical-offset="1500">
-              <caret line="63" column="5" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.6257198" vertical-offset="844" max-vertical-offset="1485">
+              <caret line="78" column="28" selection-start-line="78" selection-start-column="28" selection-end-line="78" selection-end-column="28" />
               <folding>
                 <element signature="e#79#88#0" expanded="true" />
               </folding>
@@ -1298,7 +1298,11 @@
       <created>1403179062316</created>
       <updated>1403179062316</updated>
     </task>
-    <option name="localTasksCounter" value="171" />
+    <task id="LOCAL-00171" summary="colored adb logcat">
+      <created>1403179345541</created>
+      <updated>1403179345541</updated>
+    </task>
+    <option name="localTasksCounter" value="172" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1744,8 +1748,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/adb/colored_adb_logcat.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.497121" vertical-offset="165" max-vertical-offset="1500">
-          <caret line="63" column="5" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.6257198" vertical-offset="844" max-vertical-offset="1485">
+          <caret line="78" column="28" selection-start-line="78" selection-start-column="28" selection-end-line="78" selection-end-column="28" />
           <folding>
             <element signature="e#79#88#0" expanded="true" />
           </folding>
