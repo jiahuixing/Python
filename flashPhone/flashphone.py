@@ -39,11 +39,16 @@ class FlashPhone:
         else:
             self.date = get_date()
         tmp_date = '4.4.28'
+        t_tmp_date = '4.3.8'
         cmp_result = self.compare_date(self.date, tmp_date)
         if cmp_result == 1:
             self.xml = 'flash_phone_info.xml'
         else:
-            self.xml = 'tmp_flash_phone_info.xml'
+            cmp_result = self.compare_date(self.date, t_tmp_date)
+            if cmp_result == 1:
+                self.xml = 'tmp_flash_phone_info.xml'
+            else:
+                self.xml = 't_tmp_flash_phone_info.xml'
 
     @staticmethod
     def compare_date(date1, date2):
