@@ -4,14 +4,13 @@ __author__ = 'jiahuixing'
 
 from libs import *
 
-# root_path = '/home/jiahuixing'
-# bug_path = 'bugreport'
 svn_path = '/home/jiahuixing/SVN/Bugreport/trunk/'
 
 bug_suffix = '.txt'
 tgz_suffix = '.tar.gz'
 
 
+# noinspection PyMethodMayBeStatic
 class Bugreport:
     work_path = ''
     file_name = ''
@@ -20,7 +19,6 @@ class Bugreport:
     adb_device_list = list()
 
     def __init__(self):
-        # self.work_path = '%s/%s/' % (root_path, bug_path)
         adb_permission()
 
     def adb_devices_list(self):
@@ -62,10 +60,6 @@ class Bugreport:
         color_cmd = 'tar -zcf %s %s%s' % (color_msg(self.tgz_name), self.file_name, bug_suffix)
         debug_msg(color_cmd)
         os.system(cmd)
-        # cmd = 'rm -rf %s' % self.txt_name
-        # color_cmd = 'rm -rf %s' % color_msg(self.txt_name)
-        # debug_msg(color_cmd)
-        # os.system(cmd)
 
     def push_tgz(self):
         debug_msg(color_msg('------push_tgz------', RED))
@@ -76,20 +70,21 @@ class Bugreport:
         try:
             i = child.expect(':')
             if i == 0:
+                debug_msg(color_msg('i = %s' % i))
                 child.sendline('1')
                 child.expect(pexpect.EOF)
         except pexpect.TIMEOUT:
             print('TIMEOUT')
         finally:
             child.close()
-            cmd = 'rm -rf %s' % self.tgz_name
-            color_cmd = 'rm -rf %s' % color_msg(self.tgz_name)
-            debug_msg(color_cmd)
-            os.system(cmd)
-            cmd = 'sudo cp -rf %s %s' % (self.txt_name, svn_path)
-            color_cmd = 'sudo cp -rf %s %s' % (color_msg(self.txt_name), svn_path)
-            debug_msg(color_msg(color_cmd))
-            os.system(cmd)
+            self.mv_file(self.tgz_name, svn_path)
+            self.mv_file(self.txt_name, svn_path)
+
+    def mv_file(self, file_name, dir_name):
+        cmd = 'sudo mv -f %s %s' % (file_name, dir_name)
+        color_cmd = 'sudo mv -f %s %s' % (color_msg(file_name), dir_name)
+        debug_msg(color_cmd)
+        os.system(cmd)
 
 
 if __name__ == '__main__':
