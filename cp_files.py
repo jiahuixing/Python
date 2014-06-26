@@ -5,7 +5,7 @@ __author__ = 'jiahuixing'
 import os
 import pexpect
 
-from flashPhone.libs import color_msg
+from flashPhone.libs import color_msg, debug_msg
 
 
 valid_suffix = [
@@ -43,25 +43,24 @@ def cp_files():
         if file_name not in ignore_files:
             is_in = file_suffix(file_name)
             if is_in == 1:
-                print('------%s------' % file_name)
-                cmd = 'sudo cp -rf %s %s' % (file_name, termini_path)
-                color_cmd = 'sudo cp -rf %s %s' % (color_msg(file_name), termini_path)
-                print('cmd = %s' % color_cmd)
-                # if file_or_folder == 0:
-                child = pexpect.spawn(cmd)
-                try:
-                    i = child.expect('jiahuixing:')
-                    if i == 0:
-                        # print('i=%s' % i)
-                        cmd = '1'
-                        child.sendline(cmd)
-                        child.expect(pexpect.EOF)
-                # except pexpect.EOF:
-                #     print('pexpect.EOF')
-                except pexpect.TIMEOUT:
-                    print('pexpect.TIMEOUT')
-                    # else:
-                    #     os.system(cmd)
+                do_cp_file(file_name, termini_path)
+
+
+def do_cp_file(file_name, path):
+    cmd = 'sudo cp -rf %s %s' % (file_name, path)
+    color_cmd = 'sudo cp -rf %s %s' % (color_msg(file_name), path)
+    debug_msg('cmd = %s' % color_cmd)
+    child = pexpect.spawn(cmd)
+    try:
+        i = child.expect('jiahuixing:')
+        if i == 0:
+            cmd = '1'
+            child.sendline(cmd)
+            child.expect(pexpect.EOF)
+    except pexpect.TIMEOUT:
+        print('pexpect.TIMEOUT')
+    finally:
+        child.close()
 
 
 cp_files()
