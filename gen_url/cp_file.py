@@ -3,11 +3,9 @@
 
 __author__ = 'jiahuixing'
 
-import os
-import pexpect
 import re
 
-from other.libs import *
+from libs import *
 
 
 Valid_Suffix = [

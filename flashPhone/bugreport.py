@@ -48,7 +48,7 @@ class Bugreport:
                 debug_msg(color_cmd)
                 os.system(cmd)
                 self.tar_file()
-                self.push_tgz()
+                self.push_tgz_txt()
         else:
             print('adb device not found.')
 
@@ -61,31 +61,25 @@ class Bugreport:
         debug_msg(color_cmd)
         os.system(cmd)
 
-    def push_tgz(self):
+    def push_tgz_txt(self):
         debug_msg(color_msg('------push_tgz------', RED))
-        cmd = 'sudo cp -rf %s %s' % (self.tgz_name, svn_path)
-        color_cmd = 'sudo cp -rf %s %s' % (color_msg(self.tgz_name), svn_path)
+        self.mv_file(self.tgz_name, svn_path)
+        self.mv_file(self.txt_name, svn_path)
+
+    def mv_file(self, file_name, dir_name):
+        cmd = 'sudo mv -f %s %s' % (file_name, dir_name)
+        color_cmd = 'sudo mv -f %s %s' % (color_msg(file_name), dir_name)
         debug_msg(color_cmd)
         child = pexpect.spawn(cmd, timeout=5)
         try:
             i = child.expect(':')
             if i == 0:
-                debug_msg(color_msg('i = %s' % i))
                 child.sendline('1')
                 child.expect(pexpect.EOF)
         except pexpect.TIMEOUT:
             print('TIMEOUT')
         finally:
             child.close()
-            self.mv_file(self.tgz_name, svn_path)
-            self.mv_file(self.txt_name, svn_path)
-
-    def mv_file(self, file_name, dir_name):
-        cmd = 'sudo mv -f %s %s' % (file_name, dir_name)
-        color_cmd = 'sudo mv -f %s %s' % (color_msg(file_name), dir_name)
-        debug_msg(color_cmd)
-        os.system(cmd)
-
 
 if __name__ == '__main__':
     bug = Bugreport()

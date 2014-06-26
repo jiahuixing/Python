@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="bugreport">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flashPhone/bugreport.py" afterPath="$PROJECT_DIR$/flashPhone/bugreport.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen_url/cp_file.py" afterPath="$PROJECT_DIR$/gen_url/cp_file.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Python.iws" />
@@ -53,8 +54,18 @@
       <file leaf-file-name="bugreport.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flashPhone/bugreport.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.48365122" vertical-offset="5" max-vertical-offset="1515">
-              <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.65258855" vertical-offset="496" max-vertical-offset="1425">
+              <caret line="65" column="42" selection-start-line="65" selection-start-column="42" selection-end-line="65" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cp_file.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gen_url/cp_file.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="586" max-vertical-offset="1320">
+              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -122,7 +133,6 @@
         <option value="$PROJECT_DIR$/gen_url/other/getfile_url.py" />
         <option value="$PROJECT_DIR$/gen_url/other/mkdir.py" />
         <option value="$PROJECT_DIR$/gen_url/__init__.py" />
-        <option value="$PROJECT_DIR$/gen_url/cp_file.py" />
         <option value="$PROJECT_DIR$/gen_url/other/test.py" />
         <option value="$PROJECT_DIR$/gen_url/other/tmp_getfile_url.py" />
         <option value="$PROJECT_DIR$/gen_url/other/my_libs.py" />
@@ -139,6 +149,7 @@
         <option value="$PROJECT_DIR$/flashPhone/t_tmp_flash_phone.info.xml" />
         <option value="$PROJECT_DIR$/adb/colored_adb_logcat.py" />
         <option value="$PROJECT_DIR$/flashPhone/flashphone.py" />
+        <option value="$PROJECT_DIR$/gen_url/cp_file.py" />
         <option value="$PROJECT_DIR$/flashPhone/bugreport.py" />
       </list>
     </option>
@@ -1308,7 +1319,11 @@
       <created>1403689270002</created>
       <updated>1403689270002</updated>
     </task>
-    <option name="localTasksCounter" value="176" />
+    <task id="LOCAL-00176" summary="bugreport">
+      <created>1403690341415</created>
+      <updated>1403690341415</updated>
+    </task>
+    <option name="localTasksCounter" value="177" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1650,13 +1665,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gen_url/cp_file.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23569483" vertical-offset="82" max-vertical-offset="1260">
-          <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/flashPhone/flash_phone_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14305177" vertical-offset="0" max-vertical-offset="3405">
@@ -1733,10 +1741,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/gen_url/cp_file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="586" max-vertical-offset="1320">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/flashPhone/bugreport.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48365122" vertical-offset="5" max-vertical-offset="1515">
-          <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.65258855" vertical-offset="496" max-vertical-offset="1425">
+          <caret line="65" column="42" selection-start-line="65" selection-start-column="42" selection-end-line="65" selection-end-column="42" />
           <folding />
         </state>
       </provider>
