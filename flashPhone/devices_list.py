@@ -12,8 +12,8 @@ class device_list:
     @staticmethod
     def adb_devices_list():
         adb_device_list = []
-        cmd = 'adb devices'
-        child = os.popen(cmd)
+        shell_command = 'adb devices'
+        child = os.popen(shell_command)
         for line in child.readlines():
             line = str.strip(line, '\r\n')
             if line:
@@ -27,8 +27,8 @@ class device_list:
     @staticmethod
     def fastboot_devices_list():
         fastboot_devices = []
-        cmd = 'fastboot devices'
-        child = os.popen(cmd)
+        shell_command = 'fastboot devices'
+        child = os.popen(shell_command)
         for line in child.readlines():
             line = str.strip(line, '\r\n')
             if line:
@@ -39,13 +39,26 @@ class device_list:
         return sorted(fastboot_devices)
 
 
+    @staticmethod
+    def get_product_name(m_device_id):
+        m_product_name = ''
+        shell_command = 'adb -s %s shell getprop ro.build.product' % m_device_id
+        # debug_msg(shell_command)
+        child = os.popen(shell_command)
+        for line in child.readlines():
+            m_product_name = str.strip(line, '\r\n')
+        return m_product_name
+
+
 if __name__ == '__main__':
     dl = device_list()
     adb_s = dl.adb_devices_list()
     if len(adb_s) > 0:
         debug_msg(color_msg('adb devices', GREEN))
         for adb in adb_s:
-            debug_msg(adb)
+            device_id = adb[0]
+            product_name = dl.get_product_name(device_id)
+            debug_msg('device = %s\nproduct = %s' % (device_id, product_name))
     else:
         debug_msg(color_msg('no adb device.', RED))
     fastboot_s = dl.fastboot_devices_list()
