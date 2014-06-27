@@ -58,7 +58,7 @@ if __name__ == '__main__':
         for adb in adb_s:
             device_id = adb[0]
             product_name = dl.get_product_name(device_id)
-            debug_msg('device = %s\nproduct = %s' % (device_id, product_name))
+            debug_msg('device = %s | product = %s' % (color_msg(device_id), color_msg(product_name)))
     else:
         debug_msg(color_msg('no adb device.', RED))
     fastboot_s = dl.fastboot_devices_list()

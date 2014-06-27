@@ -4,9 +4,8 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="bugreport">
+    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="get device list">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flashPhone/devices_list.py" afterPath="$PROJECT_DIR$/flashPhone/devices_list.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/jiahuixing.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/jiahuixing.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Python.iws" />
@@ -84,7 +83,7 @@
       <file leaf-file-name="devices_list.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flashPhone/devices_list.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.625" vertical-offset="590" max-vertical-offset="1125">
+            <state vertical-scroll-proportion="0.59615386" vertical-offset="605" max-vertical-offset="1125">
               <caret line="61" column="9" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
               <folding />
             </state>
@@ -1351,7 +1350,11 @@
       <created>1403784833250</created>
       <updated>1403784833250</updated>
     </task>
-    <option name="localTasksCounter" value="179" />
+    <task id="LOCAL-00179" summary="get device list">
+      <created>1403838124670</created>
+      <updated>1403838124670</updated>
+    </task>
+    <option name="localTasksCounter" value="180" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1397,7 +1400,6 @@
       <TodoPanelSettings />
     </option>
     <option name="SHOW_FILE_HISTORY_DETAILS" value="false" />
-    <MESSAGE value="push" />
     <MESSAGE value="fix dior pattern" />
     <MESSAGE value="mione plus name pattern" />
     <MESSAGE value="cancro name pattern" />
@@ -1422,7 +1424,8 @@
     <MESSAGE value="delete" />
     <MESSAGE value="flash phone" />
     <MESSAGE value="bugreport" />
-    <option name="LAST_COMMIT_MESSAGE" value="bugreport" />
+    <MESSAGE value="get device list" />
+    <option name="LAST_COMMIT_MESSAGE" value="get device list" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1781,7 +1784,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flashPhone/devices_list.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.625" vertical-offset="590" max-vertical-offset="1125">
+        <state vertical-scroll-proportion="0.59615386" vertical-offset="605" max-vertical-offset="1125">
           <caret line="61" column="9" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
           <folding />
         </state>
