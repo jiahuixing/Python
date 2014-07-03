@@ -1,4 +1,5 @@
 <?xml   version="1.0"   encoding="utf-8"?>
+<!--suppress XmlUnboundNsPrefix, XmlUnboundNsPrefix -->
 <info>
 
     <device>
@@ -7,7 +8,7 @@
     </device>
 
     <device>
-    <name>aries_images</name>
+        <name>aries_images</name>
         <tgz_pattern>%s_%s_4\.[0-9]{1}_cn_[a-z0-9]{10}\.tgz</tgz_pattern>
     </device>
 

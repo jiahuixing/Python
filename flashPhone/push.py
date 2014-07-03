@@ -8,6 +8,7 @@ import sys
 
 PRI_MODELS = [
     'mocha',
+    'cancro',
 ]
 
 
@@ -44,7 +45,7 @@ class Push:
         if len(self.adb_device_list) > 0:
             for i in xrange(len(self.adb_device_list)):
                 device_id = self.adb_device_list[i]
-                print(device_id)
+                # print(device_id)
                 device = Device(device_id)
                 self.device_list.append(device)
         else:

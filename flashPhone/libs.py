@@ -4,6 +4,7 @@ __author__ = 'jiahuixing'
 import os
 import pexpect
 import time
+# noinspection PyPep8Naming
 from xml.etree import ElementTree as ET
 import urllib2
 import json
@@ -257,7 +258,7 @@ def color_msg(msg, fg=GREEN, bg=None):
         # debug(color_str)
         msg = '%s%sm%s%s' % (COLOR_START, color_str, msg, COLOR_END)
     # if color == 2:
-    #     return '%s%s%s%s%s' % (COLOR_START, color_fg, color_bg, msg, COLOR_END)
+    # return '%s%s%s%s%s' % (COLOR_START, color_fg, color_bg, msg, COLOR_END)
     return msg
 
 

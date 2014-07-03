@@ -10,7 +10,7 @@ from libs import *
 
 # noinspection PyClassHasNoInit
 class FlashInfo:
-    work_path = '/home/jiahuixing/Python/flashPhone'
+    work_path = '/home/jiahuixing/pytools'
     main_url = 'http://ota.n.miui.com/ota/'
     Sign = [
         'http://ota.n.miui.com',

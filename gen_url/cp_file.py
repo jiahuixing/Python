@@ -5,7 +5,7 @@ __author__ = 'jiahuixing'
 
 import re
 
-from libs import *
+from flashPhone.libs import *
 
 
 Valid_Suffix = [
