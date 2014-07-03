@@ -4,28 +4,8 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="get device list">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flashPhone/colored_adb_logcat.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flashPhone/cp_file_to_pytools.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/flashPhone/bugreport.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/flashPhone/data.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/flashPhone/data.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/flashPhone/data_tmp.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/flashPhone/devices.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/flashPhone/do_operate.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/flashPhone/flashphone.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/flashPhone/root_devices.sh" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flashPhone/Operate.py" afterPath="$PROJECT_DIR$/flashPhone/Operate.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flashPhone/__init__.py" afterPath="$PROJECT_DIR$/flashPhone/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flashPhone/bugreport.py" afterPath="$PROJECT_DIR$/flashPhone/bugreport.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen_url/cp_file.py" afterPath="$PROJECT_DIR$/gen_url/cp_file.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flashPhone/flash_phone_info.xml" afterPath="$PROJECT_DIR$/flashPhone/flash_phone_info.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flashPhone/flashphone.py" afterPath="$PROJECT_DIR$/flashPhone/flashphone.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/jiahuixing.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/jiahuixing.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flashPhone/libs.py" afterPath="$PROJECT_DIR$/flashPhone/libs.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flashPhone/push.py" afterPath="$PROJECT_DIR$/flashPhone/push.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flashPhone/t_tmp_flash_phone.info.xml" afterPath="$PROJECT_DIR$/flashPhone/t_tmp_flash_phone.info.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flashPhone/tmp_flash_phone_info.xml" afterPath="$PROJECT_DIR$/flashPhone/tmp_flash_phone_info.xml" />
+    <list default="true" id="5a13205b-a7ba-49f3-8b1d-130ba429b4ae" name="Default" comment="modify">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flashPhone/cp_file_to_pytools.py" afterPath="$PROJECT_DIR$/flashPhone/cp_file_to_pytools.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Python.iws" />
@@ -83,9 +63,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="633" max-vertical-offset="1275">
               <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="75" selection-end-column="21" />
-              <folding>
-                <element signature="e#80#89#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -93,11 +71,9 @@
       <file leaf-file-name="cp_file_to_pytools.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flashPhone/cp_file_to_pytools.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5673077" vertical-offset="80" max-vertical-offset="1365">
-              <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
-              <folding>
-                <element signature="e#78#87#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.30769232" vertical-offset="815" max-vertical-offset="1350">
+              <caret line="65" column="24" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -105,8 +81,8 @@
       <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flashPhone/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="210">
+              <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -1422,7 +1398,11 @@
       <created>1403847287566</created>
       <updated>1403847287566</updated>
     </task>
-    <option name="localTasksCounter" value="182" />
+    <task id="LOCAL-00182" summary="modify">
+      <created>1404388743053</created>
+      <updated>1404388743053</updated>
+    </task>
+    <option name="localTasksCounter" value="183" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1437,6 +1417,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28818062" sideWeight="0.50037736" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1654952" sideWeight="0.2182628" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24178712" sideWeight="0.67018867" order="7" side_tool="false" content_ui="tabs" x="616" y="74" width="514" height="898" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298292" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32802126" sideWeight="0.49962264" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17433962" sideWeight="0.7118194" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28091982" sideWeight="0.6662252" order="0" side_tool="false" content_ui="combo" />
@@ -1446,7 +1427,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298292" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -1468,7 +1448,6 @@
       <TodoPanelSettings />
     </option>
     <option name="SHOW_FILE_HISTORY_DETAILS" value="false" />
-    <MESSAGE value="fix dior pattern" />
     <MESSAGE value="mione plus name pattern" />
     <MESSAGE value="cancro name pattern" />
     <MESSAGE value="pisces name pattern" />
@@ -1493,7 +1472,8 @@
     <MESSAGE value="flash phone" />
     <MESSAGE value="bugreport" />
     <MESSAGE value="get device list" />
-    <option name="LAST_COMMIT_MESSAGE" value="get device list" />
+    <MESSAGE value="modify" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1786,8 +1766,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flashPhone/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="210">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -1796,19 +1776,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="633" max-vertical-offset="1275">
           <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="75" selection-end-column="21" />
-          <folding>
-            <element signature="e#80#89#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/flashPhone/cp_file_to_pytools.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5673077" vertical-offset="80" max-vertical-offset="1365">
-          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
-          <folding>
-            <element signature="e#78#87#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.30769232" vertical-offset="815" max-vertical-offset="1350">
+          <caret line="65" column="24" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>

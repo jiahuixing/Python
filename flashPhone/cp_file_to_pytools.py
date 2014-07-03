@@ -68,6 +68,7 @@ class CpFiles:
         try:
             i = child.expect('jiahuixing:')
             if i == 0:
+                debug_msg(color_msg('expect'))
                 passwd = '1'
                 child.sendline(passwd)
                 child.expect(pexpect.EOF)
