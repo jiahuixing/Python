@@ -1,10 +1,10 @@
 <?xml   version="1.0"   encoding="utf-8"?>
-<!--suppress XmlUnboundNsPrefix -->
+<!--suppress XmlUnboundNsPrefix, XmlUnboundNsPrefix -->
 <info>
 
     <device>
         <name>mione_plus_images</name>
-        <tgz_pattern>%s_%s_4\.[0-9]{1}_cn_[a-z0-9]{10}\.tar</tgz_pattern>
+        <tgz_pattern>%s_%s_4\.[0-9]{1}_[a-z0-9]{10}\.tar</tgz_pattern>
     </device>
 
     <device>
@@ -19,7 +19,7 @@
 
     <device>
         <name>cancro_images</name>
-        <tgz_pattern>%s_%s_4\.[0-9]{1}_cn_[a-z0-9]{10}\.tar</tgz_pattern>
+        <tgz_pattern>%s_%s_4\.[0-9]{1}_[a-z0-9]{10}\.tar</tgz_pattern>
     </device>
 
     <device>
@@ -29,7 +29,7 @@
 
     <device>
         <name>pisces_images</name>
-        <tgz_pattern>%s_%s_4\.[0-9]{1}_cn_[a-z0-9]{10}\.tar</tgz_pattern>
+        <tgz_pattern>%s_%s_4\.[0-9]{1}_[a-z0-9]{10}\.tar</tgz_pattern>
     </device>
 
     <device>

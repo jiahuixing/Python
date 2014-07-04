@@ -46,17 +46,39 @@ class FlashPhone:
         if FlashInfo.Sign[0] in self.date and FlashInfo.Sign[1] in self.date:
             self.sign = 1
         else:
-            tmp_date = '4.4.28'
-            t_tmp_date = '4.3.8'
-            cmp_result = self.compare_date(self.date, tmp_date)
-            if cmp_result == 1:
-                self.xml = 'flash_phone_info.xml'
-            else:
-                cmp_result = self.compare_date(self.date, t_tmp_date)
+            dev = self.dev_or_stable(self.date)
+            debug_msg(color_msg('dev = %s' % dev))
+            if self.dev_or_stable(self.date) == 1:
+                tmp_date = '4.4.28'
+                t_tmp_date = '4.3.8'
+                cmp_result = self.compare_date(self.date, tmp_date)
                 if cmp_result == 1:
-                    self.xml = 'tmp_flash_phone_info.xml'
+                    self.xml = 'flash_phone_info.xml'
                 else:
-                    self.xml = 't_tmp_flash_phone_info.xml'
+                    cmp_result = self.compare_date(self.date, t_tmp_date)
+                    if cmp_result == 1:
+                        self.xml = 'tmp_flash_phone_info.xml'
+                    else:
+                        self.xml = 't_tmp_flash_phone_info.xml'
+            else:
+                self.xml = 't_tmp_flash_phone_info.xml'
+
+    # noinspection PyMethodMayBeStatic
+    def dev_or_stable(self, file_name):
+        file_name = str.lower(file_name)
+        dev_version = r'[0-9]{1}\.[0-9]{1,2}\.[0-9]{1,2}'
+        stable_version = r'[a-z]{3,7}[0-9]{1,2}\.[0-9]{1,2}'
+        pattern_dev = re.compile(dev_version)
+        pattern_stable = re.compile(stable_version)
+        dev_search_result = re.findall(pattern_dev, file_name)
+        stable_search_result = re.findall(pattern_stable, file_name)
+        if dev_search_result:
+            dev = 1
+        elif stable_search_result:
+            dev = 2
+        else:
+            dev = 0
+        return dev
 
     @staticmethod
     def compare_date(date1, date2):
