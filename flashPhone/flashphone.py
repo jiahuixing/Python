@@ -100,8 +100,6 @@ class FlashPhone:
                 dt2.pop(j)
                 # noinspection PyTypeChecker
                 dt2.insert(j, tmp)
-            # debug(dt1)
-            # debug(dt2)
             if dt1[0] > dt2[0]:
                 result = 1
             elif dt1[0] == dt2[0]:
@@ -129,15 +127,11 @@ class FlashPhone:
                 tmp = list()
                 if isinstance(content, ET.Element):
                     children = list(content)
-                    # debug(children)
                     for child in children:
                         if isinstance(child, ET.Element):
-                            # debug(color_msg('tag:%s,text:%s' % (child.tag, child.text)))
                             tmp.append(child.text)
                     tmp[1] = tmp[1] % (tmp[0], self.date)
-                    # debug(tmp)
                 info_s.append(tmp)
-        # debug(color_msg(info_s))
         self.info_s = info_s
 
     # noinspection PyMethodMayBeStatic
@@ -156,7 +150,6 @@ class FlashPhone:
                 page = urllib2.urlopen(main_url, timeout=5).read()
                 if self.date in page:
                     td_main_url = main_url + self.date + '/'
-                    # debug(td_main_url)
                     choice = info_s[i]
                     rom = choice[0]
                     pat = r'%s' % choice[1]
@@ -164,15 +157,11 @@ class FlashPhone:
                     debug_msg(color_msg('pat=%s' % pat))
                     page = urllib2.urlopen(td_main_url, timeout=5).read()
                     pattern = re.compile(pat)
-                    # debug_msg('pattern=%s' % pattern)
                     f_result = re.findall(pattern, page)
                     if f_result:
                         tgz_name = list(set(f_result))[0]
-                        # debug('tgz_name=%s' % tgz_name)
                         td_tgz_url = td_main_url + tgz_name
-                        # debug('td_tgz_url=%s' % td_tgz_url)
                         cmd = 'wget %s' % td_tgz_url
-                        # debug(cmd)
                         os.system(cmd)
                         self.tgz_name = tgz_name
                         if os.path.exists(self.tgz_name):
@@ -193,14 +182,8 @@ class FlashPhone:
             msg = 'un_tar'
             print(color_msg(msg, GREEN))
             cmd = 'tar xvf %s' % self.tgz_name
-            # debug(cmd)
             os.system(cmd)
-            # cmd = 'rm -rf %s' % tgz_name
-            # # debug(cmd)
-            # debug_msg(color_msg('rm tgz \"%s\".' % tgz_name, RED))
-            # os.system(cmd)
             self.folder = self.tgz_name[0:-len('_f0e572b4f6.tgz')]
-            # debug('folder=%s' % self.folder)
             self.flag += 1
 
     # noinspection PyMethodMayBeStatic
@@ -239,7 +222,6 @@ class FlashPhone:
                     time.sleep(3)
                 self.adb_device = self.adb_device_list[0]
                 cmd = 'adb -s %s reboot bootloader' % self.adb_device
-                # debug(cmd)
                 os.system(cmd)
                 self.flag += 1
                 time.sleep(3)
@@ -257,12 +239,9 @@ class FlashPhone:
             if os.path.exists(self.folder):
                 sh_files = list()
                 abs_folder = os.path.abspath(self.folder)
-                # debug(abs_folder)
-                # debug(os.listdir(abs_folder))
                 for file_name in os.listdir(abs_folder):
                     if file_name.endswith('.sh'):
                         sh_files.append(file_name)
-                # debug(sh_files)
                 for i in xrange(len(sh_files)):
                     print(color_msg('%s:%s' % (i, sh_files[i]), RED))
                 i = input('Pls input ur choice num:')
@@ -273,7 +252,6 @@ class FlashPhone:
                         os.chdir(self.folder)
                         if os.path.exists(flash_script):
                             cmd = 'chmod a+x %s' % flash_script
-                            # debug(cmd)
                             os.system(cmd)
                             cmd = './%s' % flash_script
                             debug_msg(color_msg(cmd))

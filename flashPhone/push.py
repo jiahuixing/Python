@@ -9,7 +9,13 @@ import sys
 PRI_MODELS = [
     'mocha',
     'cancro',
+    'pisces',
 ]
+
+
+def run_cmd(shell_command):
+    print('shell_command = %s' % shell_command)
+    os.system(shell_command)
 
 
 # noinspection PyMethodMayBeStatic
@@ -19,6 +25,8 @@ class Push:
     device_list = list()
 
     def __init__(self):
+        shell = 'root_devices'
+        run_cmd(shell)
         self.init_apk()
         self.adb_device_list = self.get_adb_device_list()
 
@@ -56,14 +64,12 @@ class Push:
             rm_files = 'Music.*'
             for device in self.device_list:
                 shell = 'adb -s %s shell rm %s%s' % (device.device_id, device.push_path, rm_files)
-                print('shell=%s' % shell)
-                os.system(shell)
+                run_cmd(shell)
                 shell = 'adb -s %s push %s %s' % (device.device_id, self.apk, device.push_path)
-                print('shell=%s' % shell)
                 if os.path.exists(self.apk):
-                    os.system(shell)
+                    run_cmd(shell)
                     shell = 'adb -s %s reboot' % device.device_id
-                    os.system(shell)
+                    run_cmd(shell)
                 else:
                     print('File not exist.')
 
@@ -91,6 +97,9 @@ class Device:
 
 
 if __name__ == '__main__':
-    push = Push()
-    push.init_devices()
-    push.push_apk()
+    try:
+        push = Push()
+        push.init_devices()
+        push.push_apk()
+    except KeyboardInterrupt:
+        print('KeyboardInterrupt')
